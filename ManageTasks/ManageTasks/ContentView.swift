@@ -20,7 +20,20 @@ struct ContentView: View {
 
     var body: some View {
         HStack(spacing: 12) {
-            BoardView(title: "To Do", tasks: toDoTasks, isTargeted: isToDoTargeted)
+            BoardView(title: "To Do", tasks: toDoTasks, isTargeted: isToDoTargeted).dropDestination(for: String.self) { items, location in
+                for task in items {
+                    inProgressTasks.removeAll(where: {$0 == task })
+                    doneTasks.removeAll(where: {$0 == task} )
+                }
+                // by default drag and drop creates a copy and not passed by reference
+                let total = toDoTasks + items
+                toDoTasks = Array(total.uniqued())
+                return true
+            } isTargeted: { isTargeted in
+                isToDoTargeted = isTargeted
+            }
+            
+            
             BoardView(title: "In Progress", tasks: inProgressTasks, isTargeted: isInProgressTargeted).dropDestination(for: String.self) { items, location in
                 for task in items {
                     toDoTasks.removeAll(where: {$0 == task })
@@ -34,7 +47,19 @@ struct ContentView: View {
                 isInProgressTargeted = isTargeted
             }
 
-            BoardView(title: "Done", tasks: doneTasks, isTargeted: isDoneTargeted)
+            BoardView(title: "Done", tasks: doneTasks, isTargeted: isDoneTargeted).dropDestination(for: String.self) { items, location in
+                for task in items {
+                    inProgressTasks.removeAll(where: {$0 == task })
+                    toDoTasks.removeAll(where: {$0 == task} )
+                }
+                // by default drag and drop creates a copy and not passed by reference
+                let total = doneTasks + items
+                doneTasks = Array(total.uniqued())
+                return true
+            } isTargeted: { isTargeted in
+                isDoneTargeted = isTargeted
+            }
+            
         }
         .padding()
     }
