@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import Algorithms
 
 struct ContentView: View {
     
@@ -22,7 +23,8 @@ struct ContentView: View {
                     doneTasks.removeAll(where: {$0 == task} )
                 }
                 // by default drag and drop creates a copy and not passed by reference
-                inProgressTasks += items
+                let total = inProgressTasks + items
+                inProgressTasks = Array(total.uniqued())
                 return true
             }
 
