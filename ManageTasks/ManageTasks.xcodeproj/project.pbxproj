@@ -16,6 +16,7 @@
 		B10DAE472A6AB6AE009B256C /* ManageTasksUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10DAE462A6AB6AE009B256C /* ManageTasksUITestsLaunchTests.swift */; };
 		B10DAE542A6AB8F1009B256C /* BoardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10DAE532A6AB8F1009B256C /* BoardView.swift */; };
 		B10DAE572A6AC3D5009B256C /* Algorithms in Frameworks */ = {isa = PBXBuildFile; productRef = B10DAE562A6AC3D5009B256C /* Algorithms */; };
+		B10DAE5A2A6AC912009B256C /* BoardTask.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10DAE592A6AC912009B256C /* BoardTask.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +48,8 @@
 		B10DAE442A6AB6AE009B256C /* ManageTasksUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ManageTasksUITests.swift; sourceTree = "<group>"; };
 		B10DAE462A6AB6AE009B256C /* ManageTasksUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ManageTasksUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		B10DAE532A6AB8F1009B256C /* BoardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoardView.swift; sourceTree = "<group>"; };
+		B10DAE592A6AC912009B256C /* BoardTask.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoardTask.swift; sourceTree = "<group>"; };
+		B10DAE5B2A6ACBB2009B256C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,6 +101,8 @@
 		B10DAE282A6AB6AD009B256C /* ManageTasks */ = {
 			isa = PBXGroup;
 			children = (
+				B10DAE5B2A6ACBB2009B256C /* Info.plist */,
+				B10DAE582A6AC8EC009B256C /* Model */,
 				B10DAE292A6AB6AD009B256C /* ManageTasksApp.swift */,
 				B10DAE2B2A6AB6AD009B256C /* ContentView.swift */,
 				B10DAE532A6AB8F1009B256C /* BoardView.swift */,
@@ -130,6 +135,14 @@
 				B10DAE462A6AB6AE009B256C /* ManageTasksUITestsLaunchTests.swift */,
 			);
 			path = ManageTasksUITests;
+			sourceTree = "<group>";
+		};
+		B10DAE582A6AC8EC009B256C /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				B10DAE592A6AC912009B256C /* BoardTask.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -269,6 +282,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B10DAE542A6AB8F1009B256C /* BoardView.swift in Sources */,
+				B10DAE5A2A6AC912009B256C /* BoardTask.swift in Sources */,
 				B10DAE2C2A6AB6AD009B256C /* ContentView.swift in Sources */,
 				B10DAE2A2A6AB6AD009B256C /* ManageTasksApp.swift in Sources */,
 			);
@@ -432,6 +446,7 @@
 				DEVELOPMENT_TEAM = Q4WH2ZZWCT;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = ManageTasks/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -461,6 +476,7 @@
 				DEVELOPMENT_TEAM = Q4WH2ZZWCT;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = ManageTasks/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
