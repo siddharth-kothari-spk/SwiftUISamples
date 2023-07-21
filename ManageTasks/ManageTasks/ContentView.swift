@@ -17,6 +17,10 @@ struct ContentView: View {
         HStack(spacing: 12) {
             BoardView(title: "To Do", tasks: toDoTasks)
             BoardView(title: "In Progress", tasks: inProgressTasks).dropDestination(for: String.self) { items, location in
+                for task in items {
+                    toDoTasks.removeAll(where: {$0 == task })
+                    doneTasks.removeAll(where: {$0 == task} )
+                }
                 // by default drag and drop creates a copy and not passed by reference
                 inProgressTasks += items
                 return true
