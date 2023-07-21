@@ -16,7 +16,11 @@ struct ContentView: View {
     var body: some View {
         HStack(spacing: 12) {
             BoardView(title: "To Do", tasks: toDoTasks)
-            BoardView(title: "In Progress", tasks: inProgressTasks)
+            BoardView(title: "In Progress", tasks: inProgressTasks).dropDestination(for: String.self) { items, location in
+                inProgressTasks += items
+                return true
+            }
+
             BoardView(title: "Done", tasks: doneTasks)
         }
         .padding()
