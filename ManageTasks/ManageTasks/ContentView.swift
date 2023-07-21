@@ -8,12 +8,16 @@
 import SwiftUI
 
 struct ContentView: View {
+    
+    @State private var toDoTasks: [String] = ["@Observable Migration", "Keyframe Animations", "Migrate to Swift Data"]
+    @State private var inProgressTasks: [String] = []
+    @State private var doneTasks: [String] = []
+
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundColor(.accentColor)
-            Text("Hello, world!")
+        HStack(spacing: 12) {
+            BoardView(title: "To Do", tasks: toDoTasks)
+            BoardView(title: "In Progress", tasks: inProgressTasks)
+            BoardView(title: "Done", tasks: doneTasks)
         }
         .padding()
     }
