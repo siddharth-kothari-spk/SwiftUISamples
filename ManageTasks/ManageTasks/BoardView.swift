@@ -29,6 +29,8 @@ struct BoardView: View {
                             .background(Color(uiColor: .secondarySystemGroupedBackground))
                             .cornerRadius(8)
                             .shadow(radius: 1, x: 1, y: 1)
+                            .draggable(task)
+                        // task needs to conform to Transferable protocol. task is just a string here and 'String' conforms to Transferable by default
                     }
 
                     Spacer()
