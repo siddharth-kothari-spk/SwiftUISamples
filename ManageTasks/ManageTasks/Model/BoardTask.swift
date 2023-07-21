@@ -31,3 +31,5 @@ extension BoardTask: Transferable {
 extension UTType {
     static let boardTask = UTType(exportedAs: "com.siddharthkothari.boardTask")
 }
+
+extension BoardTask: Hashable {}

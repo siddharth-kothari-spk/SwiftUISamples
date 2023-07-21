@@ -11,7 +11,7 @@ import SwiftUI
 struct BoardView: View {
     
     let title: String
-    let tasks: [String]
+    let tasks: [BoardTask]
     let isTargeted: Bool
 
     var body: some View {
@@ -24,8 +24,8 @@ struct BoardView: View {
                     .foregroundColor(isTargeted ? Color.teal : Color(.secondarySystemFill))
 
                 VStack(alignment: .leading, spacing: 12) {
-                    ForEach(tasks, id: \.self) { task in
-                        Text(task)
+                    ForEach(tasks, id: \.id) { task in
+                        Text(task.title)
                             .padding(12)
                             .background(Color(uiColor: .secondarySystemGroupedBackground))
                             .cornerRadius(8)

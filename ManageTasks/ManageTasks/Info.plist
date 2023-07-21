@@ -5,6 +5,10 @@
 	<key>UTExportedTypeDeclarations</key>
 	<array>
 		<dict>
+			<key>UTTypeConformsTo</key>
+			<array>
+				<string>com.public.data</string>
+			</array>
 			<key>UTTypeDescription</key>
 			<string>BoardTask</string>
 			<key>UTTypeIconFiles</key>

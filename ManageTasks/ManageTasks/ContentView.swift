@@ -5,14 +5,15 @@
 //  Created by Siddharth Kothari on 21/07/23.
 //
 
+// courtsey: SwiftUI Drag and Drop with Transferable Custom Object  https://www.youtube.com/watch?v=lsXqJKm4l-U
 import SwiftUI
 import Algorithms
 
 struct ContentView: View {
     
-    @State private var toDoTasks: [String] = ["@Observable Migration", "Keyframe Animations", "Migrate to Swift Data"]
-    @State private var inProgressTasks: [String] = []
-    @State private var doneTasks: [String] = []
+    @State private var toDoTasks: [BoardTask] = [MockData.mockOne, MockData.mockTwo, MockData.mockThree]
+    @State private var inProgressTasks: [BoardTask] = []
+    @State private var doneTasks: [BoardTask] = []
     
     @State private var isToDoTargeted = false
     @State private var isInProgressTargeted = false
@@ -20,10 +21,10 @@ struct ContentView: View {
 
     var body: some View {
         HStack(spacing: 12) {
-            BoardView(title: "To Do", tasks: toDoTasks, isTargeted: isToDoTargeted).dropDestination(for: String.self) { items, location in
+            BoardView(title: "To Do", tasks: toDoTasks, isTargeted: isToDoTargeted).dropDestination(for: BoardTask.self) { items, location in
                 for task in items {
-                    inProgressTasks.removeAll(where: {$0 == task })
-                    doneTasks.removeAll(where: {$0 == task} )
+                    inProgressTasks.removeAll(where: {$0.id == task.id})
+                    doneTasks.removeAll(where: {$0.id == task.id} )
                 }
                 // by default drag and drop creates a copy and not passed by reference
                 let total = toDoTasks + items
@@ -34,10 +35,10 @@ struct ContentView: View {
             }
             
             
-            BoardView(title: "In Progress", tasks: inProgressTasks, isTargeted: isInProgressTargeted).dropDestination(for: String.self) { items, location in
+            BoardView(title: "In Progress", tasks: inProgressTasks, isTargeted: isInProgressTargeted).dropDestination(for: BoardTask.self) { items, location in
                 for task in items {
-                    toDoTasks.removeAll(where: {$0 == task })
-                    doneTasks.removeAll(where: {$0 == task} )
+                    toDoTasks.removeAll(where: {$0.id == task.id})
+                    doneTasks.removeAll(where: {$0.id == task.id} )
                 }
                 // by default drag and drop creates a copy and not passed by reference
                 let total = inProgressTasks + items
@@ -47,10 +48,10 @@ struct ContentView: View {
                 isInProgressTargeted = isTargeted
             }
 
-            BoardView(title: "Done", tasks: doneTasks, isTargeted: isDoneTargeted).dropDestination(for: String.self) { items, location in
+            BoardView(title: "Done", tasks: doneTasks, isTargeted: isDoneTargeted).dropDestination(for: BoardTask.self) { items, location in
                 for task in items {
-                    inProgressTasks.removeAll(where: {$0 == task })
-                    toDoTasks.removeAll(where: {$0 == task} )
+                    inProgressTasks.removeAll(where: {$0.id == task.id})
+                    toDoTasks.removeAll(where: {$0.id == task.id} )
                 }
                 // by default drag and drop creates a copy and not passed by reference
                 let total = doneTasks + items
