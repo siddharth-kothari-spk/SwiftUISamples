@@ -17,6 +17,7 @@ struct ContentView: View {
         HStack(spacing: 12) {
             BoardView(title: "To Do", tasks: toDoTasks)
             BoardView(title: "In Progress", tasks: inProgressTasks).dropDestination(for: String.self) { items, location in
+                // by default drag and drop creates a copy and not passed by reference
                 inProgressTasks += items
                 return true
             }
