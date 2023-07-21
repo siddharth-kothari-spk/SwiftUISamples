@@ -12,6 +12,7 @@ struct BoardView: View {
     
     let title: String
     let tasks: [String]
+    let isTargeted: Bool
 
     var body: some View {
         VStack(alignment: .leading) {
@@ -20,7 +21,7 @@ struct BoardView: View {
             ZStack {
                 RoundedRectangle(cornerRadius: 12)
                     .frame(maxWidth: .infinity)
-                    .foregroundColor(Color(.secondarySystemFill))
+                    .foregroundColor(isTargeted ? Color.teal : Color(.secondarySystemFill))
 
                 VStack(alignment: .leading, spacing: 12) {
                     ForEach(tasks, id: \.self) { task in

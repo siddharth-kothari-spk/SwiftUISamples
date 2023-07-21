@@ -13,11 +13,15 @@ struct ContentView: View {
     @State private var toDoTasks: [String] = ["@Observable Migration", "Keyframe Animations", "Migrate to Swift Data"]
     @State private var inProgressTasks: [String] = []
     @State private var doneTasks: [String] = []
+    
+    @State private var isToDoTargeted = false
+    @State private var isInProgressTargeted = false
+    @State private var isDoneTargeted = false
 
     var body: some View {
         HStack(spacing: 12) {
-            BoardView(title: "To Do", tasks: toDoTasks)
-            BoardView(title: "In Progress", tasks: inProgressTasks).dropDestination(for: String.self) { items, location in
+            BoardView(title: "To Do", tasks: toDoTasks, isTargeted: isToDoTargeted)
+            BoardView(title: "In Progress", tasks: inProgressTasks, isTargeted: isInProgressTargeted).dropDestination(for: String.self) { items, location in
                 for task in items {
                     toDoTasks.removeAll(where: {$0 == task })
                     doneTasks.removeAll(where: {$0 == task} )
@@ -26,9 +30,11 @@ struct ContentView: View {
                 let total = inProgressTasks + items
                 inProgressTasks = Array(total.uniqued())
                 return true
+            } isTargeted: { isTargeted in
+                isInProgressTargeted = isTargeted
             }
 
-            BoardView(title: "Done", tasks: doneTasks)
+            BoardView(title: "Done", tasks: doneTasks, isTargeted: isDoneTargeted)
         }
         .padding()
     }
