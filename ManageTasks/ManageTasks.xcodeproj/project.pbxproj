@@ -14,6 +14,7 @@
 		B10DAE3B2A6AB6AE009B256C /* ManageTasksTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10DAE3A2A6AB6AE009B256C /* ManageTasksTests.swift */; };
 		B10DAE452A6AB6AE009B256C /* ManageTasksUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10DAE442A6AB6AE009B256C /* ManageTasksUITests.swift */; };
 		B10DAE472A6AB6AE009B256C /* ManageTasksUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10DAE462A6AB6AE009B256C /* ManageTasksUITestsLaunchTests.swift */; };
+		B10DAE542A6AB8F1009B256C /* BoardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10DAE532A6AB8F1009B256C /* BoardView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +45,7 @@
 		B10DAE402A6AB6AE009B256C /* ManageTasksUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ManageTasksUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B10DAE442A6AB6AE009B256C /* ManageTasksUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ManageTasksUITests.swift; sourceTree = "<group>"; };
 		B10DAE462A6AB6AE009B256C /* ManageTasksUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ManageTasksUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		B10DAE532A6AB8F1009B256C /* BoardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoardView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,6 +98,7 @@
 			children = (
 				B10DAE292A6AB6AD009B256C /* ManageTasksApp.swift */,
 				B10DAE2B2A6AB6AD009B256C /* ContentView.swift */,
+				B10DAE532A6AB8F1009B256C /* BoardView.swift */,
 				B10DAE2D2A6AB6AE009B256C /* Assets.xcassets */,
 				B10DAE2F2A6AB6AE009B256C /* Preview Content */,
 			);
@@ -257,6 +260,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B10DAE542A6AB8F1009B256C /* BoardView.swift in Sources */,
 				B10DAE2C2A6AB6AD009B256C /* ContentView.swift in Sources */,
 				B10DAE2A2A6AB6AD009B256C /* ManageTasksApp.swift in Sources */,
 			);
