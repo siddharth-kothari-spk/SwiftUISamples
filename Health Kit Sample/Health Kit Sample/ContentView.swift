@@ -5,6 +5,8 @@
 //  Created by Siddharth Kothari on 16/08/23.
 //
 
+// courtsey: https://betterprogramming.pub/get-step-count-data-from-healthkit-b6d1a2818e73
+
 import SwiftUI
 
 struct ContentView: View {
