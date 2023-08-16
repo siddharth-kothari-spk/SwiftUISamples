@@ -44,6 +44,7 @@
 		B1E98CEA2A8CE89C0041FB5B /* Health Kit SampleUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Health Kit SampleUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B1E98CEE2A8CE89C0041FB5B /* Health_Kit_SampleUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Health_Kit_SampleUITests.swift; sourceTree = "<group>"; };
 		B1E98CF02A8CE89C0041FB5B /* Health_Kit_SampleUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Health_Kit_SampleUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		B1E98CFD2A8CE9060041FB5B /* Health Kit Sample.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Health Kit Sample.entitlements"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,6 +95,7 @@
 		B1E98CD22A8CE89A0041FB5B /* Health Kit Sample */ = {
 			isa = PBXGroup;
 			children = (
+				B1E98CFD2A8CE9060041FB5B /* Health Kit Sample.entitlements */,
 				B1E98CD32A8CE89A0041FB5B /* Health_Kit_SampleApp.swift */,
 				B1E98CD52A8CE89A0041FB5B /* ContentView.swift */,
 				B1E98CD72A8CE89C0041FB5B /* Assets.xcassets */,
@@ -414,12 +416,15 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "Health Kit Sample/Health Kit Sample.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Health Kit Sample/Preview Content\"";
 				DEVELOPMENT_TEAM = Q4WH2ZZWCT;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHealthShareUsageDescription = "Allow app to access health data";
+				INFOPLIST_KEY_NSHealthUpdateUsageDescription = "Allow app to update health data";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -443,12 +448,15 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "Health Kit Sample/Health Kit Sample.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Health Kit Sample/Preview Content\"";
 				DEVELOPMENT_TEAM = Q4WH2ZZWCT;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHealthShareUsageDescription = "Allow app to access health data";
+				INFOPLIST_KEY_NSHealthUpdateUsageDescription = "Allow app to update health data";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
