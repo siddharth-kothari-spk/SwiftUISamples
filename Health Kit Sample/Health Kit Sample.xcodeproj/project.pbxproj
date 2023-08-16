@@ -15,6 +15,7 @@
 		B1E98CEF2A8CE89C0041FB5B /* Health_Kit_SampleUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1E98CEE2A8CE89C0041FB5B /* Health_Kit_SampleUITests.swift */; };
 		B1E98CF12A8CE89C0041FB5B /* Health_Kit_SampleUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1E98CF02A8CE89C0041FB5B /* Health_Kit_SampleUITestsLaunchTests.swift */; };
 		B1E98CFF2A8CE9C60041FB5B /* HealthKitManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1E98CFE2A8CE9C60041FB5B /* HealthKitManager.swift */; };
+		B1E98D012A8CEE540041FB5B /* HealthKitViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1E98D002A8CEE540041FB5B /* HealthKitViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +48,7 @@
 		B1E98CF02A8CE89C0041FB5B /* Health_Kit_SampleUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Health_Kit_SampleUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		B1E98CFD2A8CE9060041FB5B /* Health Kit Sample.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Health Kit Sample.entitlements"; sourceTree = "<group>"; };
 		B1E98CFE2A8CE9C60041FB5B /* HealthKitManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealthKitManager.swift; sourceTree = "<group>"; };
+		B1E98D002A8CEE540041FB5B /* HealthKitViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealthKitViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,6 +80,7 @@
 			isa = PBXGroup;
 			children = (
 				B1E98CFE2A8CE9C60041FB5B /* HealthKitManager.swift */,
+				B1E98D002A8CEE540041FB5B /* HealthKitViewModel.swift */,
 				B1E98CD22A8CE89A0041FB5B /* Health Kit Sample */,
 				B1E98CE32A8CE89C0041FB5B /* Health Kit SampleTests */,
 				B1E98CED2A8CE89C0041FB5B /* Health Kit SampleUITests */,
@@ -263,6 +266,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B1E98CD62A8CE89A0041FB5B /* ContentView.swift in Sources */,
+				B1E98D012A8CEE540041FB5B /* HealthKitViewModel.swift in Sources */,
 				B1E98CD42A8CE89A0041FB5B /* Health_Kit_SampleApp.swift in Sources */,
 				B1E98CFF2A8CE9C60041FB5B /* HealthKitManager.swift in Sources */,
 			);
