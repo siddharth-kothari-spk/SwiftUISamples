@@ -22,7 +22,19 @@ class HealthKitViewModel: ObservableObject {
     }
     
     func changeAuthorizationStatus() {
-        
+        guard let stepQuantityType = HKObjectType.quantityType(forIdentifier: .stepCount) else { return }
+            let authorizationStatus = self.healthStore.authorizationStatus(for: stepQuantityType)
+            
+            switch authorizationStatus {
+            case .notDetermined:
+                isAuthorized = false
+            case .sharingDenied:
+                isAuthorized = false
+            case .sharingAuthorized:
+                isAuthorized = true
+            @unknown default:
+                isAuthorized = false
+            }
     }
     
     func readStepsTakenInDay() {
