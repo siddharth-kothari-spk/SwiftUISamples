@@ -14,6 +14,7 @@
 		B1E98CAD2A8CCDE90041FB5B /* QR_Image_generatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1E98CAC2A8CCDE90041FB5B /* QR_Image_generatorTests.swift */; };
 		B1E98CB72A8CCDE90041FB5B /* QR_Image_generatorUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1E98CB62A8CCDE90041FB5B /* QR_Image_generatorUITests.swift */; };
 		B1E98CB92A8CCDE90041FB5B /* QR_Image_generatorUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1E98CB82A8CCDE90041FB5B /* QR_Image_generatorUITestsLaunchTests.swift */; };
+		B1E98CC62A8CCE390041FB5B /* QRImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1E98CC52A8CCE390041FB5B /* QRImageView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +45,7 @@
 		B1E98CB22A8CCDE90041FB5B /* QR Image generatorUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "QR Image generatorUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B1E98CB62A8CCDE90041FB5B /* QR_Image_generatorUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QR_Image_generatorUITests.swift; sourceTree = "<group>"; };
 		B1E98CB82A8CCDE90041FB5B /* QR_Image_generatorUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QR_Image_generatorUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		B1E98CC52A8CCE390041FB5B /* QRImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QRImageView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,6 +98,7 @@
 			children = (
 				B1E98C9B2A8CCDE70041FB5B /* QR_Image_generatorApp.swift */,
 				B1E98C9D2A8CCDE80041FB5B /* ContentView.swift */,
+				B1E98CC52A8CCE390041FB5B /* QRImageView.swift */,
 				B1E98C9F2A8CCDE90041FB5B /* Assets.xcassets */,
 				B1E98CA12A8CCDE90041FB5B /* Preview Content */,
 			);
@@ -259,6 +262,7 @@
 			files = (
 				B1E98C9E2A8CCDE80041FB5B /* ContentView.swift in Sources */,
 				B1E98C9C2A8CCDE70041FB5B /* QR_Image_generatorApp.swift in Sources */,
+				B1E98CC62A8CCE390041FB5B /* QRImageView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
