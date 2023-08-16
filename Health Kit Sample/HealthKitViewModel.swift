@@ -31,7 +31,9 @@ class HealthKitViewModel: ObservableObject {
             case .sharingDenied:
                 isAuthorized = false
             case .sharingAuthorized:
-                isAuthorized = true
+                DispatchQueue.main.async {
+                    self.isAuthorized = true
+                }
             @unknown default:
                 isAuthorized = false
             }

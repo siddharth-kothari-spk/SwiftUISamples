@@ -11,7 +11,7 @@ import SwiftUI
 struct Health_Kit_SampleApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            ContentView().environmentObject(HealthKitViewModel())
         }
     }
 }
