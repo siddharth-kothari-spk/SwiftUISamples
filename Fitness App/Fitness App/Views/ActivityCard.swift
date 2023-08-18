@@ -13,7 +13,7 @@ struct ActivityCard: View {
             Color(uiColor: .systemGray6)
                 .cornerRadius(15)
             
-            VStack {
+            VStack(spacing: 20) {
                 HStack(alignment: .top) {
                     VStack(alignment: .leading, spacing: 5) {
                         Text("Daily Steps")
