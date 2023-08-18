@@ -15,9 +15,13 @@ struct HomeView: View {
                 ActivityCard(activity: Activity(id: 1, title: "Daily Steps", subTitle: "Goal: 10000", image: "figure.walk", amount: "1234"))
                 ActivityCard(activity: Activity(id: 1, title: "Daily Steps", subTitle: "Goal: 10000", image: "figure.walk", amount: "1234"))
             }
+            .padding(.horizontal)
         }
-        .padding(.horizontal)
+        .onAppear {
+        healthManager.fetchTodaySteps()
     }
+    }
+        
 }
 
 struct HomeView_Previews: PreviewProvider {

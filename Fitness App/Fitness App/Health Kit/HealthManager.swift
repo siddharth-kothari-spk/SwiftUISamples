@@ -31,7 +31,7 @@ class HealthManager: ObservableObject {
         let predicate = HKQuery.predicateForSamples(withStart: .startOftheDay, end: Date())
         let query = HKStatisticsQuery.init(quantityType: steps, quantitySamplePredicate: predicate) { query, stats, error in
             guard let stats = stats,let quantity = stats.sumQuantity(), error == nil else {
-                print("error: \(error?.localizedDescription)")
+                print("error: \(String(describing: error?.localizedDescription))")
                 return
             }
             let stepCount = quantity.doubleValue(for: .count())
