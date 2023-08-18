@@ -16,12 +16,15 @@ class HealthManager: ObservableObject {
     
     init() {
         let steps = HKQuantityType(.stepCount)
+        let calories = HKQuantityType(.activeEnergyBurned)
         
-        let healthTypes : Set = [steps]
+        let healthTypes : Set = [steps, calories]
         
         Task {
             do {
                 try await healthStore.requestAuthorization(toShare: [], read: healthTypes)
+                fetchTodaySteps()
+                fetchTodayCalories()
             } catch {
                 print("error in fetching health data: \(error.localizedDescription)")
             }
@@ -37,11 +40,29 @@ class HealthManager: ObservableObject {
                 return
             }
             let stepCount = quantity.doubleValue(for: .count())
-            let activity = Activity(id: 1, title: "Daily Steps", subTitle: "Goal: 10000", image: "figure.walk", amount: stepCount.formatToString()!)
+            let activity = Activity(id: 0, title: "Daily Steps", subTitle: "Goal: 10000", image: "figure.walk", amount: stepCount.formatToString()!)
             DispatchQueue.main.async {
                 self.activities["todaySteps"] = activity
             }
             print("steps: \(stepCount)")
+        }
+        healthStore.execute(query)
+    }
+    
+    func fetchTodayCalories() {
+        let steps = HKQuantityType(.activeEnergyBurned)
+        let predicate = HKQuery.predicateForSamples(withStart: .startOftheDay, end: Date())
+        let query = HKStatisticsQuery.init(quantityType: steps, quantitySamplePredicate: predicate) { query, stats, error in
+            guard let stats = stats,let quantity = stats.sumQuantity(), error == nil else {
+                print("error: \(String(describing: error?.localizedDescription))")
+                return
+            }
+            let calories = quantity.doubleValue(for: .kilocalorie())
+            let activity = Activity(id: 1, title: "Today calories", subTitle: "Goal: 1000", image: "flame", amount: calories.formatToString()!)
+            DispatchQueue.main.async {
+                self.activities["todayCalories"] = activity
+            }
+            print("steps: \(calories)")
         }
         healthStore.execute(query)
     }

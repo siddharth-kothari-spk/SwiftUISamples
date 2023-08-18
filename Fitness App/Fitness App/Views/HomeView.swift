@@ -20,7 +20,8 @@ struct HomeView: View {
             .padding(.horizontal)
         }
         .onAppear {
-        healthManager.fetchTodaySteps()
+            healthManager.fetchTodaySteps()
+            healthManager.fetchTodayCalories()
     }
     }
         
