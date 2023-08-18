@@ -20,6 +20,7 @@
 		B1E98D8B2A8F83460041FB5B /* HealthManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1E98D8A2A8F83460041FB5B /* HealthManager.swift */; };
 		B1E98D902A8F92CB0041FB5B /* Activity.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1E98D8F2A8F92CB0041FB5B /* Activity.swift */; };
 		B1E98D932A8FA0600041FB5B /* Date+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1E98D922A8FA0600041FB5B /* Date+Extension.swift */; };
+		B1E98D952A8FA5C50041FB5B /* Double+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1E98D942A8FA5C50041FB5B /* Double+Extension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -58,6 +59,7 @@
 		B1E98D8D2A8F86AB0041FB5B /* Fitness-App-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "Fitness-App-Info.plist"; sourceTree = SOURCE_ROOT; };
 		B1E98D8F2A8F92CB0041FB5B /* Activity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Activity.swift; sourceTree = "<group>"; };
 		B1E98D922A8FA0600041FB5B /* Date+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+Extension.swift"; sourceTree = "<group>"; };
+		B1E98D942A8FA5C50041FB5B /* Double+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Double+Extension.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -177,6 +179,7 @@
 			isa = PBXGroup;
 			children = (
 				B1E98D922A8FA0600041FB5B /* Date+Extension.swift */,
+				B1E98D942A8FA5C50041FB5B /* Double+Extension.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -313,6 +316,7 @@
 			files = (
 				B1E98D5B2A8F5CFE0041FB5B /* ContentView.swift in Sources */,
 				B1E98D8B2A8F83460041FB5B /* HealthManager.swift in Sources */,
+				B1E98D952A8FA5C50041FB5B /* Double+Extension.swift in Sources */,
 				B1E98D902A8F92CB0041FB5B /* Activity.swift in Sources */,
 				B1E98D852A8F78CF0041FB5B /* HomeView.swift in Sources */,
 				B1E98D832A8F5D6B0041FB5B /* BeActiveTabView.swift in Sources */,

@@ -12,6 +12,8 @@ class HealthManager: ObservableObject {
  
     let healthStore = HKHealthStore()
     
+    @Published var activities: [String: Activity] = [:]
+    
     init() {
         let steps = HKQuantityType(.stepCount)
         
@@ -35,6 +37,8 @@ class HealthManager: ObservableObject {
                 return
             }
             let stepCount = quantity.doubleValue(for: .count())
+            let activity = Activity(id: 1, title: "Daily Steps", subTitle: "Goal: 10000", image: "figure.walk", amount: stepCount.formatToString()!)
+            self.activities["todaySteps"] = activity
             print("steps: \(stepCount)")
         }
         healthStore.execute(query)
