@@ -15,6 +15,7 @@
 		B1E98D742A8F5D000041FB5B /* Fitness_AppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1E98D732A8F5D000041FB5B /* Fitness_AppUITests.swift */; };
 		B1E98D762A8F5D000041FB5B /* Fitness_AppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1E98D752A8F5D000041FB5B /* Fitness_AppUITestsLaunchTests.swift */; };
 		B1E98D832A8F5D6B0041FB5B /* BeActiveTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1E98D822A8F5D6B0041FB5B /* BeActiveTabView.swift */; };
+		B1E98D852A8F78CF0041FB5B /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1E98D842A8F78CF0041FB5B /* HomeView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,6 +47,7 @@
 		B1E98D732A8F5D000041FB5B /* Fitness_AppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Fitness_AppUITests.swift; sourceTree = "<group>"; };
 		B1E98D752A8F5D000041FB5B /* Fitness_AppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Fitness_AppUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		B1E98D822A8F5D6B0041FB5B /* BeActiveTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeActiveTabView.swift; sourceTree = "<group>"; };
+		B1E98D842A8F78CF0041FB5B /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,6 +99,7 @@
 			isa = PBXGroup;
 			children = (
 				B1E98D822A8F5D6B0041FB5B /* BeActiveTabView.swift */,
+				B1E98D842A8F78CF0041FB5B /* HomeView.swift */,
 				B1E98D582A8F5CFE0041FB5B /* Fitness_AppApp.swift */,
 				B1E98D5A2A8F5CFE0041FB5B /* ContentView.swift */,
 				B1E98D5C2A8F5D000041FB5B /* Assets.xcassets */,
@@ -261,6 +264,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B1E98D5B2A8F5CFE0041FB5B /* ContentView.swift in Sources */,
+				B1E98D852A8F78CF0041FB5B /* HomeView.swift in Sources */,
 				B1E98D832A8F5D6B0041FB5B /* BeActiveTabView.swift in Sources */,
 				B1E98D592A8F5CFE0041FB5B /* Fitness_AppApp.swift in Sources */,
 			);

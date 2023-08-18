@@ -13,7 +13,13 @@ struct BeActiveTabView: View {
     
     var body: some View {
         TabView(selection: $selectedTab) {
-            // add tab views
+            HomeView().tag("Home").tabItem {
+                Image(systemName: "house")
+            }
+            
+            HomeView().tag("Home2").tabItem {
+                Image(systemName: "house")
+            }
         }
     }
     
