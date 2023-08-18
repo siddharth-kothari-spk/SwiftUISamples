@@ -8,6 +8,8 @@
 import SwiftUI
 
 struct ActivityCard: View {
+    @State var activity: Activity
+    
     var body: some View {
         ZStack {
             Color(uiColor: .systemGray6)
@@ -16,18 +18,18 @@ struct ActivityCard: View {
             VStack(spacing: 20) {
                 HStack(alignment: .top) {
                     VStack(alignment: .leading, spacing: 5) {
-                        Text("Daily Steps")
+                        Text(activity.title)
                             .font(.system(size: 16))
-                        Text("Goal: 10000")
+                        Text(activity.subTitle)
                             .font(.system(size: 12))
                             .foregroundColor(.gray)
                     }
                     Spacer()
-                    Image(systemName: "figure.walk").foregroundColor(.green)
+                    Image(systemName: activity.image).foregroundColor(.green)
                 }
                 .padding()
                 
-                Text("5000").font(.system(size: 24))
+                Text(activity.amount).font(.system(size: 24))
             }
         .cornerRadius(15)
         }
@@ -36,6 +38,6 @@ struct ActivityCard: View {
 
 struct ActivityCard_Previews: PreviewProvider {
     static var previews: some View {
-        ActivityCard()
+        ActivityCard(activity: Activity(id: 1, title: "Daily Steps", subTitle: "Goal: 10000", image: "figure.walk", amount: "1234"))
     }
 }
