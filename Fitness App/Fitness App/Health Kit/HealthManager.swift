@@ -38,7 +38,9 @@ class HealthManager: ObservableObject {
             }
             let stepCount = quantity.doubleValue(for: .count())
             let activity = Activity(id: 1, title: "Daily Steps", subTitle: "Goal: 10000", image: "figure.walk", amount: stepCount.formatToString()!)
-            self.activities["todaySteps"] = activity
+            DispatchQueue.main.async {
+                self.activities["todaySteps"] = activity
+            }
             print("steps: \(stepCount)")
         }
         healthStore.execute(query)

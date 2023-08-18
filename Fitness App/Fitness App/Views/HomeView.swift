@@ -12,8 +12,10 @@ struct HomeView: View {
     var body: some View {
         VStack {
             LazyVGrid(columns: Array(repeating: GridItem(spacing: 20), count: 2)) {
-                ActivityCard(activity: Activity(id: 1, title: "Daily Steps", subTitle: "Goal: 10000", image: "figure.walk", amount: "1234"))
-                ActivityCard(activity: Activity(id: 1, title: "Daily Steps", subTitle: "Goal: 10000", image: "figure.walk", amount: "1234"))
+                ForEach(healthManager.activities.sorted(by: { $0.value.id < $1.value.id}), id:\.key) { item in
+                    ActivityCard(activity: item.value)
+                    
+                }
             }
             .padding(.horizontal)
         }
