@@ -9,6 +9,7 @@ import SwiftUI
 
 @main
 struct Fitness_AppApp: App {
+    @StateObject var healthManager = HealthManager()
     var body: some Scene {
         WindowGroup {
             ContentView()

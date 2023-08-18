@@ -9,17 +9,18 @@ import Foundation
 import SwiftUI
 
 struct BeActiveTabView: View {
+    @EnvironmentObject var healthManager: HealthManager
     @State var selectedTab = "Home"
     
     var body: some View {
         TabView(selection: $selectedTab) {
             HomeView().tag("Home").tabItem {
                 Image(systemName: "house")
-            }
+            }.environmentObject(healthManager)
             
             HomeView().tag("Home2").tabItem {
                 Image(systemName: "house")
-            }
+            }.environmentObject(healthManager)
         }
     }
     
