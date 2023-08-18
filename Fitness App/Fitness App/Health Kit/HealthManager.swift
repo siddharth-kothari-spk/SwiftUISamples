@@ -25,4 +25,9 @@ class HealthManager: ObservableObject {
             }
         }
     }
+    
+    func fetchTodaySteps() {
+        let steps = HKQuantityType(.stepCount)
+        let predicate = HKQuery.predicateForSamples(withStart: .startOftheDay, end: Date())
+    }
 }
