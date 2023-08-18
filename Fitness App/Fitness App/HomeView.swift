@@ -9,7 +9,13 @@ import SwiftUI
 
 struct HomeView: View {
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        VStack {
+            LazyVGrid(columns: Array(repeating: GridItem(spacing: 20), count: 2)) {
+                ActivityCard()
+                ActivityCard()
+            }
+        }
+        .padding(.horizontal)
     }
 }
 
