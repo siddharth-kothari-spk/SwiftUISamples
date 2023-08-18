@@ -52,6 +52,8 @@
 		B1E98D842A8F78CF0041FB5B /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		B1E98D862A8F7B750041FB5B /* ActivityCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityCard.swift; sourceTree = "<group>"; };
 		B1E98D8A2A8F83460041FB5B /* HealthManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealthManager.swift; sourceTree = "<group>"; };
+		B1E98D8C2A8F868C0041FB5B /* Fitness App.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Fitness App.entitlements"; sourceTree = "<group>"; };
+		B1E98D8D2A8F86AB0041FB5B /* Fitness-App-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "Fitness-App-Info.plist"; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,6 +104,8 @@
 		B1E98D572A8F5CFE0041FB5B /* Fitness App */ = {
 			isa = PBXGroup;
 			children = (
+				B1E98D8D2A8F86AB0041FB5B /* Fitness-App-Info.plist */,
+				B1E98D8C2A8F868C0041FB5B /* Fitness App.entitlements */,
 				B1E98D892A8F83110041FB5B /* Health Kit */,
 				B1E98D882A8F82810041FB5B /* Views */,
 				B1E98D582A8F5CFE0041FB5B /* Fitness_AppApp.swift */,
@@ -446,12 +450,16 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "Fitness App/Fitness App.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Fitness App/Preview Content\"";
 				DEVELOPMENT_TEAM = Q4WH2ZZWCT;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Fitness-App-Info.plist";
+				INFOPLIST_KEY_NSHealthShareUsageDescription = "Please allow access";
+				INFOPLIST_KEY_NSHealthUpdateUsageDescription = "Please allow access";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -475,12 +483,16 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "Fitness App/Fitness App.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Fitness App/Preview Content\"";
 				DEVELOPMENT_TEAM = Q4WH2ZZWCT;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Fitness-App-Info.plist";
+				INFOPLIST_KEY_NSHealthShareUsageDescription = "Please allow access";
+				INFOPLIST_KEY_NSHealthUpdateUsageDescription = "Please allow access";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
