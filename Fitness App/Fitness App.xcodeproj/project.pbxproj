@@ -17,6 +17,7 @@
 		B1E98D832A8F5D6B0041FB5B /* BeActiveTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1E98D822A8F5D6B0041FB5B /* BeActiveTabView.swift */; };
 		B1E98D852A8F78CF0041FB5B /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1E98D842A8F78CF0041FB5B /* HomeView.swift */; };
 		B1E98D872A8F7B750041FB5B /* ActivityCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1E98D862A8F7B750041FB5B /* ActivityCard.swift */; };
+		B1E98D8B2A8F83460041FB5B /* HealthManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1E98D8A2A8F83460041FB5B /* HealthManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,6 +51,7 @@
 		B1E98D822A8F5D6B0041FB5B /* BeActiveTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeActiveTabView.swift; sourceTree = "<group>"; };
 		B1E98D842A8F78CF0041FB5B /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		B1E98D862A8F7B750041FB5B /* ActivityCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityCard.swift; sourceTree = "<group>"; };
+		B1E98D8A2A8F83460041FB5B /* HealthManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealthManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,6 +102,7 @@
 		B1E98D572A8F5CFE0041FB5B /* Fitness App */ = {
 			isa = PBXGroup;
 			children = (
+				B1E98D892A8F83110041FB5B /* Health Kit */,
 				B1E98D882A8F82810041FB5B /* Views */,
 				B1E98D582A8F5CFE0041FB5B /* Fitness_AppApp.swift */,
 				B1E98D5A2A8F5CFE0041FB5B /* ContentView.swift */,
@@ -142,6 +145,14 @@
 				B1E98D862A8F7B750041FB5B /* ActivityCard.swift */,
 			);
 			path = Views;
+			sourceTree = "<group>";
+		};
+		B1E98D892A8F83110041FB5B /* Health Kit */ = {
+			isa = PBXGroup;
+			children = (
+				B1E98D8A2A8F83460041FB5B /* HealthManager.swift */,
+			);
+			path = "Health Kit";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -275,6 +286,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B1E98D5B2A8F5CFE0041FB5B /* ContentView.swift in Sources */,
+				B1E98D8B2A8F83460041FB5B /* HealthManager.swift in Sources */,
 				B1E98D852A8F78CF0041FB5B /* HomeView.swift in Sources */,
 				B1E98D832A8F5D6B0041FB5B /* BeActiveTabView.swift in Sources */,
 				B1E98D592A8F5CFE0041FB5B /* Fitness_AppApp.swift in Sources */,
