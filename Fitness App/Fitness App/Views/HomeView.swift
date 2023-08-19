@@ -19,6 +19,7 @@ struct HomeView: View {
                 .font(.largeTitle)
                 .padding()
                 .foregroundColor(.secondary)
+                .animation(.easeIn(duration: 0.5), value: currentIndex)
                 .onAppear {
                     startWelcomeTimer()
                 }
