@@ -14,6 +14,11 @@ class HealthManager: ObservableObject {
     
     @Published var activities: [String: Activity] = [:]
     
+    @Published var mockActivities: [String: Activity] = [
+        "todaySteps": Activity(id: 0, title: "Daily Steps", subTitle: "Goal: 10000", image: "figure.walk", amount: "8999"),
+        "todayCalories": Activity(id: 1, title: "Today calories", subTitle: "Goal: 1000", image: "flame", amount: "400")
+    ]
+    
     init() {
         let steps = HKQuantityType(.stepCount)
         let calories = HKQuantityType(.activeEnergyBurned)
