@@ -22,14 +22,16 @@ class HealthManager: ObservableObject {
     init() {
         let steps = HKQuantityType(.stepCount)
         let calories = HKQuantityType(.activeEnergyBurned)
+        let workout = HKObjectType.workoutType()
         
-        let healthTypes : Set = [steps, calories]
+        let healthTypes : Set = [steps, calories, workout]
         
         Task {
             do {
                 try await healthStore.requestAuthorization(toShare: [], read: healthTypes)
                 fetchTodaySteps()
                 fetchTodayCalories()
+                fetchWorkoutWeekData()
             } catch {
                 print("error in fetching health data: \(error.localizedDescription)")
             }
@@ -68,6 +70,27 @@ class HealthManager: ObservableObject {
                 self.activities["todayCalories"] = activity
             }
             print("steps: \(calories)")
+        }
+        healthStore.execute(query)
+    }
+    
+    func fetchWorkoutWeekData() {
+        // we can have multiple options here to select from , daily , weekly , monthly
+        let workout = HKSampleType.workoutType()
+        let timePredicate = HKQuery.predicateForSamples(withStart: .startOfWeek, end: Date())
+        let workoutPredicate = HKQuery.predicateForWorkouts(with: .running)//HKQuery.predicateForWorkoutActivities(workoutActivityType: .running)
+        let predicate = NSCompoundPredicate(andPredicateWithSubpredicates: [timePredicate, workoutPredicate])
+        let query = HKSampleQuery(sampleType: workout, predicate: predicate, limit: 20, sortDescriptors: nil) { _, samples, error in
+            guard let workouts = samples as? [HKWorkout], error == nil else {
+                print("error: \(String(describing: error?.localizedDescription))")
+                return
+            }
+            var count = 0
+            for workout in workouts {
+                let duration = Int(workout.duration)/60
+                count += duration
+                print(workout.allStatistics, workout.duration, workout.workoutActivities, workout.workoutActivityType, workout.workoutEvents as Any)
+            }
         }
         healthStore.execute(query)
     }
