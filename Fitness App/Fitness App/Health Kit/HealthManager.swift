@@ -32,6 +32,7 @@ class HealthManager: ObservableObject {
                 fetchTodaySteps()
                 fetchTodayCalories()
                 fetchWorkoutWeekData()
+                fetchStrengthTrainingData()
             } catch {
                 print("error in fetching health data: \(error.localizedDescription)")
             }
@@ -78,7 +79,7 @@ class HealthManager: ObservableObject {
         // we can have multiple options here to select from , daily , weekly , monthly
         let workout = HKSampleType.workoutType()
         let timePredicate = HKQuery.predicateForSamples(withStart: .startOfWeek, end: Date())
-        let workoutPredicate = HKQuery.predicateForWorkouts(with: .running)//HKQuery.predicateForWorkoutActivities(workoutActivityType: .running)
+        let workoutPredicate = HKQuery.predicateForWorkouts(with: .running)
         let predicate = NSCompoundPredicate(andPredicateWithSubpredicates: [timePredicate, workoutPredicate])
         let query = HKSampleQuery(sampleType: workout, predicate: predicate, limit: 20, sortDescriptors: nil) { _, samples, error in
             guard let workouts = samples as? [HKWorkout], error == nil else {
@@ -91,9 +92,34 @@ class HealthManager: ObservableObject {
                 count += duration
                 print(workout.allStatistics, workout.duration, workout.workoutActivities, workout.workoutActivityType, workout.workoutEvents as Any)
             }
-            let activity = Activity(id: 2, title: "Running", subTitle: "Min this week", image: "figure.walk", amount: String(count))
+            let activity = Activity(id: 2, title: "Running", subTitle: "Min this week", image: "figure.walk", amount: "\(count) minutes")
             DispatchQueue.main.async {
                 self.activities["weekRuning"] = activity
+            }
+        }
+        healthStore.execute(query)
+    }
+    
+    func fetchStrengthTrainingData() {
+        // we can have multiple options here to select from , daily , weekly , monthly
+        let workout = HKSampleType.workoutType()
+        let timePredicate = HKQuery.predicateForSamples(withStart: .startOfWeek, end: Date())
+        let workoutPredicate = HKQuery.predicateForWorkouts(with: .functionalStrengthTraining)
+        let predicate = NSCompoundPredicate(andPredicateWithSubpredicates: [timePredicate, workoutPredicate])
+        let query = HKSampleQuery(sampleType: workout, predicate: predicate, limit: 20, sortDescriptors: nil) { _, samples, error in
+            guard let workouts = samples as? [HKWorkout], error == nil else {
+                print("error: \(String(describing: error?.localizedDescription))")
+                return
+            }
+            var count = 0
+            for workout in workouts {
+                let duration = Int(workout.duration)/60
+                count += duration
+                print(workout.allStatistics, workout.duration, workout.workoutActivities, workout.workoutActivityType, workout.workoutEvents as Any)
+            }
+            let activity = Activity(id: 3, title: "Strength Trainig", subTitle: "This week", image: "dumbbell", amount: "\(count) minutes")
+            DispatchQueue.main.async {
+                self.activities["strengthTraining"] = activity
             }
         }
         healthStore.execute(query)

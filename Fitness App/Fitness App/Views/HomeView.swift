@@ -31,7 +31,6 @@ struct HomeView: View {
             }
             .padding(.horizontal)
         }
-        .frame(width: .infinity, height: .infinity, alignment: .top)
     }
     
     func startWelcomeTimer() {
