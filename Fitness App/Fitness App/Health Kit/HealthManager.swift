@@ -79,9 +79,9 @@ class HealthManager: ObservableObject {
         // we can have multiple options here to select from , daily , weekly , monthly
         let workout = HKSampleType.workoutType()
         let timePredicate = HKQuery.predicateForSamples(withStart: .startOfWeek, end: Date())
-        let workoutPredicate = HKQuery.predicateForWorkouts(with: .running)
-        let predicate = NSCompoundPredicate(andPredicateWithSubpredicates: [timePredicate, workoutPredicate])
-        let query = HKSampleQuery(sampleType: workout, predicate: predicate, limit: 20, sortDescriptors: nil) { _, samples, error in
+        //let workoutPredicate = HKQuery.predicateForWorkouts(with: .running)
+        //let predicate = NSCompoundPredicate(andPredicateWithSubpredicates: [timePredicate, workoutPredicate])
+        let query = HKSampleQuery(sampleType: workout, predicate: timePredicate, limit: 20, sortDescriptors: nil) { _, samples, error in
             guard let workouts = samples as? [HKWorkout],workouts.count > 0, error == nil else {
                 print("error: \(String(describing: error?.localizedDescription))")
                 return
