@@ -25,7 +25,7 @@ struct ActivityCard: View {
                             .foregroundColor(.gray)
                     }
                     Spacer()
-                    Image(systemName: activity.image).foregroundColor(.green)
+                    Image(systemName: activity.image).foregroundColor(activity.tintColor)
                 }
                 .padding()
                 
@@ -39,6 +39,6 @@ struct ActivityCard: View {
 
 struct ActivityCard_Previews: PreviewProvider {
     static var previews: some View {
-        ActivityCard(activity: Activity(id: 1, title: "Daily Steps", subTitle: "Goal: 10000", image: "figure.walk", amount: "1234"))
+        ActivityCard(activity: Activity(id: 1, title: "Daily Steps", subTitle: "Goal: 10000", image: "figure.walk", amount: "1234", tintColor: .green))
     }
 }

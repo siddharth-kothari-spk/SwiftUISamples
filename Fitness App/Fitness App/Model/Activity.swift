@@ -6,6 +6,7 @@
 //
 
 import Foundation
+import SwiftUI
 
 struct Activity {
     let id: Int
@@ -13,4 +14,5 @@ struct Activity {
     let subTitle: String
     let image: String
     let amount: String
+    let tintColor: Color
 }

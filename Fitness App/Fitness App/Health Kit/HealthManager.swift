@@ -15,8 +15,8 @@ class HealthManager: ObservableObject {
     @Published var activities: [String: Activity] = [:]
     
     @Published var mockActivities: [String: Activity] = [
-        "todaySteps": Activity(id: 0, title: "Daily Steps", subTitle: "Goal: 10000", image: "figure.walk", amount: "8999"),
-        "todayCalories": Activity(id: 1, title: "Today calories", subTitle: "Goal: 1000", image: "flame", amount: "400")
+        "todaySteps": Activity(id: 0, title: "Daily Steps", subTitle: "Goal: 10000", image: "figure.walk", amount: "8999", tintColor: .green),
+        "todayCalories": Activity(id: 1, title: "Today calories", subTitle: "Goal: 1000", image: "flame", amount: "400", tintColor: .red)
     ]
     
     init() {
@@ -48,7 +48,7 @@ class HealthManager: ObservableObject {
                 return
             }
             let stepCount = quantity.doubleValue(for: .count())
-            let activity = Activity(id: 0, title: "Daily Steps", subTitle: "Goal: 10000", image: "figure.walk", amount: stepCount.formatToString()!)
+            let activity = Activity(id: 0, title: "Daily Steps", subTitle: "Goal: 10000", image: "figure.walk", amount: stepCount.formatToString()!, tintColor: .green)
             DispatchQueue.main.async {
                 self.activities["todaySteps"] = activity
             }
@@ -66,7 +66,7 @@ class HealthManager: ObservableObject {
                 return
             }
             let calories = quantity.doubleValue(for: .kilocalorie())
-            let activity = Activity(id: 1, title: "Today calories", subTitle: "Goal: 1000", image: "flame", amount: calories.formatToString()!)
+            let activity = Activity(id: 1, title: "Today calories", subTitle: "Goal: 1000", image: "flame", amount: calories.formatToString()!, tintColor: .red)
             DispatchQueue.main.async {
                 self.activities["todayCalories"] = activity
             }
@@ -195,11 +195,11 @@ class HealthManager: ObservableObject {
                 }
                 
             }
-            let runningActivity = Activity(id: 2, title: "Running", subTitle: "Min this week", image: "figure.walk", amount: "\(runningCount) minutes")
-            let strengthActivity = Activity(id: 3, title: "Strength Trainig", subTitle: "This week", image: "dumbbell", amount: "\(strengthCount) minutes")
-            let stairActivity = Activity(id: 4, title: "Stair Activity", subTitle: "This week", image: "stairs", amount: "\(stairsCount) minutes")
-            let stairClimbActivity = Activity(id: 5, title: "Stair Climb", subTitle: "This week", image: "figure.stairs", amount: "\(stairClimbingCount) minutes")
-            let walkingActivity = Activity(id: 6, title: "Walking", subTitle: "This week", image: "figure.walk.motion", amount: "\(walkingCount) minutes")
+            let runningActivity = Activity(id: 2, title: "Running", subTitle: "Min this week", image: "figure.walk", amount: "\(runningCount) minutes", tintColor: .green)
+            let strengthActivity = Activity(id: 3, title: "Strength Trainig", subTitle: "This week", image: "dumbbell", amount: "\(strengthCount) minutes", tintColor: .blue)
+            let stairActivity = Activity(id: 4, title: "Stair Activity", subTitle: "This week", image: "stairs", amount: "\(stairsCount) minutes", tintColor: .orange)
+            let stairClimbActivity = Activity(id: 5, title: "Stair Climb", subTitle: "This week", image: "figure.stairs", amount: "\(stairClimbingCount) minutes", tintColor: .purple)
+            let walkingActivity = Activity(id: 6, title: "Walking", subTitle: "This week", image: "figure.walk.motion", amount: "\(walkingCount) minutes", tintColor: .cyan)
             DispatchQueue.main.async {
                 self.activities["weekRuning"] = runningActivity
                 self.activities["strengthTraining"] = strengthActivity
@@ -229,7 +229,7 @@ class HealthManager: ObservableObject {
                 count += duration
                 print(workout.allStatistics, workout.duration, workout.workoutActivities, workout.workoutActivityType, workout.workoutEvents as Any)
             }
-            let activity = Activity(id: 3, title: "Strength Trainig", subTitle: "This week", image: "dumbbell", amount: "\(count) minutes")
+            let activity = Activity(id: 3, title: "Strength Trainig", subTitle: "This week", image: "dumbbell", amount: "\(count) minutes", tintColor: .orange)
             DispatchQueue.main.async {
                 self.activities["strengthTraining"] = activity
             }
