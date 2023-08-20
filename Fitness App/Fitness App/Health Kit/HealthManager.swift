@@ -91,6 +91,10 @@ class HealthManager: ObservableObject {
                 count += duration
                 print(workout.allStatistics, workout.duration, workout.workoutActivities, workout.workoutActivityType, workout.workoutEvents as Any)
             }
+            let activity = Activity(id: 2, title: "Running", subTitle: "Min this week", image: "figure.walk", amount: String(count))
+            DispatchQueue.main.async {
+                self.activities["weekRuning"] = activity
+            }
         }
         healthStore.execute(query)
     }
