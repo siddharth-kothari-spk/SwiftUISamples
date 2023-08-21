@@ -25,9 +25,10 @@ class HealthManager: ObservableObject {
         let exerciseTime = HKQuantityType(.appleExerciseTime)
         let standTime = HKQuantityType(.appleStandTime)
         let moveTime = HKQuantityType(.appleMoveTime)
+        let heartrate = HKQuantityType(.walkingHeartRateAverage)
         let workout = HKObjectType.workoutType()
         
-        let healthTypes : Set = [steps, calories, exerciseTime, standTime, moveTime, workout]
+        let healthTypes : Set = [steps, calories, exerciseTime, standTime, moveTime, workout, heartrate]
         
         Task {
             do {
@@ -37,7 +38,8 @@ class HealthManager: ObservableObject {
                 fetchMoveTime()
                 fetchStandTime()
                 fetchExerciseTime()
-               // fetchWorkoutWeekData()
+                fetchWorkoutWeekData()
+                fetchHeartRate()
                // fetchStrengthTrainingData()
             } catch {
                 print("error in fetching health data: \(error.localizedDescription)")
@@ -131,6 +133,24 @@ class HealthManager: ObservableObject {
                 self.activities["todayMove"] = activity
             }
             print("move: \(moveCount)")
+        }
+        healthStore.execute(query)
+    }
+    
+    func fetchHeartRate() {
+        let heart = HKQuantityType(.walkingHeartRateAverage)
+        let predicate = HKQuery.predicateForSamples(withStart: .startOftheDay, end: Date())
+        let query = HKStatisticsQuery.init(quantityType: heart, quantitySamplePredicate: predicate, options: [.discreteAverage]) { query, stats, error in
+            guard let stats = stats,let quantity = stats.averageQuantity(), error == nil else {
+                print("error: \(String(describing: error?.localizedDescription))")
+                return
+            }
+            let heartCount = quantity.doubleValue(for: HKUnit.count().unitDivided(by: HKUnit.minute()))
+            let activity = Activity(id: 5, title: "Heart rate", subTitle: "dummy", image: "heart.circle", amount: heartCount.formatToString()!, tintColor: .red)
+            DispatchQueue.main.async {
+                self.activities["todayHeart"] = activity
+            }
+            print("heart: \(heartCount)")
         }
         healthStore.execute(query)
     }
