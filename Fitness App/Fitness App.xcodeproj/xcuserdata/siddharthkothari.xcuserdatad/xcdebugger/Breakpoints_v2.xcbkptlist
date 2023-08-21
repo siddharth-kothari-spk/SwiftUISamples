@@ -14,8 +14,8 @@
             filePath = "Fitness App/Health Kit/HealthManager.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "85"
-            endingLineNumber = "85"
+            startingLineNumber = "145"
+            endingLineNumber = "145"
             landmarkName = "fetchWorkoutWeekData()"
             landmarkType = "7">
             <Locations>
@@ -48,6 +48,99 @@
                   startingLineNumber = "85"
                   endingLineNumber = "85"
                   offsetFromSymbolStart = "644">
+               </Location>
+               <Location
+                  uuid = "FEEF2040-AE6C-442B-AF72-F169581D6C24 - 51cb768109e12ad4"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (__C.HKSampleQuery, Swift.Optional&lt;Swift.Array&lt;__C.HKSample&gt;&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in Fitness_App.HealthManager.fetchWorkoutWeekData() -&gt; ()"
+                  moduleName = "Fitness App"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/siddharthkothari/Desktop/KothariSiddharth/siddharth-kothari-spk/Projects/SwiftUISamples/Fitness%20App/Fitness%20App/Health%20Kit/HealthManager.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "145"
+                  endingLineNumber = "145"
+                  offsetFromSymbolStart = "480">
+               </Location>
+               <Location
+                  uuid = "FEEF2040-AE6C-442B-AF72-F169581D6C24 - 51cb768109e12ad4"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (__C.HKSampleQuery, Swift.Optional&lt;Swift.Array&lt;__C.HKSample&gt;&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in Fitness_App.HealthManager.fetchWorkoutWeekData() -&gt; ()"
+                  moduleName = "Fitness App"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/siddharthkothari/Desktop/KothariSiddharth/siddharth-kothari-spk/Projects/SwiftUISamples/Fitness%20App/Fitness%20App/Health%20Kit/HealthManager.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "145"
+                  endingLineNumber = "145"
+                  offsetFromSymbolStart = "644">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "D3C1581A-DB6E-43E9-A678-68ADB6D08CF3"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Fitness App/Health Kit/HealthManager.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "88"
+            endingLineNumber = "88"
+            landmarkName = "fetchExerciseTime()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "D3C1581A-DB6E-43E9-A678-68ADB6D08CF3 - 1dc2a740eebb369e"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (__C.HKStatisticsQuery, Swift.Optional&lt;__C.HKStatistics&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in Fitness_App.HealthManager.fetchExerciseTime() -&gt; ()"
+                  moduleName = "Fitness App"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/siddharthkothari/Desktop/KothariSiddharth/siddharth-kothari-spk/Projects/SwiftUISamples/Fitness%20App/Fitness%20App/Health%20Kit/HealthManager.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "88"
+                  endingLineNumber = "88"
+                  offsetFromSymbolStart = "336">
+               </Location>
+               <Location
+                  uuid = "D3C1581A-DB6E-43E9-A678-68ADB6D08CF3 - 1dc2a740eebb369e"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (__C.HKStatisticsQuery, Swift.Optional&lt;__C.HKStatistics&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in Fitness_App.HealthManager.fetchExerciseTime() -&gt; ()"
+                  moduleName = "Fitness App"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/siddharthkothari/Desktop/KothariSiddharth/siddharth-kothari-spk/Projects/SwiftUISamples/Fitness%20App/Fitness%20App/Health%20Kit/HealthManager.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "88"
+                  endingLineNumber = "88"
+                  offsetFromSymbolStart = "372">
+               </Location>
+               <Location
+                  uuid = "D3C1581A-DB6E-43E9-A678-68ADB6D08CF3 - 1dc2a740eebb369e"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (__C.HKStatisticsQuery, Swift.Optional&lt;__C.HKStatistics&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in Fitness_App.HealthManager.fetchExerciseTime() -&gt; ()"
+                  moduleName = "Fitness App"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/siddharthkothari/Desktop/KothariSiddharth/siddharth-kothari-spk/Projects/SwiftUISamples/Fitness%20App/Fitness%20App/Health%20Kit/HealthManager.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "88"
+                  endingLineNumber = "88"
+                  offsetFromSymbolStart = "444">
                </Location>
             </Locations>
          </BreakpointContent>

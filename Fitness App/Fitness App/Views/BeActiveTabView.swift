@@ -18,9 +18,10 @@ struct BeActiveTabView: View {
                 Image(systemName: "house")
             }.environmentObject(healthManager)
             
-            HomeView().tag("Home2").tabItem {
+           /* HomeView().tag("Home2").tabItem {
                 Image(systemName: "house")
             }.environmentObject(healthManager)
+            */
         }
     }
     

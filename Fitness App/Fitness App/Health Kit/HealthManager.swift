@@ -22,16 +22,22 @@ class HealthManager: ObservableObject {
     init() {
         let steps = HKQuantityType(.stepCount)
         let calories = HKQuantityType(.activeEnergyBurned)
+        let exerciseTime = HKQuantityType(.appleExerciseTime)
+        let standTime = HKQuantityType(.appleStandTime)
+        let moveTime = HKQuantityType(.appleMoveTime)
         let workout = HKObjectType.workoutType()
         
-        let healthTypes : Set = [steps, calories, workout]
+        let healthTypes : Set = [steps, calories, exerciseTime, standTime, moveTime, workout]
         
         Task {
             do {
                 try await healthStore.requestAuthorization(toShare: [], read: healthTypes)
                 fetchTodaySteps()
                 fetchTodayCalories()
-                fetchWorkoutWeekData()
+                fetchMoveTime()
+                fetchStandTime()
+                fetchExerciseTime()
+               // fetchWorkoutWeekData()
                // fetchStrengthTrainingData()
             } catch {
                 print("error in fetching health data: \(error.localizedDescription)")
@@ -71,6 +77,60 @@ class HealthManager: ObservableObject {
                 self.activities["todayCalories"] = activity
             }
             print("calories: \(calories)")
+        }
+        healthStore.execute(query)
+    }
+    
+    func fetchExerciseTime() {
+        let exercise = HKQuantityType(.appleExerciseTime)
+        let predicate = HKQuery.predicateForSamples(withStart: .startOftheDay, end: Date())
+        let query = HKStatisticsQuery.init(quantityType: exercise, quantitySamplePredicate: predicate) { query, stats, error in
+            guard let stats = stats,let quantity = stats.duration(), error == nil else {
+                print("error: \(String(describing: error?.localizedDescription))")
+                return
+            }
+            let exerciseCount = quantity.doubleValue(for: .count())
+            let activity = Activity(id: 2, title: "Daily Exercise", subTitle: "Goal: 15 min", image: "figure.walk", amount: exerciseCount.formatToString()!, tintColor: .green)
+            DispatchQueue.main.async {
+                self.activities["todayExercise"] = activity
+            }
+            print("exercise: \(exerciseCount)")
+        }
+        healthStore.execute(query)
+    }
+    
+    func fetchStandTime() {
+        let stand = HKQuantityType(.appleStandTime)
+        let predicate = HKQuery.predicateForSamples(withStart: .startOftheDay, end: Date())
+        let query = HKStatisticsQuery.init(quantityType: stand, quantitySamplePredicate: predicate) { query, stats, error in
+            guard let stats = stats,let quantity = stats.duration(), error == nil else {
+                print("error: \(String(describing: error?.localizedDescription))")
+                return
+            }
+            let standCount = quantity.doubleValue(for: .count())
+            let activity = Activity(id: 3, title: "Daily Stand Count", subTitle: "Goal: 12", image: "figure.walk", amount: standCount.formatToString()!, tintColor: .green)
+            DispatchQueue.main.async {
+                self.activities["todayStand"] = activity
+            }
+            print("stand: \(standCount)")
+        }
+        healthStore.execute(query)
+    }
+    
+    func fetchMoveTime() {
+        let move = HKQuantityType(.appleMoveTime)
+        let predicate = HKQuery.predicateForSamples(withStart: .startOftheDay, end: Date())
+        let query = HKStatisticsQuery.init(quantityType: move, quantitySamplePredicate: predicate) { query, stats, error in
+            guard let stats = stats,let quantity = stats.duration(), error == nil else {
+                print("error: \(String(describing: error?.localizedDescription))")
+                return
+            }
+            let moveCount = quantity.doubleValue(for: .count())
+            let activity = Activity(id: 4, title: "Daily Move", subTitle: "Goal: 30 min", image: "figure.walk", amount: moveCount.formatToString()!, tintColor: .green)
+            DispatchQueue.main.async {
+                self.activities["todayMove"] = activity
+            }
+            print("move: \(moveCount)")
         }
         healthStore.execute(query)
     }
