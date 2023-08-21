@@ -84,13 +84,13 @@ class HealthManager: ObservableObject {
     func fetchExerciseTime() {
         let exercise = HKQuantityType(.appleExerciseTime)
         let predicate = HKQuery.predicateForSamples(withStart: .startOftheDay, end: Date())
-        let query = HKStatisticsQuery.init(quantityType: exercise, quantitySamplePredicate: predicate) { query, stats, error in
+        let query = HKStatisticsQuery.init(quantityType: exercise, quantitySamplePredicate: predicate, options: [.duration]) { query, stats, error in
             guard let stats = stats,let quantity = stats.duration(), error == nil else {
                 print("error: \(String(describing: error?.localizedDescription))")
                 return
             }
-            let exerciseCount = quantity.doubleValue(for: .count())
-            let activity = Activity(id: 2, title: "Daily Exercise", subTitle: "Goal: 15 min", image: "figure.walk", amount: exerciseCount.formatToString()!, tintColor: .green)
+            let exerciseCount = quantity.doubleValue(for: .minute())
+            let activity = Activity(id: 2, title: "Daily Exercise", subTitle: "Goal: 15 min", image: "figure.walk", amount: "\(exerciseCount.formatToString()!) min", tintColor: .green)
             DispatchQueue.main.async {
                 self.activities["todayExercise"] = activity
             }
@@ -102,13 +102,13 @@ class HealthManager: ObservableObject {
     func fetchStandTime() {
         let stand = HKQuantityType(.appleStandTime)
         let predicate = HKQuery.predicateForSamples(withStart: .startOftheDay, end: Date())
-        let query = HKStatisticsQuery.init(quantityType: stand, quantitySamplePredicate: predicate) { query, stats, error in
+        let query = HKStatisticsQuery.init(quantityType: stand, quantitySamplePredicate: predicate, options: [.duration]) { query, stats, error in
             guard let stats = stats,let quantity = stats.duration(), error == nil else {
                 print("error: \(String(describing: error?.localizedDescription))")
                 return
             }
-            let standCount = quantity.doubleValue(for: .count())
-            let activity = Activity(id: 3, title: "Daily Stand Count", subTitle: "Goal: 12", image: "figure.walk", amount: standCount.formatToString()!, tintColor: .green)
+            let standCount = quantity.doubleValue(for: .minute())
+            let activity = Activity(id: 3, title: "Daily Stand Count", subTitle: "Goal: 60 min", image: "figure.walk", amount: "\(standCount.formatToString()!) min", tintColor: .green)
             DispatchQueue.main.async {
                 self.activities["todayStand"] = activity
             }
@@ -120,12 +120,12 @@ class HealthManager: ObservableObject {
     func fetchMoveTime() {
         let move = HKQuantityType(.appleMoveTime)
         let predicate = HKQuery.predicateForSamples(withStart: .startOftheDay, end: Date())
-        let query = HKStatisticsQuery.init(quantityType: move, quantitySamplePredicate: predicate) { query, stats, error in
+        let query = HKStatisticsQuery.init(quantityType: move, quantitySamplePredicate: predicate, options: [.duration]) { query, stats, error in
             guard let stats = stats,let quantity = stats.duration(), error == nil else {
                 print("error: \(String(describing: error?.localizedDescription))")
                 return
             }
-            let moveCount = quantity.doubleValue(for: .count())
+            let moveCount = quantity.doubleValue(for: .minute())
             let activity = Activity(id: 4, title: "Daily Move", subTitle: "Goal: 30 min", image: "figure.walk", amount: moveCount.formatToString()!, tintColor: .green)
             DispatchQueue.main.async {
                 self.activities["todayMove"] = activity
