@@ -173,3 +173,47 @@ struct DataOwnerView: View {
 
  */
 
+
+//-----------------------------------------------------------
+
+// @ObservedObject
+/*
+
+ On iOS 17+ you will most likely leverage the @Observable macro for your models instead of one of the ObservableObject related property wrappers.
+
+ An @ObservedObject is used to wrap ObservableObject instances that are not created or owned by the view that's used in. It's applied to the same types of objects as @StateObject, and it provides similar features, except a view doesn't create its own @ObservedObject instances. Instead, they are passed down to views like this:
+ */
+
+struct DataOwnerView: View {
+  @StateObject private var provider = DataProvider()
+
+  var body: some View {
+    VStack {
+      Text("provider value: \(provider.currentValue)")
+
+      DataUserView(provider: provider)
+    }
+  }
+}
+
+struct DataUserView: View {
+  @ObservedObject var provider: DataProvider
+
+  var body: some View {
+    // create body and use / modify `provider`
+  }
+}
+
+/*
+ The DataOwnerView passes a reference to its @StateObject down to DataUserView, where the DataProvider is used as an @ObservedObject.
+
+ Internally, SwiftUI will not keep an @ObservedObject around when it discards and recreates a view if this is needed for a fresh render.
+
+ Instead, SwiftUI knows that the parent view will pass down an ObservedObject (which could be either a @StateObject if the parent owns the property, or an @ObservedObject if the parent doesn't own the property) that's used as the value for the property marked as @ObservedObject.
+ 
+ You should use @ObservedObject if:
+
+ 1. You want to respond to changes or updates in an ObservedObject.
+ 2. The view does not create the instance of the ObservedObject itself. (if it does, you need a @StateObject)
+ */
+//-----------------------------------------------------------
