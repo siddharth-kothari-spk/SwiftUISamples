@@ -217,3 +217,42 @@ struct DataUserView: View {
  2. The view does not create the instance of the ObservedObject itself. (if it does, you need a @StateObject)
  */
 //-----------------------------------------------------------
+
+// @EnvironmentObject
+/*
+On iOS 17+ you will most likely leverage the @Observable macro for your models instead of one of the ObservableObject related property wrappers.
+
+Sometimes you have objects that are needed in various places in your app, and you might not want to pass these objects down to the initializer of each view you create. In those cases, you might want to make a dependency available to all children of a view, your App or a Scene.
+
+You can achieve this with @EnvironmentObject:
+*/
+
+struct EnvironmentUsingView: View {
+  @EnvironmentObject var dependency: DataProvider
+
+  var body: some View {
+    Text(dependency.currentValue)
+  }
+}
+
+//Properties that are marked as @EnvironmentObject must conform to ObservableObject. They are configured by a parent object of the object that uses the @EnvironmentObject. So for example, we can inject an environment object from the App struct to make it available for us in all views that we create:
+
+struct MyApp: App {
+  @StateObject var dataProvider = DataProvider()
+
+  var body: some Scene {
+    WindowGroup {
+      EnvironmentUsingView()
+        .environmentObject(dataProvider)
+    }
+  }
+}
+
+/*
+ An @EnvironmentObject shared the same functionality that an @ObservedObject has. Your view will re-render when one of the @EnvironmentObject's properties changes. The main difference is that @EnvironmentObject properties are made available on a much larger scale than @ObservedObject. In same cases even to your whole app.
+
+ You should use @EnvironmentObject if:
+
+ 1. You would normally use an @ObservedObject but you would have to pass the ObservableObject through several view's initializers before it reaches the view where it's needed.
+
+ */
