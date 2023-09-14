@@ -318,3 +318,26 @@ struct PropertyWrappersApp: App {
  3. The property should be available to all views that are subviews of the view that received the .environment modifier.
 
  */
+
+//-----------------------------------------------------------
+
+//@FetchRequest
+//Fetch request is one of SwiftUI's persistence related property wrappers. You use it to retrieve data from Core Data. A brief example of how to use this property wrapper looks as follows:
+
+struct ContentView: View {
+    @FetchRequest(fetchRequest: MyModel.fetchRequest())
+    var items: MyModel
+
+    var body: some View {
+        List(items) { item in
+            Text(item.title)
+        }
+    }
+}
+/*
+Whenever the data loaded by @FetchRequest updates, your view will update too.
+
+There are various overloads for the @FetchRequest initializer that I won't cover on this page; we'd quickly spiral into covering Core Data and how it should be added to a SwiftUI app. To learn more about that you can explore this talk. (https://www.youtube.com/watch?v=P8rqjs_CNsk&ab_channel=SwiftHeroes)
+
+Use @FetchRequest whenever you want to fetch data from a Core Data store directly into your view.
+*/
