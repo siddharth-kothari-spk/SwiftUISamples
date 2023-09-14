@@ -256,3 +256,65 @@ struct MyApp: App {
  1. You would normally use an @ObservedObject but you would have to pass the ObservableObject through several view's initializers before it reaches the view where it's needed.
 
  */
+
+//-----------------------------------------------------------
+
+//@Environment
+/*
+ The @Environment property wrapper is similar to @EnvironmentObject with one major difference. It's used to read values from the view's environment. If the value in the environment changes, your view is updated. You can't use this property wrapper to set or modify an environment property. To set an @Environment property on a view you need to use the .environment view modifier. A nice way to think of @Environment is this: @Environment is to @EnvironmentObject what @State is to @StateObject.
+
+You can read a value from the environment as follows:
+*/
+
+struct MyView: App {
+  @Environment(\.colorScheme) var colorScheme: ColorScheme
+
+  var body: some View {
+    Text("The color scheme is \(colorScheme == .dark ? "dark" : "light")")
+  }
+}
+
+//To assign a value to a view's environment you'd write the following:
+
+ContentView()
+    .environment(\.managedObjectContext, Persistence.shared.viewContext)
+
+//You can add a custom property to your view's environment as follows:
+
+// The type we want to use for the custom environment value
+enum AppStyle {
+    case classic, modern
+}
+
+// Our environment key
+private struct AppStyleKey: EnvironmentKey {
+    static let defaultValue = AppStyle.modern
+}
+
+// Register the key on SwiftUI's EnvironmentValues
+extension EnvironmentValues {
+    var appStyle: AppStyle {
+        get { self[AppStyleKey.self] }
+        set { self[AppStyleKey.self] = newValue }
+    }
+}
+
+// Example usage
+@main
+struct PropertyWrappersApp: App {
+    var body: some Scene {
+        WindowGroup {
+            ContentView()
+                .environment(\.appStyle, .classic)
+        }
+    }
+}
+
+/*
+ You should use @Environment if:
+
+ 1. You want to inject some value into the SwiftUI environment using a key.
+ 2. The injected property doesn't need to behave like an @EnvironmentObject.
+ 3. The property should be available to all views that are subviews of the view that received the .environment modifier.
+
+ */
