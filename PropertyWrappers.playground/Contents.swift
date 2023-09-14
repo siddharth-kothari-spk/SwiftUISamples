@@ -417,3 +417,13 @@ struct ContentView: View {
  1. You're storing simple state related to the current scene
  2. The data you're persisting isn't sensitive or mission critical
  */
+
+/*
+ Further reads:
+ 1. https://developer.apple.com/videos/play/wwdc2020/10040/
+ 2.https://www.donnywals.com/wrapping-your-head-around-property-wrappers-in-swift/
+ 3.https://www.donnywals.com/writing-custom-property-wrappers-for-swiftui/
+ 4.https://www.donnywals.com/understanding-how-and-when-swiftui-decides-to-redraw-views/
+ 5. https://swiftwithmajid.com/
+ 6. https://nilcoalescing.com/
+ */
