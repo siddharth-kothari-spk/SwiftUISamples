@@ -341,3 +341,41 @@ There are various overloads for the @FetchRequest initializer that I won't cover
 
 Use @FetchRequest whenever you want to fetch data from a Core Data store directly into your view.
 */
+
+//-----------------------------------------------------------
+
+//@AppStorage
+/*
+ The @AppStorage property wrapper is an app-wide wrapper around UserDefaults. This means that it's great for storing simple key / value pairs. When the data in UserDefaults changes, your view reloads. You can update values in @AppStorage by assigning a value to your property.
+
+Here's a simple example of using @AppStorage:
+*/
+struct ContentView: View {
+    @AppStorage("lastTap") var lastTap: Double?
+
+    var dateString: String {
+        if let timestamp = lastTap {
+            return Date(timeIntervalSince1970: timestamp).formatted()
+        } else {
+            return "Never"
+        }
+    }
+
+    var body: some View {
+        Text("Button was last clicked on \(dateString)")
+
+        Button("Click me") {
+            lastTap = Date().timeIntervalSince1970
+        }
+    }
+}
+// Note that @AppStorage isn't intended to hold a full data model for your app; it should be used for small, simple data.
+
+/*
+ You should make use of @AppStorage when:
+
+ 1. You're storing simple user preferences.
+ 2. You want to track simple data like when the user last launched your app.
+ 3. You need to persist some very simple state that should service an app restart.
+
+ */
