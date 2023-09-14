@@ -81,3 +81,57 @@ struct StateView: View {
 
 //-----------------------------------------------------------
 
+//@Bindable
+//The @Bindable property wrapper is used to create bindings to properties on your @Observable annotated models. Without @Bindable it's not possible to create a binding to an @Observable model. For example, the following code doesn't compile:
+
+@Observable
+class SearchModel {
+  var query: String = ""
+  var results: [SearchResult] = []
+
+  // ...
+}
+
+struct SearchView {
+  let searchModel: SearchModel
+
+  var body: some View {
+    // Cannot find '$searchModel' in scope
+    TextField("Search query", text: $searchModel.query)
+  }
+}
+
+// The $ prefixed version of a property is only avaialble when that property leverages a property wrapper since $myProperty accesses something called a projected property. If you're not entirely sure what that means, I recommend you take a look at this post.(https://www.donnywals.com/wrapping-your-head-around-property-wrappers-in-swift/)
+
+// Given that we can't bind to our plain SearchModel's properties, we need some mechanism to enable this. One option would be to make our own Binding instances and passing a get and set closure. This would be tedious and error prone.
+
+//The alternative is the @Bindable property wrapper:
+
+struct SearchViewBindable {
+  @Bindable var searchModel: SearchModel
+
+  var body: some View {
+    // This works
+    TextField("Search query", text: $searchModel.query)
+  }
+}
+// With @Bindable we have access to the $ prefixed property to obtain a projected value from the property wrapper, and the projected value provides our binding. In other words, we can now provide a binding to our model's query property where we otherwise would not be able to do this.
+
+
+//One neat trick you might need to employ for observable objects that exist in the environment for example is the following:
+
+struct SearchViewEnvironment {
+  @Environment(\.searchModel) var searchModel
+
+  var body: some View {
+    @Bindable var bindableSearchModel = searchModel
+    // This works
+    TextField("Search query", text: $bindableSearchModel.query)
+  }
+}
+//With this technique you extract the search model from the environment as a non-bindable property. To make it bindable, you can create a shadow property inside of your body that's marked as @Bindable.
+// You should use @Bindable if:
+
+// 1.You're wrapping a class annotated with @Observed
+// 2.You need to provide another view a binding to a property on your model object
+//Note that you never choose between @Binding and @Bindable. @Binding indicates that a view needs to receive a binding to a property so it can read and mutate state owned by another object. @Bindable indicates that we want to pass a binding to that property to another view, allowing that view to read and mutate the property.
