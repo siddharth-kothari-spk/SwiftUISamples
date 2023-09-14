@@ -379,3 +379,41 @@ struct ContentView: View {
  3. You need to persist some very simple state that should service an app restart.
 
  */
+
+
+//-----------------------------------------------------------
+//@SceneStorage
+/*
+The @SceneStorage property wrapper is similar to @AppStorage except it only persists data local to the scene that your view is currently in. On iOS an app will typically have a single scene but on the mac and iPad an app can have several scenes. When a scene is temporarily torn down and restored later, your scene storage will be available again. If a scene is destroyed, all scene related data is destroyed too.
+
+You should only use scene storage for state related data that's non-essential to your app.
+
+You use @SceneStorage in a similar manner as @AppStorage:
+*/
+
+struct ContentView: View {
+    @SceneStorage("lastTap") var lastTap: Double?
+
+    var dateString: String {
+        if let timestamp = lastTap {
+            return Date(timeIntervalSince1970: timestamp).formatted()
+        } else {
+            return "Never"
+        }
+    }
+
+    var body: some View {
+        Text("Button was last clicked on \(dateString)")
+
+        Button("Click me") {
+            lastTap = Date().timeIntervalSince1970
+        }
+    }
+}
+
+/*
+ You should make use of @SceneStorage when:
+
+ 1. You're storing simple state related to the current scene
+ 2. The data you're persisting isn't sensitive or mission critical
+ */
