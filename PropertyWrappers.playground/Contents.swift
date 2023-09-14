@@ -135,3 +135,41 @@ struct SearchViewEnvironment {
 // 1.You're wrapping a class annotated with @Observed
 // 2.You need to provide another view a binding to a property on your model object
 //Note that you never choose between @Binding and @Bindable. @Binding indicates that a view needs to receive a binding to a property so it can read and mutate state owned by another object. @Bindable indicates that we want to pass a binding to that property to another view, allowing that view to read and mutate the property.
+
+//-----------------------------------------------------------
+
+// @StateObject
+//Only available in iOS 14+, iPadOS 14+, watchOS 7+, macOS 10.16+ etc. On iOS 17+ you will most likely leverage the @Observable macro for your models instead of one of the ObservableObject related property wrappers.
+
+//The @StateObject property is used for similar reasons as @State, except it's applied to ObservableObjects. An ObservableObject is always a reference type (class) and informs SwiftUI whenever one of its @Published properties will change.
+
+class DataProvider: ObservableObject {
+  @Published var currentValue = "a value"
+}
+
+struct DataOwnerView: View {
+  @StateObject private var provider = DataProvider()
+
+  var body: some View {
+    Text("provider value: \(provider.currentValue)")
+  }
+}
+
+/*
+ Notice that DataOwnerView creates an instance of DataProvider. This means that DataOwnerView owns the DataProvider. Whenever the value of DataProvider.currentValue changes, DataOwnerView will rerender.
+
+ Internally, SwiftUI will keep the initially created instance of DataProvider around whenever SwiftUI decides to discard and recreate DataOwnerView for a fresh render. This means that a @StateObject for any given view is initialized only once.
+
+ SwiftUI sets the instance associated with your @StateObject aside and reuses it when the view that owns the @StateObject is initialized again. This means that your new view instance does not get a new instance of the property marked as @StateObject since it's reused.
+
+ In other words, a property marked as @StateObject will keep its initially assigned ObservedObject instance as long as the view is needed, even when the struct gets recreated by SwiftUI.
+
+ This is the same behavior you see in @State, except it's applied to an ObservableObject rather than a value type like a struct.
+ 
+ You should use @StateObject if:
+
+ 1. You want to respond to changes or updates in an ObservableObject.
+ 2. The view you're using @StateObject in creates the instance of the ObservableObject itself.
+
+ */
+
