@@ -15,6 +15,7 @@
 		B19A2B2E2AC67DC300D11CC4 /* Published_usage_sampleUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B19A2B2D2AC67DC300D11CC4 /* Published_usage_sampleUITests.swift */; };
 		B19A2B302AC67DC300D11CC4 /* Published_usage_sampleUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B19A2B2F2AC67DC300D11CC4 /* Published_usage_sampleUITestsLaunchTests.swift */; };
 		B19A2B3D2AC67E4100D11CC4 /* Counter.swift in Sources */ = {isa = PBXBuildFile; fileRef = B19A2B3C2AC67E4100D11CC4 /* Counter.swift */; };
+		B19A2B3F2AC67EAA00D11CC4 /* CounterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B19A2B3E2AC67EAA00D11CC4 /* CounterView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,6 +47,7 @@
 		B19A2B2D2AC67DC300D11CC4 /* Published_usage_sampleUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Published_usage_sampleUITests.swift; sourceTree = "<group>"; };
 		B19A2B2F2AC67DC300D11CC4 /* Published_usage_sampleUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Published_usage_sampleUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		B19A2B3C2AC67E4100D11CC4 /* Counter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Counter.swift; sourceTree = "<group>"; };
+		B19A2B3E2AC67EAA00D11CC4 /* CounterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CounterView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +101,7 @@
 				B19A2B122AC67DC100D11CC4 /* Published_usage_sampleApp.swift */,
 				B19A2B142AC67DC100D11CC4 /* ContentView.swift */,
 				B19A2B3C2AC67E4100D11CC4 /* Counter.swift */,
+				B19A2B3E2AC67EAA00D11CC4 /* CounterView.swift */,
 				B19A2B162AC67DC300D11CC4 /* Assets.xcassets */,
 				B19A2B182AC67DC300D11CC4 /* Preview Content */,
 			);
@@ -263,6 +266,7 @@
 				B19A2B152AC67DC100D11CC4 /* ContentView.swift in Sources */,
 				B19A2B132AC67DC100D11CC4 /* Published_usage_sampleApp.swift in Sources */,
 				B19A2B3D2AC67E4100D11CC4 /* Counter.swift in Sources */,
+				B19A2B3F2AC67EAA00D11CC4 /* CounterView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
