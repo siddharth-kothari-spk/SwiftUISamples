@@ -8,8 +8,21 @@
 import SwiftUI
 
 struct ContentTransitionView: View {
+    @State private var muteOn = false
+    private var buttonTitle: String {
+        return muteOn ? "Unmute" : "Mute"
+    }
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        VStack {
+            Button {
+                muteOn.toggle()
+            } label: {
+                Label(buttonTitle, systemImage: !muteOn ? "speaker.wave.3.fill" : "speaker.slash.fill")
+            }
+            .contentTransition(.symbolEffect(.replace))
+        }
+        .font(.largeTitle)
     }
 }
 
