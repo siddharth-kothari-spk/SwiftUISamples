@@ -8,8 +8,20 @@
 import SwiftUI
 
 struct DiscreteView: View {
+    
+    @State private var animationCount = 0
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        VStack {
+            VStack(content: {
+                Text("Bounce")
+                Image(systemName: "wifi.router").symbolEffect(.bounce, value: animationCount)
+            }).padding()
+            
+            Button("Animate") {
+                animationCount += 1
+            }
+        }
     }
 }
 
