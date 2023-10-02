@@ -24,6 +24,11 @@ struct DiscreteView: View {
                 
             }).padding()
             
+            VStack(content: {
+                Text("Variable colour")
+                Image(systemName: "wifi.router").symbolEffect(.variableColor, value: animationCount)
+            }).padding()
+            
             Button("Animate") {
                 animationCount += 1
             }
