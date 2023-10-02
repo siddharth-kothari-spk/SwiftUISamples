@@ -8,9 +8,23 @@
 import SwiftUI
 
 struct TransitionView: View {
-    var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+  @State private var symbolIsHidden = true
+  private var buttonTitle: String {
+      return symbolIsHidden ? "Show" : "Hide"
+  }
+  
+  var body: some View {
+    VStack {
+      if !symbolIsHidden {
+        Image(systemName: "wifi.router")
+              .transition(.symbolEffect(.appear)).padding()
+      }
+      
+      Button(buttonTitle) {
+        symbolIsHidden.toggle()
+      }
     }
+  }
 }
 
 #Preview {
