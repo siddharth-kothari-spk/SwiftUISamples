@@ -24,6 +24,34 @@ struct IndefiniteView: View {
                             isActive: animationIsActive)
             }.padding()
             
+            VStack {
+                Text("Variable Color")
+                Image(systemName: "wifi.router")
+                    .symbolEffect(.variableColor,
+                            isActive: animationIsActive)
+            }.padding()
+            
+            VStack {
+                Text("Scale")
+                Image(systemName: "wifi.router")
+                    .symbolEffect(.scale,
+                            isActive: animationIsActive)
+            }.padding()
+            
+            VStack {
+                Text("Appear")
+                Image(systemName: "wifi.router")
+                    .symbolEffect(.appear,
+                            isActive: !animationIsActive)
+            }.padding()
+            
+            VStack {
+                Text("Disappear")
+                Image(systemName: "wifi.router")
+                    .symbolEffect(.disappear,
+                            isActive: animationIsActive)
+            }.padding()
+            
             Button(buttonTitle) {
                 animationIsActive.toggle()
             }
