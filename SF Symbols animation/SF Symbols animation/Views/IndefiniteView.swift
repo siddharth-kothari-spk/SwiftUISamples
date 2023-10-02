@@ -6,10 +6,28 @@
 //
 
 import SwiftUI
+// We control when the animation starts and when the animation stops using symbolEffect(_:options:isActive:)
 
 struct IndefiniteView: View {
+    @State private var animationIsActive = false
+    
+    private var buttonTitle: String {
+          return animationIsActive ? "Stop animations" : "Start animations"
+    }
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        VStack {
+            VStack {
+                Text("Pulse")
+                Image(systemName: "wifi.router")
+                    .symbolEffect(.pulse,
+                            isActive: animationIsActive)
+            }.padding()
+            
+            Button(buttonTitle) {
+                animationIsActive.toggle()
+            }
+        }
     }
 }
 
