@@ -18,6 +18,12 @@ struct DiscreteView: View {
                 Image(systemName: "wifi.router").symbolEffect(.bounce, value: animationCount)
             }).padding()
             
+            VStack(content: {
+                Text("Pulse")
+                Image(systemName: "wifi.router").symbolEffect(.pulse, value: animationCount)
+                
+            }).padding()
+            
             Button("Animate") {
                 animationCount += 1
             }
