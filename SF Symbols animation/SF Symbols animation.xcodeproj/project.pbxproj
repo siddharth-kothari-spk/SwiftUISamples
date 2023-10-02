@@ -1,0 +1,593 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		B1A3557C2ACA78990006828E /* SF_Symbols_animationApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1A3557B2ACA78990006828E /* SF_Symbols_animationApp.swift */; };
+		B1A3557E2ACA78990006828E /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1A3557D2ACA78990006828E /* ContentView.swift */; };
+		B1A355802ACA789B0006828E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B1A3557F2ACA789B0006828E /* Assets.xcassets */; };
+		B1A355832ACA789B0006828E /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B1A355822ACA789B0006828E /* Preview Assets.xcassets */; };
+		B1A3558D2ACA789B0006828E /* SF_Symbols_animationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1A3558C2ACA789B0006828E /* SF_Symbols_animationTests.swift */; };
+		B1A355972ACA789B0006828E /* SF_Symbols_animationUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1A355962ACA789B0006828E /* SF_Symbols_animationUITests.swift */; };
+		B1A355992ACA789B0006828E /* SF_Symbols_animationUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1A355982ACA789B0006828E /* SF_Symbols_animationUITestsLaunchTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		B1A355892ACA789B0006828E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B1A355702ACA78990006828E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B1A355772ACA78990006828E;
+			remoteInfo = "SF Symbols animation";
+		};
+		B1A355932ACA789B0006828E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B1A355702ACA78990006828E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B1A355772ACA78990006828E;
+			remoteInfo = "SF Symbols animation";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		B1A355782ACA78990006828E /* SF Symbols animation.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "SF Symbols animation.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B1A3557B2ACA78990006828E /* SF_Symbols_animationApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SF_Symbols_animationApp.swift; sourceTree = "<group>"; };
+		B1A3557D2ACA78990006828E /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		B1A3557F2ACA789B0006828E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		B1A355822ACA789B0006828E /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		B1A355882ACA789B0006828E /* SF Symbols animationTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "SF Symbols animationTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B1A3558C2ACA789B0006828E /* SF_Symbols_animationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SF_Symbols_animationTests.swift; sourceTree = "<group>"; };
+		B1A355922ACA789B0006828E /* SF Symbols animationUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "SF Symbols animationUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B1A355962ACA789B0006828E /* SF_Symbols_animationUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SF_Symbols_animationUITests.swift; sourceTree = "<group>"; };
+		B1A355982ACA789B0006828E /* SF_Symbols_animationUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SF_Symbols_animationUITestsLaunchTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B1A355752ACA78990006828E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B1A355852ACA789B0006828E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B1A3558F2ACA789B0006828E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		B1A3556F2ACA78990006828E = {
+			isa = PBXGroup;
+			children = (
+				B1A3557A2ACA78990006828E /* SF Symbols animation */,
+				B1A3558B2ACA789B0006828E /* SF Symbols animationTests */,
+				B1A355952ACA789B0006828E /* SF Symbols animationUITests */,
+				B1A355792ACA78990006828E /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		B1A355792ACA78990006828E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B1A355782ACA78990006828E /* SF Symbols animation.app */,
+				B1A355882ACA789B0006828E /* SF Symbols animationTests.xctest */,
+				B1A355922ACA789B0006828E /* SF Symbols animationUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B1A3557A2ACA78990006828E /* SF Symbols animation */ = {
+			isa = PBXGroup;
+			children = (
+				B1A3557B2ACA78990006828E /* SF_Symbols_animationApp.swift */,
+				B1A3557D2ACA78990006828E /* ContentView.swift */,
+				B1A3557F2ACA789B0006828E /* Assets.xcassets */,
+				B1A355812ACA789B0006828E /* Preview Content */,
+			);
+			path = "SF Symbols animation";
+			sourceTree = "<group>";
+		};
+		B1A355812ACA789B0006828E /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				B1A355822ACA789B0006828E /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		B1A3558B2ACA789B0006828E /* SF Symbols animationTests */ = {
+			isa = PBXGroup;
+			children = (
+				B1A3558C2ACA789B0006828E /* SF_Symbols_animationTests.swift */,
+			);
+			path = "SF Symbols animationTests";
+			sourceTree = "<group>";
+		};
+		B1A355952ACA789B0006828E /* SF Symbols animationUITests */ = {
+			isa = PBXGroup;
+			children = (
+				B1A355962ACA789B0006828E /* SF_Symbols_animationUITests.swift */,
+				B1A355982ACA789B0006828E /* SF_Symbols_animationUITestsLaunchTests.swift */,
+			);
+			path = "SF Symbols animationUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		B1A355772ACA78990006828E /* SF Symbols animation */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B1A3559C2ACA789B0006828E /* Build configuration list for PBXNativeTarget "SF Symbols animation" */;
+			buildPhases = (
+				B1A355742ACA78990006828E /* Sources */,
+				B1A355752ACA78990006828E /* Frameworks */,
+				B1A355762ACA78990006828E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "SF Symbols animation";
+			productName = "SF Symbols animation";
+			productReference = B1A355782ACA78990006828E /* SF Symbols animation.app */;
+			productType = "com.apple.product-type.application";
+		};
+		B1A355872ACA789B0006828E /* SF Symbols animationTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B1A3559F2ACA789B0006828E /* Build configuration list for PBXNativeTarget "SF Symbols animationTests" */;
+			buildPhases = (
+				B1A355842ACA789B0006828E /* Sources */,
+				B1A355852ACA789B0006828E /* Frameworks */,
+				B1A355862ACA789B0006828E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B1A3558A2ACA789B0006828E /* PBXTargetDependency */,
+			);
+			name = "SF Symbols animationTests";
+			productName = "SF Symbols animationTests";
+			productReference = B1A355882ACA789B0006828E /* SF Symbols animationTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		B1A355912ACA789B0006828E /* SF Symbols animationUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B1A355A22ACA789B0006828E /* Build configuration list for PBXNativeTarget "SF Symbols animationUITests" */;
+			buildPhases = (
+				B1A3558E2ACA789B0006828E /* Sources */,
+				B1A3558F2ACA789B0006828E /* Frameworks */,
+				B1A355902ACA789B0006828E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B1A355942ACA789B0006828E /* PBXTargetDependency */,
+			);
+			name = "SF Symbols animationUITests";
+			productName = "SF Symbols animationUITests";
+			productReference = B1A355922ACA789B0006828E /* SF Symbols animationUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B1A355702ACA78990006828E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1500;
+				LastUpgradeCheck = 1500;
+				TargetAttributes = {
+					B1A355772ACA78990006828E = {
+						CreatedOnToolsVersion = 15.0;
+					};
+					B1A355872ACA789B0006828E = {
+						CreatedOnToolsVersion = 15.0;
+						TestTargetID = B1A355772ACA78990006828E;
+					};
+					B1A355912ACA789B0006828E = {
+						CreatedOnToolsVersion = 15.0;
+						TestTargetID = B1A355772ACA78990006828E;
+					};
+				};
+			};
+			buildConfigurationList = B1A355732ACA78990006828E /* Build configuration list for PBXProject "SF Symbols animation" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = B1A3556F2ACA78990006828E;
+			productRefGroup = B1A355792ACA78990006828E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B1A355772ACA78990006828E /* SF Symbols animation */,
+				B1A355872ACA789B0006828E /* SF Symbols animationTests */,
+				B1A355912ACA789B0006828E /* SF Symbols animationUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B1A355762ACA78990006828E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B1A355832ACA789B0006828E /* Preview Assets.xcassets in Resources */,
+				B1A355802ACA789B0006828E /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B1A355862ACA789B0006828E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B1A355902ACA789B0006828E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B1A355742ACA78990006828E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B1A3557E2ACA78990006828E /* ContentView.swift in Sources */,
+				B1A3557C2ACA78990006828E /* SF_Symbols_animationApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B1A355842ACA789B0006828E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B1A3558D2ACA789B0006828E /* SF_Symbols_animationTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B1A3558E2ACA789B0006828E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B1A355992ACA789B0006828E /* SF_Symbols_animationUITestsLaunchTests.swift in Sources */,
+				B1A355972ACA789B0006828E /* SF_Symbols_animationUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		B1A3558A2ACA789B0006828E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B1A355772ACA78990006828E /* SF Symbols animation */;
+			targetProxy = B1A355892ACA789B0006828E /* PBXContainerItemProxy */;
+		};
+		B1A355942ACA789B0006828E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B1A355772ACA78990006828E /* SF Symbols animation */;
+			targetProxy = B1A355932ACA789B0006828E /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		B1A3559A2ACA789B0006828E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		B1A3559B2ACA789B0006828E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		B1A3559D2ACA789B0006828E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"SF Symbols animation/Preview Content\"";
+				DEVELOPMENT_TEAM = Q4WH2ZZWCT;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.siddharthkothari.SF-Symbols-animation";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		B1A3559E2ACA789B0006828E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"SF Symbols animation/Preview Content\"";
+				DEVELOPMENT_TEAM = Q4WH2ZZWCT;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.siddharthkothari.SF-Symbols-animation";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		B1A355A02ACA789B0006828E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = Q4WH2ZZWCT;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.siddharthkothari.SF-Symbols-animationTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SF Symbols animation.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/SF Symbols animation";
+			};
+			name = Debug;
+		};
+		B1A355A12ACA789B0006828E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = Q4WH2ZZWCT;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.siddharthkothari.SF-Symbols-animationTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SF Symbols animation.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/SF Symbols animation";
+			};
+			name = Release;
+		};
+		B1A355A32ACA789B0006828E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = Q4WH2ZZWCT;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.siddharthkothari.SF-Symbols-animationUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "SF Symbols animation";
+			};
+			name = Debug;
+		};
+		B1A355A42ACA789B0006828E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = Q4WH2ZZWCT;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.siddharthkothari.SF-Symbols-animationUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "SF Symbols animation";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B1A355732ACA78990006828E /* Build configuration list for PBXProject "SF Symbols animation" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B1A3559A2ACA789B0006828E /* Debug */,
+				B1A3559B2ACA789B0006828E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B1A3559C2ACA789B0006828E /* Build configuration list for PBXNativeTarget "SF Symbols animation" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B1A3559D2ACA789B0006828E /* Debug */,
+				B1A3559E2ACA789B0006828E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B1A3559F2ACA789B0006828E /* Build configuration list for PBXNativeTarget "SF Symbols animationTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B1A355A02ACA789B0006828E /* Debug */,
+				B1A355A12ACA789B0006828E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B1A355A22ACA789B0006828E /* Build configuration list for PBXNativeTarget "SF Symbols animationUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B1A355A32ACA789B0006828E /* Debug */,
+				B1A355A42ACA789B0006828E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = B1A355702ACA78990006828E /* Project object */;
+}
