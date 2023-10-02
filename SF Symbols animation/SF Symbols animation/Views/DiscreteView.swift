@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+// We need to use symbolEffect(_:options:value:) function wherevalue could be any Equatable type. The effect will be applied every timevalue changes.
 
 struct DiscreteView: View {
     
