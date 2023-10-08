@@ -6,6 +6,8 @@
 //
 
 import Foundation
+import CoreLocation
+import SwiftUI
 
 @Observable
 class OldLocationManager: NSObject, CLLocationManagerDelegate {
