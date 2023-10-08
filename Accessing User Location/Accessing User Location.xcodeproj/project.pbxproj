@@ -14,6 +14,7 @@
 		B1A355CC2AD297A50006828E /* Accessing_User_LocationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1A355CB2AD297A50006828E /* Accessing_User_LocationTests.swift */; };
 		B1A355D62AD297A50006828E /* Accessing_User_LocationUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1A355D52AD297A50006828E /* Accessing_User_LocationUITests.swift */; };
 		B1A355D82AD297A50006828E /* Accessing_User_LocationUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1A355D72AD297A50006828E /* Accessing_User_LocationUITestsLaunchTests.swift */; };
+		B1A355E52AD299060006828E /* OldLocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1A355E42AD299060006828E /* OldLocationManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +45,7 @@
 		B1A355D12AD297A50006828E /* Accessing User LocationUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Accessing User LocationUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B1A355D52AD297A50006828E /* Accessing_User_LocationUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Accessing_User_LocationUITests.swift; sourceTree = "<group>"; };
 		B1A355D72AD297A50006828E /* Accessing_User_LocationUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Accessing_User_LocationUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		B1A355E42AD299060006828E /* OldLocationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OldLocationManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,6 +98,7 @@
 			children = (
 				B1A355BA2AD297A40006828E /* Accessing_User_LocationApp.swift */,
 				B1A355BC2AD297A40006828E /* ContentView.swift */,
+				B1A355E42AD299060006828E /* OldLocationManager.swift */,
 				B1A355BE2AD297A50006828E /* Assets.xcassets */,
 				B1A355C02AD297A50006828E /* Preview Content */,
 			);
@@ -259,6 +262,7 @@
 			files = (
 				B1A355BD2AD297A40006828E /* ContentView.swift in Sources */,
 				B1A355BB2AD297A40006828E /* Accessing_User_LocationApp.swift in Sources */,
+				B1A355E52AD299060006828E /* OldLocationManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
