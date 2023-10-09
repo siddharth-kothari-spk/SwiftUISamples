@@ -14,6 +14,7 @@
 		B1A356062AD461110006828E /* LogicOnlyOnceOnViewAppearTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1A356052AD461110006828E /* LogicOnlyOnceOnViewAppearTests.swift */; };
 		B1A356102AD461110006828E /* LogicOnlyOnceOnViewAppearUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1A3560F2AD461110006828E /* LogicOnlyOnceOnViewAppearUITests.swift */; };
 		B1A356122AD461110006828E /* LogicOnlyOnceOnViewAppearUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1A356112AD461110006828E /* LogicOnlyOnceOnViewAppearUITestsLaunchTests.swift */; };
+		B1A3561F2AD462920006828E /* OnFirstAppearModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1A3561E2AD462920006828E /* OnFirstAppearModifier.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +45,7 @@
 		B1A3560B2AD461110006828E /* LogicOnlyOnceOnViewAppearUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LogicOnlyOnceOnViewAppearUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B1A3560F2AD461110006828E /* LogicOnlyOnceOnViewAppearUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogicOnlyOnceOnViewAppearUITests.swift; sourceTree = "<group>"; };
 		B1A356112AD461110006828E /* LogicOnlyOnceOnViewAppearUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogicOnlyOnceOnViewAppearUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		B1A3561E2AD462920006828E /* OnFirstAppearModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnFirstAppearModifier.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,6 +98,7 @@
 			children = (
 				B1A355F42AD4610E0006828E /* LogicOnlyOnceOnViewAppearApp.swift */,
 				B1A355F62AD4610E0006828E /* ContentView.swift */,
+				B1A3561E2AD462920006828E /* OnFirstAppearModifier.swift */,
 				B1A355F82AD461100006828E /* Assets.xcassets */,
 				B1A355FA2AD461100006828E /* Preview Content */,
 			);
@@ -258,6 +261,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B1A355F72AD4610E0006828E /* ContentView.swift in Sources */,
+				B1A3561F2AD462920006828E /* OnFirstAppearModifier.swift in Sources */,
 				B1A355F52AD4610E0006828E /* LogicOnlyOnceOnViewAppearApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
