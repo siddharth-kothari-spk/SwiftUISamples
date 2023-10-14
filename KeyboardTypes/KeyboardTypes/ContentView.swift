@@ -33,8 +33,12 @@ struct ContentView: View {
             AsciiCapableNumberPad(myText: $myText)
             
             .onTapGesture {
-                
-                UIApplication.shared.windows.filter {$0.isKeyWindow}.first?.endEditing(true)
+
+                let windowScene = UIApplication.shared.connectedScenes.first as? UIWindowScene
+                guard let window = windowScene?.windows.filter({ keyWindow in
+                    keyWindow.isKeyWindow
+                }).first else { return }
+                window.endEditing(true)
             }
             .padding()
         }
