@@ -9,7 +9,7 @@ import SwiftUI
 // https://holyswift.app/discovering-all-swiftui-textfield-keyboard-types/
 
 struct ContentView: View {
-    @State var myText = ""
+    @State private var myText = ""
     let textPlaceholder = "Text Placeholder"
     var body: some View {
         List {
@@ -20,11 +20,7 @@ struct ContentView: View {
                     .padding()
                 
                 HStack {
-                    VStack(alignment: .leading) {
-                        Text("asciiCapable")
-                        TextField(textPlaceholder, text: $myText)
-                            .keyboardType(.asciiCapable)
-                    }
+                    AsciiCapable(myText: $myText)
                     
                     VStack(alignment: .leading) {
                         Text("numbersAndPunctuation")

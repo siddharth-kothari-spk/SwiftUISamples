@@ -14,6 +14,7 @@
 		B1A3563E2AD901D80006828E /* KeyboardTypesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1A3563D2AD901D80006828E /* KeyboardTypesTests.swift */; };
 		B1A356482AD901D80006828E /* KeyboardTypesUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1A356472AD901D80006828E /* KeyboardTypesUITests.swift */; };
 		B1A3564A2AD901D80006828E /* KeyboardTypesUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1A356492AD901D80006828E /* KeyboardTypesUITestsLaunchTests.swift */; };
+		B1A356592ADA61120006828E /* AsciiCapable.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1A356582ADA61120006828E /* AsciiCapable.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +45,7 @@
 		B1A356432AD901D80006828E /* KeyboardTypesUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KeyboardTypesUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B1A356472AD901D80006828E /* KeyboardTypesUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardTypesUITests.swift; sourceTree = "<group>"; };
 		B1A356492AD901D80006828E /* KeyboardTypesUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardTypesUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		B1A356582ADA61120006828E /* AsciiCapable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AsciiCapable.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,6 +98,7 @@
 			children = (
 				B1A3562C2AD901D50006828E /* KeyboardTypesApp.swift */,
 				B1A3562E2AD901D50006828E /* ContentView.swift */,
+				B1A356582ADA61120006828E /* AsciiCapable.swift */,
 				B1A356302AD901D80006828E /* Assets.xcassets */,
 				B1A356322AD901D80006828E /* Preview Content */,
 			);
@@ -258,6 +261,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B1A3562F2AD901D50006828E /* ContentView.swift in Sources */,
+				B1A356592ADA61120006828E /* AsciiCapable.swift in Sources */,
 				B1A3562D2AD901D50006828E /* KeyboardTypesApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
