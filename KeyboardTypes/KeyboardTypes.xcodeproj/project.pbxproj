@@ -15,6 +15,14 @@
 		B1A356482AD901D80006828E /* KeyboardTypesUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1A356472AD901D80006828E /* KeyboardTypesUITests.swift */; };
 		B1A3564A2AD901D80006828E /* KeyboardTypesUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1A356492AD901D80006828E /* KeyboardTypesUITestsLaunchTests.swift */; };
 		B1A356592ADA61120006828E /* AsciiCapable.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1A356582ADA61120006828E /* AsciiCapable.swift */; };
+		B1A3565B2ADA63050006828E /* NumbersAndPunctuation.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1A3565A2ADA63050006828E /* NumbersAndPunctuation.swift */; };
+		B1A3565D2ADA636C0006828E /* URL.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1A3565C2ADA636C0006828E /* URL.swift */; };
+		B1A3565F2ADA64560006828E /* Twitter.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1A3565E2ADA64560006828E /* Twitter.swift */; };
+		B1A356612ADA64990006828E /* NamePhonePad.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1A356602ADA64990006828E /* NamePhonePad.swift */; };
+		B1A356632ADA64F10006828E /* WebSearch.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1A356622ADA64F10006828E /* WebSearch.swift */; };
+		B1A356652ADA652C0006828E /* Email.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1A356642ADA652C0006828E /* Email.swift */; };
+		B1A356672ADA65860006828E /* PhonePad.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1A356662ADA65860006828E /* PhonePad.swift */; };
+		B1A356692ADA65C40006828E /* AsciiCapableNumberPad.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1A356682ADA65C40006828E /* AsciiCapableNumberPad.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,6 +54,14 @@
 		B1A356472AD901D80006828E /* KeyboardTypesUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardTypesUITests.swift; sourceTree = "<group>"; };
 		B1A356492AD901D80006828E /* KeyboardTypesUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardTypesUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		B1A356582ADA61120006828E /* AsciiCapable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AsciiCapable.swift; sourceTree = "<group>"; };
+		B1A3565A2ADA63050006828E /* NumbersAndPunctuation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NumbersAndPunctuation.swift; sourceTree = "<group>"; };
+		B1A3565C2ADA636C0006828E /* URL.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URL.swift; sourceTree = "<group>"; };
+		B1A3565E2ADA64560006828E /* Twitter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Twitter.swift; sourceTree = "<group>"; };
+		B1A356602ADA64990006828E /* NamePhonePad.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NamePhonePad.swift; sourceTree = "<group>"; };
+		B1A356622ADA64F10006828E /* WebSearch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebSearch.swift; sourceTree = "<group>"; };
+		B1A356642ADA652C0006828E /* Email.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Email.swift; sourceTree = "<group>"; };
+		B1A356662ADA65860006828E /* PhonePad.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhonePad.swift; sourceTree = "<group>"; };
+		B1A356682ADA65C40006828E /* AsciiCapableNumberPad.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AsciiCapableNumberPad.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +115,14 @@
 				B1A3562C2AD901D50006828E /* KeyboardTypesApp.swift */,
 				B1A3562E2AD901D50006828E /* ContentView.swift */,
 				B1A356582ADA61120006828E /* AsciiCapable.swift */,
+				B1A3565A2ADA63050006828E /* NumbersAndPunctuation.swift */,
+				B1A3565C2ADA636C0006828E /* URL.swift */,
+				B1A3565E2ADA64560006828E /* Twitter.swift */,
+				B1A356602ADA64990006828E /* NamePhonePad.swift */,
+				B1A356622ADA64F10006828E /* WebSearch.swift */,
+				B1A356642ADA652C0006828E /* Email.swift */,
+				B1A356662ADA65860006828E /* PhonePad.swift */,
+				B1A356682ADA65C40006828E /* AsciiCapableNumberPad.swift */,
 				B1A356302AD901D80006828E /* Assets.xcassets */,
 				B1A356322AD901D80006828E /* Preview Content */,
 			);
@@ -260,9 +284,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B1A3565D2ADA636C0006828E /* URL.swift in Sources */,
+				B1A356692ADA65C40006828E /* AsciiCapableNumberPad.swift in Sources */,
+				B1A356612ADA64990006828E /* NamePhonePad.swift in Sources */,
+				B1A3565F2ADA64560006828E /* Twitter.swift in Sources */,
 				B1A3562F2AD901D50006828E /* ContentView.swift in Sources */,
 				B1A356592ADA61120006828E /* AsciiCapable.swift in Sources */,
+				B1A356652ADA652C0006828E /* Email.swift in Sources */,
 				B1A3562D2AD901D50006828E /* KeyboardTypesApp.swift in Sources */,
+				B1A356632ADA64F10006828E /* WebSearch.swift in Sources */,
+				B1A356672ADA65860006828E /* PhonePad.swift in Sources */,
+				B1A3565B2ADA63050006828E /* NumbersAndPunctuation.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

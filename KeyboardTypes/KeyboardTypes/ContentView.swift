@@ -13,82 +13,25 @@ struct ContentView: View {
     let textPlaceholder = "Text Placeholder"
     var body: some View {
         List {
-            VStack(spacing: 15) {
-                
-                Text("Alphabetical")
-                    .font(.largeTitle)
-                    .padding()
-                
-                HStack {
-                    AsciiCapable(myText: $myText)
-                    
-                    VStack(alignment: .leading) {
-                        Text("numbersAndPunctuation")
-                        TextField(textPlaceholder, text: $myText)
-                            .keyboardType(.numbersAndPunctuation)
-                    }
-                }
-                
-                Divider()
-                
-                HStack {
-                    VStack(alignment: .leading) {
-                        Text("URL")
-                        TextField(textPlaceholder, text: $myText)
-                            .keyboardType(.URL)
-                    }
-                    
-                    VStack(alignment: .leading) {
-                        Text("twitter")
-                        TextField(textPlaceholder, text: $myText)
-                            .keyboardType(.twitter)
-                    }
-                }
-                
-                Divider()
-                
-                HStack {
-                    VStack(alignment: .leading) {
-                        Text("namePhonePad")
-                        TextField(textPlaceholder, text: $myText)
-                            .keyboardType(.namePhonePad)
-                    }
-                    
-                    VStack(alignment: .leading) {
-                        Text("websearch")
-                        TextField(textPlaceholder, text: $myText)
-                            .keyboardType(.webSearch)
-                    }
-                }
-                
-                Divider()
-                
-                HStack {
-                    VStack(alignment: .leading) {
-                        Text("emailAddress")
-                        TextField(textPlaceholder, text: $myText)
-                            .keyboardType(.emailAddress)
-                    }
-                }
-                                
-                Text("Num Pads")
-                    .font(.largeTitle)
-                    .padding()
-                
-                HStack {
-                    VStack(alignment: .leading) {
-                        Text("phonePad")
-                        TextField(textPlaceholder, text: $myText)
-                            .keyboardType(.phonePad)
-                    }
-                    
-                    VStack(alignment: .leading) {
-                        Text("asciiCapableNumberPad")
-                        TextField(textPlaceholder, text: $myText)
-                            .keyboardType(.asciiCapableNumberPad)
-                    }
-                }
-            }
+            
+            AsciiCapable(myText: $myText)
+            
+            NumbersAndPunctuation(myText: $myText)
+            
+            URL(myText: $myText)
+
+            Twitter(myText: $myText)
+            
+            NamePhonePad(myText: $myText)
+            
+            WebSearch(myText: $myText)
+            
+            Email(myText: $myText)
+            
+            PhonePad(myText: $myText)
+            
+            AsciiCapableNumberPad(myText: $myText)
+            
             .onTapGesture {
                 
                 UIApplication.shared.windows.filter {$0.isKeyWindow}.first?.endEditing(true)
