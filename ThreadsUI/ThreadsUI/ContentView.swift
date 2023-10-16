@@ -65,6 +65,8 @@ struct ContentView: View {
                                 .fill(Color.blue)
                                 .shadow(radius: 5)
                         }
+                        .offset(x: item == "CD" ? -10 : 0)
+                        .offset(x: item == "EF" ? -20 : 0)
                 }
                 
                 Text("1.2 mil followers · rickroll.net/about")
