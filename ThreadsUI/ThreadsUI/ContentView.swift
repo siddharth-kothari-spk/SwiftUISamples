@@ -9,6 +9,23 @@
 
 import SwiftUI
 
+private let symbols: [String] = [
+    "square.and.pencil.circle.fill",
+    "calendar.badge.plus",
+    "square.and.arrow.up.circle.fill",
+    "book.circle",
+    "pencil.tip.crop.circle.badge.plus",
+    "apple.logo",
+    "network.badge.shield.half.filled",
+    "figure.snowboarding",
+    "cloud.sun.rain.fill",
+    "circle.lefthalf.fill",
+    "lock.applewatch",
+    "staroflife.circle.fill"
+]
+
+private let columnLayout = Array(repeating: GridItem(), count: 3)
+
 struct ContentView: View {
     var body: some View {
         VStack {
@@ -125,9 +142,34 @@ struct ContentView: View {
             .fontWeight(.semibold)
             .padding(.bottom, 16)
             
-            
+           // scroll view
+            ScrollView {
+                LazyVGrid(columns: columnLayout) {
+                    ForEach(symbols, id: \.self) { index in
+                        Button {
+                            print("\(index) clicked")
+                        } label: {
+                            Image(systemName: index)
+                                .font(.largeTitle)
+                                .padding()
+                        }
+                        .buttonStyle(.plain)
+                        .contentShape(ContentShapeKinds.contextMenuPreview, Circle())
+                        .contextMenu {
+                            Button {
+                                print("context menu clicked: \(index)")
+                            } label: {
+                                Label("Share", systemImage: "square.and.arrow.up")
+                            }
+
+                        }
+                    }
+                }
+            }
+            .padding(.horizontal, 16)
         }
         .padding()
+        .background(Color.white)
     }
 }
 
