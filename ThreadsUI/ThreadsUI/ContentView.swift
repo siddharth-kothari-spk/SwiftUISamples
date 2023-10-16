@@ -22,6 +22,7 @@ struct ContentView: View {
                     Image(systemName: "plus.circle")
                         .fontWeight(.semibold)
                 }
+                .padding(.bottom, 32)
             }
         }
         .padding()
