@@ -12,10 +12,17 @@ import SwiftUI
 struct ContentView: View {
     var body: some View {
         VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundColor(.accentColor)
-            Text("Hello, world!")
+            NavigationView {
+                HStack {
+                    Image(systemName: "globe")
+                        .fontWeight(.semibold)
+                    Spacer()
+                    Text("Threads UI")
+                    Spacer()
+                    Image(systemName: "plus.circle")
+                        .fontWeight(.semibold)
+                }
+            }
         }
         .padding()
     }
