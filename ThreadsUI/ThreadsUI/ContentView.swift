@@ -43,6 +43,15 @@ struct ContentView: View {
                     }
             }
             .padding(.bottom, 16)
+            
+            // intro
+            Text("🧑🏻‍💻 Learning ObjectiveC, Swift, SwiftUI, Git, Jira\n📍 India")
+                .font(.system(size: 14))
+                .multilineTextAlignment(.leading)
+                .lineSpacing(10)
+                .frame(minWidth: 0, maxWidth: .infinity, alignment: .leading)
+                .padding(.bottom, 16)
+            
         }
         .padding()
     }
