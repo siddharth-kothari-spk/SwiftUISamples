@@ -12,18 +12,37 @@ import SwiftUI
 struct ContentView: View {
     var body: some View {
         VStack {
-            NavigationView {
-                HStack {
-                    Image(systemName: "globe")
-                        .fontWeight(.semibold)
-                    Spacer()
-                    Text("Threads UI")
-                    Spacer()
-                    Image(systemName: "plus.circle")
-                        .fontWeight(.semibold)
-                }
-                .padding(.bottom, 32)
+            // navigation view
+            HStack {
+                Image(systemName: "globe")
+                    .fontWeight(.semibold)
+                Spacer()
+                Text("Threads UI")
+                Spacer()
+                Image(systemName: "plus.circle")
+                    .fontWeight(.semibold)
             }
+            .padding(.bottom, 32)
+            
+            // About me
+            HStack {
+                VStack(alignment: .leading, spacing: 8) {
+                    Text("Siddharth Kothari")
+                        .font(.system(size: 24, weight: .bold, design: .default))
+                    Text("iOS developer")
+                        .font(.system(size: 16))
+                }
+                Spacer()
+                Image("Me")
+                    .resizable()
+                    .frame(width: 64, height: 64)
+                    .clipShape(Circle())
+                    .contextMenu {
+                        Button("Change Picture") {
+                        }
+                    }
+            }
+            .padding(.bottom, 16)
         }
         .padding()
     }
