@@ -79,6 +79,33 @@ struct ContentView: View {
             .font(.system(size: 12))
             .padding(.bottom, 16)
             
+            // edit/share profile
+            HStack {
+                Button("Edit profile") {
+                    print("edit profile tapped")
+                }
+                .frame(width: 160, height: 44, alignment: .center)
+                .foregroundColor(Color.black)
+                .background {
+                    RoundedRectangle(cornerRadius: 8)
+                        .strokeBorder(Color(uiColor: .systemGray5), lineWidth: 1)
+                        .foregroundColor(Color.white)
+                }
+                
+                Spacer()
+                
+                Button("Share profile") {
+                    print("share profile tapped")
+                }
+                .frame(width: 160, height: 44)
+                .foregroundColor(Color.black)
+                .background {
+                    RoundedRectangle(cornerRadius: 8).strokeBorder(Color(uiColor: .systemGray5), lineWidth: 1)
+                }
+            }
+            .font(.system(size: 16))
+            .fontWeight(.semibold)
+            .padding(.bottom, 16)
         }
         .padding()
     }
