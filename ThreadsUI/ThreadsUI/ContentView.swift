@@ -52,6 +52,31 @@ struct ContentView: View {
                 .frame(minWidth: 0, maxWidth: .infinity, alignment: .leading)
                 .padding(.bottom, 16)
             
+            // followers
+            HStack(spacing: 0) {
+                
+                ForEach(["AB", "CD", "EF"], id: \.self) { item in
+                    Text(item)
+                        .foregroundStyle(Color.white)
+                        .fontWeight(.bold)
+                        .padding(6)
+                        .background {
+                            Circle()
+                                .fill(Color.blue)
+                                .shadow(radius: 5)
+                        }
+                }
+                
+                Text("1.2 mil followers · rickroll.net/about")
+                    .fontWeight(.medium)
+                    .foregroundStyle(Color(uiColor: .secondaryLabel))
+                    .offset(x: -10)
+                
+                Spacer()
+            }
+            .font(.system(size: 12))
+            .padding(.bottom, 16)
+            
         }
         .padding()
     }
