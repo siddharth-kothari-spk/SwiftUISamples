@@ -106,6 +106,26 @@ struct ContentView: View {
             .font(.system(size: 16))
             .fontWeight(.semibold)
             .padding(.bottom, 16)
+            
+            // favourite/replies
+            HStack {
+                Text("Favorites")
+                    .frame(maxWidth: .infinity)
+                    .padding(.bottom, 16)
+                    .overlay(alignment: .bottom) {
+                        Rectangle()
+                            .frame(height: 1)
+                        
+                    }
+                Text("Replies")
+                    .frame(maxWidth: .infinity)
+                    .foregroundStyle(Color(uiColor: .tertiaryLabel))
+            }
+            .font(.system(size: 16))
+            .fontWeight(.semibold)
+            .padding(.bottom, 16)
+            
+            
         }
         .padding()
     }
