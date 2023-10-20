@@ -21,6 +21,10 @@ struct ContentView: View {
                   .cornerRadius(16)
                   .foregroundColor(dummyShape.color)
                   .padding(.horizontal)
+                // SwiftUI has added a new modifier toScrollView which is scrollTransition(). It allows customising the transition for views to come into and go out of the screen.
+                  .scrollTransition { emptyVisualEffect, scrollTransitionPhase in
+                      emptyVisualEffect.scaleEffect(scrollTransitionPhase.isIdentity ? 1 : 0.3)
+                  }
               }
             }
     }
