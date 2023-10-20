@@ -30,6 +30,7 @@ struct ContentView: View {
                           emptyVisualEffect.scaleEffect(scrollTransitionPhase.isIdentity ? 1 : 0.3)
                               .rotationEffect(.degrees(scrollTransitionPhase.value > 0 ? -90 : 0))
                               .opacity(scrollTransitionPhase.isIdentity ? 1 : 0.01)
+                              .blur(radius: scrollTransitionPhase.isIdentity ? 0 : 6)
                         /*  if(scrollTransitionPhase.isIdentity) {
                               .rotation3DEffect(Angle(degrees: 10), axis: (x: 1, y: 1, z: 1))
                           } else {
@@ -55,6 +56,7 @@ struct ContentView: View {
                               emptyVisualEffect.scaleEffect(scrollTransitionPhase.isIdentity ? 1 : 0.3)
                                   .rotation3DEffect(Angle(degrees: 25), axis: (x: 2, y: 1, z: 1))
                                   .opacity(scrollTransitionPhase.isIdentity ? 1 : 0.01)
+                                  .blur(radius: scrollTransitionPhase.isIdentity ? 0 : 6)
                           }
                       }
                 })
