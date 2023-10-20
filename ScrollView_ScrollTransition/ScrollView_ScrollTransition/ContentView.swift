@@ -28,6 +28,12 @@ struct ContentView: View {
                       .padding(.horizontal)
                       .scrollTransition { emptyVisualEffect, scrollTransitionPhase in
                           emptyVisualEffect.scaleEffect(scrollTransitionPhase.isIdentity ? 1 : 0.3)
+                              .rotationEffect(.degrees(scrollTransitionPhase.value > 0 ? -90 : 0))
+                        /*  if(scrollTransitionPhase.isIdentity) {
+                              .rotation3DEffect(Angle(degrees: 10), axis: (x: 1, y: 1, z: 1))
+                          } else {
+                              .rotation3DEffect(Angle(degrees: 100), axis: (x: 2, y: 1, z: 1))
+                          }*/
                       }
                   }
             }.padding()
