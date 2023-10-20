@@ -8,25 +8,49 @@
 
 // Developers use the ScrollView design screen by adding children's views into it when it needs scrolling capability.
 
+// // SwiftUI has added a new modifier toScrollView which is scrollTransition(). It allows customising the transition for views to come into and go out of the screen.
+
 import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        ScrollView {
-            ForEach(Shapes.dummyShapes) { dummyShape in
-                Image(systemName: dummyShape.title)
-                  .resizable()
-                  .imageScale(.medium)
-                  .frame(height: 300)
-                  .cornerRadius(16)
-                  .foregroundColor(dummyShape.color)
-                  .padding(.horizontal)
-                // SwiftUI has added a new modifier toScrollView which is scrollTransition(). It allows customising the transition for views to come into and go out of the screen.
-                  .scrollTransition { emptyVisualEffect, scrollTransitionPhase in
-                      emptyVisualEffect.scaleEffect(scrollTransitionPhase.isIdentity ? 1 : 0.3)
+        VStack {
+            // Vertical
+            Text("Vertical").font(.largeTitle)
+            ScrollView {
+                ForEach(Shapes.dummyShapes) { dummyShape in
+                    Image(systemName: dummyShape.title)
+                      .resizable()
+                      .imageScale(.medium)
+                      .frame(width: 200,height: 200)
+                      .cornerRadius(16)
+                      .foregroundColor(dummyShape.color)
+                      .padding(.horizontal)
+                      .scrollTransition { emptyVisualEffect, scrollTransitionPhase in
+                          emptyVisualEffect.scaleEffect(scrollTransitionPhase.isIdentity ? 1 : 0.3)
+                      }
                   }
-              }
-            }
+            }.padding()
+            
+            // Horizontal
+            Text("Horizontal").font(.largeTitle)
+            ScrollView(.horizontal) {
+                HStack(content: {
+                    ForEach(Shapes.dummyShapes) { dummyShape in
+                        Image(systemName: dummyShape.title)
+                          .resizable()
+                          .imageScale(.medium)
+                          .frame(width: 80, height:80)
+                          .cornerRadius(16)
+                          .foregroundColor(dummyShape.color)
+                          .padding(.horizontal)
+                          .scrollTransition { emptyVisualEffect, scrollTransitionPhase in
+                              emptyVisualEffect.scaleEffect(scrollTransitionPhase.isIdentity ? 1 : 0.3)
+                          }
+                      }
+                })
+            }.padding()
+        }
     }
 }
 
