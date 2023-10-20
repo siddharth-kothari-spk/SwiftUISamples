@@ -31,6 +31,7 @@ struct ContentView: View {
                               .rotationEffect(.degrees(scrollTransitionPhase.value > 0 ? -90 : 0))
                               .opacity(scrollTransitionPhase.isIdentity ? 1 : 0.01)
                               .blur(radius: scrollTransitionPhase.isIdentity ? 0 : 6)
+                              .offset(x: offset(for:scrollTransitionPhase))
                         /*  if(scrollTransitionPhase.isIdentity) {
                               .rotation3DEffect(Angle(degrees: 10), axis: (x: 1, y: 1, z: 1))
                           } else {
@@ -57,12 +58,23 @@ struct ContentView: View {
                                   .rotation3DEffect(Angle(degrees: 25), axis: (x: 2, y: 1, z: 1))
                                   .opacity(scrollTransitionPhase.isIdentity ? 1 : 0.01)
                                   .blur(radius: scrollTransitionPhase.isIdentity ? 0 : 6)
+                                  .offset(x: offset(for:scrollTransitionPhase))
                           }
                       }
                 })
             }.padding()
         }
     }
+    private func offset(for phase: ScrollTransitionPhase) -> Double {
+        switch phase {
+        case .topLeading:
+          -200
+        case .identity:
+          0
+        case .bottomTrailing:
+          200
+        }
+      }
 }
 
 #Preview {
