@@ -12,13 +12,17 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("Hello, world!")
-        }
-        .padding()
+        ScrollView {
+            ForEach(Shapes.dummyShapes) { dummyShape in
+                Image(systemName: dummyShape.title)
+                  .resizable()
+                  .imageScale(.medium)
+                  .frame(height: 300)
+                  .cornerRadius(16)
+                  .foregroundColor(dummyShape.color)
+                  .padding(.horizontal)
+              }
+            }
     }
 }
 

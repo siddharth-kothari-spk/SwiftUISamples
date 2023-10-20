@@ -6,13 +6,14 @@
 //
 
 import Foundation
+import SwiftUI
 
 struct Shapes: Identifiable {
   let id = UUID()
   let title: String
   let color: Color
   
-  static let dummyMovies: [Shapes] = [
+  static let dummyShapes: [Shapes] = [
     Shapes(title: "a.square.fill", color: .red),
     Shapes(title: "b.circle", color: .green),
     Shapes(title: "c.square.fill", color: .blue),
