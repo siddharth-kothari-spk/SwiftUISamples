@@ -14,6 +14,7 @@
 		B15E566F2AE2369600647756 /* ScrollView_ScrollTransitionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B15E566E2AE2369600647756 /* ScrollView_ScrollTransitionTests.swift */; };
 		B15E56792AE2369600647756 /* ScrollView_ScrollTransitionUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B15E56782AE2369600647756 /* ScrollView_ScrollTransitionUITests.swift */; };
 		B15E567B2AE2369600647756 /* ScrollView_ScrollTransitionUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B15E567A2AE2369600647756 /* ScrollView_ScrollTransitionUITestsLaunchTests.swift */; };
+		B15E56882AE2386000647756 /* Shapes.swift in Sources */ = {isa = PBXBuildFile; fileRef = B15E56872AE2386000647756 /* Shapes.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +45,7 @@
 		B15E56742AE2369600647756 /* ScrollView_ScrollTransitionUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ScrollView_ScrollTransitionUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B15E56782AE2369600647756 /* ScrollView_ScrollTransitionUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrollView_ScrollTransitionUITests.swift; sourceTree = "<group>"; };
 		B15E567A2AE2369600647756 /* ScrollView_ScrollTransitionUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrollView_ScrollTransitionUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		B15E56872AE2386000647756 /* Shapes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Shapes.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,6 +98,7 @@
 			children = (
 				B15E565D2AE2369400647756 /* ScrollView_ScrollTransitionApp.swift */,
 				B15E565F2AE2369400647756 /* ContentView.swift */,
+				B15E56872AE2386000647756 /* Shapes.swift */,
 				B15E56612AE2369600647756 /* Assets.xcassets */,
 				B15E56632AE2369600647756 /* Preview Content */,
 			);
@@ -259,6 +262,7 @@
 			files = (
 				B15E56602AE2369400647756 /* ContentView.swift in Sources */,
 				B15E565E2AE2369400647756 /* ScrollView_ScrollTransitionApp.swift in Sources */,
+				B15E56882AE2386000647756 /* Shapes.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -6,6 +6,8 @@
 //
 // courtsey: https://santoshbotre01.medium.com/elevate-your-apps-user-experience-exploring-scrollview-scrolltransition-api-in-swiftui-with-ios-2c259025fab2
 
+// Developers use the ScrollView design screen by adding children's views into it when it needs scrolling capability.
+
 import SwiftUI
 
 struct ContentView: View {
