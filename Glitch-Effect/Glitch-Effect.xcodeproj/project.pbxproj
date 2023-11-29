@@ -14,6 +14,7 @@
 		B1E3C5DE2B1770C300B84D5F /* Glitch_EffectTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1E3C5DD2B1770C300B84D5F /* Glitch_EffectTests.swift */; };
 		B1E3C5E82B1770C300B84D5F /* Glitch_EffectUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1E3C5E72B1770C300B84D5F /* Glitch_EffectUITests.swift */; };
 		B1E3C5EA2B1770C300B84D5F /* Glitch_EffectUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1E3C5E92B1770C300B84D5F /* Glitch_EffectUITestsLaunchTests.swift */; };
+		B1E3C5F72B17712A00B84D5F /* GlitchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1E3C5F62B17712A00B84D5F /* GlitchView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +45,7 @@
 		B1E3C5E32B1770C300B84D5F /* Glitch-EffectUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Glitch-EffectUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B1E3C5E72B1770C300B84D5F /* Glitch_EffectUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Glitch_EffectUITests.swift; sourceTree = "<group>"; };
 		B1E3C5E92B1770C300B84D5F /* Glitch_EffectUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Glitch_EffectUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		B1E3C5F62B17712A00B84D5F /* GlitchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlitchView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,6 +98,7 @@
 			children = (
 				B1E3C5CC2B1770C100B84D5F /* Glitch_EffectApp.swift */,
 				B1E3C5CE2B1770C100B84D5F /* ContentView.swift */,
+				B1E3C5F62B17712A00B84D5F /* GlitchView.swift */,
 				B1E3C5D02B1770C300B84D5F /* Assets.xcassets */,
 				B1E3C5D22B1770C300B84D5F /* Preview Content */,
 			);
@@ -257,6 +260,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B1E3C5F72B17712A00B84D5F /* GlitchView.swift in Sources */,
 				B1E3C5CF2B1770C100B84D5F /* ContentView.swift in Sources */,
 				B1E3C5CD2B1770C100B84D5F /* Glitch_EffectApp.swift in Sources */,
 			);

@@ -5,17 +5,12 @@
 //  Created by Siddharth Kothari on 29/11/23.
 //
 
+// courtsey : https://blog.devgenius.io/implementing-tiktok-like-glitch-for-apple-b3c891303668
 import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("Hello, world!")
-        }
-        .padding()
+        GlitchView()
     }
 }
 
