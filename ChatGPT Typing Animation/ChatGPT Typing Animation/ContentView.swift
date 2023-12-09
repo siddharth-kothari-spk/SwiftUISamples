@@ -44,6 +44,7 @@ struct ContentView: View {
                     .shadow(radius: 10)
             }
             Spacer()
+            TypedView(input, speed: 0.1, isStarted: $isStarted)
         }
         .padding()
     }
