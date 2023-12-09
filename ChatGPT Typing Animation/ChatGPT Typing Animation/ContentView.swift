@@ -35,6 +35,13 @@ struct ContentView: View {
                 }
             } label: {
                 Text("Start")
+                    .font(.title2)
+                    .fontWeight(.bold)
+                    .padding()
+                    .foregroundStyle(Color.white)
+                    .background(Color.green.opacity(0.5))
+                    .clipShape(RoundedRectangle(cornerRadius: 10))
+                    .shadow(radius: 10)
             }
         }
         .padding()
