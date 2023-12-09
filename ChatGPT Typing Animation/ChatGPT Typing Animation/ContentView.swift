@@ -29,12 +29,16 @@ struct ContentView: View {
     
     var body: some View {
         VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("Hello, world!")
+            Button {
+                withAnimation {
+                    isStarted.toggle()
+                }
+            } label: {
+                Text("Start")
+            }
         }
         .padding()
+        Spacer()
     }
 }
 
