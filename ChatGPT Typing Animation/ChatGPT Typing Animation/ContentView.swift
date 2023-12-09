@@ -39,13 +39,13 @@ struct ContentView: View {
                     .fontWeight(.bold)
                     .padding()
                     .foregroundStyle(Color.white)
-                    .background(Color.green.opacity(0.5))
+                    .background(Color.orange.opacity(0.5))
                     .clipShape(RoundedRectangle(cornerRadius: 10))
                     .shadow(radius: 10)
             }
+            Spacer()
         }
         .padding()
-        Spacer()
     }
 }
 
