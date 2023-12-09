@@ -1,0 +1,593 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		B18668042B24194E006A3DDD /* ChatGPT_Typing_AnimationApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B18668032B24194E006A3DDD /* ChatGPT_Typing_AnimationApp.swift */; };
+		B18668062B24194E006A3DDD /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B18668052B24194E006A3DDD /* ContentView.swift */; };
+		B18668082B241950006A3DDD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B18668072B241950006A3DDD /* Assets.xcassets */; };
+		B186680B2B241950006A3DDD /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B186680A2B241950006A3DDD /* Preview Assets.xcassets */; };
+		B18668152B241950006A3DDD /* ChatGPT_Typing_AnimationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B18668142B241950006A3DDD /* ChatGPT_Typing_AnimationTests.swift */; };
+		B186681F2B241950006A3DDD /* ChatGPT_Typing_AnimationUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B186681E2B241950006A3DDD /* ChatGPT_Typing_AnimationUITests.swift */; };
+		B18668212B241950006A3DDD /* ChatGPT_Typing_AnimationUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B18668202B241950006A3DDD /* ChatGPT_Typing_AnimationUITestsLaunchTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		B18668112B241950006A3DDD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B18667F82B24194E006A3DDD /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B18667FF2B24194E006A3DDD;
+			remoteInfo = "ChatGPT Typing Animation";
+		};
+		B186681B2B241950006A3DDD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B18667F82B24194E006A3DDD /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B18667FF2B24194E006A3DDD;
+			remoteInfo = "ChatGPT Typing Animation";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		B18668002B24194E006A3DDD /* ChatGPT Typing Animation.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ChatGPT Typing Animation.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B18668032B24194E006A3DDD /* ChatGPT_Typing_AnimationApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatGPT_Typing_AnimationApp.swift; sourceTree = "<group>"; };
+		B18668052B24194E006A3DDD /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		B18668072B241950006A3DDD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		B186680A2B241950006A3DDD /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		B18668102B241950006A3DDD /* ChatGPT Typing AnimationTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "ChatGPT Typing AnimationTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B18668142B241950006A3DDD /* ChatGPT_Typing_AnimationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatGPT_Typing_AnimationTests.swift; sourceTree = "<group>"; };
+		B186681A2B241950006A3DDD /* ChatGPT Typing AnimationUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "ChatGPT Typing AnimationUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B186681E2B241950006A3DDD /* ChatGPT_Typing_AnimationUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatGPT_Typing_AnimationUITests.swift; sourceTree = "<group>"; };
+		B18668202B241950006A3DDD /* ChatGPT_Typing_AnimationUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatGPT_Typing_AnimationUITestsLaunchTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B18667FD2B24194E006A3DDD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B186680D2B241950006A3DDD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B18668172B241950006A3DDD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		B18667F72B24194E006A3DDD = {
+			isa = PBXGroup;
+			children = (
+				B18668022B24194E006A3DDD /* ChatGPT Typing Animation */,
+				B18668132B241950006A3DDD /* ChatGPT Typing AnimationTests */,
+				B186681D2B241950006A3DDD /* ChatGPT Typing AnimationUITests */,
+				B18668012B24194E006A3DDD /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		B18668012B24194E006A3DDD /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B18668002B24194E006A3DDD /* ChatGPT Typing Animation.app */,
+				B18668102B241950006A3DDD /* ChatGPT Typing AnimationTests.xctest */,
+				B186681A2B241950006A3DDD /* ChatGPT Typing AnimationUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B18668022B24194E006A3DDD /* ChatGPT Typing Animation */ = {
+			isa = PBXGroup;
+			children = (
+				B18668032B24194E006A3DDD /* ChatGPT_Typing_AnimationApp.swift */,
+				B18668052B24194E006A3DDD /* ContentView.swift */,
+				B18668072B241950006A3DDD /* Assets.xcassets */,
+				B18668092B241950006A3DDD /* Preview Content */,
+			);
+			path = "ChatGPT Typing Animation";
+			sourceTree = "<group>";
+		};
+		B18668092B241950006A3DDD /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				B186680A2B241950006A3DDD /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		B18668132B241950006A3DDD /* ChatGPT Typing AnimationTests */ = {
+			isa = PBXGroup;
+			children = (
+				B18668142B241950006A3DDD /* ChatGPT_Typing_AnimationTests.swift */,
+			);
+			path = "ChatGPT Typing AnimationTests";
+			sourceTree = "<group>";
+		};
+		B186681D2B241950006A3DDD /* ChatGPT Typing AnimationUITests */ = {
+			isa = PBXGroup;
+			children = (
+				B186681E2B241950006A3DDD /* ChatGPT_Typing_AnimationUITests.swift */,
+				B18668202B241950006A3DDD /* ChatGPT_Typing_AnimationUITestsLaunchTests.swift */,
+			);
+			path = "ChatGPT Typing AnimationUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		B18667FF2B24194E006A3DDD /* ChatGPT Typing Animation */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B18668242B241950006A3DDD /* Build configuration list for PBXNativeTarget "ChatGPT Typing Animation" */;
+			buildPhases = (
+				B18667FC2B24194E006A3DDD /* Sources */,
+				B18667FD2B24194E006A3DDD /* Frameworks */,
+				B18667FE2B24194E006A3DDD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "ChatGPT Typing Animation";
+			productName = "ChatGPT Typing Animation";
+			productReference = B18668002B24194E006A3DDD /* ChatGPT Typing Animation.app */;
+			productType = "com.apple.product-type.application";
+		};
+		B186680F2B241950006A3DDD /* ChatGPT Typing AnimationTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B18668272B241950006A3DDD /* Build configuration list for PBXNativeTarget "ChatGPT Typing AnimationTests" */;
+			buildPhases = (
+				B186680C2B241950006A3DDD /* Sources */,
+				B186680D2B241950006A3DDD /* Frameworks */,
+				B186680E2B241950006A3DDD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B18668122B241950006A3DDD /* PBXTargetDependency */,
+			);
+			name = "ChatGPT Typing AnimationTests";
+			productName = "ChatGPT Typing AnimationTests";
+			productReference = B18668102B241950006A3DDD /* ChatGPT Typing AnimationTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		B18668192B241950006A3DDD /* ChatGPT Typing AnimationUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B186682A2B241950006A3DDD /* Build configuration list for PBXNativeTarget "ChatGPT Typing AnimationUITests" */;
+			buildPhases = (
+				B18668162B241950006A3DDD /* Sources */,
+				B18668172B241950006A3DDD /* Frameworks */,
+				B18668182B241950006A3DDD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B186681C2B241950006A3DDD /* PBXTargetDependency */,
+			);
+			name = "ChatGPT Typing AnimationUITests";
+			productName = "ChatGPT Typing AnimationUITests";
+			productReference = B186681A2B241950006A3DDD /* ChatGPT Typing AnimationUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B18667F82B24194E006A3DDD /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1500;
+				LastUpgradeCheck = 1500;
+				TargetAttributes = {
+					B18667FF2B24194E006A3DDD = {
+						CreatedOnToolsVersion = 15.0;
+					};
+					B186680F2B241950006A3DDD = {
+						CreatedOnToolsVersion = 15.0;
+						TestTargetID = B18667FF2B24194E006A3DDD;
+					};
+					B18668192B241950006A3DDD = {
+						CreatedOnToolsVersion = 15.0;
+						TestTargetID = B18667FF2B24194E006A3DDD;
+					};
+				};
+			};
+			buildConfigurationList = B18667FB2B24194E006A3DDD /* Build configuration list for PBXProject "ChatGPT Typing Animation" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = B18667F72B24194E006A3DDD;
+			productRefGroup = B18668012B24194E006A3DDD /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B18667FF2B24194E006A3DDD /* ChatGPT Typing Animation */,
+				B186680F2B241950006A3DDD /* ChatGPT Typing AnimationTests */,
+				B18668192B241950006A3DDD /* ChatGPT Typing AnimationUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B18667FE2B24194E006A3DDD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B186680B2B241950006A3DDD /* Preview Assets.xcassets in Resources */,
+				B18668082B241950006A3DDD /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B186680E2B241950006A3DDD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B18668182B241950006A3DDD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B18667FC2B24194E006A3DDD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B18668062B24194E006A3DDD /* ContentView.swift in Sources */,
+				B18668042B24194E006A3DDD /* ChatGPT_Typing_AnimationApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B186680C2B241950006A3DDD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B18668152B241950006A3DDD /* ChatGPT_Typing_AnimationTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B18668162B241950006A3DDD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B18668212B241950006A3DDD /* ChatGPT_Typing_AnimationUITestsLaunchTests.swift in Sources */,
+				B186681F2B241950006A3DDD /* ChatGPT_Typing_AnimationUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		B18668122B241950006A3DDD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B18667FF2B24194E006A3DDD /* ChatGPT Typing Animation */;
+			targetProxy = B18668112B241950006A3DDD /* PBXContainerItemProxy */;
+		};
+		B186681C2B241950006A3DDD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B18667FF2B24194E006A3DDD /* ChatGPT Typing Animation */;
+			targetProxy = B186681B2B241950006A3DDD /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		B18668222B241950006A3DDD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		B18668232B241950006A3DDD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		B18668252B241950006A3DDD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"ChatGPT Typing Animation/Preview Content\"";
+				DEVELOPMENT_TEAM = Q4WH2ZZWCT;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.siddharthkothari.ChatGPT-Typing-Animation";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		B18668262B241950006A3DDD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"ChatGPT Typing Animation/Preview Content\"";
+				DEVELOPMENT_TEAM = Q4WH2ZZWCT;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.siddharthkothari.ChatGPT-Typing-Animation";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		B18668282B241950006A3DDD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = Q4WH2ZZWCT;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.siddharthkothari.ChatGPT-Typing-AnimationTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ChatGPT Typing Animation.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/ChatGPT Typing Animation";
+			};
+			name = Debug;
+		};
+		B18668292B241950006A3DDD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = Q4WH2ZZWCT;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.siddharthkothari.ChatGPT-Typing-AnimationTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ChatGPT Typing Animation.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/ChatGPT Typing Animation";
+			};
+			name = Release;
+		};
+		B186682B2B241950006A3DDD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = Q4WH2ZZWCT;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.siddharthkothari.ChatGPT-Typing-AnimationUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "ChatGPT Typing Animation";
+			};
+			name = Debug;
+		};
+		B186682C2B241950006A3DDD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = Q4WH2ZZWCT;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.siddharthkothari.ChatGPT-Typing-AnimationUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "ChatGPT Typing Animation";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B18667FB2B24194E006A3DDD /* Build configuration list for PBXProject "ChatGPT Typing Animation" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B18668222B241950006A3DDD /* Debug */,
+				B18668232B241950006A3DDD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B18668242B241950006A3DDD /* Build configuration list for PBXNativeTarget "ChatGPT Typing Animation" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B18668252B241950006A3DDD /* Debug */,
+				B18668262B241950006A3DDD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B18668272B241950006A3DDD /* Build configuration list for PBXNativeTarget "ChatGPT Typing AnimationTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B18668282B241950006A3DDD /* Debug */,
+				B18668292B241950006A3DDD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B186682A2B241950006A3DDD /* Build configuration list for PBXNativeTarget "ChatGPT Typing AnimationUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B186682B2B241950006A3DDD /* Debug */,
+				B186682C2B241950006A3DDD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = B18667F82B24194E006A3DDD /* Project object */;
+}
