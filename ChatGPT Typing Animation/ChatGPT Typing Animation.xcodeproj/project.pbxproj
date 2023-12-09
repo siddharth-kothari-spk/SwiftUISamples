@@ -14,6 +14,7 @@
 		B18668152B241950006A3DDD /* ChatGPT_Typing_AnimationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B18668142B241950006A3DDD /* ChatGPT_Typing_AnimationTests.swift */; };
 		B186681F2B241950006A3DDD /* ChatGPT_Typing_AnimationUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B186681E2B241950006A3DDD /* ChatGPT_Typing_AnimationUITests.swift */; };
 		B18668212B241950006A3DDD /* ChatGPT_Typing_AnimationUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B18668202B241950006A3DDD /* ChatGPT_Typing_AnimationUITestsLaunchTests.swift */; };
+		B186682E2B241B50006A3DDD /* TypedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B186682D2B241B50006A3DDD /* TypedView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +45,7 @@
 		B186681A2B241950006A3DDD /* ChatGPT Typing AnimationUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "ChatGPT Typing AnimationUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B186681E2B241950006A3DDD /* ChatGPT_Typing_AnimationUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatGPT_Typing_AnimationUITests.swift; sourceTree = "<group>"; };
 		B18668202B241950006A3DDD /* ChatGPT_Typing_AnimationUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatGPT_Typing_AnimationUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		B186682D2B241B50006A3DDD /* TypedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TypedView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,6 +98,7 @@
 			children = (
 				B18668032B24194E006A3DDD /* ChatGPT_Typing_AnimationApp.swift */,
 				B18668052B24194E006A3DDD /* ContentView.swift */,
+				B186682D2B241B50006A3DDD /* TypedView.swift */,
 				B18668072B241950006A3DDD /* Assets.xcassets */,
 				B18668092B241950006A3DDD /* Preview Content */,
 			);
@@ -259,6 +262,7 @@
 			files = (
 				B18668062B24194E006A3DDD /* ContentView.swift in Sources */,
 				B18668042B24194E006A3DDD /* ChatGPT_Typing_AnimationApp.swift in Sources */,
+				B186682E2B241B50006A3DDD /* TypedView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
