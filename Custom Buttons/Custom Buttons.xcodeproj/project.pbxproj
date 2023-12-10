@@ -28,6 +28,7 @@
 		B18668BD2B257191006A3DDD /* DashedBorderButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = B18668BC2B257191006A3DDD /* DashedBorderButton.swift */; };
 		B18668BF2B257286006A3DDD /* DashedIconButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = B18668BE2B257286006A3DDD /* DashedIconButton.swift */; };
 		B18668C12B257302006A3DDD /* RadioButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = B18668C02B257302006A3DDD /* RadioButton.swift */; };
+		B18668C32B25742C006A3DDD /* CheckmarkButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = B18668C22B25742C006A3DDD /* CheckmarkButton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -72,6 +73,7 @@
 		B18668BC2B257191006A3DDD /* DashedBorderButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashedBorderButton.swift; sourceTree = "<group>"; };
 		B18668BE2B257286006A3DDD /* DashedIconButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashedIconButton.swift; sourceTree = "<group>"; };
 		B18668C02B257302006A3DDD /* RadioButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RadioButton.swift; sourceTree = "<group>"; };
+		B18668C22B25742C006A3DDD /* CheckmarkButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckmarkButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -173,6 +175,7 @@
 				B18668BC2B257191006A3DDD /* DashedBorderButton.swift */,
 				B18668BE2B257286006A3DDD /* DashedIconButton.swift */,
 				B18668C02B257302006A3DDD /* RadioButton.swift */,
+				B18668C22B25742C006A3DDD /* CheckmarkButton.swift */,
 			);
 			path = "Button Views";
 			sourceTree = "<group>";
@@ -307,6 +310,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B18668C32B25742C006A3DDD /* CheckmarkButton.swift in Sources */,
 				B18668BD2B257191006A3DDD /* DashedBorderButton.swift in Sources */,
 				B18668AD2B256B1C006A3DDD /* IconButton.swift in Sources */,
 				B18668A72B25633F006A3DDD /* FillButton.swift in Sources */,

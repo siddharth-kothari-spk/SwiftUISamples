@@ -29,6 +29,7 @@ struct ContentView: View {
                 TextWrappedButton()
                 DashedBorderButton()
                 RadioButton()
+                CheckmarkButton()
             }
             .padding(.all, Constants.customPadding)
         }
