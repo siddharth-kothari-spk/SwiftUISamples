@@ -19,11 +19,12 @@ struct ContentView: View {
                 HStack(content: {
                     IconButton()
                     CircleIconButton()
+                    CaptionIconButton()
+                    ToggleIconButton()
                 })
                 TextWithImageButton()
                 LinkButton()
                 IconButtonWithFullWidth()
-                CaptionIconButton()
             }
             .padding(.all, Constants.customPadding)
         }
