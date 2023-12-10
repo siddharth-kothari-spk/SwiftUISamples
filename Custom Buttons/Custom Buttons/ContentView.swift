@@ -21,6 +21,7 @@ struct ContentView: View {
                     CircleIconButton()
                     CaptionIconButton()
                     ToggleIconButton()
+                    DashedIconButton()
                 })
                 TextWithImageButton()
                 LinkButton()

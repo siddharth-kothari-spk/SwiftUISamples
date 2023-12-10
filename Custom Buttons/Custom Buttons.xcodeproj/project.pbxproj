@@ -26,6 +26,7 @@
 		B18668B92B257020006A3DDD /* ToggleIconButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = B18668B82B257020006A3DDD /* ToggleIconButton.swift */; };
 		B18668BB2B2570EF006A3DDD /* TextWrappedButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = B18668BA2B2570EF006A3DDD /* TextWrappedButton.swift */; };
 		B18668BD2B257191006A3DDD /* DashedBorderButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = B18668BC2B257191006A3DDD /* DashedBorderButton.swift */; };
+		B18668BF2B257286006A3DDD /* DashedIconButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = B18668BE2B257286006A3DDD /* DashedIconButton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -68,6 +69,7 @@
 		B18668B82B257020006A3DDD /* ToggleIconButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToggleIconButton.swift; sourceTree = "<group>"; };
 		B18668BA2B2570EF006A3DDD /* TextWrappedButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextWrappedButton.swift; sourceTree = "<group>"; };
 		B18668BC2B257191006A3DDD /* DashedBorderButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashedBorderButton.swift; sourceTree = "<group>"; };
+		B18668BE2B257286006A3DDD /* DashedIconButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashedIconButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -167,6 +169,7 @@
 				B18668B82B257020006A3DDD /* ToggleIconButton.swift */,
 				B18668BA2B2570EF006A3DDD /* TextWrappedButton.swift */,
 				B18668BC2B257191006A3DDD /* DashedBorderButton.swift */,
+				B18668BE2B257286006A3DDD /* DashedIconButton.swift */,
 			);
 			path = "Button Views";
 			sourceTree = "<group>";
@@ -315,6 +318,7 @@
 				B18668A92B2564A9006A3DDD /* Constants.swift in Sources */,
 				B18668AF2B256C00006A3DDD /* CircleIconButton.swift in Sources */,
 				B18668B72B256F2A006A3DDD /* CaptionIconButton.swift in Sources */,
+				B18668BF2B257286006A3DDD /* DashedIconButton.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
