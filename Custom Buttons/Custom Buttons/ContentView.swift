@@ -15,6 +15,7 @@ struct ContentView: View {
         ScrollView {
             VStack {
                 FillButton()
+                BorderButton()
             }
             .padding(.all, Constants.customPadding)
         }
