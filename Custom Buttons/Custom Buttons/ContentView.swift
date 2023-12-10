@@ -30,6 +30,7 @@ struct ContentView: View {
                 DashedBorderButton()
                 RadioButton()
                 CheckmarkButton()
+                FullWidthCheckmarkButton()
             }
             .padding(.all, Constants.customPadding)
         }
