@@ -16,7 +16,10 @@ struct ContentView: View {
             VStack {
                 FillButton()
                 BorderButton()
-                IconButton()
+                HStack(content: {
+                    IconButton()
+                    CircleIconButton()
+                })
             }
             .padding(.all, Constants.customPadding)
         }
