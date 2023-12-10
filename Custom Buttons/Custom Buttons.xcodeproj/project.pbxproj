@@ -32,6 +32,8 @@
 		B18668C52B2574A5006A3DDD /* FullWidthCheckmarkButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = B18668C42B2574A5006A3DDD /* FullWidthCheckmarkButton.swift */; };
 		B18668C72B257596006A3DDD /* ModernButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = B18668C62B257596006A3DDD /* ModernButton.swift */; };
 		B18668C92B257654006A3DDD /* ModernButton2.swift in Sources */ = {isa = PBXBuildFile; fileRef = B18668C82B257654006A3DDD /* ModernButton2.swift */; };
+		B18668CB2B257710006A3DDD /* ButtonWithCustomEffect.swift in Sources */ = {isa = PBXBuildFile; fileRef = B18668CA2B257710006A3DDD /* ButtonWithCustomEffect.swift */; };
+		B18668CD2B257732006A3DDD /* ButtonPressedEffect.swift in Sources */ = {isa = PBXBuildFile; fileRef = B18668CC2B257732006A3DDD /* ButtonPressedEffect.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -80,6 +82,8 @@
 		B18668C42B2574A5006A3DDD /* FullWidthCheckmarkButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FullWidthCheckmarkButton.swift; sourceTree = "<group>"; };
 		B18668C62B257596006A3DDD /* ModernButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModernButton.swift; sourceTree = "<group>"; };
 		B18668C82B257654006A3DDD /* ModernButton2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModernButton2.swift; sourceTree = "<group>"; };
+		B18668CA2B257710006A3DDD /* ButtonWithCustomEffect.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonWithCustomEffect.swift; sourceTree = "<group>"; };
+		B18668CC2B257732006A3DDD /* ButtonPressedEffect.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonPressedEffect.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -133,6 +137,7 @@
 				B186687B2B2562F1006A3DDD /* Custom_ButtonsApp.swift */,
 				B186687D2B2562F1006A3DDD /* ContentView.swift */,
 				B18668A82B2564A9006A3DDD /* Constants.swift */,
+				B18668CC2B257732006A3DDD /* ButtonPressedEffect.swift */,
 				B18668A52B256302006A3DDD /* Button Views */,
 				B186687F2B2562F3006A3DDD /* Assets.xcassets */,
 				B18668812B2562F3006A3DDD /* Preview Content */,
@@ -185,6 +190,7 @@
 				B18668C42B2574A5006A3DDD /* FullWidthCheckmarkButton.swift */,
 				B18668C62B257596006A3DDD /* ModernButton.swift */,
 				B18668C82B257654006A3DDD /* ModernButton2.swift */,
+				B18668CA2B257710006A3DDD /* ButtonWithCustomEffect.swift */,
 			);
 			path = "Button Views";
 			sourceTree = "<group>";
@@ -320,12 +326,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				B18668C32B25742C006A3DDD /* CheckmarkButton.swift in Sources */,
+				B18668CD2B257732006A3DDD /* ButtonPressedEffect.swift in Sources */,
 				B18668BD2B257191006A3DDD /* DashedBorderButton.swift in Sources */,
 				B18668AD2B256B1C006A3DDD /* IconButton.swift in Sources */,
 				B18668A72B25633F006A3DDD /* FillButton.swift in Sources */,
 				B18668B52B256ECC006A3DDD /* IconButtonWithFullWidth.swift in Sources */,
 				B18668C92B257654006A3DDD /* ModernButton2.swift in Sources */,
 				B186687E2B2562F1006A3DDD /* ContentView.swift in Sources */,
+				B18668CB2B257710006A3DDD /* ButtonWithCustomEffect.swift in Sources */,
 				B186687C2B2562F1006A3DDD /* Custom_ButtonsApp.swift in Sources */,
 				B18668B12B256C89006A3DDD /* TextWithImageButton.swift in Sources */,
 				B18668C12B257302006A3DDD /* RadioButton.swift in Sources */,
