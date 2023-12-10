@@ -24,6 +24,7 @@
 		B18668B52B256ECC006A3DDD /* IconButtonWithFullWidth.swift in Sources */ = {isa = PBXBuildFile; fileRef = B18668B42B256ECC006A3DDD /* IconButtonWithFullWidth.swift */; };
 		B18668B72B256F2A006A3DDD /* CaptionIconButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = B18668B62B256F2A006A3DDD /* CaptionIconButton.swift */; };
 		B18668B92B257020006A3DDD /* ToggleIconButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = B18668B82B257020006A3DDD /* ToggleIconButton.swift */; };
+		B18668BB2B2570EF006A3DDD /* TextWrappedButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = B18668BA2B2570EF006A3DDD /* TextWrappedButton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -64,6 +65,7 @@
 		B18668B42B256ECC006A3DDD /* IconButtonWithFullWidth.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IconButtonWithFullWidth.swift; sourceTree = "<group>"; };
 		B18668B62B256F2A006A3DDD /* CaptionIconButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CaptionIconButton.swift; sourceTree = "<group>"; };
 		B18668B82B257020006A3DDD /* ToggleIconButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToggleIconButton.swift; sourceTree = "<group>"; };
+		B18668BA2B2570EF006A3DDD /* TextWrappedButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextWrappedButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -161,6 +163,7 @@
 				B18668B42B256ECC006A3DDD /* IconButtonWithFullWidth.swift */,
 				B18668B62B256F2A006A3DDD /* CaptionIconButton.swift */,
 				B18668B82B257020006A3DDD /* ToggleIconButton.swift */,
+				B18668BA2B2570EF006A3DDD /* TextWrappedButton.swift */,
 			);
 			path = "Button Views";
 			sourceTree = "<group>";
@@ -301,6 +304,7 @@
 				B186687E2B2562F1006A3DDD /* ContentView.swift in Sources */,
 				B186687C2B2562F1006A3DDD /* Custom_ButtonsApp.swift in Sources */,
 				B18668B12B256C89006A3DDD /* TextWithImageButton.swift in Sources */,
+				B18668BB2B2570EF006A3DDD /* TextWrappedButton.swift in Sources */,
 				B18668AB2B25695E006A3DDD /* BorderButton.swift in Sources */,
 				B18668B32B256E0A006A3DDD /* LinkButton.swift in Sources */,
 				B18668B92B257020006A3DDD /* ToggleIconButton.swift in Sources */,

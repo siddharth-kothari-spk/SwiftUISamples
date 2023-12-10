@@ -25,6 +25,7 @@ struct ContentView: View {
                 TextWithImageButton()
                 LinkButton()
                 IconButtonWithFullWidth()
+                TextWrappedButton()
             }
             .padding(.all, Constants.customPadding)
         }
