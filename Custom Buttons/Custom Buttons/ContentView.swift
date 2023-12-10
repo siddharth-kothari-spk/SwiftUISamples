@@ -21,6 +21,7 @@ struct ContentView: View {
                     CircleIconButton()
                 })
                 TextWithImageButton()
+                LinkButton()
             }
             .padding(.all, Constants.customPadding)
         }
