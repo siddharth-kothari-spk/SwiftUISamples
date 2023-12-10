@@ -23,6 +23,8 @@ class Constants {
     }
     
     static var customPadding: CGFloat = 8.0
+    
+    static var customTextWidth: CGFloat = 80.0
 }
 
 

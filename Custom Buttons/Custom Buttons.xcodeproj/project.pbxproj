@@ -22,6 +22,7 @@
 		B18668B12B256C89006A3DDD /* TextWithImageButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = B18668B02B256C89006A3DDD /* TextWithImageButton.swift */; };
 		B18668B32B256E0A006A3DDD /* LinkButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = B18668B22B256E0A006A3DDD /* LinkButton.swift */; };
 		B18668B52B256ECC006A3DDD /* IconButtonWithFullWidth.swift in Sources */ = {isa = PBXBuildFile; fileRef = B18668B42B256ECC006A3DDD /* IconButtonWithFullWidth.swift */; };
+		B18668B72B256F2A006A3DDD /* CaptionIconButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = B18668B62B256F2A006A3DDD /* CaptionIconButton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -60,6 +61,7 @@
 		B18668B02B256C89006A3DDD /* TextWithImageButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextWithImageButton.swift; sourceTree = "<group>"; };
 		B18668B22B256E0A006A3DDD /* LinkButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LinkButton.swift; sourceTree = "<group>"; };
 		B18668B42B256ECC006A3DDD /* IconButtonWithFullWidth.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IconButtonWithFullWidth.swift; sourceTree = "<group>"; };
+		B18668B62B256F2A006A3DDD /* CaptionIconButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CaptionIconButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -155,6 +157,7 @@
 				B18668B02B256C89006A3DDD /* TextWithImageButton.swift */,
 				B18668B22B256E0A006A3DDD /* LinkButton.swift */,
 				B18668B42B256ECC006A3DDD /* IconButtonWithFullWidth.swift */,
+				B18668B62B256F2A006A3DDD /* CaptionIconButton.swift */,
 			);
 			path = "Button Views";
 			sourceTree = "<group>";
@@ -299,6 +302,7 @@
 				B18668B32B256E0A006A3DDD /* LinkButton.swift in Sources */,
 				B18668A92B2564A9006A3DDD /* Constants.swift in Sources */,
 				B18668AF2B256C00006A3DDD /* CircleIconButton.swift in Sources */,
+				B18668B72B256F2A006A3DDD /* CaptionIconButton.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
