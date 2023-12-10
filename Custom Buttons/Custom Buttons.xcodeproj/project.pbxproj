@@ -30,6 +30,7 @@
 		B18668C12B257302006A3DDD /* RadioButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = B18668C02B257302006A3DDD /* RadioButton.swift */; };
 		B18668C32B25742C006A3DDD /* CheckmarkButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = B18668C22B25742C006A3DDD /* CheckmarkButton.swift */; };
 		B18668C52B2574A5006A3DDD /* FullWidthCheckmarkButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = B18668C42B2574A5006A3DDD /* FullWidthCheckmarkButton.swift */; };
+		B18668C72B257596006A3DDD /* ModernButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = B18668C62B257596006A3DDD /* ModernButton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -76,6 +77,7 @@
 		B18668C02B257302006A3DDD /* RadioButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RadioButton.swift; sourceTree = "<group>"; };
 		B18668C22B25742C006A3DDD /* CheckmarkButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckmarkButton.swift; sourceTree = "<group>"; };
 		B18668C42B2574A5006A3DDD /* FullWidthCheckmarkButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FullWidthCheckmarkButton.swift; sourceTree = "<group>"; };
+		B18668C62B257596006A3DDD /* ModernButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModernButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -179,6 +181,7 @@
 				B18668C02B257302006A3DDD /* RadioButton.swift */,
 				B18668C22B25742C006A3DDD /* CheckmarkButton.swift */,
 				B18668C42B2574A5006A3DDD /* FullWidthCheckmarkButton.swift */,
+				B18668C62B257596006A3DDD /* ModernButton.swift */,
 			);
 			path = "Button Views";
 			sourceTree = "<group>";
@@ -328,6 +331,7 @@
 				B18668B32B256E0A006A3DDD /* LinkButton.swift in Sources */,
 				B18668B92B257020006A3DDD /* ToggleIconButton.swift in Sources */,
 				B18668A92B2564A9006A3DDD /* Constants.swift in Sources */,
+				B18668C72B257596006A3DDD /* ModernButton.swift in Sources */,
 				B18668AF2B256C00006A3DDD /* CircleIconButton.swift in Sources */,
 				B18668B72B256F2A006A3DDD /* CaptionIconButton.swift in Sources */,
 				B18668BF2B257286006A3DDD /* DashedIconButton.swift in Sources */,

@@ -31,6 +31,7 @@ struct ContentView: View {
                 RadioButton()
                 CheckmarkButton()
                 FullWidthCheckmarkButton()
+                ModernButton()
             }
             .padding(.all, Constants.customPadding)
         }
