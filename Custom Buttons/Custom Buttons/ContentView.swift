@@ -28,6 +28,7 @@ struct ContentView: View {
                 IconButtonWithFullWidth()
                 TextWrappedButton()
                 DashedBorderButton()
+                RadioButton()
             }
             .padding(.all, Constants.customPadding)
         }

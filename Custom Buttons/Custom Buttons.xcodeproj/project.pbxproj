@@ -27,6 +27,7 @@
 		B18668BB2B2570EF006A3DDD /* TextWrappedButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = B18668BA2B2570EF006A3DDD /* TextWrappedButton.swift */; };
 		B18668BD2B257191006A3DDD /* DashedBorderButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = B18668BC2B257191006A3DDD /* DashedBorderButton.swift */; };
 		B18668BF2B257286006A3DDD /* DashedIconButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = B18668BE2B257286006A3DDD /* DashedIconButton.swift */; };
+		B18668C12B257302006A3DDD /* RadioButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = B18668C02B257302006A3DDD /* RadioButton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -70,6 +71,7 @@
 		B18668BA2B2570EF006A3DDD /* TextWrappedButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextWrappedButton.swift; sourceTree = "<group>"; };
 		B18668BC2B257191006A3DDD /* DashedBorderButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashedBorderButton.swift; sourceTree = "<group>"; };
 		B18668BE2B257286006A3DDD /* DashedIconButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashedIconButton.swift; sourceTree = "<group>"; };
+		B18668C02B257302006A3DDD /* RadioButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RadioButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -170,6 +172,7 @@
 				B18668BA2B2570EF006A3DDD /* TextWrappedButton.swift */,
 				B18668BC2B257191006A3DDD /* DashedBorderButton.swift */,
 				B18668BE2B257286006A3DDD /* DashedIconButton.swift */,
+				B18668C02B257302006A3DDD /* RadioButton.swift */,
 			);
 			path = "Button Views";
 			sourceTree = "<group>";
@@ -311,6 +314,7 @@
 				B186687E2B2562F1006A3DDD /* ContentView.swift in Sources */,
 				B186687C2B2562F1006A3DDD /* Custom_ButtonsApp.swift in Sources */,
 				B18668B12B256C89006A3DDD /* TextWithImageButton.swift in Sources */,
+				B18668C12B257302006A3DDD /* RadioButton.swift in Sources */,
 				B18668BB2B2570EF006A3DDD /* TextWrappedButton.swift in Sources */,
 				B18668AB2B25695E006A3DDD /* BorderButton.swift in Sources */,
 				B18668B32B256E0A006A3DDD /* LinkButton.swift in Sources */,
