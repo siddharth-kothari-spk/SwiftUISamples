@@ -13,8 +13,8 @@ struct IconButton: View {
             print("IconButton pressed")
         } label: {
             Image(systemName: "house.fill")
+                .foregroundStyle(.white)
                 .frame(width: Constants.customHeight, height: Constants.customHeight)
-                .foregroundColor(.white)
                 .background(.black)
                 .cornerRadius(Constants.customCornerRadius * 0.5)
         }

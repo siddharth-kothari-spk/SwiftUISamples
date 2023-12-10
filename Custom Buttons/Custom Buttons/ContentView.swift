@@ -20,6 +20,7 @@ struct ContentView: View {
                     IconButton()
                     CircleIconButton()
                 })
+                TextWithImageButton()
             }
             .padding(.all, Constants.customPadding)
         }

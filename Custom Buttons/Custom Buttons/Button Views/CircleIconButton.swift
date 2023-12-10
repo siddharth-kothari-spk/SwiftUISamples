@@ -13,8 +13,8 @@ struct CircleIconButton: View {
             print("CircleIconButton pressed")
         } label: {
             Image(systemName: "house.fill")
+                .foregroundStyle(.white)
                 .frame(width: Constants.customHeight, height: Constants.customHeight)
-                .foregroundColor(.white)
                 .background(.black)
                 .cornerRadius(Constants.customCornerRadius)
         }
