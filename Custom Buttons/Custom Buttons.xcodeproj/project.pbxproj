@@ -17,6 +17,7 @@
 		B18668A72B25633F006A3DDD /* FillButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = B18668A62B25633F006A3DDD /* FillButton.swift */; };
 		B18668A92B2564A9006A3DDD /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = B18668A82B2564A9006A3DDD /* Constants.swift */; };
 		B18668AB2B25695E006A3DDD /* BorderButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = B18668AA2B25695E006A3DDD /* BorderButton.swift */; };
+		B18668AD2B256B1C006A3DDD /* IconButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = B18668AC2B256B1C006A3DDD /* IconButton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,6 +51,7 @@
 		B18668A62B25633F006A3DDD /* FillButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FillButton.swift; sourceTree = "<group>"; };
 		B18668A82B2564A9006A3DDD /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		B18668AA2B25695E006A3DDD /* BorderButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BorderButton.swift; sourceTree = "<group>"; };
+		B18668AC2B256B1C006A3DDD /* IconButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IconButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -140,6 +142,7 @@
 			children = (
 				B18668A62B25633F006A3DDD /* FillButton.swift */,
 				B18668AA2B25695E006A3DDD /* BorderButton.swift */,
+				B18668AC2B256B1C006A3DDD /* IconButton.swift */,
 			);
 			path = "Button Views";
 			sourceTree = "<group>";
@@ -274,6 +277,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B18668AD2B256B1C006A3DDD /* IconButton.swift in Sources */,
 				B18668A72B25633F006A3DDD /* FillButton.swift in Sources */,
 				B186687E2B2562F1006A3DDD /* ContentView.swift in Sources */,
 				B186687C2B2562F1006A3DDD /* Custom_ButtonsApp.swift in Sources */,

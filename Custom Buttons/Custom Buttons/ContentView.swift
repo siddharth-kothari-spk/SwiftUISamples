@@ -16,6 +16,7 @@ struct ContentView: View {
             VStack {
                 FillButton()
                 BorderButton()
+                IconButton()
             }
             .padding(.all, Constants.customPadding)
         }
