@@ -1,5 +1,5 @@
 //
-//  ModernButton.swift
+//  ModernButton2.swift
 //  Custom Buttons
 //
 //  Created by Siddharth Kothari on 10/12/23.
@@ -7,33 +7,33 @@
 
 import SwiftUI
 
-struct ModernButton: View {
+struct ModernButton2: View {
     var body: some View {
         Button {
-            print("ModernButton pressed")
+            print("ModernButton2 pressed")
         } label: {
             ZStack(alignment: .leading) {
-                Text("Modern Button")
+                Text("Modern Button2")
                     .foregroundStyle(.black)
                     .font(.system(size: Constants.customFontSize, weight: Constants.customFontWeight))
-                    .padding()
-                    .padding(.leading, Constants.customHeight)
+                    .padding(12)
+                    .padding(.leading, 30)
                     .overlay {
                         RoundedRectangle(cornerRadius: 25)
                             .stroke(.black)
                     }
                 
                 Image(systemName: "house.fill")
-                    .frame(width: Constants.customHeight, height: Constants.customHeight)
+                    .frame(width: 70, height: 70)
                     .foregroundStyle(.white)
                     .background(.black)
-                    .cornerRadius(26)
-                    .offset(x: -1)
+                    .cornerRadius(35)
+                    .offset(x: -40)
             }
         }
     }
 }
 
 #Preview {
-    ModernButton()
+    ModernButton2()
 }

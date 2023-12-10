@@ -32,6 +32,7 @@ struct ContentView: View {
                 CheckmarkButton()
                 FullWidthCheckmarkButton()
                 ModernButton()
+                ModernButton2()
             }
             .padding(.all, Constants.customPadding)
         }
