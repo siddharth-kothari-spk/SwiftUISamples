@@ -33,3 +33,25 @@ struct ContentView: View {
      ForEach uses this range of indices. id: \.self is used to identify each element uniquely.
      Inside the ForEach loop, items[index] is used to access each item using the index.
  */
+
+
+// 2. Using indices property
+struct ContentView2: View {
+    let items = ["Milk", "Bread", "Cookies", "Tea"]
+
+    var body: some View {
+        VStack {
+            ForEach(items.indices, id: \.self) { index in
+                Text("\(index): \(items[index])")
+            }
+        }
+    }
+}
+
+/*
+ In this example:
+
+     items.indices gives you a range of indices for the items array.
+     ForEach uses this range of indices. id: \.self is used to identify each element uniquely.
+     Inside the ForEach loop, items[index] is used to access each item using the index.
+ */
