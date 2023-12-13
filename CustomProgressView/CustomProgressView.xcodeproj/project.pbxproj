@@ -20,6 +20,7 @@
 		B186690B2B29F532006A3DDD /* MultiCircleLoaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B186690A2B29F532006A3DDD /* MultiCircleLoaderView.swift */; };
 		B186690D2B29F584006A3DDD /* SquareLoaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B186690C2B29F584006A3DDD /* SquareLoaderView.swift */; };
 		B186690F2B29F5EA006A3DDD /* AnimatedStrokeRectangle.swift in Sources */ = {isa = PBXBuildFile; fileRef = B186690E2B29F5EA006A3DDD /* AnimatedStrokeRectangle.swift */; };
+		B18669112B29F642006A3DDD /* AnimatedStrokeTriangle.swift in Sources */ = {isa = PBXBuildFile; fileRef = B18669102B29F642006A3DDD /* AnimatedStrokeTriangle.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,6 +57,7 @@
 		B186690A2B29F532006A3DDD /* MultiCircleLoaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MultiCircleLoaderView.swift; sourceTree = "<group>"; };
 		B186690C2B29F584006A3DDD /* SquareLoaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SquareLoaderView.swift; sourceTree = "<group>"; };
 		B186690E2B29F5EA006A3DDD /* AnimatedStrokeRectangle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimatedStrokeRectangle.swift; sourceTree = "<group>"; };
+		B18669102B29F642006A3DDD /* AnimatedStrokeTriangle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimatedStrokeTriangle.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -114,6 +116,7 @@
 				B186690A2B29F532006A3DDD /* MultiCircleLoaderView.swift */,
 				B186690C2B29F584006A3DDD /* SquareLoaderView.swift */,
 				B186690E2B29F5EA006A3DDD /* AnimatedStrokeRectangle.swift */,
+				B18669102B29F642006A3DDD /* AnimatedStrokeTriangle.swift */,
 				B18668DE2B29F36A006A3DDD /* Assets.xcassets */,
 				B18668E02B29F36A006A3DDD /* Preview Content */,
 			);
@@ -278,6 +281,7 @@
 				B186690F2B29F5EA006A3DDD /* AnimatedStrokeRectangle.swift in Sources */,
 				B18668DD2B29F368006A3DDD /* ContentView.swift in Sources */,
 				B18669092B29F4A6006A3DDD /* RotateCircleAroundCircle.swift in Sources */,
+				B18669112B29F642006A3DDD /* AnimatedStrokeTriangle.swift in Sources */,
 				B186690D2B29F584006A3DDD /* SquareLoaderView.swift in Sources */,
 				B18668DB2B29F368006A3DDD /* CustomProgressViewApp.swift in Sources */,
 				B186690B2B29F532006A3DDD /* MultiCircleLoaderView.swift in Sources */,
