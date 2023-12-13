@@ -30,7 +30,7 @@ struct ContentView: View {
             }).padding()
             
             CircleFillLoaderView()
-            
+            CirclesLoaderView()
         }
         .padding()
     }
