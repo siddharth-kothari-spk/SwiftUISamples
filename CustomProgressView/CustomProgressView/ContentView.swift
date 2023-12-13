@@ -13,6 +13,7 @@ struct ContentView: View {
     var body: some View {
         ScrollView {
             CircularLoaderView()
+            RotateImageLoaderView()
         }
         .padding(/*@START_MENU_TOKEN@*/EdgeInsets()/*@END_MENU_TOKEN@*/)
     }

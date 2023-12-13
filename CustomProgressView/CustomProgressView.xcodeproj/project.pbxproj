@@ -15,6 +15,7 @@
 		B18668F62B29F36A006A3DDD /* CustomProgressViewUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B18668F52B29F36A006A3DDD /* CustomProgressViewUITests.swift */; };
 		B18668F82B29F36A006A3DDD /* CustomProgressViewUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B18668F72B29F36A006A3DDD /* CustomProgressViewUITestsLaunchTests.swift */; };
 		B18669052B29F3B5006A3DDD /* CircularLoaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B18669042B29F3B5006A3DDD /* CircularLoaderView.swift */; };
+		B18669072B29F447006A3DDD /* RotateImageLoaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B18669062B29F447006A3DDD /* RotateImageLoaderView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,6 +47,7 @@
 		B18668F52B29F36A006A3DDD /* CustomProgressViewUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomProgressViewUITests.swift; sourceTree = "<group>"; };
 		B18668F72B29F36A006A3DDD /* CustomProgressViewUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomProgressViewUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		B18669042B29F3B5006A3DDD /* CircularLoaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircularLoaderView.swift; sourceTree = "<group>"; };
+		B18669062B29F447006A3DDD /* RotateImageLoaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RotateImageLoaderView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +101,7 @@
 				B18668DA2B29F368006A3DDD /* CustomProgressViewApp.swift */,
 				B18668DC2B29F368006A3DDD /* ContentView.swift */,
 				B18669042B29F3B5006A3DDD /* CircularLoaderView.swift */,
+				B18669062B29F447006A3DDD /* RotateImageLoaderView.swift */,
 				B18668DE2B29F36A006A3DDD /* Assets.xcassets */,
 				B18668E02B29F36A006A3DDD /* Preview Content */,
 			);
@@ -262,6 +265,7 @@
 			files = (
 				B18668DD2B29F368006A3DDD /* ContentView.swift in Sources */,
 				B18668DB2B29F368006A3DDD /* CustomProgressViewApp.swift in Sources */,
+				B18669072B29F447006A3DDD /* RotateImageLoaderView.swift in Sources */,
 				B18669052B29F3B5006A3DDD /* CircularLoaderView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
