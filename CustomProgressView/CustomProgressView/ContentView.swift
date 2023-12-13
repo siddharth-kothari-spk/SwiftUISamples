@@ -29,6 +29,8 @@ struct ContentView: View {
                 AnimatedStrokeCircle()
             }).padding()
             
+            CircleFillLoaderView()
+            
         }
         .padding()
     }
