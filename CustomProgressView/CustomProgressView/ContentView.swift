@@ -15,6 +15,7 @@ struct ContentView: View {
             CircularLoaderView()
             RotateImageLoaderView()
             RotateCircleAroundCircle()
+            MultiCircleLoaderView()
         }
         .padding(/*@START_MENU_TOKEN@*/EdgeInsets()/*@END_MENU_TOKEN@*/)
     }
