@@ -25,6 +25,7 @@
 		B18669152B29F73E006A3DDD /* CircleFillLoaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B18669142B29F73E006A3DDD /* CircleFillLoaderView.swift */; };
 		B18669172B29F7A2006A3DDD /* CirclesLoaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B18669162B29F7A2006A3DDD /* CirclesLoaderView.swift */; };
 		B18669192B29F7F2006A3DDD /* ModernCircularLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = B18669182B29F7F2006A3DDD /* ModernCircularLoader.swift */; };
+		B186691B2B29F854006A3DDD /* DashCircleLoaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B186691A2B29F854006A3DDD /* DashCircleLoaderView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -66,6 +67,7 @@
 		B18669142B29F73E006A3DDD /* CircleFillLoaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleFillLoaderView.swift; sourceTree = "<group>"; };
 		B18669162B29F7A2006A3DDD /* CirclesLoaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CirclesLoaderView.swift; sourceTree = "<group>"; };
 		B18669182B29F7F2006A3DDD /* ModernCircularLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModernCircularLoader.swift; sourceTree = "<group>"; };
+		B186691A2B29F854006A3DDD /* DashCircleLoaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashCircleLoaderView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -129,6 +131,7 @@
 				B18669142B29F73E006A3DDD /* CircleFillLoaderView.swift */,
 				B18669162B29F7A2006A3DDD /* CirclesLoaderView.swift */,
 				B18669182B29F7F2006A3DDD /* ModernCircularLoader.swift */,
+				B186691A2B29F854006A3DDD /* DashCircleLoaderView.swift */,
 				B18668DE2B29F36A006A3DDD /* Assets.xcassets */,
 				B18668E02B29F36A006A3DDD /* Preview Content */,
 			);
@@ -299,6 +302,7 @@
 				B18668DB2B29F368006A3DDD /* CustomProgressViewApp.swift in Sources */,
 				B18669152B29F73E006A3DDD /* CircleFillLoaderView.swift in Sources */,
 				B186690B2B29F532006A3DDD /* MultiCircleLoaderView.swift in Sources */,
+				B186691B2B29F854006A3DDD /* DashCircleLoaderView.swift in Sources */,
 				B18669172B29F7A2006A3DDD /* CirclesLoaderView.swift in Sources */,
 				B18669072B29F447006A3DDD /* RotateImageLoaderView.swift in Sources */,
 				B18669052B29F3B5006A3DDD /* CircularLoaderView.swift in Sources */,
