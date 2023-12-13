@@ -18,6 +18,7 @@
 		B18669072B29F447006A3DDD /* RotateImageLoaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B18669062B29F447006A3DDD /* RotateImageLoaderView.swift */; };
 		B18669092B29F4A6006A3DDD /* RotateCircleAroundCircle.swift in Sources */ = {isa = PBXBuildFile; fileRef = B18669082B29F4A6006A3DDD /* RotateCircleAroundCircle.swift */; };
 		B186690B2B29F532006A3DDD /* MultiCircleLoaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B186690A2B29F532006A3DDD /* MultiCircleLoaderView.swift */; };
+		B186690D2B29F584006A3DDD /* SquareLoaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B186690C2B29F584006A3DDD /* SquareLoaderView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,6 +53,7 @@
 		B18669062B29F447006A3DDD /* RotateImageLoaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RotateImageLoaderView.swift; sourceTree = "<group>"; };
 		B18669082B29F4A6006A3DDD /* RotateCircleAroundCircle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RotateCircleAroundCircle.swift; sourceTree = "<group>"; };
 		B186690A2B29F532006A3DDD /* MultiCircleLoaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MultiCircleLoaderView.swift; sourceTree = "<group>"; };
+		B186690C2B29F584006A3DDD /* SquareLoaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SquareLoaderView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -108,6 +110,7 @@
 				B18669062B29F447006A3DDD /* RotateImageLoaderView.swift */,
 				B18669082B29F4A6006A3DDD /* RotateCircleAroundCircle.swift */,
 				B186690A2B29F532006A3DDD /* MultiCircleLoaderView.swift */,
+				B186690C2B29F584006A3DDD /* SquareLoaderView.swift */,
 				B18668DE2B29F36A006A3DDD /* Assets.xcassets */,
 				B18668E02B29F36A006A3DDD /* Preview Content */,
 			);
@@ -271,6 +274,7 @@
 			files = (
 				B18668DD2B29F368006A3DDD /* ContentView.swift in Sources */,
 				B18669092B29F4A6006A3DDD /* RotateCircleAroundCircle.swift in Sources */,
+				B186690D2B29F584006A3DDD /* SquareLoaderView.swift in Sources */,
 				B18668DB2B29F368006A3DDD /* CustomProgressViewApp.swift in Sources */,
 				B186690B2B29F532006A3DDD /* MultiCircleLoaderView.swift in Sources */,
 				B18669072B29F447006A3DDD /* RotateImageLoaderView.swift in Sources */,
