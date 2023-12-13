@@ -12,15 +12,25 @@ import SwiftUI
 struct ContentView: View {
     var body: some View {
         ScrollView {
-            CircularLoaderView()
-            RotateImageLoaderView()
-            RotateCircleAroundCircle()
-            MultiCircleLoaderView()
-            SquareLoaderView()
-            AnimatedStrokeRectangle()
-            AnimatedStrokeTriangle()
+            HStack(content: {
+                CircularLoaderView()
+                RotateImageLoaderView()
+            }).padding()
+            
+            HStack(content: {
+                RotateCircleAroundCircle()
+                MultiCircleLoaderView()
+                SquareLoaderView()
+            }).padding()
+            
+            HStack(content: {
+                AnimatedStrokeRectangle()
+                AnimatedStrokeTriangle()
+                AnimatedStrokeCircle()
+            }).padding()
+            
         }
-        .padding(/*@START_MENU_TOKEN@*/EdgeInsets()/*@END_MENU_TOKEN@*/)
+        .padding()
     }
 }
 
