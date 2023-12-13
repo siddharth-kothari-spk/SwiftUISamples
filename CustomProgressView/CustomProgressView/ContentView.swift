@@ -29,8 +29,12 @@ struct ContentView: View {
                 AnimatedStrokeCircle()
             }).padding()
             
-            CircleFillLoaderView()
-            CirclesLoaderView()
+            HStack(content: {
+                CircleFillLoaderView()
+                CirclesLoaderView()
+                ModernCircularLoader()
+            })
+            
         }
         .padding()
     }
