@@ -26,6 +26,7 @@
 		B18669172B29F7A2006A3DDD /* CirclesLoaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B18669162B29F7A2006A3DDD /* CirclesLoaderView.swift */; };
 		B18669192B29F7F2006A3DDD /* ModernCircularLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = B18669182B29F7F2006A3DDD /* ModernCircularLoader.swift */; };
 		B186691B2B29F854006A3DDD /* DashCircleLoaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B186691A2B29F854006A3DDD /* DashCircleLoaderView.swift */; };
+		B186691D2B29F8AB006A3DDD /* BottomToTopFill.swift in Sources */ = {isa = PBXBuildFile; fileRef = B186691C2B29F8AB006A3DDD /* BottomToTopFill.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -68,6 +69,7 @@
 		B18669162B29F7A2006A3DDD /* CirclesLoaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CirclesLoaderView.swift; sourceTree = "<group>"; };
 		B18669182B29F7F2006A3DDD /* ModernCircularLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModernCircularLoader.swift; sourceTree = "<group>"; };
 		B186691A2B29F854006A3DDD /* DashCircleLoaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashCircleLoaderView.swift; sourceTree = "<group>"; };
+		B186691C2B29F8AB006A3DDD /* BottomToTopFill.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BottomToTopFill.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -132,6 +134,7 @@
 				B18669162B29F7A2006A3DDD /* CirclesLoaderView.swift */,
 				B18669182B29F7F2006A3DDD /* ModernCircularLoader.swift */,
 				B186691A2B29F854006A3DDD /* DashCircleLoaderView.swift */,
+				B186691C2B29F8AB006A3DDD /* BottomToTopFill.swift */,
 				B18668DE2B29F36A006A3DDD /* Assets.xcassets */,
 				B18668E02B29F36A006A3DDD /* Preview Content */,
 			);
@@ -293,6 +296,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B186691D2B29F8AB006A3DDD /* BottomToTopFill.swift in Sources */,
 				B18669132B29F697006A3DDD /* AnimatedStrokeCircle.swift in Sources */,
 				B186690F2B29F5EA006A3DDD /* AnimatedStrokeRectangle.swift in Sources */,
 				B18668DD2B29F368006A3DDD /* ContentView.swift in Sources */,
