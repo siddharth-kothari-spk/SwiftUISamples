@@ -35,8 +35,12 @@ struct ContentView: View {
                 ModernCircularLoader()
             })
             
-            DashCircleLoaderView()
-            BottomToTopFill()
+            HStack(content: {
+                DashCircleLoaderView()
+                BottomToTopFill()
+                PieSegmentLoader()
+            })
+            
         }
         .padding()
     }

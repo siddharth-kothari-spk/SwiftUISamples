@@ -27,6 +27,7 @@
 		B18669192B29F7F2006A3DDD /* ModernCircularLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = B18669182B29F7F2006A3DDD /* ModernCircularLoader.swift */; };
 		B186691B2B29F854006A3DDD /* DashCircleLoaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B186691A2B29F854006A3DDD /* DashCircleLoaderView.swift */; };
 		B186691D2B29F8AB006A3DDD /* BottomToTopFill.swift in Sources */ = {isa = PBXBuildFile; fileRef = B186691C2B29F8AB006A3DDD /* BottomToTopFill.swift */; };
+		B186691F2B29F90F006A3DDD /* PieSegmentLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = B186691E2B29F90F006A3DDD /* PieSegmentLoader.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -70,6 +71,7 @@
 		B18669182B29F7F2006A3DDD /* ModernCircularLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModernCircularLoader.swift; sourceTree = "<group>"; };
 		B186691A2B29F854006A3DDD /* DashCircleLoaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashCircleLoaderView.swift; sourceTree = "<group>"; };
 		B186691C2B29F8AB006A3DDD /* BottomToTopFill.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BottomToTopFill.swift; sourceTree = "<group>"; };
+		B186691E2B29F90F006A3DDD /* PieSegmentLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PieSegmentLoader.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -135,6 +137,7 @@
 				B18669182B29F7F2006A3DDD /* ModernCircularLoader.swift */,
 				B186691A2B29F854006A3DDD /* DashCircleLoaderView.swift */,
 				B186691C2B29F8AB006A3DDD /* BottomToTopFill.swift */,
+				B186691E2B29F90F006A3DDD /* PieSegmentLoader.swift */,
 				B18668DE2B29F36A006A3DDD /* Assets.xcassets */,
 				B18668E02B29F36A006A3DDD /* Preview Content */,
 			);
@@ -305,6 +308,7 @@
 				B186690D2B29F584006A3DDD /* SquareLoaderView.swift in Sources */,
 				B18668DB2B29F368006A3DDD /* CustomProgressViewApp.swift in Sources */,
 				B18669152B29F73E006A3DDD /* CircleFillLoaderView.swift in Sources */,
+				B186691F2B29F90F006A3DDD /* PieSegmentLoader.swift in Sources */,
 				B186690B2B29F532006A3DDD /* MultiCircleLoaderView.swift in Sources */,
 				B186691B2B29F854006A3DDD /* DashCircleLoaderView.swift in Sources */,
 				B18669172B29F7A2006A3DDD /* CirclesLoaderView.swift in Sources */,
