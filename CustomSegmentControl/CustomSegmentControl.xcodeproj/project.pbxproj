@@ -15,6 +15,7 @@
 		B18669482B2B3DE2006A3DDD /* CustomSegmentControlUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B18669472B2B3DE2006A3DDD /* CustomSegmentControlUITests.swift */; };
 		B186694A2B2B3DE2006A3DDD /* CustomSegmentControlUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B18669492B2B3DE2006A3DDD /* CustomSegmentControlUITestsLaunchTests.swift */; };
 		B18669572B2B3E0C006A3DDD /* SegmentControlItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = B18669562B2B3E0C006A3DDD /* SegmentControlItem.swift */; };
+		B18669592B2B3E5E006A3DDD /* SegmentControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = B18669582B2B3E5E006A3DDD /* SegmentControl.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,6 +47,7 @@
 		B18669472B2B3DE2006A3DDD /* CustomSegmentControlUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomSegmentControlUITests.swift; sourceTree = "<group>"; };
 		B18669492B2B3DE2006A3DDD /* CustomSegmentControlUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomSegmentControlUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		B18669562B2B3E0C006A3DDD /* SegmentControlItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SegmentControlItem.swift; sourceTree = "<group>"; };
+		B18669582B2B3E5E006A3DDD /* SegmentControl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SegmentControl.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +101,7 @@
 				B186692C2B2B3DE0006A3DDD /* CustomSegmentControlApp.swift */,
 				B186692E2B2B3DE0006A3DDD /* ContentView.swift */,
 				B18669562B2B3E0C006A3DDD /* SegmentControlItem.swift */,
+				B18669582B2B3E5E006A3DDD /* SegmentControl.swift */,
 				B18669302B2B3DE2006A3DDD /* Assets.xcassets */,
 				B18669322B2B3DE2006A3DDD /* Preview Content */,
 			);
@@ -263,6 +266,7 @@
 				B186692F2B2B3DE0006A3DDD /* ContentView.swift in Sources */,
 				B18669572B2B3E0C006A3DDD /* SegmentControlItem.swift in Sources */,
 				B186692D2B2B3DE0006A3DDD /* CustomSegmentControlApp.swift in Sources */,
+				B18669592B2B3E5E006A3DDD /* SegmentControl.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
