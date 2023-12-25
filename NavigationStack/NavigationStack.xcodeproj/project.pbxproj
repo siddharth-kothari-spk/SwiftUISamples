@@ -14,6 +14,7 @@
 		B18669782B39E1C9006A3DDD /* NavigationStackTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B18669772B39E1C9006A3DDD /* NavigationStackTests.swift */; };
 		B18669822B39E1C9006A3DDD /* NavigationStackUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B18669812B39E1C9006A3DDD /* NavigationStackUITests.swift */; };
 		B18669842B39E1C9006A3DDD /* NavigationStackUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B18669832B39E1C9006A3DDD /* NavigationStackUITestsLaunchTests.swift */; };
+		B18669912B39E23F006A3DDD /* DataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B18669902B39E23F006A3DDD /* DataModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +45,7 @@
 		B186697D2B39E1C9006A3DDD /* NavigationStackUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NavigationStackUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B18669812B39E1C9006A3DDD /* NavigationStackUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationStackUITests.swift; sourceTree = "<group>"; };
 		B18669832B39E1C9006A3DDD /* NavigationStackUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationStackUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		B18669902B39E23F006A3DDD /* DataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,6 +98,7 @@
 			children = (
 				B18669662B39E1C6006A3DDD /* NavigationStackApp.swift */,
 				B18669682B39E1C6006A3DDD /* ContentView.swift */,
+				B18669902B39E23F006A3DDD /* DataModel.swift */,
 				B186696A2B39E1C9006A3DDD /* Assets.xcassets */,
 				B186696C2B39E1C9006A3DDD /* Preview Content */,
 			);
@@ -259,6 +262,7 @@
 			files = (
 				B18669692B39E1C6006A3DDD /* ContentView.swift in Sources */,
 				B18669672B39E1C6006A3DDD /* NavigationStackApp.swift in Sources */,
+				B18669912B39E23F006A3DDD /* DataModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
