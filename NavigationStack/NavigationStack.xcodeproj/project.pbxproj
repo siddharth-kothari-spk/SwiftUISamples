@@ -18,6 +18,7 @@
 		B18669932B39E2F9006A3DDD /* FirstScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = B18669922B39E2F9006A3DDD /* FirstScreen.swift */; };
 		B18669952B39E3F6006A3DDD /* SecondScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = B18669942B39E3F6006A3DDD /* SecondScreen.swift */; };
 		B18669972B3A6B13006A3DDD /* LastScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = B18669962B3A6B13006A3DDD /* LastScreen.swift */; };
+		B18669992B3A6D91006A3DDD /* ContentView2.swift in Sources */ = {isa = PBXBuildFile; fileRef = B18669982B3A6D91006A3DDD /* ContentView2.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,6 +53,7 @@
 		B18669922B39E2F9006A3DDD /* FirstScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstScreen.swift; sourceTree = "<group>"; };
 		B18669942B39E3F6006A3DDD /* SecondScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondScreen.swift; sourceTree = "<group>"; };
 		B18669962B3A6B13006A3DDD /* LastScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LastScreen.swift; sourceTree = "<group>"; };
+		B18669982B3A6D91006A3DDD /* ContentView2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView2.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,6 +106,7 @@
 			children = (
 				B18669662B39E1C6006A3DDD /* NavigationStackApp.swift */,
 				B18669682B39E1C6006A3DDD /* ContentView.swift */,
+				B18669982B3A6D91006A3DDD /* ContentView2.swift */,
 				B18669902B39E23F006A3DDD /* DataModel.swift */,
 				B18669922B39E2F9006A3DDD /* FirstScreen.swift */,
 				B18669942B39E3F6006A3DDD /* SecondScreen.swift */,
@@ -273,6 +276,7 @@
 				B18669972B3A6B13006A3DDD /* LastScreen.swift in Sources */,
 				B18669692B39E1C6006A3DDD /* ContentView.swift in Sources */,
 				B18669672B39E1C6006A3DDD /* NavigationStackApp.swift in Sources */,
+				B18669992B3A6D91006A3DDD /* ContentView2.swift in Sources */,
 				B18669912B39E23F006A3DDD /* DataModel.swift in Sources */,
 				B18669952B39E3F6006A3DDD /* SecondScreen.swift in Sources */,
 			);
