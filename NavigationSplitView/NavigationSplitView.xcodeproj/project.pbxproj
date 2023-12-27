@@ -14,6 +14,7 @@
 		B18669BA2B3BC0B6006A3DDD /* NavigationSplitViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B18669B92B3BC0B6006A3DDD /* NavigationSplitViewTests.swift */; };
 		B18669C42B3BC0B6006A3DDD /* NavigationSplitViewUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B18669C32B3BC0B6006A3DDD /* NavigationSplitViewUITests.swift */; };
 		B18669C62B3BC0B6006A3DDD /* NavigationSplitViewUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B18669C52B3BC0B6006A3DDD /* NavigationSplitViewUITestsLaunchTests.swift */; };
+		B18669D32B3BC1E1006A3DDD /* DataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B18669D22B3BC1E1006A3DDD /* DataModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +45,7 @@
 		B18669BF2B3BC0B6006A3DDD /* NavigationSplitViewUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NavigationSplitViewUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B18669C32B3BC0B6006A3DDD /* NavigationSplitViewUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationSplitViewUITests.swift; sourceTree = "<group>"; };
 		B18669C52B3BC0B6006A3DDD /* NavigationSplitViewUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationSplitViewUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		B18669D22B3BC1E1006A3DDD /* DataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,6 +98,7 @@
 			children = (
 				B18669A82B3BC0B3006A3DDD /* NavigationSplitViewApp.swift */,
 				B18669AA2B3BC0B3006A3DDD /* ContentView.swift */,
+				B18669D22B3BC1E1006A3DDD /* DataModel.swift */,
 				B18669AC2B3BC0B6006A3DDD /* Assets.xcassets */,
 				B18669AE2B3BC0B6006A3DDD /* Preview Content */,
 			);
@@ -259,6 +262,7 @@
 			files = (
 				B18669AB2B3BC0B3006A3DDD /* ContentView.swift in Sources */,
 				B18669A92B3BC0B3006A3DDD /* NavigationSplitViewApp.swift in Sources */,
+				B18669D32B3BC1E1006A3DDD /* DataModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
