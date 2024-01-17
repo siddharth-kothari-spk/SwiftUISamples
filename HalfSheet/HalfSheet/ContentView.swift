@@ -24,3 +24,14 @@ struct ContentView: View {
 #Preview {
     ContentView()
 }
+
+
+extension View {
+    // MARK: For bottom Sheet
+
+    func halfSheet<SheetView: View>(showSheet: Binding<Bool>, @ViewBuilder sheeView: @escaping () -> SheetView) -> some View {
+        return background {
+            HalfSheetHelper(sheetView: sheeView(), showSheet: showSheet)
+        }
+    }
+}
