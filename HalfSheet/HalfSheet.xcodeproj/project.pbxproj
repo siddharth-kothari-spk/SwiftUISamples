@@ -14,6 +14,8 @@
 		B1A039F92B57B64400C6D672 /* HalfSheetTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1A039F82B57B64400C6D672 /* HalfSheetTests.swift */; };
 		B1A03A032B57B64400C6D672 /* HalfSheetUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1A03A022B57B64400C6D672 /* HalfSheetUITests.swift */; };
 		B1A03A052B57B64400C6D672 /* HalfSheetUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1A03A042B57B64400C6D672 /* HalfSheetUITestsLaunchTests.swift */; };
+		B1A03A122B57B73400C6D672 /* HalfSheetHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1A03A112B57B73400C6D672 /* HalfSheetHelper.swift */; };
+		B1A03A142B57B76200C6D672 /* CustomHostingController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1A03A132B57B76200C6D672 /* CustomHostingController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +46,8 @@
 		B1A039FE2B57B64400C6D672 /* HalfSheetUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HalfSheetUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B1A03A022B57B64400C6D672 /* HalfSheetUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HalfSheetUITests.swift; sourceTree = "<group>"; };
 		B1A03A042B57B64400C6D672 /* HalfSheetUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HalfSheetUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		B1A03A112B57B73400C6D672 /* HalfSheetHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HalfSheetHelper.swift; sourceTree = "<group>"; };
+		B1A03A132B57B76200C6D672 /* CustomHostingController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomHostingController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,6 +100,8 @@
 			children = (
 				B1A039E72B57B64300C6D672 /* HalfSheetApp.swift */,
 				B1A039E92B57B64300C6D672 /* ContentView.swift */,
+				B1A03A112B57B73400C6D672 /* HalfSheetHelper.swift */,
+				B1A03A132B57B76200C6D672 /* CustomHostingController.swift */,
 				B1A039EB2B57B64400C6D672 /* Assets.xcassets */,
 				B1A039ED2B57B64400C6D672 /* Preview Content */,
 			);
@@ -258,7 +264,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				B1A039EA2B57B64300C6D672 /* ContentView.swift in Sources */,
+				B1A03A122B57B73400C6D672 /* HalfSheetHelper.swift in Sources */,
 				B1A039E82B57B64300C6D672 /* HalfSheetApp.swift in Sources */,
+				B1A03A142B57B76200C6D672 /* CustomHostingController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
