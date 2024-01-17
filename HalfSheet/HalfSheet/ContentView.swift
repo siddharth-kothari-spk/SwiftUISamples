@@ -10,13 +10,19 @@
 import SwiftUI
 
 struct ContentView: View {
+    @State private var isSheetPresented = false
+
     var body: some View {
         VStack {
             Image(systemName: "globe")
                 .imageScale(.large)
                 .foregroundStyle(.tint)
-            Text("Hello, world!")
-        }
+            Text("Hello, world!").onTapGesture {
+                isSheetPresented = true
+            }
+        }.halfSheet(showSheet: $isSheetPresented, sheeView: {
+            Text("test")
+        })
         .padding()
     }
 }
