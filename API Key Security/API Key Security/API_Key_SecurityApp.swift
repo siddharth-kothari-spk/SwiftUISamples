@@ -12,6 +12,13 @@ struct API_Key_SecurityApp: App {
     var body: some Scene {
         WindowGroup {
             ContentView()
+                .task {
+                    do {
+                        try await KeyConstants.loadAPIKeys()
+                    } catch {
+                        debugPrint(error.localizedDescription)
+                    }
+                }
         }
     }
 }
