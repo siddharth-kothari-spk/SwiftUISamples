@@ -14,6 +14,7 @@
 		B1A03A332B59429700C6D672 /* API_Key_SecurityTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1A03A322B59429700C6D672 /* API_Key_SecurityTests.swift */; };
 		B1A03A3D2B59429700C6D672 /* API_Key_SecurityUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1A03A3C2B59429700C6D672 /* API_Key_SecurityUITests.swift */; };
 		B1A03A3F2B59429700C6D672 /* API_Key_SecurityUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1A03A3E2B59429700C6D672 /* API_Key_SecurityUITestsLaunchTests.swift */; };
+		B1A03A4C2B59437000C6D672 /* APIKeys.json in Resources */ = {isa = PBXBuildFile; fileRef = B1A03A4B2B59437000C6D672 /* APIKeys.json */; settings = {ASSET_TAGS = (APIKeys, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +45,7 @@
 		B1A03A382B59429700C6D672 /* API Key SecurityUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "API Key SecurityUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B1A03A3C2B59429700C6D672 /* API_Key_SecurityUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = API_Key_SecurityUITests.swift; sourceTree = "<group>"; };
 		B1A03A3E2B59429700C6D672 /* API_Key_SecurityUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = API_Key_SecurityUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		B1A03A4B2B59437000C6D672 /* APIKeys.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = APIKeys.json; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,6 +98,7 @@
 			children = (
 				B1A03A212B59429500C6D672 /* API_Key_SecurityApp.swift */,
 				B1A03A232B59429500C6D672 /* ContentView.swift */,
+				B1A03A4B2B59437000C6D672 /* APIKeys.json */,
 				B1A03A252B59429700C6D672 /* Assets.xcassets */,
 				B1A03A272B59429700C6D672 /* Preview Content */,
 			);
@@ -190,6 +193,9 @@
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
+				KnownAssetTags = (
+					APIKeys,
+				);
 				LastSwiftUpdateCheck = 1500;
 				LastUpgradeCheck = 1500;
 				TargetAttributes = {
@@ -233,6 +239,7 @@
 			files = (
 				B1A03A292B59429700C6D672 /* Preview Assets.xcassets in Resources */,
 				B1A03A262B59429700C6D672 /* Assets.xcassets in Resources */,
+				B1A03A4C2B59437000C6D672 /* APIKeys.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
