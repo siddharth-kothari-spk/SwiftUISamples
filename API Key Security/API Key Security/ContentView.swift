@@ -10,14 +10,28 @@
 import SwiftUI
 
 struct ContentView: View {
+    
+    @State private var keys: String = ""
+    
     var body: some View {
         VStack {
             Image(systemName: "globe")
                 .imageScale(.large)
                 .foregroundStyle(.tint)
-            Text("Hello, world!")
+            Text("Hello, keys!,\n \(keys)")
+            
+            Button("Show API Keys", action: {
+                showKeys()
+            })
         }
         .padding()
+    }
+    
+    func showKeys() {
+         keys = """
+                \(KeyConstants.APIKeys.serviceA)
+                \(KeyConstants.APIKeys.serviceB)
+                """
     }
 }
 
