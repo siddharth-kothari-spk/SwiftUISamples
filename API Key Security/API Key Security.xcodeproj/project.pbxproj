@@ -15,6 +15,7 @@
 		B1A03A3D2B59429700C6D672 /* API_Key_SecurityUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1A03A3C2B59429700C6D672 /* API_Key_SecurityUITests.swift */; };
 		B1A03A3F2B59429700C6D672 /* API_Key_SecurityUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1A03A3E2B59429700C6D672 /* API_Key_SecurityUITestsLaunchTests.swift */; };
 		B1A03A4C2B59437000C6D672 /* APIKeys.json in Resources */ = {isa = PBXBuildFile; fileRef = B1A03A4B2B59437000C6D672 /* APIKeys.json */; settings = {ASSET_TAGS = (APIKeys, ); }; };
+		B1A03A4E2B59441200C6D672 /* KeyConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1A03A4D2B59441200C6D672 /* KeyConstants.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,6 +47,7 @@
 		B1A03A3C2B59429700C6D672 /* API_Key_SecurityUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = API_Key_SecurityUITests.swift; sourceTree = "<group>"; };
 		B1A03A3E2B59429700C6D672 /* API_Key_SecurityUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = API_Key_SecurityUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		B1A03A4B2B59437000C6D672 /* APIKeys.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = APIKeys.json; sourceTree = "<group>"; };
+		B1A03A4D2B59441200C6D672 /* KeyConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyConstants.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +101,7 @@
 				B1A03A212B59429500C6D672 /* API_Key_SecurityApp.swift */,
 				B1A03A232B59429500C6D672 /* ContentView.swift */,
 				B1A03A4B2B59437000C6D672 /* APIKeys.json */,
+				B1A03A4D2B59441200C6D672 /* KeyConstants.swift */,
 				B1A03A252B59429700C6D672 /* Assets.xcassets */,
 				B1A03A272B59429700C6D672 /* Preview Content */,
 			);
@@ -266,6 +269,7 @@
 			files = (
 				B1A03A242B59429500C6D672 /* ContentView.swift in Sources */,
 				B1A03A222B59429500C6D672 /* API_Key_SecurityApp.swift in Sources */,
+				B1A03A4E2B59441200C6D672 /* KeyConstants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
