@@ -14,6 +14,7 @@
 		B1A03A6D2B5A91AF00C6D672 /* Test_iOS_NotificationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1A03A6C2B5A91AF00C6D672 /* Test_iOS_NotificationTests.swift */; };
 		B1A03A772B5A91AF00C6D672 /* Test_iOS_NotificationUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1A03A762B5A91AF00C6D672 /* Test_iOS_NotificationUITests.swift */; };
 		B1A03A792B5A91AF00C6D672 /* Test_iOS_NotificationUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1A03A782B5A91AF00C6D672 /* Test_iOS_NotificationUITestsLaunchTests.swift */; };
+		B1A03A872B5A936800C6D672 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1A03A862B5A936800C6D672 /* AppDelegate.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,6 +46,7 @@
 		B1A03A762B5A91AF00C6D672 /* Test_iOS_NotificationUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Test_iOS_NotificationUITests.swift; sourceTree = "<group>"; };
 		B1A03A782B5A91AF00C6D672 /* Test_iOS_NotificationUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Test_iOS_NotificationUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		B1A03A852B5A920500C6D672 /* AlertPushNotification.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = AlertPushNotification.apns; sourceTree = "<group>"; };
+		B1A03A862B5A936800C6D672 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,6 +100,7 @@
 				B1A03A5B2B5A91AC00C6D672 /* Test_iOS_NotificationApp.swift */,
 				B1A03A5D2B5A91AC00C6D672 /* ContentView.swift */,
 				B1A03A852B5A920500C6D672 /* AlertPushNotification.apns */,
+				B1A03A862B5A936800C6D672 /* AppDelegate.swift */,
 				B1A03A5F2B5A91AF00C6D672 /* Assets.xcassets */,
 				B1A03A612B5A91AF00C6D672 /* Preview Content */,
 			);
@@ -259,6 +262,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B1A03A872B5A936800C6D672 /* AppDelegate.swift in Sources */,
 				B1A03A5E2B5A91AC00C6D672 /* ContentView.swift in Sources */,
 				B1A03A5C2B5A91AC00C6D672 /* Test_iOS_NotificationApp.swift in Sources */,
 			);
