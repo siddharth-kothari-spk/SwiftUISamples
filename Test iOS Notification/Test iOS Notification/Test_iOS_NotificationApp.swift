@@ -18,3 +18,13 @@ struct Test_iOS_NotificationApp: App {
         }
     }
 }
+
+/* via terminal
+ 
+ Simulator identifier: 94FE4029-4410-4D6A-BBB9-EFBDBEB73DD6
+ Bundle identifier: com.siddharthkothari.Test-iOS-Notification
+ Payload path: /Users/siddharthkothari/Documents/TestProjects/SwiftUISamples/Test iOS Notification/Test iOS Notification/AlertPushNotification.apns
+ 
+ run on terminal:
+ xcrun simctl push "Simulator identifier" "Bundle identifier" "Payload path"
+ */
