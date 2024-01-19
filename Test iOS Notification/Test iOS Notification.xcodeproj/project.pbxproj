@@ -44,6 +44,7 @@
 		B1A03A722B5A91AF00C6D672 /* Test iOS NotificationUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Test iOS NotificationUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B1A03A762B5A91AF00C6D672 /* Test_iOS_NotificationUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Test_iOS_NotificationUITests.swift; sourceTree = "<group>"; };
 		B1A03A782B5A91AF00C6D672 /* Test_iOS_NotificationUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Test_iOS_NotificationUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		B1A03A852B5A920500C6D672 /* AlertPushNotification.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = AlertPushNotification.apns; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,6 +97,7 @@
 			children = (
 				B1A03A5B2B5A91AC00C6D672 /* Test_iOS_NotificationApp.swift */,
 				B1A03A5D2B5A91AC00C6D672 /* ContentView.swift */,
+				B1A03A852B5A920500C6D672 /* AlertPushNotification.apns */,
 				B1A03A5F2B5A91AF00C6D672 /* Assets.xcassets */,
 				B1A03A612B5A91AF00C6D672 /* Preview Content */,
 			);

@@ -1,0 +1,13 @@
+{
+    "Simulator Target Bundle": "com.siddharthkothari.Test-iOS-Notification",
+    "aps" : {
+       "alert" : {
+            "title" : "test push notification",
+            "body" : "Sid has joined the meeting"
+        },
+        "sound" : "default",
+        "badge" : 10,
+   },
+    "duration": "Current time",
+    "startedAt": "Meeting’s starting time"
+}
