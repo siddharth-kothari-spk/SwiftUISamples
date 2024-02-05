@@ -14,14 +14,14 @@ struct ContentView: View {
     var body: some View {
         VStack {
             Toggle("Toggle Switch", isOn: $testBool)
-                            .padding()
+                    .padding()
                         
             VStack {
                 Image(systemName: "globe")
                     .imageScale(.large)
                 .foregroundStyle(.tint)
                 
-                Text("Hello, world!")
+                Text("Hello, world!").font(.system(size: 50))
             }.shimmer(when: $testBool)
             
         }
