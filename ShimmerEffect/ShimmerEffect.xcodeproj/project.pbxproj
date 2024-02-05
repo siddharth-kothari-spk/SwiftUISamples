@@ -14,6 +14,7 @@
 		B172DCF52B707FFB00C9811F /* ShimmerEffectTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B172DCF42B707FFB00C9811F /* ShimmerEffectTests.swift */; };
 		B172DCFF2B707FFB00C9811F /* ShimmerEffectUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B172DCFE2B707FFB00C9811F /* ShimmerEffectUITests.swift */; };
 		B172DD012B707FFB00C9811F /* ShimmerEffectUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B172DD002B707FFB00C9811F /* ShimmerEffectUITestsLaunchTests.swift */; };
+		B172DD0F2B70809E00C9811F /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = B172DD0E2B70809E00C9811F /* Extensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +45,7 @@
 		B172DCFA2B707FFB00C9811F /* ShimmerEffectUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ShimmerEffectUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B172DCFE2B707FFB00C9811F /* ShimmerEffectUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShimmerEffectUITests.swift; sourceTree = "<group>"; };
 		B172DD002B707FFB00C9811F /* ShimmerEffectUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShimmerEffectUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		B172DD0E2B70809E00C9811F /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,6 +98,7 @@
 			children = (
 				B172DCE32B707FF900C9811F /* ShimmerEffectApp.swift */,
 				B172DCE52B707FF900C9811F /* ContentView.swift */,
+				B172DD0D2B70808E00C9811F /* Utilities */,
 				B172DCE72B707FFA00C9811F /* Assets.xcassets */,
 				B172DCE92B707FFA00C9811F /* Preview Content */,
 			);
@@ -125,6 +128,14 @@
 				B172DD002B707FFB00C9811F /* ShimmerEffectUITestsLaunchTests.swift */,
 			);
 			path = ShimmerEffectUITests;
+			sourceTree = "<group>";
+		};
+		B172DD0D2B70808E00C9811F /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				B172DD0E2B70809E00C9811F /* Extensions.swift */,
+			);
+			path = Utilities;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -258,6 +269,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B172DCE62B707FF900C9811F /* ContentView.swift in Sources */,
+				B172DD0F2B70809E00C9811F /* Extensions.swift in Sources */,
 				B172DCE42B707FF900C9811F /* ShimmerEffectApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
