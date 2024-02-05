@@ -15,6 +15,7 @@
 		B172DCFF2B707FFB00C9811F /* ShimmerEffectUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B172DCFE2B707FFB00C9811F /* ShimmerEffectUITests.swift */; };
 		B172DD012B707FFB00C9811F /* ShimmerEffectUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B172DD002B707FFB00C9811F /* ShimmerEffectUITestsLaunchTests.swift */; };
 		B172DD0F2B70809E00C9811F /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = B172DD0E2B70809E00C9811F /* Extensions.swift */; };
+		B172DD112B7081C000C9811F /* ViewModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = B172DD102B7081C000C9811F /* ViewModifier.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,6 +47,7 @@
 		B172DCFE2B707FFB00C9811F /* ShimmerEffectUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShimmerEffectUITests.swift; sourceTree = "<group>"; };
 		B172DD002B707FFB00C9811F /* ShimmerEffectUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShimmerEffectUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		B172DD0E2B70809E00C9811F /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		B172DD102B7081C000C9811F /* ViewModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModifier.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -134,6 +136,7 @@
 			isa = PBXGroup;
 			children = (
 				B172DD0E2B70809E00C9811F /* Extensions.swift */,
+				B172DD102B7081C000C9811F /* ViewModifier.swift */,
 			);
 			path = Utilities;
 			sourceTree = "<group>";
@@ -271,6 +274,7 @@
 				B172DCE62B707FF900C9811F /* ContentView.swift in Sources */,
 				B172DD0F2B70809E00C9811F /* Extensions.swift in Sources */,
 				B172DCE42B707FF900C9811F /* ShimmerEffectApp.swift in Sources */,
+				B172DD112B7081C000C9811F /* ViewModifier.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
