@@ -5,6 +5,8 @@
 //  Created by Siddharth Kothari on 05/02/24.
 //
 
+// courtsey: https://medium.com/@felipaugsts/skeleton-shimmer-in-swiftui-a6668194f6c5
+
 import SwiftUI
 
 struct ContentView: View {
