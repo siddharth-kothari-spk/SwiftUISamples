@@ -6,6 +6,7 @@
 //
 
 import Foundation
+import SwiftUI
 import CoreImage.CIFilterBuiltins
 
 struct BarCodeGenerator {
@@ -13,7 +14,7 @@ struct BarCodeGenerator {
     let generator = CIFilter.code128BarcodeGenerator()
     
     func generateBarCode(text: String) -> Image {
-        generator.message = Data(text)
+        generator.message = Data(text.utf8)
         
         if let outputImage = generator.outputImage,
            let cgImage = context.createCGImage(outputImage, from: outputImage.extent) {

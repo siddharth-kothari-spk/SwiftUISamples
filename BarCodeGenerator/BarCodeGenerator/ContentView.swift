@@ -11,6 +11,8 @@ import SwiftUI
 
 
 struct ContentView: View {
+    @State private var inputText = ""
+    var barcodeGenerator = BarcodeGenerator()
     var body: some View {
         VStack {
             Image(systemName: "globe")
