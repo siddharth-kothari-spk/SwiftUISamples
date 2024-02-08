@@ -14,6 +14,7 @@
 		B172DD302B74AF1000C9811F /* BarCodeGeneratorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B172DD2F2B74AF1000C9811F /* BarCodeGeneratorTests.swift */; };
 		B172DD3A2B74AF1000C9811F /* BarCodeGeneratorUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B172DD392B74AF1000C9811F /* BarCodeGeneratorUITests.swift */; };
 		B172DD3C2B74AF1000C9811F /* BarCodeGeneratorUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B172DD3B2B74AF1000C9811F /* BarCodeGeneratorUITestsLaunchTests.swift */; };
+		B172DD492B74AFA300C9811F /* BarCodeGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = B172DD482B74AFA300C9811F /* BarCodeGenerator.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +45,7 @@
 		B172DD352B74AF1000C9811F /* BarCodeGeneratorUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BarCodeGeneratorUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B172DD392B74AF1000C9811F /* BarCodeGeneratorUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BarCodeGeneratorUITests.swift; sourceTree = "<group>"; };
 		B172DD3B2B74AF1000C9811F /* BarCodeGeneratorUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BarCodeGeneratorUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		B172DD482B74AFA300C9811F /* BarCodeGenerator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BarCodeGenerator.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,6 +98,7 @@
 			children = (
 				B172DD1E2B74AF0C00C9811F /* BarCodeGeneratorApp.swift */,
 				B172DD202B74AF0C00C9811F /* ContentView.swift */,
+				B172DD482B74AFA300C9811F /* BarCodeGenerator.swift */,
 				B172DD222B74AF1000C9811F /* Assets.xcassets */,
 				B172DD242B74AF1000C9811F /* Preview Content */,
 			);
@@ -257,6 +260,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B172DD492B74AFA300C9811F /* BarCodeGenerator.swift in Sources */,
 				B172DD212B74AF0C00C9811F /* ContentView.swift in Sources */,
 				B172DD1F2B74AF0C00C9811F /* BarCodeGeneratorApp.swift in Sources */,
 			);
