@@ -14,6 +14,7 @@
 		B172DDAA2B7A3AE200C9811F /* ObservableVsObservableObjectTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B172DDA92B7A3AE200C9811F /* ObservableVsObservableObjectTests.swift */; };
 		B172DDB42B7A3AE200C9811F /* ObservableVsObservableObjectUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B172DDB32B7A3AE200C9811F /* ObservableVsObservableObjectUITests.swift */; };
 		B172DDB62B7A3AE200C9811F /* ObservableVsObservableObjectUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B172DDB52B7A3AE200C9811F /* ObservableVsObservableObjectUITestsLaunchTests.swift */; };
+		B172DDC32B7A3EC900C9811F /* AppSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = B172DDC22B7A3EC900C9811F /* AppSettings.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +45,7 @@
 		B172DDAF2B7A3AE200C9811F /* ObservableVsObservableObjectUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ObservableVsObservableObjectUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B172DDB32B7A3AE200C9811F /* ObservableVsObservableObjectUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObservableVsObservableObjectUITests.swift; sourceTree = "<group>"; };
 		B172DDB52B7A3AE200C9811F /* ObservableVsObservableObjectUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObservableVsObservableObjectUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		B172DDC22B7A3EC900C9811F /* AppSettings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppSettings.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,6 +98,7 @@
 			children = (
 				B172DD982B7A3ADF00C9811F /* ObservableVsObservableObjectApp.swift */,
 				B172DD9A2B7A3ADF00C9811F /* ContentView.swift */,
+				B172DDC22B7A3EC900C9811F /* AppSettings.swift */,
 				B172DD9C2B7A3AE200C9811F /* Assets.xcassets */,
 				B172DD9E2B7A3AE200C9811F /* Preview Content */,
 			);
@@ -259,6 +262,7 @@
 			files = (
 				B172DD9B2B7A3ADF00C9811F /* ContentView.swift in Sources */,
 				B172DD992B7A3ADF00C9811F /* ObservableVsObservableObjectApp.swift in Sources */,
+				B172DDC32B7A3EC900C9811F /* AppSettings.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
