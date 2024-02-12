@@ -31,7 +31,7 @@ struct ObservableWithEnvironment: View {
 }
 
 struct NestedView: View {
-  @Environment(SearchModel.self) var searchModel
+  @Environment(SearchModel2.self) var searchModel
     /* By writing our code like this, SwiftUI knows which type of object to look for in the environment and we’ll be handed our instance from there.
     
     If SwiftUI can’t find an instance of SearchModel, our app will crash.*/
