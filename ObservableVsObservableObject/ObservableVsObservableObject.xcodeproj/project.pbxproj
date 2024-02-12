@@ -18,6 +18,7 @@
 		B172DDC52B7A432400C9811F /* 1.ObservableAsState.swift in Sources */ = {isa = PBXBuildFile; fileRef = B172DDC42B7A432400C9811F /* 1.ObservableAsState.swift */; };
 		B172DDC72B7A477E00C9811F /* 2.ObservableAsLet.swift in Sources */ = {isa = PBXBuildFile; fileRef = B172DDC62B7A477E00C9811F /* 2.ObservableAsLet.swift */; };
 		B172DDC92B7A494A00C9811F /* 3.ObservableWithBindable.swift in Sources */ = {isa = PBXBuildFile; fileRef = B172DDC82B7A494A00C9811F /* 3.ObservableWithBindable.swift */; };
+		B172DDCB2B7A4B4500C9811F /* 4.ObservableWithEnvironment.swift in Sources */ = {isa = PBXBuildFile; fileRef = B172DDCA2B7A4B4500C9811F /* 4.ObservableWithEnvironment.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,6 +53,7 @@
 		B172DDC42B7A432400C9811F /* 1.ObservableAsState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 1.ObservableAsState.swift; sourceTree = "<group>"; };
 		B172DDC62B7A477E00C9811F /* 2.ObservableAsLet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 2.ObservableAsLet.swift; sourceTree = "<group>"; };
 		B172DDC82B7A494A00C9811F /* 3.ObservableWithBindable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 3.ObservableWithBindable.swift; sourceTree = "<group>"; };
+		B172DDCA2B7A4B4500C9811F /* 4.ObservableWithEnvironment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 4.ObservableWithEnvironment.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -108,6 +110,7 @@
 				B172DDC42B7A432400C9811F /* 1.ObservableAsState.swift */,
 				B172DDC62B7A477E00C9811F /* 2.ObservableAsLet.swift */,
 				B172DDC82B7A494A00C9811F /* 3.ObservableWithBindable.swift */,
+				B172DDCA2B7A4B4500C9811F /* 4.ObservableWithEnvironment.swift */,
 				B172DD9C2B7A3AE200C9811F /* Assets.xcassets */,
 				B172DD9E2B7A3AE200C9811F /* Preview Content */,
 			);
@@ -274,6 +277,7 @@
 				B172DD9B2B7A3ADF00C9811F /* ContentView.swift in Sources */,
 				B172DDC52B7A432400C9811F /* 1.ObservableAsState.swift in Sources */,
 				B172DD992B7A3ADF00C9811F /* ObservableVsObservableObjectApp.swift in Sources */,
+				B172DDCB2B7A4B4500C9811F /* 4.ObservableWithEnvironment.swift in Sources */,
 				B172DDC32B7A3EC900C9811F /* AppSettings.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
