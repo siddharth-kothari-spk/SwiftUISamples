@@ -29,18 +29,20 @@ struct ObservableAsState: View {
             }
             Text("Current id: \(id)")
             
-            ButtonView()
+            ButtonView1()
+            
+            ButtonView2()
         }.padding()
     }
 }
 
-struct ButtonView: View {
+struct ButtonView1: View {
   let counter = Counter()
 
   var body: some View {
     VStack {
       Text("Counter is tapped \(counter.currentValue) times")
-      Button("Increase") {
+      Button("Increase1") {
         counter.currentValue += 1
       }
     }.padding()
@@ -53,6 +55,19 @@ However, when you tap on Change id the counter resets back to 0.
 
 That’s because once the ContentView redraws, a new instance of ButtonView is created which will also create a new Counter. */
 
+struct ButtonView2: View {
+  @State var counter = Counter()
+ // We’ve now wrapped counter in @State. Changing the id in this view’s parent now doesn’t reset the counter because @State caches the counter instance for the duration of this view’s lifecycle.
+
+  var body: some View {
+    VStack {
+      Text("Counter is tapped \(counter.currentValue) times")
+      Button("Increase2") {
+        counter.currentValue += 1
+      }
+    }.padding()
+  }
+}
 #Preview {
     ObservableAsState()
 }
