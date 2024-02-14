@@ -32,5 +32,17 @@ final class ObservableVsObservableObjectTests: XCTestCase {
             // Put the code you want to measure the time of here.
         }
     }
+    
+    func test_callback() {
+        callback { result in
+            XCTAssertTrue(result)
+        }
+    }
+    
+    func callback(onComplete: @escaping (Bool) -> Void) {
+        DispatchQueue.main.asyncAfter(deadline: .now() + 1) {
+            onComplete(true)
+        }
+    }
 
 }
