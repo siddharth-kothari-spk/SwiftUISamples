@@ -6,16 +6,27 @@
 //
 
 import SwiftUI
+import Popovers
 
 // courtsey: https://betterprogramming.pub/how-to-add-custom-popovers-to-your-swiftui-ios-app-814bdfad73d0
 
 struct ContentView: View {
+    @State var basicPopoverPresent1: Bool = false
+    
     var body: some View {
         VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("Hello, world!")
+            HStack {
+                Button("Present popover") {
+                    basicPopoverPresent1 = true
+                }
+                .popover(present: $basicPopoverPresent1) {
+                    Text("Hi, I'm a popover.")
+                                    .padding()
+                                    .foregroundColor(.white)
+                                    .background(.blue)
+                                    .cornerRadius(16)
+                }
+            }
         }
         .padding()
     }
