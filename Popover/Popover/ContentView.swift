@@ -14,6 +14,8 @@ struct ContentView: View {
     @State var basicPopoverPresent1: Bool = false
     @State var basicPopoverPresent2: Bool = false
     @State var basicPopoverPresent3: Bool = false
+    @State var advancePopoverSelection: String?
+    @State var advancePopoverSelection1: Bool = false
     
     var body: some View {
         VStack {
@@ -77,7 +79,57 @@ struct ContentView: View {
                         )
                 }
             
-        }
+            }.padding()
+            
+            
+            VStack {
+                Text("Advance Popovers").padding()
+                HStack {
+                    Button("1st") { advancePopoverSelection = "1" }
+                        .popover(selection: $advancePopoverSelection, tag: "1") {
+                            Text("1st Popover")
+                                .padding()
+                                .foregroundColor(.white)
+                                .background(.red)
+                        }.padding()
+                    Button("2nd") { advancePopoverSelection = "2" }
+                        .popover(selection: $advancePopoverSelection, tag: "2") {
+                            Text("2nd Popover")
+                                .padding()
+                                .foregroundColor(.white)
+                                .background(.green)
+                        }.padding()
+                    Button("3rd") { advancePopoverSelection = "3" }
+                        .popover(selection: $advancePopoverSelection, tag: "3") {
+                            Text("3rd Popover")
+                                .padding()
+                                .foregroundColor(.white)
+                                .background(.blue)
+                        }.padding()
+                }.padding()
+                
+                Button("Advance popover2") {
+                    advancePopoverSelection1 = true
+                     }
+                     .frameTag("Button")
+                     .popover(present: $advancePopoverSelection1) {
+                         Text("Hi, I'm a popover.")
+                             .padding()
+                             .foregroundColor(.white)
+                             .background(.blue)
+                             .cornerRadius(16)
+
+                     } background: {
+                         PopoverReader { context in
+                             Templates.CurveConnector(
+                                 start: context.frame.point(at: .top),
+                                 end: context.window.frameTagged("Button").point(at: .bottom)
+                             )
+                             .stroke(Color.blue, lineWidth: 4)
+                         }
+                     }
+            }
+            
         }
         .padding()
     }
