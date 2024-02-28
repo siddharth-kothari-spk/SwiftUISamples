@@ -14,6 +14,7 @@
 		B1832CD42B8F419000263A05 /* SwiftUIBootcampTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1832CD32B8F419000263A05 /* SwiftUIBootcampTests.swift */; };
 		B1832CDE2B8F419000263A05 /* SwiftUIBootcampUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1832CDD2B8F419000263A05 /* SwiftUIBootcampUITests.swift */; };
 		B1832CE02B8F419000263A05 /* SwiftUIBootcampUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1832CDF2B8F419000263A05 /* SwiftUIBootcampUITestsLaunchTests.swift */; };
+		B1832CEE2B8F450D00263A05 /* TextModule.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1832CED2B8F450D00263A05 /* TextModule.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +45,7 @@
 		B1832CD92B8F419000263A05 /* SwiftUIBootcampUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwiftUIBootcampUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B1832CDD2B8F419000263A05 /* SwiftUIBootcampUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIBootcampUITests.swift; sourceTree = "<group>"; };
 		B1832CDF2B8F419000263A05 /* SwiftUIBootcampUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIBootcampUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		B1832CED2B8F450D00263A05 /* TextModule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextModule.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,6 +96,7 @@
 		B1832CC12B8F418D00263A05 /* SwiftUIBootcamp */ = {
 			isa = PBXGroup;
 			children = (
+				B1832CEC2B8F44F000263A05 /* Text */,
 				B1832CC22B8F418D00263A05 /* SwiftUIBootcampApp.swift */,
 				B1832CC42B8F418D00263A05 /* ContentView.swift */,
 				B1832CC62B8F419000263A05 /* Assets.xcassets */,
@@ -125,6 +128,14 @@
 				B1832CDF2B8F419000263A05 /* SwiftUIBootcampUITestsLaunchTests.swift */,
 			);
 			path = SwiftUIBootcampUITests;
+			sourceTree = "<group>";
+		};
+		B1832CEC2B8F44F000263A05 /* Text */ = {
+			isa = PBXGroup;
+			children = (
+				B1832CED2B8F450D00263A05 /* TextModule.swift */,
+			);
+			path = Text;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -257,6 +268,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B1832CEE2B8F450D00263A05 /* TextModule.swift in Sources */,
 				B1832CC52B8F418D00263A05 /* ContentView.swift in Sources */,
 				B1832CC32B8F418D00263A05 /* SwiftUIBootcampApp.swift in Sources */,
 			);
