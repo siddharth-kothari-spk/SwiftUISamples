@@ -16,6 +16,7 @@
 		B1832CE02B8F419000263A05 /* SwiftUIBootcampUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1832CDF2B8F419000263A05 /* SwiftUIBootcampUITestsLaunchTests.swift */; };
 		B1832CEE2B8F450D00263A05 /* TextModule.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1832CED2B8F450D00263A05 /* TextModule.swift */; };
 		B1832CF12B8F4F7D00263A05 /* ShapesModule.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1832CF02B8F4F7D00263A05 /* ShapesModule.swift */; };
+		B1832CF42B8F56DC00263A05 /* ImagesModule.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1832CF32B8F56DC00263A05 /* ImagesModule.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +49,7 @@
 		B1832CDF2B8F419000263A05 /* SwiftUIBootcampUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIBootcampUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		B1832CED2B8F450D00263A05 /* TextModule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextModule.swift; sourceTree = "<group>"; };
 		B1832CF02B8F4F7D00263A05 /* ShapesModule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShapesModule.swift; sourceTree = "<group>"; };
+		B1832CF32B8F56DC00263A05 /* ImagesModule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagesModule.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,6 +102,7 @@
 			children = (
 				B1832CEC2B8F44F000263A05 /* Text */,
 				B1832CEF2B8F4F6400263A05 /* Shapes */,
+				B1832CF22B8F56C900263A05 /* Images */,
 				B1832CC22B8F418D00263A05 /* SwiftUIBootcampApp.swift */,
 				B1832CC42B8F418D00263A05 /* ContentView.swift */,
 				B1832CC62B8F419000263A05 /* Assets.xcassets */,
@@ -147,6 +150,14 @@
 				B1832CF02B8F4F7D00263A05 /* ShapesModule.swift */,
 			);
 			path = Shapes;
+			sourceTree = "<group>";
+		};
+		B1832CF22B8F56C900263A05 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				B1832CF32B8F56DC00263A05 /* ImagesModule.swift */,
+			);
+			path = Images;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -281,6 +292,7 @@
 			files = (
 				B1832CEE2B8F450D00263A05 /* TextModule.swift in Sources */,
 				B1832CC52B8F418D00263A05 /* ContentView.swift in Sources */,
+				B1832CF42B8F56DC00263A05 /* ImagesModule.swift in Sources */,
 				B1832CC32B8F418D00263A05 /* SwiftUIBootcampApp.swift in Sources */,
 				B1832CF12B8F4F7D00263A05 /* ShapesModule.swift in Sources */,
 			);
