@@ -17,6 +17,7 @@
 		B1832CEE2B8F450D00263A05 /* TextModule.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1832CED2B8F450D00263A05 /* TextModule.swift */; };
 		B1832CF12B8F4F7D00263A05 /* ShapesModule.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1832CF02B8F4F7D00263A05 /* ShapesModule.swift */; };
 		B1832CF42B8F56DC00263A05 /* ImagesModule.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1832CF32B8F56DC00263A05 /* ImagesModule.swift */; };
+		B1832D032B8F672300263A05 /* StacksModule.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1832D022B8F672300263A05 /* StacksModule.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,6 +51,7 @@
 		B1832CED2B8F450D00263A05 /* TextModule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextModule.swift; sourceTree = "<group>"; };
 		B1832CF02B8F4F7D00263A05 /* ShapesModule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShapesModule.swift; sourceTree = "<group>"; };
 		B1832CF32B8F56DC00263A05 /* ImagesModule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagesModule.swift; sourceTree = "<group>"; };
+		B1832D022B8F672300263A05 /* StacksModule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StacksModule.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,6 +102,7 @@
 		B1832CC12B8F418D00263A05 /* SwiftUIBootcamp */ = {
 			isa = PBXGroup;
 			children = (
+				B1832D012B8F670D00263A05 /* Stacks */,
 				B1832CEC2B8F44F000263A05 /* Text */,
 				B1832CEF2B8F4F6400263A05 /* Shapes */,
 				B1832CF22B8F56C900263A05 /* Images */,
@@ -158,6 +161,14 @@
 				B1832CF32B8F56DC00263A05 /* ImagesModule.swift */,
 			);
 			path = Images;
+			sourceTree = "<group>";
+		};
+		B1832D012B8F670D00263A05 /* Stacks */ = {
+			isa = PBXGroup;
+			children = (
+				B1832D022B8F672300263A05 /* StacksModule.swift */,
+			);
+			path = Stacks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -290,6 +301,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B1832D032B8F672300263A05 /* StacksModule.swift in Sources */,
 				B1832CEE2B8F450D00263A05 /* TextModule.swift in Sources */,
 				B1832CC52B8F418D00263A05 /* ContentView.swift in Sources */,
 				B1832CF42B8F56DC00263A05 /* ImagesModule.swift in Sources */,
