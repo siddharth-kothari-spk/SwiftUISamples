@@ -9,7 +9,7 @@ import SwiftUI
 
 struct StackCustom: View {
     var body: some View {
-        VStack {
+        VStack(alignment: .leading, content: {
             Text("15 spacing between contents").fontWeight(.medium).font(/*@START_MENU_TOKEN@*/.title/*@END_MENU_TOKEN@*/)
             VStack(spacing: 15, content: { // 15 spacing between contents
                 Capsule(style: .continuous)
@@ -53,7 +53,7 @@ struct StackCustom: View {
                     .fill(.red)
                     .frame(width: 200,height: 50)
             }
-        }
+        })
         // same we can do with HStack
     }
 }
