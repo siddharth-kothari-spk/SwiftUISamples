@@ -62,8 +62,8 @@ struct StacksModule: View {
                     .fill(.yellow)
                     .frame(width: 50, height: 50)
                     .clipShape(Circle(), style: FillStyle(eoFill: true))
-            })
-        }
+            }).padding()
+        }.padding()
     }
 }
 
