@@ -9,7 +9,10 @@ import SwiftUI
 
 struct StacksModule: View {
     var body: some View {
-       StackBasic()
+        ScrollView {
+            StackBasic()
+            StackCustom()
+        }
     }
 }
 

@@ -18,6 +18,8 @@
 		B1832CF12B8F4F7D00263A05 /* ShapesModule.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1832CF02B8F4F7D00263A05 /* ShapesModule.swift */; };
 		B1832CF42B8F56DC00263A05 /* ImagesModule.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1832CF32B8F56DC00263A05 /* ImagesModule.swift */; };
 		B1832D032B8F672300263A05 /* StacksModule.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1832D022B8F672300263A05 /* StacksModule.swift */; };
+		B1832D052B90913300263A05 /* StackBasic.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1832D042B90913300263A05 /* StackBasic.swift */; };
+		B1832D072B90918400263A05 /* StackCustom.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1832D062B90918400263A05 /* StackCustom.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,6 +54,8 @@
 		B1832CF02B8F4F7D00263A05 /* ShapesModule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShapesModule.swift; sourceTree = "<group>"; };
 		B1832CF32B8F56DC00263A05 /* ImagesModule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagesModule.swift; sourceTree = "<group>"; };
 		B1832D022B8F672300263A05 /* StacksModule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StacksModule.swift; sourceTree = "<group>"; };
+		B1832D042B90913300263A05 /* StackBasic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StackBasic.swift; sourceTree = "<group>"; };
+		B1832D062B90918400263A05 /* StackCustom.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StackCustom.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -167,6 +171,8 @@
 			isa = PBXGroup;
 			children = (
 				B1832D022B8F672300263A05 /* StacksModule.swift */,
+				B1832D042B90913300263A05 /* StackBasic.swift */,
+				B1832D062B90918400263A05 /* StackCustom.swift */,
 			);
 			path = Stacks;
 			sourceTree = "<group>";
@@ -306,6 +312,8 @@
 				B1832CC52B8F418D00263A05 /* ContentView.swift in Sources */,
 				B1832CF42B8F56DC00263A05 /* ImagesModule.swift in Sources */,
 				B1832CC32B8F418D00263A05 /* SwiftUIBootcampApp.swift in Sources */,
+				B1832D072B90918400263A05 /* StackCustom.swift in Sources */,
+				B1832D052B90913300263A05 /* StackBasic.swift in Sources */,
 				B1832CF12B8F4F7D00263A05 /* ShapesModule.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
