@@ -22,6 +22,7 @@
 		B1832D072B90918400263A05 /* StackCustom.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1832D062B90918400263A05 /* StackCustom.swift */; };
 		B1832D092B9094D400263A05 /* StackCustom2.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1832D082B9094D400263A05 /* StackCustom2.swift */; };
 		B1832D0B2B90965100263A05 /* StackCustom3.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1832D0A2B90965100263A05 /* StackCustom3.swift */; };
+		B1832D0D2B90A3FF00263A05 /* StackChallenge.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1832D0C2B90A3FF00263A05 /* StackChallenge.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -60,6 +61,7 @@
 		B1832D062B90918400263A05 /* StackCustom.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StackCustom.swift; sourceTree = "<group>"; };
 		B1832D082B9094D400263A05 /* StackCustom2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StackCustom2.swift; sourceTree = "<group>"; };
 		B1832D0A2B90965100263A05 /* StackCustom3.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StackCustom3.swift; sourceTree = "<group>"; };
+		B1832D0C2B90A3FF00263A05 /* StackChallenge.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StackChallenge.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -179,6 +181,7 @@
 				B1832D062B90918400263A05 /* StackCustom.swift */,
 				B1832D082B9094D400263A05 /* StackCustom2.swift */,
 				B1832D0A2B90965100263A05 /* StackCustom3.swift */,
+				B1832D0C2B90A3FF00263A05 /* StackChallenge.swift */,
 			);
 			path = Stacks;
 			sourceTree = "<group>";
@@ -323,6 +326,7 @@
 				B1832D072B90918400263A05 /* StackCustom.swift in Sources */,
 				B1832D052B90913300263A05 /* StackBasic.swift in Sources */,
 				B1832CF12B8F4F7D00263A05 /* ShapesModule.swift in Sources */,
+				B1832D0D2B90A3FF00263A05 /* StackChallenge.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
