@@ -21,6 +21,7 @@
 		B1832D052B90913300263A05 /* StackBasic.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1832D042B90913300263A05 /* StackBasic.swift */; };
 		B1832D072B90918400263A05 /* StackCustom.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1832D062B90918400263A05 /* StackCustom.swift */; };
 		B1832D092B9094D400263A05 /* StackCustom2.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1832D082B9094D400263A05 /* StackCustom2.swift */; };
+		B1832D0B2B90965100263A05 /* StackCustom3.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1832D0A2B90965100263A05 /* StackCustom3.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -58,6 +59,7 @@
 		B1832D042B90913300263A05 /* StackBasic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StackBasic.swift; sourceTree = "<group>"; };
 		B1832D062B90918400263A05 /* StackCustom.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StackCustom.swift; sourceTree = "<group>"; };
 		B1832D082B9094D400263A05 /* StackCustom2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StackCustom2.swift; sourceTree = "<group>"; };
+		B1832D0A2B90965100263A05 /* StackCustom3.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StackCustom3.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -176,6 +178,7 @@
 				B1832D042B90913300263A05 /* StackBasic.swift */,
 				B1832D062B90918400263A05 /* StackCustom.swift */,
 				B1832D082B9094D400263A05 /* StackCustom2.swift */,
+				B1832D0A2B90965100263A05 /* StackCustom3.swift */,
 			);
 			path = Stacks;
 			sourceTree = "<group>";
@@ -313,6 +316,7 @@
 				B1832D032B8F672300263A05 /* StacksModule.swift in Sources */,
 				B1832CEE2B8F450D00263A05 /* TextModule.swift in Sources */,
 				B1832CC52B8F418D00263A05 /* ContentView.swift in Sources */,
+				B1832D0B2B90965100263A05 /* StackCustom3.swift in Sources */,
 				B1832CF42B8F56DC00263A05 /* ImagesModule.swift in Sources */,
 				B1832CC32B8F418D00263A05 /* SwiftUIBootcampApp.swift in Sources */,
 				B1832D092B9094D400263A05 /* StackCustom2.swift in Sources */,
