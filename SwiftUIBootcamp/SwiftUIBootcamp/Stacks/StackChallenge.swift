@@ -33,6 +33,9 @@ struct StackChallenge: View {
                             .font(.subheadline)
                             .foregroundStyle(.green)
                     })
+                    Spacer()
+                    Image(systemName: "paperplane")
+                        .foregroundColor(/*@START_MENU_TOKEN@*/.blue/*@END_MENU_TOKEN@*/)
                 }
                 
                 HStack {
@@ -52,6 +55,9 @@ struct StackChallenge: View {
                             .font(.subheadline)
                             .foregroundStyle(.green)
                     })
+                    Spacer()
+                    Image(systemName: "paperplane")
+                        .foregroundColor(/*@START_MENU_TOKEN@*/.blue/*@END_MENU_TOKEN@*/)
                 }
             }
             
@@ -78,6 +84,9 @@ struct StackChallenge: View {
                             .font(.subheadline)
                             .foregroundStyle(.green)
                     })
+                    Spacer()
+                    Image(systemName: "paperplane")
+                        .foregroundColor(/*@START_MENU_TOKEN@*/.blue/*@END_MENU_TOKEN@*/)
                 }.padding(16)
                 Divider()
                 
@@ -98,6 +107,9 @@ struct StackChallenge: View {
                             .font(.subheadline)
                             .foregroundStyle(.green)
                     })
+                    Spacer()
+                    Image(systemName: "paperplane")
+                        .foregroundColor(/*@START_MENU_TOKEN@*/.blue/*@END_MENU_TOKEN@*/)
                 }.padding(16)
                 Divider()
 
