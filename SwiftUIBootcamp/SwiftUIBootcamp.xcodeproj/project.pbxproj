@@ -24,6 +24,7 @@
 		B1832D0B2B90965100263A05 /* StackCustom3.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1832D0A2B90965100263A05 /* StackCustom3.swift */; };
 		B1832D0D2B90A3FF00263A05 /* StackChallenge.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1832D0C2B90A3FF00263A05 /* StackChallenge.swift */; };
 		B1832D102B90A98400263A05 /* PaddingModule.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1832D0F2B90A98400263A05 /* PaddingModule.swift */; };
+		B1832D132B91C7B400263A05 /* SpacersModule.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1832D122B91C7B400263A05 /* SpacersModule.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -64,6 +65,7 @@
 		B1832D0A2B90965100263A05 /* StackCustom3.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StackCustom3.swift; sourceTree = "<group>"; };
 		B1832D0C2B90A3FF00263A05 /* StackChallenge.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StackChallenge.swift; sourceTree = "<group>"; };
 		B1832D0F2B90A98400263A05 /* PaddingModule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaddingModule.swift; sourceTree = "<group>"; };
+		B1832D122B91C7B400263A05 /* SpacersModule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpacersModule.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -114,6 +116,7 @@
 		B1832CC12B8F418D00263A05 /* SwiftUIBootcamp */ = {
 			isa = PBXGroup;
 			children = (
+				B1832D112B91C7A200263A05 /* Spacers */,
 				B1832D0E2B90A97300263A05 /* Padding */,
 				B1832D012B8F670D00263A05 /* Stacks */,
 				B1832CEC2B8F44F000263A05 /* Text */,
@@ -195,6 +198,14 @@
 				B1832D0F2B90A98400263A05 /* PaddingModule.swift */,
 			);
 			path = Padding;
+			sourceTree = "<group>";
+		};
+		B1832D112B91C7A200263A05 /* Spacers */ = {
+			isa = PBXGroup;
+			children = (
+				B1832D122B91C7B400263A05 /* SpacersModule.swift */,
+			);
+			path = Spacers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -339,6 +350,7 @@
 				B1832D052B90913300263A05 /* StackBasic.swift in Sources */,
 				B1832CF12B8F4F7D00263A05 /* ShapesModule.swift in Sources */,
 				B1832D0D2B90A3FF00263A05 /* StackChallenge.swift in Sources */,
+				B1832D132B91C7B400263A05 /* SpacersModule.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
