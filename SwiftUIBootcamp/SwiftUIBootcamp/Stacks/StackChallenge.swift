@@ -14,7 +14,7 @@ struct StackChallenge: View {
                 .font(.title)
                 .fontWeight(.bold)
             
-            VStack(alignment: .leading) {
+            VStack(alignment: .leading, spacing: 16) {
                 // alignment is leading here but items do not move to left as the width is limited by HStack contents, but Divider() goes across the screen
                 HStack {
                     Image("photo2")
@@ -78,7 +78,7 @@ struct StackChallenge: View {
                             .font(.subheadline)
                             .foregroundStyle(.green)
                     })
-                }
+                }.padding(16)
                 Divider()
                 
                 HStack {
@@ -98,7 +98,7 @@ struct StackChallenge: View {
                             .font(.subheadline)
                             .foregroundStyle(.green)
                     })
-                }
+                }.padding(16)
                 Divider()
 
             }
