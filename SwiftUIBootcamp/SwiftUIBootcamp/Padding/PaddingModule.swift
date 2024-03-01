@@ -29,6 +29,22 @@ struct PaddingModule: View {
             Text("both horizontal and vertical")
                 .padding(15)
                 .background(.red)
+            
+            Text("leading")
+                .padding(.leading, 15)
+                .background(.yellow)
+            
+            Text("trailing")
+                .padding(.trailing, 15)
+                .background(.yellow)
+            
+            Text("top")
+                .padding(.top, 15)
+                .background(.yellow)
+            
+            Text("bottom")
+                .padding(.bottom, 15)
+                .background(.yellow)
         }
     }
 }
