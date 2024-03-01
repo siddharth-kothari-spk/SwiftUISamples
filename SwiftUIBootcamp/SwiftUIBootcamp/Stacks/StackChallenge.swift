@@ -114,6 +114,7 @@ struct StackChallenge: View {
                 Divider()
 
             }
+            Spacer()
         })
 
     }
