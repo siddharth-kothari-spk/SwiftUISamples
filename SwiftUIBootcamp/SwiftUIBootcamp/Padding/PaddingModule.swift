@@ -17,6 +17,18 @@ struct PaddingModule: View {
             Text("padding after color")
                 .background(.pink)
                 .padding()
+            
+            Text("Horizontal padding")
+                .padding(.horizontal, 20)
+                .background(.green)
+            
+            Text("Vertical padding")
+                .padding(.vertical, 20)
+                .background(.brown)
+            
+            Text("both horizontal and vertical")
+                .padding(15)
+                .background(.red)
         }
     }
 }
