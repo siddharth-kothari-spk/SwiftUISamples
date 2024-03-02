@@ -28,6 +28,7 @@
 		B1832D162B924EA300263A05 /* LoopsModule.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1832D152B924EA300263A05 /* LoopsModule.swift */; };
 		B1832D192B932D3E00263A05 /* ScrollViewModule.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1832D182B932D3E00263A05 /* ScrollViewModule.swift */; };
 		B1832D1B2B933EF800263A05 /* ScrollChallenge.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1832D1A2B933EF800263A05 /* ScrollChallenge.swift */; };
+		B1832D1E2B9353D200263A05 /* GridsModule.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1832D1D2B9353D200263A05 /* GridsModule.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -72,6 +73,7 @@
 		B1832D152B924EA300263A05 /* LoopsModule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoopsModule.swift; sourceTree = "<group>"; };
 		B1832D182B932D3E00263A05 /* ScrollViewModule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrollViewModule.swift; sourceTree = "<group>"; };
 		B1832D1A2B933EF800263A05 /* ScrollChallenge.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrollChallenge.swift; sourceTree = "<group>"; };
+		B1832D1D2B9353D200263A05 /* GridsModule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GridsModule.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -130,6 +132,7 @@
 				B1832D112B91C7A200263A05 /* Spacers */,
 				B1832D142B924E9000263A05 /* Loops */,
 				B1832D172B932D2600263A05 /* ScrollView */,
+				B1832D1C2B9353BB00263A05 /* Grids */,
 				B1832CC22B8F418D00263A05 /* SwiftUIBootcampApp.swift */,
 				B1832CC42B8F418D00263A05 /* ContentView.swift */,
 				B1832CC62B8F419000263A05 /* Assets.xcassets */,
@@ -231,6 +234,14 @@
 				B1832D1A2B933EF800263A05 /* ScrollChallenge.swift */,
 			);
 			path = ScrollView;
+			sourceTree = "<group>";
+		};
+		B1832D1C2B9353BB00263A05 /* Grids */ = {
+			isa = PBXGroup;
+			children = (
+				B1832D1D2B9353D200263A05 /* GridsModule.swift */,
+			);
+			path = Grids;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -379,6 +390,7 @@
 				B1832D0D2B90A3FF00263A05 /* StackChallenge.swift in Sources */,
 				B1832D192B932D3E00263A05 /* ScrollViewModule.swift in Sources */,
 				B1832D132B91C7B400263A05 /* SpacersModule.swift in Sources */,
+				B1832D1E2B9353D200263A05 /* GridsModule.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
