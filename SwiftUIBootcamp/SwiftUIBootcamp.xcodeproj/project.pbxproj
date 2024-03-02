@@ -26,6 +26,7 @@
 		B1832D102B90A98400263A05 /* PaddingModule.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1832D0F2B90A98400263A05 /* PaddingModule.swift */; };
 		B1832D132B91C7B400263A05 /* SpacersModule.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1832D122B91C7B400263A05 /* SpacersModule.swift */; };
 		B1832D162B924EA300263A05 /* LoopsModule.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1832D152B924EA300263A05 /* LoopsModule.swift */; };
+		B1832D192B932D3E00263A05 /* ScrollViewModule.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1832D182B932D3E00263A05 /* ScrollViewModule.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -68,6 +69,7 @@
 		B1832D0F2B90A98400263A05 /* PaddingModule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaddingModule.swift; sourceTree = "<group>"; };
 		B1832D122B91C7B400263A05 /* SpacersModule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpacersModule.swift; sourceTree = "<group>"; };
 		B1832D152B924EA300263A05 /* LoopsModule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoopsModule.swift; sourceTree = "<group>"; };
+		B1832D182B932D3E00263A05 /* ScrollViewModule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrollViewModule.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -118,13 +120,14 @@
 		B1832CC12B8F418D00263A05 /* SwiftUIBootcamp */ = {
 			isa = PBXGroup;
 			children = (
-				B1832D142B924E9000263A05 /* Loops */,
 				B1832CEC2B8F44F000263A05 /* Text */,
 				B1832CEF2B8F4F6400263A05 /* Shapes */,
 				B1832CF22B8F56C900263A05 /* Images */,
 				B1832D012B8F670D00263A05 /* Stacks */,
 				B1832D0E2B90A97300263A05 /* Padding */,
 				B1832D112B91C7A200263A05 /* Spacers */,
+				B1832D142B924E9000263A05 /* Loops */,
+				B1832D172B932D2600263A05 /* ScrollView */,
 				B1832CC22B8F418D00263A05 /* SwiftUIBootcampApp.swift */,
 				B1832CC42B8F418D00263A05 /* ContentView.swift */,
 				B1832CC62B8F419000263A05 /* Assets.xcassets */,
@@ -217,6 +220,14 @@
 				B1832D152B924EA300263A05 /* LoopsModule.swift */,
 			);
 			path = Loops;
+			sourceTree = "<group>";
+		};
+		B1832D172B932D2600263A05 /* ScrollView */ = {
+			isa = PBXGroup;
+			children = (
+				B1832D182B932D3E00263A05 /* ScrollViewModule.swift */,
+			);
+			path = ScrollView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -362,6 +373,7 @@
 				B1832D052B90913300263A05 /* StackBasic.swift in Sources */,
 				B1832CF12B8F4F7D00263A05 /* ShapesModule.swift in Sources */,
 				B1832D0D2B90A3FF00263A05 /* StackChallenge.swift in Sources */,
+				B1832D192B932D3E00263A05 /* ScrollViewModule.swift in Sources */,
 				B1832D132B91C7B400263A05 /* SpacersModule.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
