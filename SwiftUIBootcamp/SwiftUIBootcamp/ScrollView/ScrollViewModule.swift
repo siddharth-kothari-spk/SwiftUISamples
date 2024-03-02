@@ -38,6 +38,23 @@ struct ScrollViewModule: View {
             .frame(width: 300, height: 50)
             .background(.red)
 
+            ScrollView(.horizontal, showsIndicators: true) {
+                HStack(spacing: 15) {
+                               ForEach(photos, id: \.self) { photo in
+                                   VStack(spacing: 10) {
+                                       Image(photo)
+                                           .resizable()
+                                           .frame(width: 60, height: 60)
+                                           .clipShape(/*@START_MENU_TOKEN@*/Circle()/*@END_MENU_TOKEN@*/)
+                                       
+                                       Text(photo)
+                                           .foregroundStyle(.white)
+                                           .font(.subheadline)
+                                   }
+                               }
+                           }
+                       }
+                       .background(.purple)
         }
     }
 }
