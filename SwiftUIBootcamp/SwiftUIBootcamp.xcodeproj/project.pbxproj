@@ -29,6 +29,7 @@
 		B1832D192B932D3E00263A05 /* ScrollViewModule.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1832D182B932D3E00263A05 /* ScrollViewModule.swift */; };
 		B1832D1B2B933EF800263A05 /* ScrollChallenge.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1832D1A2B933EF800263A05 /* ScrollChallenge.swift */; };
 		B1832D1E2B9353D200263A05 /* GridsModule.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1832D1D2B9353D200263A05 /* GridsModule.swift */; };
+		B1832D202B93A7EF00263A05 /* GridsChallenge.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1832D1F2B93A7EF00263A05 /* GridsChallenge.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -74,6 +75,7 @@
 		B1832D182B932D3E00263A05 /* ScrollViewModule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrollViewModule.swift; sourceTree = "<group>"; };
 		B1832D1A2B933EF800263A05 /* ScrollChallenge.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrollChallenge.swift; sourceTree = "<group>"; };
 		B1832D1D2B9353D200263A05 /* GridsModule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GridsModule.swift; sourceTree = "<group>"; };
+		B1832D1F2B93A7EF00263A05 /* GridsChallenge.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GridsChallenge.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -240,6 +242,7 @@
 			isa = PBXGroup;
 			children = (
 				B1832D1D2B9353D200263A05 /* GridsModule.swift */,
+				B1832D1F2B93A7EF00263A05 /* GridsChallenge.swift */,
 			);
 			path = Grids;
 			sourceTree = "<group>";
@@ -375,6 +378,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B1832D032B8F672300263A05 /* StacksModule.swift in Sources */,
+				B1832D202B93A7EF00263A05 /* GridsChallenge.swift in Sources */,
 				B1832CEE2B8F450D00263A05 /* TextModule.swift in Sources */,
 				B1832D1B2B933EF800263A05 /* ScrollChallenge.swift in Sources */,
 				B1832CC52B8F418D00263A05 /* ContentView.swift in Sources */,
