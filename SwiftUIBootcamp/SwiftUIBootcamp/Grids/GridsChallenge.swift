@@ -11,7 +11,7 @@ struct GridsChallenge: View {
     let columns: [GridItem] = [
         .init(.flexible(), spacing: 2),
         .init(.flexible(), spacing: 2),
-        .init(.flexible())
+        .init(.flexible(), spacing: 2)
     ]
     
     let foods : [String] = [
@@ -30,13 +30,19 @@ struct GridsChallenge: View {
     
     var body: some View {
         ScrollView {
-            LazyVGrid(columns: columns, spacing: 2, content: {
+            LazyVGrid(columns: columns, spacing: 10, content: {
                 ForEach(foods, id: \.self) { food in
-                    Image(food)
-                        .resizable()
-                        .scaledToFill()
-                        .frame(width: dimension, height: dimension)
-                        .clipShape(Rectangle())
+                    VStack(alignment: .leading, spacing: 5) {
+                        Image(food)
+                            .resizable()
+                            .scaledToFill()
+                            .frame(width: dimension, height: dimension)
+                            .clipShape(Rectangle())
+                        
+                        Text(food)
+                            .font(.callout)
+                            .fontWeight(.semibold)
+                    }
                 }
                
             })
