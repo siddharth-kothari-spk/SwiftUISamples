@@ -20,21 +20,25 @@ let foods : [String] = [
     "food10"]
 
 struct ListsModule: View {
+    @State private var isIndexSectionExpanded: Bool = false
+    @State private var isFoodNameSectionExpanded: Bool = false
+    @State private var isFoodImageSectionExpanded: Bool = false
+
     var body: some View {
         List {
-            Section("Index with index position") {
+            Section("Index with index position", isExpanded: $isIndexSectionExpanded) {
                 ForEach(0...5, id: \.self) { index in
                     Text("Index \(index)")
                 }
             }
             
-            Section("Food name list") {
+            Section("Food name list", isExpanded: $isFoodNameSectionExpanded) {
                 ForEach(foods, id: \.self) { food in
                     Text(food)
                 }
             }
             
-            Section("Food image") {
+            Section("Food image", isExpanded: $isFoodImageSectionExpanded) {
                 ForEach(foods, id: \.self) { food in
                     Image(food)
                         .resizable()
@@ -43,6 +47,8 @@ struct ListsModule: View {
                 }
             }
         }
+        .listStyle(.sidebar)
+        // https://stackoverflow.com/a/77266404 sidebar issue
     }
 }
 
