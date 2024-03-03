@@ -9,6 +9,7 @@ import SwiftUI
 
 struct ButtonsModule: View {
     @State private var rectColor = Color.blue
+    @State private var counter = 0
     var body: some View {
         VStack {
             Rectangle()
@@ -21,6 +22,25 @@ struct ButtonsModule: View {
                 rectColor = .green
             }
             .padding()
+            
+            
+            Text("Counter: \(counter)")
+                .font(.largeTitle)
+                .fontWeight(.heavy)
+                .foregroundStyle(.cyan)
+                .padding()
+            
+            Button(action: {
+                counter += 1
+            }, label: {
+                Text("Custom Button")
+                    .font(.headline)
+                    .frame(width: 300, height: 50)
+                    .background(.red)
+                    .clipShape(Capsule())
+                    .foregroundStyle(.white)
+                
+            })
         }
     }
 }
