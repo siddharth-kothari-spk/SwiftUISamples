@@ -22,19 +22,19 @@ let foods : [String] = [
 struct ListsModule: View {
     var body: some View {
         List {
-            Section {
+            Section("Index with index position") {
                 ForEach(0...5, id: \.self) { index in
                     Text("Index \(index)")
                 }
             }
             
-            Section {
+            Section("Food name list") {
                 ForEach(foods, id: \.self) { food in
                     Text(food)
                 }
             }
             
-            Section {
+            Section("Food image") {
                 ForEach(foods, id: \.self) { food in
                     Image(food)
                         .resizable()
