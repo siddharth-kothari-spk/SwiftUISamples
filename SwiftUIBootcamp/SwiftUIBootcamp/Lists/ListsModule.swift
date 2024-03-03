@@ -7,22 +7,22 @@
 
 import SwiftUI
 
-let foods : [String] = [
-    "food1",
-    "food2",
-    "food3",
-    "food4",
-    "food5",
-    "food6",
-    "food7",
-    "food8",
-    "food9",
-    "food10"]
-
 struct ListsModule: View {
     @State private var isIndexSectionExpanded: Bool = false
-    @State private var isFoodNameSectionExpanded: Bool = false
+    @State private var isFoodNameSectionExpanded: Bool = true
     @State private var isFoodImageSectionExpanded: Bool = false
+    
+    @State var foods : [String] = [
+        "food1",
+        "food2",
+        "food3",
+        "food4",
+        "food5",
+        "food6",
+        "food7",
+        "food8",
+        "food9",
+        "food10"]
 
     var body: some View {
         List {
@@ -36,6 +36,9 @@ struct ListsModule: View {
                 ForEach(foods, id: \.self) { food in
                     Text(food)
                 }
+                .onDelete(perform: { indexSet in
+                    foods.remove(atOffsets: indexSet)
+                })
             }
             
             Section("Food image", isExpanded: $isFoodImageSectionExpanded) {
