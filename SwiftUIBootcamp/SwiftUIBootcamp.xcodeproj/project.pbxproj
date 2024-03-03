@@ -31,6 +31,7 @@
 		B1832D1E2B9353D200263A05 /* GridsModule.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1832D1D2B9353D200263A05 /* GridsModule.swift */; };
 		B1832D202B93A7EF00263A05 /* GridsChallenge.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1832D1F2B93A7EF00263A05 /* GridsChallenge.swift */; };
 		B1832D232B9419ED00263A05 /* ListsModule.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1832D222B9419ED00263A05 /* ListsModule.swift */; };
+		B1832D262B94229E00263A05 /* ButtonsModule.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1832D252B94229E00263A05 /* ButtonsModule.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -78,6 +79,7 @@
 		B1832D1D2B9353D200263A05 /* GridsModule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GridsModule.swift; sourceTree = "<group>"; };
 		B1832D1F2B93A7EF00263A05 /* GridsChallenge.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GridsChallenge.swift; sourceTree = "<group>"; };
 		B1832D222B9419ED00263A05 /* ListsModule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListsModule.swift; sourceTree = "<group>"; };
+		B1832D252B94229E00263A05 /* ButtonsModule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonsModule.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -138,6 +140,7 @@
 				B1832D172B932D2600263A05 /* ScrollView */,
 				B1832D1C2B9353BB00263A05 /* Grids */,
 				B1832D212B9419DC00263A05 /* Lists */,
+				B1832D242B94228A00263A05 /* Buttons */,
 				B1832CC22B8F418D00263A05 /* SwiftUIBootcampApp.swift */,
 				B1832CC42B8F418D00263A05 /* ContentView.swift */,
 				B1832CC62B8F419000263A05 /* Assets.xcassets */,
@@ -256,6 +259,14 @@
 				B1832D222B9419ED00263A05 /* ListsModule.swift */,
 			);
 			path = Lists;
+			sourceTree = "<group>";
+		};
+		B1832D242B94228A00263A05 /* Buttons */ = {
+			isa = PBXGroup;
+			children = (
+				B1832D252B94229E00263A05 /* ButtonsModule.swift */,
+			);
+			path = Buttons;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -391,6 +402,7 @@
 				B1832D032B8F672300263A05 /* StacksModule.swift in Sources */,
 				B1832D202B93A7EF00263A05 /* GridsChallenge.swift in Sources */,
 				B1832CEE2B8F450D00263A05 /* TextModule.swift in Sources */,
+				B1832D262B94229E00263A05 /* ButtonsModule.swift in Sources */,
 				B1832D1B2B933EF800263A05 /* ScrollChallenge.swift in Sources */,
 				B1832CC52B8F418D00263A05 /* ContentView.swift in Sources */,
 				B1832D102B90A98400263A05 /* PaddingModule.swift in Sources */,
