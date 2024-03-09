@@ -16,6 +16,7 @@
 		B11A4E772B9BF67B006CFE27 /* NavigationStack2UITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B11A4E762B9BF67B006CFE27 /* NavigationStack2UITestsLaunchTests.swift */; };
 		B11A4E842B9BF70C006CFE27 /* Before_iOS16.swift in Sources */ = {isa = PBXBuildFile; fileRef = B11A4E832B9BF70C006CFE27 /* Before_iOS16.swift */; };
 		B11A4E862B9BF7AA006CFE27 /* From_iOS16.swift in Sources */ = {isa = PBXBuildFile; fileRef = B11A4E852B9BF7AA006CFE27 /* From_iOS16.swift */; };
+		B11A4E882B9BF8FE006CFE27 /* MasterDetailFlow.swift in Sources */ = {isa = PBXBuildFile; fileRef = B11A4E872B9BF8FE006CFE27 /* MasterDetailFlow.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +49,7 @@
 		B11A4E762B9BF67B006CFE27 /* NavigationStack2UITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationStack2UITestsLaunchTests.swift; sourceTree = "<group>"; };
 		B11A4E832B9BF70C006CFE27 /* Before_iOS16.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Before_iOS16.swift; sourceTree = "<group>"; };
 		B11A4E852B9BF7AA006CFE27 /* From_iOS16.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = From_iOS16.swift; sourceTree = "<group>"; };
+		B11A4E872B9BF8FE006CFE27 /* MasterDetailFlow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MasterDetailFlow.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,6 +104,7 @@
 				B11A4E5B2B9BF678006CFE27 /* ContentView.swift */,
 				B11A4E832B9BF70C006CFE27 /* Before_iOS16.swift */,
 				B11A4E852B9BF7AA006CFE27 /* From_iOS16.swift */,
+				B11A4E872B9BF8FE006CFE27 /* MasterDetailFlow.swift */,
 				B11A4E5D2B9BF67B006CFE27 /* Assets.xcassets */,
 				B11A4E5F2B9BF67B006CFE27 /* Preview Content */,
 			);
@@ -263,6 +266,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B11A4E882B9BF8FE006CFE27 /* MasterDetailFlow.swift in Sources */,
 				B11A4E862B9BF7AA006CFE27 /* From_iOS16.swift in Sources */,
 				B11A4E5C2B9BF678006CFE27 /* ContentView.swift in Sources */,
 				B11A4E842B9BF70C006CFE27 /* Before_iOS16.swift in Sources */,
