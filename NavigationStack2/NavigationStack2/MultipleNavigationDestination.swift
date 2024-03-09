@@ -18,22 +18,22 @@ struct MultipleNavigationDestination: View {
                 }
             }
             
-            List(systemImages,id:\.self, rowContent: { systemImage in
+            List(systemImages, id:\.self) { systemImage in
                 NavigationLink(value: systemImage) {
                     Image(systemName: systemImage)
                         .font(.system(size: 40))
                 }
                 
-            })
+            }
             .navigationDestination(for: Color.self) { color in
                 color
                     .frame(maxWidth: .infinity,
                            maxHeight: .infinity)
             }
-            .navigationDestination(for: String.self, destination: { image in
+            .navigationDestination(for: String.self) { image in
                 Image(systemName: image)
                     .font(.system(size: 100))
-            })
+            }
             .navigationTitle("Navigate")
         }
     }
