@@ -46,6 +46,14 @@ struct StoreNavigationState: View {
                     }
                     .listStyle(.plain)
  
+                    Button {
+                        path = .init()
+                        // By resetting the value of the path variable, we can instruct the navigation stack to go back to the root level.
+                    } label: {
+                        Text("Back to Main")
+                    }
+                    .buttonStyle(.borderedProminent)
+                    .controlSize(.large)
                 }
             }
  
