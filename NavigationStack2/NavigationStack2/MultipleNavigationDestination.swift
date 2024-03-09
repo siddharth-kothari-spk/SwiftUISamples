@@ -22,6 +22,7 @@ struct MultipleNavigationDestination: View {
                 NavigationLink(value: systemImage) {
                     Image(systemName: systemImage)
                         .font(.system(size: 40))
+                        .foregroundStyle(/*@START_MENU_TOKEN@*/.blue/*@END_MENU_TOKEN@*/)
                 }
                 
             }
@@ -33,6 +34,7 @@ struct MultipleNavigationDestination: View {
             .navigationDestination(for: String.self) { image in
                 Image(systemName: image)
                     .font(.system(size: 100))
+                    .foregroundStyle(.cyan)
             }
             .navigationTitle("Navigate")
         }
