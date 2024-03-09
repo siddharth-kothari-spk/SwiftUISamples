@@ -13,9 +13,13 @@ struct From_iOS16: View {
         // style 1
         NavigationStack {
             NavigationLink {
-                Text("Destination")
+                Text("Destination1")
             } label: {
-                Text("Tap me")
+                Text("Tap me - style 1")
+            }
+            
+            NavigationLink("Tap me - style 2") {
+                Text("Destination2")
             }
         }
     }
