@@ -14,6 +14,7 @@
 		B11A4E6B2B9BF67B006CFE27 /* NavigationStack2Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B11A4E6A2B9BF67B006CFE27 /* NavigationStack2Tests.swift */; };
 		B11A4E752B9BF67B006CFE27 /* NavigationStack2UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B11A4E742B9BF67B006CFE27 /* NavigationStack2UITests.swift */; };
 		B11A4E772B9BF67B006CFE27 /* NavigationStack2UITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B11A4E762B9BF67B006CFE27 /* NavigationStack2UITestsLaunchTests.swift */; };
+		B11A4E842B9BF70C006CFE27 /* Before_iOS16.swift in Sources */ = {isa = PBXBuildFile; fileRef = B11A4E832B9BF70C006CFE27 /* Before_iOS16.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +45,7 @@
 		B11A4E702B9BF67B006CFE27 /* NavigationStack2UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NavigationStack2UITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B11A4E742B9BF67B006CFE27 /* NavigationStack2UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationStack2UITests.swift; sourceTree = "<group>"; };
 		B11A4E762B9BF67B006CFE27 /* NavigationStack2UITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationStack2UITestsLaunchTests.swift; sourceTree = "<group>"; };
+		B11A4E832B9BF70C006CFE27 /* Before_iOS16.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Before_iOS16.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,6 +98,7 @@
 			children = (
 				B11A4E592B9BF678006CFE27 /* NavigationStack2App.swift */,
 				B11A4E5B2B9BF678006CFE27 /* ContentView.swift */,
+				B11A4E832B9BF70C006CFE27 /* Before_iOS16.swift */,
 				B11A4E5D2B9BF67B006CFE27 /* Assets.xcassets */,
 				B11A4E5F2B9BF67B006CFE27 /* Preview Content */,
 			);
@@ -258,6 +261,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B11A4E5C2B9BF678006CFE27 /* ContentView.swift in Sources */,
+				B11A4E842B9BF70C006CFE27 /* Before_iOS16.swift in Sources */,
 				B11A4E5A2B9BF678006CFE27 /* NavigationStack2App.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
