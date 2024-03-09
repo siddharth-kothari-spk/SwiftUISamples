@@ -39,6 +39,7 @@ struct MasterDetailFlow: View {
             }
             .navigationTitle("Color")
         }
+        // We still use NavigationLinks to present the list of data and implement the navigation feature. What’s difference is that each NavigationLink associates with a value. On top of that, we added the new navigationDestination modifier to capture the value change. When a user selects a particular link, the navigationDestination modifier presents the corresponding destination view for navigation links that present data of type Color.
     }
 }
 
