@@ -12,6 +12,7 @@ struct ListsModule: View {
     @State private var isFoodNameSectionExpanded: Bool = true
     @State private var isFoodImageSectionExpanded: Bool = false
     
+    @State private var showAlert = false
     @State var foods : [String] = [
         "food1",
         "food2",
@@ -51,6 +52,21 @@ struct ListsModule: View {
             }
         }
         .listStyle(.sidebar)
+        .onLongPressGesture {
+            self.showAlert.toggle()
+        }
+        .alert("Alert title", isPresented: $showAlert, actions: {
+            HStack {
+                Button("Function", role: .destructive) {
+                    print("Destructive method")
+                }
+                Button("Cancel", role: .cancel) {
+                    print("cancel method")
+                }
+            }
+           
+            
+        })
         // https://stackoverflow.com/a/77266404 sidebar issue
     }
 }
