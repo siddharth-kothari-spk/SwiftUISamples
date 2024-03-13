@@ -15,6 +15,7 @@
 		B11A4F022BA17B80006CFE27 /* CheckOrientationUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B11A4F012BA17B80006CFE27 /* CheckOrientationUITests.swift */; };
 		B11A4F042BA17B80006CFE27 /* CheckOrientationUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B11A4F032BA17B80006CFE27 /* CheckOrientationUITestsLaunchTests.swift */; };
 		B11A4F112BA17B9E006CFE27 /* DeviceRotationViewModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = B11A4F102BA17B9E006CFE27 /* DeviceRotationViewModifier.swift */; };
+		B11A4F142BA17CC0006CFE27 /* ViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B11A4F132BA17CC0006CFE27 /* ViewExtension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,6 +47,7 @@
 		B11A4F012BA17B80006CFE27 /* CheckOrientationUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckOrientationUITests.swift; sourceTree = "<group>"; };
 		B11A4F032BA17B80006CFE27 /* CheckOrientationUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckOrientationUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		B11A4F102BA17B9E006CFE27 /* DeviceRotationViewModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceRotationViewModifier.swift; sourceTree = "<group>"; };
+		B11A4F132BA17CC0006CFE27 /* ViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewExtension.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +101,7 @@
 				B11A4EE62BA17B7D006CFE27 /* CheckOrientationApp.swift */,
 				B11A4EE82BA17B7D006CFE27 /* ContentView.swift */,
 				B11A4F102BA17B9E006CFE27 /* DeviceRotationViewModifier.swift */,
+				B11A4F122BA17CB2006CFE27 /* Extensions */,
 				B11A4EEA2BA17B80006CFE27 /* Assets.xcassets */,
 				B11A4EEC2BA17B80006CFE27 /* Preview Content */,
 			);
@@ -128,6 +131,14 @@
 				B11A4F032BA17B80006CFE27 /* CheckOrientationUITestsLaunchTests.swift */,
 			);
 			path = CheckOrientationUITests;
+			sourceTree = "<group>";
+		};
+		B11A4F122BA17CB2006CFE27 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				B11A4F132BA17CC0006CFE27 /* ViewExtension.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -262,6 +273,7 @@
 			files = (
 				B11A4EE92BA17B7D006CFE27 /* ContentView.swift in Sources */,
 				B11A4F112BA17B9E006CFE27 /* DeviceRotationViewModifier.swift in Sources */,
+				B11A4F142BA17CC0006CFE27 /* ViewExtension.swift in Sources */,
 				B11A4EE72BA17B7D006CFE27 /* CheckOrientationApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
