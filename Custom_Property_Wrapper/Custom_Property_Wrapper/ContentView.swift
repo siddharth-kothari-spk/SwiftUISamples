@@ -8,11 +8,20 @@
 import SwiftUI
 
 struct ContentView: View {
+    @Document("test.txt") var document
+    
     var body: some View {
-        VStack {
-            Text("Hello, world!").padding()
-        }
-        .padding()
+        NavigationView(content: {
+            NavigationLink(destination: Text("Destination")) {
+                VStack {
+                    Text(document)
+                    Button("Change document") {
+                        document = String(Int.random(in: 1...1000))
+                    }
+                }
+            }
+            .navigationTitle("Simple Text")
+        })
     }
 }
 
