@@ -12,15 +12,24 @@ struct ContentView: View {
     
     var body: some View {
         NavigationView(content: {
-            NavigationLink(destination: Text("Destination")) {
+           /* NavigationLink(destination: Text("Destination")) {
                 VStack {
-                    Text(document)
+                    //Text(document)
+                    TextEditor(text: $document)
                     Button("Change document") {
                         document = String(Int.random(in: 1...1000))
                     }
                 }
             }
             .navigationTitle("Simple Text")
+            */
+            VStack {
+                //Text(document)
+                TextEditor(text: $document)
+                Button("Change document") {
+                    document = String(Int.random(in: 1...1000))
+                }
+            }
         })
     }
 }
@@ -55,6 +64,15 @@ struct ContentView: View {
         }
     }
     
+    // SwiftUI’s own @State property wrapper uses the projected value to create a binding for its data, and if we do the same thing here then it would allow us to bind directly to a document so that every change we make gets saved out.
+    var projectedValue: Binding<String> {
+        Binding {
+            wrappedValue
+        } set: { newVal in
+            wrappedValue = newVal
+            // when our binding is written to we update wrappedValue, which in turn triggers our nonmutating setter, which is what causes the new value to be written to disk
+        }
+    }
     init(_ filename: String) {
         let paths = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask)
         url = paths[0].appendingPathExtension(filename)
