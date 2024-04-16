@@ -29,7 +29,9 @@ struct ContentView: View {
     ContentView()
 }
 
-@propertyWrapper struct Document {
+// right now SwiftUI doesn’t realize it should be watching our property wrapper for change notification, even though it has an @State property inside there. To fix this we need to make Document conform to the DynamicProperty protocol
+
+@propertyWrapper struct Document: DynamicProperty {
     
     @State private var value = "" // private for a reason: when we interact with this property wrapper we want to add some extra work so that our new value gets written to disk automatically.
     
