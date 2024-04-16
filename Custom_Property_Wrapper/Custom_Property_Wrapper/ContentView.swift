@@ -43,4 +43,16 @@ struct ContentView: View {
             }
         }
     }
+    
+    init(_ filename: String) {
+        let paths = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask)
+        url = paths[0].appendingPathExtension(filename)
+        
+        // we need to load the initial value of the text file and wrap that in a State object.
+        let initialText = (try? String(contentsOf: url)) ?? ""
+        _value = State(wrappedValue: initialText)
+        
+        
+        
+    }
 }
