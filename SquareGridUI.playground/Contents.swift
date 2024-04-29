@@ -38,6 +38,10 @@ struct SquareGrid: View {
 }
 
 let view = SquareGrid()
-let hostingVC = UIHostingController(rootView: view)
-PlaygroundPage.current.liveView = hostingVC
 
+// UIHostingController
+//let hostingVC = UIHostingController(rootView: view)
+//PlaygroundPage.current.liveView = hostingVC
+
+// setLiveView
+PlaygroundPage.current.setLiveView(view)
