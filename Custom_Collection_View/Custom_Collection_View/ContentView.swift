@@ -6,6 +6,7 @@
 //
 
 // courtsey: https://blog.stackademic.com/swiftui-custom-collectionview-ea06c4a6bc70
+// Challenge: A CollectionView with dynamic number of columns (may differ by row) depending on the item width.
 
 import SwiftUI
 

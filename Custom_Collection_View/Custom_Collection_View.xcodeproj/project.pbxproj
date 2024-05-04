@@ -14,6 +14,8 @@
 		B1324EDE2BE612D500C713A4 /* Custom_Collection_ViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1324EDD2BE612D500C713A4 /* Custom_Collection_ViewTests.swift */; };
 		B1324EE82BE612D500C713A4 /* Custom_Collection_ViewUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1324EE72BE612D500C713A4 /* Custom_Collection_ViewUITests.swift */; };
 		B1324EEA2BE612D500C713A4 /* Custom_Collection_ViewUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1324EE92BE612D500C713A4 /* Custom_Collection_ViewUITestsLaunchTests.swift */; };
+		B1324EF72BE613F300C713A4 /* LazyVGridAdaptiveDemo1.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1324EF62BE613F300C713A4 /* LazyVGridAdaptiveDemo1.swift */; };
+		B1324EF92BE6145700C713A4 /* LazyVGridAdaptiveDemo1.png in Resources */ = {isa = PBXBuildFile; fileRef = B1324EF82BE6145700C713A4 /* LazyVGridAdaptiveDemo1.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +46,8 @@
 		B1324EE32BE612D500C713A4 /* Custom_Collection_ViewUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Custom_Collection_ViewUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B1324EE72BE612D500C713A4 /* Custom_Collection_ViewUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Custom_Collection_ViewUITests.swift; sourceTree = "<group>"; };
 		B1324EE92BE612D500C713A4 /* Custom_Collection_ViewUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Custom_Collection_ViewUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		B1324EF62BE613F300C713A4 /* LazyVGridAdaptiveDemo1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LazyVGridAdaptiveDemo1.swift; sourceTree = "<group>"; };
+		B1324EF82BE6145700C713A4 /* LazyVGridAdaptiveDemo1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = LazyVGridAdaptiveDemo1.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,6 +100,8 @@
 			children = (
 				B1324ECC2BE612D200C713A4 /* Custom_Collection_ViewApp.swift */,
 				B1324ECE2BE612D200C713A4 /* ContentView.swift */,
+				B1324EF62BE613F300C713A4 /* LazyVGridAdaptiveDemo1.swift */,
+				B1324EF82BE6145700C713A4 /* LazyVGridAdaptiveDemo1.png */,
 				B1324ED02BE612D400C713A4 /* Assets.xcassets */,
 				B1324ED22BE612D400C713A4 /* Preview Content */,
 			);
@@ -233,6 +239,7 @@
 			files = (
 				B1324ED42BE612D400C713A4 /* Preview Assets.xcassets in Resources */,
 				B1324ED12BE612D400C713A4 /* Assets.xcassets in Resources */,
+				B1324EF92BE6145700C713A4 /* LazyVGridAdaptiveDemo1.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -257,6 +264,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B1324EF72BE613F300C713A4 /* LazyVGridAdaptiveDemo1.swift in Sources */,
 				B1324ECF2BE612D200C713A4 /* ContentView.swift in Sources */,
 				B1324ECD2BE612D200C713A4 /* Custom_Collection_ViewApp.swift in Sources */,
 			);
