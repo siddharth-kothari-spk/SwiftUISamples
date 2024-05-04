@@ -18,6 +18,8 @@
 		B1324EF92BE6145700C713A4 /* LazyVGridAdaptiveDemo1.png in Resources */ = {isa = PBXBuildFile; fileRef = B1324EF82BE6145700C713A4 /* LazyVGridAdaptiveDemo1.png */; };
 		B1324EFB2BE614E000C713A4 /* LazyVGridAdaptiveDemo2.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1324EFA2BE614E000C713A4 /* LazyVGridAdaptiveDemo2.swift */; };
 		B1324EFD2BE6153200C713A4 /* LazyVGridAdaptiveDemo2.png in Resources */ = {isa = PBXBuildFile; fileRef = B1324EFC2BE6153200C713A4 /* LazyVGridAdaptiveDemo2.png */; };
+		B1324EFF2BE6164C00C713A4 /* CustomCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1324EFE2BE6164C00C713A4 /* CustomCollectionView.swift */; };
+		B1324F012BE617A400C713A4 /* CustomCollectionView.png in Resources */ = {isa = PBXBuildFile; fileRef = B1324F002BE617A400C713A4 /* CustomCollectionView.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,6 +54,8 @@
 		B1324EF82BE6145700C713A4 /* LazyVGridAdaptiveDemo1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = LazyVGridAdaptiveDemo1.png; sourceTree = "<group>"; };
 		B1324EFA2BE614E000C713A4 /* LazyVGridAdaptiveDemo2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LazyVGridAdaptiveDemo2.swift; sourceTree = "<group>"; };
 		B1324EFC2BE6153200C713A4 /* LazyVGridAdaptiveDemo2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = LazyVGridAdaptiveDemo2.png; sourceTree = "<group>"; };
+		B1324EFE2BE6164C00C713A4 /* CustomCollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomCollectionView.swift; sourceTree = "<group>"; };
+		B1324F002BE617A400C713A4 /* CustomCollectionView.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = CustomCollectionView.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -108,6 +112,8 @@
 				B1324EF82BE6145700C713A4 /* LazyVGridAdaptiveDemo1.png */,
 				B1324EFA2BE614E000C713A4 /* LazyVGridAdaptiveDemo2.swift */,
 				B1324EFC2BE6153200C713A4 /* LazyVGridAdaptiveDemo2.png */,
+				B1324EFE2BE6164C00C713A4 /* CustomCollectionView.swift */,
+				B1324F002BE617A400C713A4 /* CustomCollectionView.png */,
 				B1324ED02BE612D400C713A4 /* Assets.xcassets */,
 				B1324ED22BE612D400C713A4 /* Preview Content */,
 			);
@@ -245,6 +251,7 @@
 			files = (
 				B1324ED42BE612D400C713A4 /* Preview Assets.xcassets in Resources */,
 				B1324ED12BE612D400C713A4 /* Assets.xcassets in Resources */,
+				B1324F012BE617A400C713A4 /* CustomCollectionView.png in Resources */,
 				B1324EFD2BE6153200C713A4 /* LazyVGridAdaptiveDemo2.png in Resources */,
 				B1324EF92BE6145700C713A4 /* LazyVGridAdaptiveDemo1.png in Resources */,
 			);
@@ -271,6 +278,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B1324EFF2BE6164C00C713A4 /* CustomCollectionView.swift in Sources */,
 				B1324EFB2BE614E000C713A4 /* LazyVGridAdaptiveDemo2.swift in Sources */,
 				B1324EF72BE613F300C713A4 /* LazyVGridAdaptiveDemo1.swift in Sources */,
 				B1324ECF2BE612D200C713A4 /* ContentView.swift in Sources */,
