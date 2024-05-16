@@ -17,6 +17,7 @@
 		B1D783E12BF621A0002F8714 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1D783E02BF621A0002F8714 /* Model.swift */; };
 		B1D783E32BF6220E002F8714 /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1D783E22BF6220E002F8714 /* ViewModel.swift */; };
 		B1D783E62BF6233D002F8714 /* MessageBubble.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1D783E52BF6233D002F8714 /* MessageBubble.swift */; };
+		B1D783E82BF62437002F8714 /* MessageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1D783E72BF62437002F8714 /* MessageCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,6 +51,7 @@
 		B1D783E02BF621A0002F8714 /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
 		B1D783E22BF6220E002F8714 /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
 		B1D783E52BF6233D002F8714 /* MessageBubble.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageBubble.swift; sourceTree = "<group>"; };
+		B1D783E72BF62437002F8714 /* MessageCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -140,6 +142,7 @@
 			isa = PBXGroup;
 			children = (
 				B1D783E52BF6233D002F8714 /* MessageBubble.swift */,
+				B1D783E72BF62437002F8714 /* MessageCell.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -279,6 +282,7 @@
 				B1D783E62BF6233D002F8714 /* MessageBubble.swift in Sources */,
 				B1D783E32BF6220E002F8714 /* ViewModel.swift in Sources */,
 				B1D783B72BF62116002F8714 /* Chat_InterfaceApp.swift in Sources */,
+				B1D783E82BF62437002F8714 /* MessageCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
