@@ -9,7 +9,7 @@ import Foundation
 import Observation
 
 @MainActor
-@Observable
+@Observable // this allows the UI to listen for changes in the view model and update itself accordingly 
 class ChatViewModel {
     var draftMessage: String = "" // message currently being typed by the user
 
