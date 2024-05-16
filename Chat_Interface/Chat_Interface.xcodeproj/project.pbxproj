@@ -14,6 +14,7 @@
 		B1D783C82BF62118002F8714 /* Chat_InterfaceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1D783C72BF62118002F8714 /* Chat_InterfaceTests.swift */; };
 		B1D783D22BF62118002F8714 /* Chat_InterfaceUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1D783D12BF62118002F8714 /* Chat_InterfaceUITests.swift */; };
 		B1D783D42BF62118002F8714 /* Chat_InterfaceUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1D783D32BF62118002F8714 /* Chat_InterfaceUITestsLaunchTests.swift */; };
+		B1D783E12BF621A0002F8714 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1D783E02BF621A0002F8714 /* Model.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +45,7 @@
 		B1D783CD2BF62118002F8714 /* Chat_InterfaceUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Chat_InterfaceUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B1D783D12BF62118002F8714 /* Chat_InterfaceUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Chat_InterfaceUITests.swift; sourceTree = "<group>"; };
 		B1D783D32BF62118002F8714 /* Chat_InterfaceUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Chat_InterfaceUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		B1D783E02BF621A0002F8714 /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,6 +98,7 @@
 			children = (
 				B1D783B62BF62116002F8714 /* Chat_InterfaceApp.swift */,
 				B1D783B82BF62116002F8714 /* ContentView.swift */,
+				B1D783E02BF621A0002F8714 /* Model.swift */,
 				B1D783BA2BF62118002F8714 /* Assets.xcassets */,
 				B1D783BC2BF62118002F8714 /* Preview Content */,
 			);
@@ -257,6 +260,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B1D783E12BF621A0002F8714 /* Model.swift in Sources */,
 				B1D783B92BF62116002F8714 /* ContentView.swift in Sources */,
 				B1D783B72BF62116002F8714 /* Chat_InterfaceApp.swift in Sources */,
 			);
