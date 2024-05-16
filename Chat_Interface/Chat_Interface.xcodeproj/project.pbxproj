@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		B1D783B72BF62116002F8714 /* Chat_InterfaceApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1D783B62BF62116002F8714 /* Chat_InterfaceApp.swift */; };
-		B1D783B92BF62116002F8714 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1D783B82BF62116002F8714 /* ContentView.swift */; };
+		B1D783B92BF62116002F8714 /* ChatView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1D783B82BF62116002F8714 /* ChatView.swift */; };
 		B1D783BB2BF62118002F8714 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B1D783BA2BF62118002F8714 /* Assets.xcassets */; };
 		B1D783BE2BF62118002F8714 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B1D783BD2BF62118002F8714 /* Preview Assets.xcassets */; };
 		B1D783C82BF62118002F8714 /* Chat_InterfaceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1D783C72BF62118002F8714 /* Chat_InterfaceTests.swift */; };
@@ -43,7 +43,7 @@
 /* Begin PBXFileReference section */
 		B1D783B32BF62116002F8714 /* Chat_Interface.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Chat_Interface.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B1D783B62BF62116002F8714 /* Chat_InterfaceApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Chat_InterfaceApp.swift; sourceTree = "<group>"; };
-		B1D783B82BF62116002F8714 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		B1D783B82BF62116002F8714 /* ChatView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatView.swift; sourceTree = "<group>"; };
 		B1D783BA2BF62118002F8714 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B1D783BD2BF62118002F8714 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		B1D783C32BF62118002F8714 /* Chat_InterfaceTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Chat_InterfaceTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -109,7 +109,7 @@
 			isa = PBXGroup;
 			children = (
 				B1D783B62BF62116002F8714 /* Chat_InterfaceApp.swift */,
-				B1D783B82BF62116002F8714 /* ContentView.swift */,
+				B1D783B82BF62116002F8714 /* ChatView.swift */,
 				B1D783E02BF621A0002F8714 /* Model.swift */,
 				B1D783E22BF6220E002F8714 /* ViewModel.swift */,
 				B1D783E42BF6232B002F8714 /* Views */,
@@ -287,7 +287,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B1D783E12BF621A0002F8714 /* Model.swift in Sources */,
-				B1D783B92BF62116002F8714 /* ContentView.swift in Sources */,
+				B1D783B92BF62116002F8714 /* ChatView.swift in Sources */,
 				B1D783EE2BF62623002F8714 /* ChatMessageList.swift in Sources */,
 				B1D783E62BF6233D002F8714 /* MessageBubble.swift in Sources */,
 				B1D783E32BF6220E002F8714 /* ViewModel.swift in Sources */,
