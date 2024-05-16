@@ -147,11 +147,11 @@
 		B1D783E42BF6232B002F8714 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				B1D783ED2BF62623002F8714 /* ChatMessageList.swift */,
 				B1D783E52BF6233D002F8714 /* MessageBubble.swift */,
 				B1D783E72BF62437002F8714 /* MessageCell.swift */,
 				B1D783E92BF624C6002F8714 /* MessageTextField.swift */,
 				B1D783EB2BF625B6002F8714 /* SendMessageButton.swift */,
-				B1D783ED2BF62623002F8714 /* ChatMessageList.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
