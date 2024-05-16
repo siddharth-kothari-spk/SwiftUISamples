@@ -19,6 +19,7 @@
 		B1D783E62BF6233D002F8714 /* MessageBubble.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1D783E52BF6233D002F8714 /* MessageBubble.swift */; };
 		B1D783E82BF62437002F8714 /* MessageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1D783E72BF62437002F8714 /* MessageCell.swift */; };
 		B1D783EA2BF624C7002F8714 /* MessageTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1D783E92BF624C6002F8714 /* MessageTextField.swift */; };
+		B1D783EC2BF625B6002F8714 /* SendMessageButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1D783EB2BF625B6002F8714 /* SendMessageButton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,6 +55,7 @@
 		B1D783E52BF6233D002F8714 /* MessageBubble.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageBubble.swift; sourceTree = "<group>"; };
 		B1D783E72BF62437002F8714 /* MessageCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageCell.swift; sourceTree = "<group>"; };
 		B1D783E92BF624C6002F8714 /* MessageTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageTextField.swift; sourceTree = "<group>"; };
+		B1D783EB2BF625B6002F8714 /* SendMessageButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SendMessageButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -146,6 +148,7 @@
 				B1D783E52BF6233D002F8714 /* MessageBubble.swift */,
 				B1D783E72BF62437002F8714 /* MessageCell.swift */,
 				B1D783E92BF624C6002F8714 /* MessageTextField.swift */,
+				B1D783EB2BF625B6002F8714 /* SendMessageButton.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -285,6 +288,7 @@
 				B1D783E62BF6233D002F8714 /* MessageBubble.swift in Sources */,
 				B1D783E32BF6220E002F8714 /* ViewModel.swift in Sources */,
 				B1D783EA2BF624C7002F8714 /* MessageTextField.swift in Sources */,
+				B1D783EC2BF625B6002F8714 /* SendMessageButton.swift in Sources */,
 				B1D783B72BF62116002F8714 /* Chat_InterfaceApp.swift in Sources */,
 				B1D783E82BF62437002F8714 /* MessageCell.swift in Sources */,
 			);
