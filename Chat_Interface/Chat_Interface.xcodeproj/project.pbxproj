@@ -16,6 +16,7 @@
 		B1D783D42BF62118002F8714 /* Chat_InterfaceUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1D783D32BF62118002F8714 /* Chat_InterfaceUITestsLaunchTests.swift */; };
 		B1D783E12BF621A0002F8714 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1D783E02BF621A0002F8714 /* Model.swift */; };
 		B1D783E32BF6220E002F8714 /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1D783E22BF6220E002F8714 /* ViewModel.swift */; };
+		B1D783E62BF6233D002F8714 /* MessageBubble.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1D783E52BF6233D002F8714 /* MessageBubble.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +49,7 @@
 		B1D783D32BF62118002F8714 /* Chat_InterfaceUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Chat_InterfaceUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		B1D783E02BF621A0002F8714 /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
 		B1D783E22BF6220E002F8714 /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
+		B1D783E52BF6233D002F8714 /* MessageBubble.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageBubble.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,6 +104,7 @@
 				B1D783B82BF62116002F8714 /* ContentView.swift */,
 				B1D783E02BF621A0002F8714 /* Model.swift */,
 				B1D783E22BF6220E002F8714 /* ViewModel.swift */,
+				B1D783E42BF6232B002F8714 /* Views */,
 				B1D783BA2BF62118002F8714 /* Assets.xcassets */,
 				B1D783BC2BF62118002F8714 /* Preview Content */,
 			);
@@ -131,6 +134,14 @@
 				B1D783D32BF62118002F8714 /* Chat_InterfaceUITestsLaunchTests.swift */,
 			);
 			path = Chat_InterfaceUITests;
+			sourceTree = "<group>";
+		};
+		B1D783E42BF6232B002F8714 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				B1D783E52BF6233D002F8714 /* MessageBubble.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -265,6 +276,7 @@
 			files = (
 				B1D783E12BF621A0002F8714 /* Model.swift in Sources */,
 				B1D783B92BF62116002F8714 /* ContentView.swift in Sources */,
+				B1D783E62BF6233D002F8714 /* MessageBubble.swift in Sources */,
 				B1D783E32BF6220E002F8714 /* ViewModel.swift in Sources */,
 				B1D783B72BF62116002F8714 /* Chat_InterfaceApp.swift in Sources */,
 			);

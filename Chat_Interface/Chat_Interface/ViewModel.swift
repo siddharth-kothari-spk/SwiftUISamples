@@ -57,7 +57,7 @@ class ChatViewModel {
         // In a real chat app this would make a server call to send the message
         let message = Message(role: .sender, text: draftMessage)
         messages.append(message)
-        scrollPosition = message.id
+       // scrollPosition = message.id
         draftMessage.removeAll()
     }
 
