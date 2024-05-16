@@ -12,7 +12,7 @@ import Observation
 @Observable // this allows the UI to listen for changes in the view model and update itself accordingly 
 class ChatViewModel {
     var draftMessage: String = "" // message currently being typed by the user
-
+    var scrollPosition: UUID? = nil // chat list scrolls to the bottom whenever a new message is added to the messages list.
     private(set) var messages: [Message] = [ // the list of all messages in the chat
         Message(
             role: .receiver,
@@ -57,7 +57,7 @@ class ChatViewModel {
         // In a real chat app this would make a server call to send the message
         let message = Message(role: .sender, text: draftMessage)
         messages.append(message)
-       // scrollPosition = message.id
+        scrollPosition = message.id // Set scroll position to newly sent message
         draftMessage.removeAll()
     }
 

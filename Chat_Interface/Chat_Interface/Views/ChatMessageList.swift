@@ -18,8 +18,10 @@ struct ChatMessagesList: View {
             ForEach(viewModel.messages) { message in
                 MessageCell(message: message)
                     .padding(message.role.padding)
+                    .id(message.id)
             }
         }
+        .scrollPosition(id: $viewModel.scrollPosition)
         .defaultScrollAnchor(.bottom)
     }
 }

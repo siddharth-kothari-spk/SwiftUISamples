@@ -20,7 +20,8 @@ struct ChatView: View {
                     MessageTextField(draftMessage: $viewModel.draftMessage)
                     SendMessageButton {
                         viewModel.sendMessage()
-                    }
+                    }.disabled(!viewModel.canSendMessage) // send message button is disabled if the user hasn’t typed anything yet
+                    
                 }
                 .padding(8)
             }
