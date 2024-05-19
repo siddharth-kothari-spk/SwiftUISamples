@@ -15,6 +15,7 @@
 		B1D784172BF99689002F8714 /* Test_JLLTUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1D784162BF99689002F8714 /* Test_JLLTUITests.swift */; };
 		B1D784192BF99689002F8714 /* Test_JLLTUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1D784182BF99689002F8714 /* Test_JLLTUITestsLaunchTests.swift */; };
 		B1D784262BF9971A002F8714 /* Models.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1D784252BF9971A002F8714 /* Models.swift */; };
+		B1D7842A2BF9981B002F8714 /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1D784292BF9981B002F8714 /* ViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,6 +47,7 @@
 		B1D784162BF99689002F8714 /* Test_JLLTUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Test_JLLTUITests.swift; sourceTree = "<group>"; };
 		B1D784182BF99689002F8714 /* Test_JLLTUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Test_JLLTUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		B1D784252BF9971A002F8714 /* Models.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Models.swift; sourceTree = "<group>"; };
+		B1D784292BF9981B002F8714 /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +101,7 @@
 				B1D783FB2BF99687002F8714 /* Test_JLLTApp.swift */,
 				B1D783FD2BF99687002F8714 /* ContentView.swift */,
 				B1D784252BF9971A002F8714 /* Models.swift */,
+				B1D784292BF9981B002F8714 /* ViewModel.swift */,
 				B1D783FF2BF99689002F8714 /* Assets.xcassets */,
 				B1D784012BF99689002F8714 /* Preview Content */,
 			);
@@ -262,6 +265,7 @@
 			files = (
 				B1D784262BF9971A002F8714 /* Models.swift in Sources */,
 				B1D783FE2BF99687002F8714 /* ContentView.swift in Sources */,
+				B1D7842A2BF9981B002F8714 /* ViewModel.swift in Sources */,
 				B1D783FC2BF99687002F8714 /* Test_JLLTApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
