@@ -20,7 +20,7 @@ class UserViewModel: ObservableObject {
     }
     
     func fetchUsers() {
-        var urllink = "https://jsonplaceholder.typicode.com/users"
+        let urllink = "https://jsonplaceholder.typicode.com/users"
         
         guard let url = URL(string: urllink) else { return }
         
