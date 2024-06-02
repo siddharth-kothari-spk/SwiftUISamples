@@ -15,6 +15,7 @@
 		B1E73B5C2C0C0F8A0020F3BA /* Enum_Manage_ConfigsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1E73B5B2C0C0F8A0020F3BA /* Enum_Manage_ConfigsUITests.swift */; };
 		B1E73B5E2C0C0F8A0020F3BA /* Enum_Manage_ConfigsUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1E73B5D2C0C0F8A0020F3BA /* Enum_Manage_ConfigsUITestsLaunchTests.swift */; };
 		B1E73B6B2C0C10110020F3BA /* Configs.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1E73B6A2C0C10110020F3BA /* Configs.swift */; };
+		B1E73B6D2C0C10730020F3BA /* EnumConfigView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1E73B6C2C0C10730020F3BA /* EnumConfigView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,6 +47,7 @@
 		B1E73B5B2C0C0F8A0020F3BA /* Enum_Manage_ConfigsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Enum_Manage_ConfigsUITests.swift; sourceTree = "<group>"; };
 		B1E73B5D2C0C0F8A0020F3BA /* Enum_Manage_ConfigsUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Enum_Manage_ConfigsUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		B1E73B6A2C0C10110020F3BA /* Configs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Configs.swift; sourceTree = "<group>"; };
+		B1E73B6C2C0C10730020F3BA /* EnumConfigView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnumConfigView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +101,7 @@
 				B1E73B402C0C0F870020F3BA /* Enum_Manage_ConfigsApp.swift */,
 				B1E73B422C0C0F870020F3BA /* ContentView.swift */,
 				B1E73B6A2C0C10110020F3BA /* Configs.swift */,
+				B1E73B6C2C0C10730020F3BA /* EnumConfigView.swift */,
 				B1E73B442C0C0F8A0020F3BA /* Assets.xcassets */,
 				B1E73B462C0C0F8A0020F3BA /* Preview Content */,
 			);
@@ -261,6 +264,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B1E73B432C0C0F870020F3BA /* ContentView.swift in Sources */,
+				B1E73B6D2C0C10730020F3BA /* EnumConfigView.swift in Sources */,
 				B1E73B412C0C0F870020F3BA /* Enum_Manage_ConfigsApp.swift in Sources */,
 				B1E73B6B2C0C10110020F3BA /* Configs.swift in Sources */,
 			);
