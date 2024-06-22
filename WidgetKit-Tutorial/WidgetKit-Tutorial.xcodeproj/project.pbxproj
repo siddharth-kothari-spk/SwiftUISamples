@@ -20,6 +20,7 @@
 		B1B4FA512C26644C007CCCD5 /* WidgetSampleExtensionExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = B1B4FA3D2C266449007CCCD5 /* WidgetSampleExtensionExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		B1B4FA572C2665F4007CCCD5 /* WaterEntry.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1B4FA562C2665F4007CCCD5 /* WaterEntry.swift */; };
 		B1B4FA592C266648007CCCD5 /* Tips.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1B4FA582C266648007CCCD5 /* Tips.swift */; };
+		B1B4FA5B2C2666AE007CCCD5 /* WaterProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1B4FA5A2C2666AE007CCCD5 /* WaterProvider.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -78,6 +79,7 @@
 		B1B4FA4E2C26644C007CCCD5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B1B4FA562C2665F4007CCCD5 /* WaterEntry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WaterEntry.swift; sourceTree = "<group>"; };
 		B1B4FA582C266648007CCCD5 /* Tips.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tips.swift; sourceTree = "<group>"; };
+		B1B4FA5A2C2666AE007CCCD5 /* WaterProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WaterProvider.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -189,6 +191,7 @@
 				B1B4FA4E2C26644C007CCCD5 /* Info.plist */,
 				B1B4FA562C2665F4007CCCD5 /* WaterEntry.swift */,
 				B1B4FA582C266648007CCCD5 /* Tips.swift */,
+				B1B4FA5A2C2666AE007CCCD5 /* WaterProvider.swift */,
 			);
 			path = WidgetSampleExtension;
 			sourceTree = "<group>";
@@ -354,6 +357,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B1B4FA5B2C2666AE007CCCD5 /* WaterProvider.swift in Sources */,
 				B1B4FA122C266392007CCCD5 /* ContentView.swift in Sources */,
 				B1B4FA592C266648007CCCD5 /* Tips.swift in Sources */,
 				B1B4FA102C266392007CCCD5 /* WidgetKit_TutorialApp.swift in Sources */,
