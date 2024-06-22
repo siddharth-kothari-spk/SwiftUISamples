@@ -23,6 +23,9 @@
 		B1B4FA5B2C2666AE007CCCD5 /* WaterProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1B4FA5A2C2666AE007CCCD5 /* WaterProvider.swift */; };
 		B1B4FA5D2C2667F8007CCCD5 /* WaterWidgetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1B4FA5C2C2667F8007CCCD5 /* WaterWidgetView.swift */; };
 		B1B4FA5F2C2668C1007CCCD5 /* WaterTipsWidgetExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1B4FA5E2C2668C1007CCCD5 /* WaterTipsWidgetExtension.swift */; };
+		B1B4FA612C266B71007CCCD5 /* AppIntent.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1B4FA602C266B71007CCCD5 /* AppIntent.swift */; };
+		B1B4FA642C266BB3007CCCD5 /* WidgetSampleExtensionLiveActivity.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1B4FA622C266BB3007CCCD5 /* WidgetSampleExtensionLiveActivity.swift */; };
+		B1B4FA652C266BB3007CCCD5 /* WidgetSampleExtensionBundle.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1B4FA632C266BB3007CCCD5 /* WidgetSampleExtensionBundle.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -84,6 +87,9 @@
 		B1B4FA5A2C2666AE007CCCD5 /* WaterProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WaterProvider.swift; sourceTree = "<group>"; };
 		B1B4FA5C2C2667F8007CCCD5 /* WaterWidgetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WaterWidgetView.swift; sourceTree = "<group>"; };
 		B1B4FA5E2C2668C1007CCCD5 /* WaterTipsWidgetExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WaterTipsWidgetExtension.swift; sourceTree = "<group>"; };
+		B1B4FA602C266B71007CCCD5 /* AppIntent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppIntent.swift; sourceTree = "<group>"; };
+		B1B4FA622C266BB3007CCCD5 /* WidgetSampleExtensionLiveActivity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WidgetSampleExtensionLiveActivity.swift; sourceTree = "<group>"; };
+		B1B4FA632C266BB3007CCCD5 /* WidgetSampleExtensionBundle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WidgetSampleExtensionBundle.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -198,6 +204,9 @@
 				B1B4FA5A2C2666AE007CCCD5 /* WaterProvider.swift */,
 				B1B4FA5C2C2667F8007CCCD5 /* WaterWidgetView.swift */,
 				B1B4FA5E2C2668C1007CCCD5 /* WaterTipsWidgetExtension.swift */,
+				B1B4FA602C266B71007CCCD5 /* AppIntent.swift */,
+				B1B4FA632C266BB3007CCCD5 /* WidgetSampleExtensionBundle.swift */,
+				B1B4FA622C266BB3007CCCD5 /* WidgetSampleExtensionLiveActivity.swift */,
 			);
 			path = WidgetSampleExtension;
 			sourceTree = "<group>";
@@ -364,10 +373,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				B1B4FA5B2C2666AE007CCCD5 /* WaterProvider.swift in Sources */,
+				B1B4FA652C266BB3007CCCD5 /* WidgetSampleExtensionBundle.swift in Sources */,
 				B1B4FA122C266392007CCCD5 /* ContentView.swift in Sources */,
 				B1B4FA592C266648007CCCD5 /* Tips.swift in Sources */,
 				B1B4FA5F2C2668C1007CCCD5 /* WaterTipsWidgetExtension.swift in Sources */,
 				B1B4FA102C266392007CCCD5 /* WidgetKit_TutorialApp.swift in Sources */,
+				B1B4FA642C266BB3007CCCD5 /* WidgetSampleExtensionLiveActivity.swift in Sources */,
+				B1B4FA612C266B71007CCCD5 /* AppIntent.swift in Sources */,
 				B1B4FA5D2C2667F8007CCCD5 /* WaterWidgetView.swift in Sources */,
 				B1B4FA572C2665F4007CCCD5 /* WaterEntry.swift in Sources */,
 			);

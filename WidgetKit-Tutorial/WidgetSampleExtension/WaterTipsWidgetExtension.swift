@@ -11,7 +11,6 @@ import WidgetKit
 import SwiftUI
 
 // 2.
-@main
 struct WaterTips_Widget_Extension: Widget {
     // 3.
     let kind: String = "Create-With-Swift-Example_Widget"
@@ -49,3 +48,17 @@ struct WaterTips_Widget_Extension: Widget {
 
 In this case, we are using the StaticConfiguration object because this widget has no user-configurable options. If your application requires a user-configurable option, like in the Stocks app which allows the user to choose which stocks to show in the widget, use IntentConfiguration.
  */
+
+#Preview(as: .systemMedium) {
+    WaterTips_Widget_Extension()
+} timeline: {
+    WaterEntry(date: .now, waterTip: "Drink water!")
+    WaterEntry(date: .now + 1, waterTip: "Did you drink water?")
+}
+
+#Preview(as: .systemLarge) {
+    WaterTips_Widget_Extension()
+} timeline: {
+    WaterEntry(date: .now, waterTip: "Drink water!")
+    WaterEntry(date: .now + 1, waterTip: "Did you drink water?")
+}
