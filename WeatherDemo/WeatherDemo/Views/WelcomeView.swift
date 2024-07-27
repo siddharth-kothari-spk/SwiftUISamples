@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import CoreLocationUI
 
 struct WelcomeView: View {
     @EnvironmentObject var locationManager: LocationManager
@@ -19,6 +20,10 @@ struct WelcomeView: View {
             })
             .multilineTextAlignment(.center)
             .padding()
+            
+            LocationButton(.shareCurrentLocation) {
+                locationManager.requestLocation()
+            }
         }
         .frame(maxWidth: .infinity, maxHeight: .infinity) // to capture entire screen
     }
