@@ -24,6 +24,9 @@ struct WelcomeView: View {
             LocationButton(.shareCurrentLocation) {
                 locationManager.requestLocation()
             }
+            .clipShape(.capsule)
+            .symbolVariant(.fill)
+            .foregroundStyle(.white)
         }
         .frame(maxWidth: .infinity, maxHeight: .infinity) // to capture entire screen
     }
