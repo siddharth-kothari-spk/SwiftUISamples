@@ -34,15 +34,16 @@ struct WeatherView: View {
                                 .font(.system(size: 40))
                             Text(weather.weather[0].main)
                         })
-                        .frame(width: 150, alignment: .leading)
-                        Spacer()
+                        .frame(width: 100, alignment: .leading)
+                        //Spacer()
                         Text(weather.main.temp.roundDouble() + "°")
                             .font(.system(size: 100))
                             .fontWeight(.bold)
                             .padding()
                     })
-                    Spacer()
-                        .frame(height: 80)
+                    // removed forsmaller device
+//                    Spacer()
+//                        .frame(height: 80)
                     
                     AsyncImage(url: URL(string: "https://cdn.pixabay.com/photo/2020/01/24/21/33/city-4791269_960_720.png")) { image in
                             image.resizable()
