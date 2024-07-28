@@ -22,7 +22,7 @@ struct Response: Codable {
     let main: Main
     let visibility: Int
     let wind: Wind
-    let rain: Rain
+    let rain: Rain?
     let clouds: Clouds
     let dt: Int
     let sys: Sys
@@ -83,9 +83,57 @@ struct Weather: Codable {
 struct Wind: Codable {
     let speed: Double
     let deg: Int
-    let gust: Double
+    let gust: Double?
 }
 
+//
+/*
+ {
+   "coord": {
+     "lon": 77.705,
+     "lat": 12.904
+   },
+   "weather": [
+     {
+       "id": 802,
+       "main": "Clouds",
+       "description": "scattered clouds",
+       "icon": "03d"
+     }
+   ],
+   "base": "stations",
+   "main": {
+     "temp": 22.53,
+     "feels_like": 23.01,
+     "temp_min": 21,
+     "temp_max": 22.9,
+     "pressure": 1008,
+     "humidity": 83,
+     "sea_level": 1008,
+     "grnd_level": 910
+   },
+   "visibility": 6000,
+   "wind": {
+     "speed": 6.17,
+     "deg": 250
+   },
+   "clouds": {
+     "all": 40
+   },
+   "dt": 1722132860,
+   "sys": {
+     "type": 1,
+     "id": 9205,
+     "country": "IN",
+     "sunrise": 1722126835,
+     "sunset": 1722172632
+   },
+   "timezone": 19800,
+   "id": 1277333,
+   "name": "Bengaluru",
+   "cod": 200
+ }
+ */
 // Sample
 /*
  
