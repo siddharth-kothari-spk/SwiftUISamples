@@ -10,7 +10,14 @@ import SwiftUI
 struct WeatherView: View {
     var weather: Response
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        ZStack(alignment: .leading) {
+            
+        }
+        .ignoresSafeArea(.container)
+        .background(Color(hue: 0.633, saturation: 0.406, brightness: 0.741)
+        )
+        .preferredColorScheme(.dark)
+        
     }
 }
 
