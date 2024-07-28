@@ -40,11 +40,21 @@ struct WeatherView: View {
                             .font(.system(size: 100))
                             .fontWeight(.bold)
                             .padding()
-                        
-                        
                     })
+                    Spacer()
+                        .frame(height: 80)
+                    
+                    AsyncImage(url: URL(string: "https://cdn.pixabay.com/photo/2023/04/09/11/05/mountains-7911302_1280.jpg")) { image in
+                            image.resizable()
+                            .aspectRatio(contentMode: .fit)
+                            .frame(width: 350)
+                    } placeholder: {
+                        ProgressView()
+                    }
+                    Spacer()
                 })
                 .frame(maxWidth: .infinity)
+               
                 
             })
             .padding()
