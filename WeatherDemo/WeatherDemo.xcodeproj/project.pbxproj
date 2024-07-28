@@ -23,6 +23,7 @@
 		B1F3B0932C55E2FC00EC2B53 /* ModelData.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1F3B0922C55E2FC00EC2B53 /* ModelData.swift */; };
 		B1F3B0952C55E48D00EC2B53 /* weatherData.json in Resources */ = {isa = PBXBuildFile; fileRef = B1F3B0942C55E48D00EC2B53 /* weatherData.json */; };
 		B1F3B0972C55E53000EC2B53 /* WeatherView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1F3B0962C55E53000EC2B53 /* WeatherView.swift */; };
+		B1F3B0992C5682B200EC2B53 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1F3B0982C5682B200EC2B53 /* Extensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -62,6 +63,7 @@
 		B1F3B0922C55E2FC00EC2B53 /* ModelData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelData.swift; sourceTree = "<group>"; };
 		B1F3B0942C55E48D00EC2B53 /* weatherData.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = weatherData.json; sourceTree = "<group>"; };
 		B1F3B0962C55E53000EC2B53 /* WeatherView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherView.swift; sourceTree = "<group>"; };
+		B1F3B0982C5682B200EC2B53 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -119,6 +121,7 @@
 				B1B4FAAC2C4FE207007CCCD5 /* Assets.xcassets */,
 				B1B4FAAE2C4FE207007CCCD5 /* Preview Content */,
 				B1B4FADC2C55D5C9007CCCD5 /* Utilities.swift */,
+				B1F3B0982C5682B200EC2B53 /* Extensions.swift */,
 			);
 			path = WeatherDemo;
 			sourceTree = "<group>";
@@ -318,6 +321,7 @@
 				B1B4FAA92C4FE204007CCCD5 /* WeatherDemoApp.swift in Sources */,
 				B1B4FAD42C4FE2BA007CCCD5 /* LocationManager.swift in Sources */,
 				B1B4FAD92C54917D007CCCD5 /* LoadingView.swift in Sources */,
+				B1F3B0992C5682B200EC2B53 /* Extensions.swift in Sources */,
 				B1B4FAD72C548AA2007CCCD5 /* WelcomeView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
