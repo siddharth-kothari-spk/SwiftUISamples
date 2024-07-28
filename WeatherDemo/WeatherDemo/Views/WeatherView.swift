@@ -11,7 +11,18 @@ struct WeatherView: View {
     var weather: Response
     var body: some View {
         ZStack(alignment: .leading) {
-            
+            VStack(content: {
+                VStack(alignment: .leading, spacing: 5, content: {
+                    Text(weather.name)
+                        .bold()
+                        .font(.title)
+                    
+                    Text("Today: \(Date().formatted())")
+                })
+                .frame(maxWidth: .infinity, alignment: .leading)
+            })
+            .padding()
+            .frame(maxWidth: .infinity, alignment: .leading)
         }
         .ignoresSafeArea(.container)
         .background(Color(hue: 0.633, saturation: 0.406, brightness: 0.741)
