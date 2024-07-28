@@ -43,8 +43,8 @@ struct Coord: Codable {
 
 // MARK: - Main
 struct Main: Codable {
-    let temp, feelsLike, tempMin, tempMax: Double
-    let pressure, humidity, seaLevel, grndLevel: Int
+    let temp, feelsLike, tempMin, tempMax, humidity: Double
+    let pressure, seaLevel, grndLevel: Int
 
     enum CodingKeys: String, CodingKey {
         case temp
