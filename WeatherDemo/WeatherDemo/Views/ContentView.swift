@@ -18,7 +18,8 @@ struct ContentView: View {
                 Text("Your current location: \(location.latitude), \(location.longitude)")
                 
                 if let weather = weather {
-                    Text("Weather data fetched")
+                   // Text("Weather data fetched")
+                    WeatherView(weather: weather)
                 }
                 else {
                     LoadingView()
