@@ -17,14 +17,16 @@ struct WeatherView: View {
                         .bold()
                         .font(.title)
                     
-                    Text("Today: \(Date().formatted())")
+                    Text("Today: \(Date().formatted(.dateTime.month().day().hour().minute()))")
+                        .fontWeight(.medium)
                 })
                 .frame(maxWidth: .infinity, alignment: .leading)
+                Spacer()
             })
             .padding()
             .frame(maxWidth: .infinity, alignment: .leading)
         }
-        .ignoresSafeArea(.container)
+        .ignoresSafeArea(.keyboard)
         .background(Color(hue: 0.633, saturation: 0.406, brightness: 0.741)
         )
         .preferredColorScheme(.dark)
