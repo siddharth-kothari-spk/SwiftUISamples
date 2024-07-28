@@ -44,7 +44,7 @@ struct WeatherView: View {
                     Spacer()
                         .frame(height: 80)
                     
-                    AsyncImage(url: URL(string: "https://cdn.pixabay.com/photo/2023/04/09/11/05/mountains-7911302_1280.jpg")) { image in
+                    AsyncImage(url: URL(string: "https://cdn.pixabay.com/photo/2020/01/24/21/33/city-4791269_960_720.png")) { image in
                             image.resizable()
                             .aspectRatio(contentMode: .fit)
                             .frame(width: 350)
@@ -59,6 +59,21 @@ struct WeatherView: View {
             })
             .padding()
             .frame(maxWidth: .infinity, alignment: .leading)
+            
+            VStack {
+                Spacer()
+                
+                VStack(alignment: .leading, spacing: 20, content: {
+                    
+                })
+                .frame(maxWidth: .infinity, alignment: .leading)
+                .padding()
+                .padding(.bottom, 20)
+                .foregroundStyle(Color(hue: 0.633, saturation: 0.406, brightness: 0.741)
+                )
+                .background(.white)
+                .cornerRadius(20, corners: [.topLeft, .topRight])
+            }
         }
         .ignoresSafeArea(.keyboard)
         .background(Color(hue: 0.633, saturation: 0.406, brightness: 0.741)
