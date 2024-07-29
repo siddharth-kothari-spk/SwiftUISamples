@@ -23,6 +23,7 @@ struct Response: Codable {
     let visibility: Int
     let wind: Wind
     let rain: Rain?
+    let snow: Snow?
     let clouds: Clouds
     let dt: Int
     let sys: Sys
@@ -60,12 +61,24 @@ struct Main: Codable {
 // MARK: - Rain
 struct Rain: Codable {
     let the1H: Double
+    let the3H: Double
 
     enum CodingKeys: String, CodingKey {
         case the1H = "1h"
+        case the3H = "3h"
     }
 }
 
+// MARK: - Snow
+struct Snow: Codable {
+    let the1H: Double
+    let the3H: Double
+
+    enum CodingKeys: String, CodingKey {
+        case the1H = "1h"
+        case the3H = "3h"
+    }
+}
 // MARK: - Sys
 struct Sys: Codable {
     let type, id: Int
