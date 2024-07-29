@@ -25,6 +25,7 @@
 		B1F3B0972C55E53000EC2B53 /* WeatherView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1F3B0962C55E53000EC2B53 /* WeatherView.swift */; };
 		B1F3B0992C5682B200EC2B53 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1F3B0982C5682B200EC2B53 /* Extensions.swift */; };
 		B1F3B09C2C56922300EC2B53 /* WeatherRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1F3B09B2C56922300EC2B53 /* WeatherRow.swift */; };
+		B1F3B09F2C572AA300EC2B53 /* WeatherCodes.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1F3B09E2C572AA200EC2B53 /* WeatherCodes.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -66,6 +67,7 @@
 		B1F3B0962C55E53000EC2B53 /* WeatherView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherView.swift; sourceTree = "<group>"; };
 		B1F3B0982C5682B200EC2B53 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		B1F3B09B2C56922300EC2B53 /* WeatherRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherRow.swift; sourceTree = "<group>"; };
+		B1F3B09E2C572AA200EC2B53 /* WeatherCodes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherCodes.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -116,6 +118,7 @@
 		B1B4FAA72C4FE204007CCCD5 /* WeatherDemo */ = {
 			isa = PBXGroup;
 			children = (
+				B1F3B09D2C572A7B00EC2B53 /* Enums */,
 				B1F3B09A2C56921300EC2B53 /* Components */,
 				B1B4FADE2C55D79D007CCCD5 /* Models */,
 				B1B4FAD52C5489E6007CCCD5 /* Views */,
@@ -190,6 +193,14 @@
 				B1F3B09B2C56922300EC2B53 /* WeatherRow.swift */,
 			);
 			path = Components;
+			sourceTree = "<group>";
+		};
+		B1F3B09D2C572A7B00EC2B53 /* Enums */ = {
+			isa = PBXGroup;
+			children = (
+				B1F3B09E2C572AA200EC2B53 /* WeatherCodes.swift */,
+			);
+			path = Enums;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -330,6 +341,7 @@
 				B1B4FAAB2C4FE204007CCCD5 /* ContentView.swift in Sources */,
 				B1B4FADD2C55D5C9007CCCD5 /* Utilities.swift in Sources */,
 				B1F3B0972C55E53000EC2B53 /* WeatherView.swift in Sources */,
+				B1F3B09F2C572AA300EC2B53 /* WeatherCodes.swift in Sources */,
 				B1B4FAA92C4FE204007CCCD5 /* WeatherDemoApp.swift in Sources */,
 				B1B4FAD42C4FE2BA007CCCD5 /* LocationManager.swift in Sources */,
 				B1B4FAD92C54917D007CCCD5 /* LoadingView.swift in Sources */,
