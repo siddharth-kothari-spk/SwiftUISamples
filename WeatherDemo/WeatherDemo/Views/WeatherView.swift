@@ -32,7 +32,8 @@ struct WeatherView: View {
                         VStack(spacing: 20, content: {
                             Image(systemName: "sun.max")
                                 .font(.system(size: 40))
-                            Text(weather.weather[0].main)
+                            let description: String = WeatherCodes(rawValue: weather.weather[0].id)?.description ?? weather.weather[0].description
+                            Text(description)
                         })
                         .frame(width: 100, alignment: .leading)
                         //Spacer()

@@ -15,6 +15,9 @@ enum WeatherCodes: Int {
     case thunderstorm_with_rain = 201
     case thunderstorm_with_heavy_rain = 202
     
+    // clouds
+    case scattered_clouds_25_50_percent = 802
+    
     
     public var description: String {
         
@@ -28,6 +31,11 @@ enum WeatherCodes: Int {
             
         case .thunderstorm_with_heavy_rain:
             return "thunderstorm with heavy rain"
+            
+        case .scattered_clouds_25_50_percent:
+            return "scattered clouds: 25-50%"
         }
+        
+        
     }
 }
