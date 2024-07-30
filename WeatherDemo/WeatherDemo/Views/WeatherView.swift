@@ -29,9 +29,15 @@ struct WeatherView: View {
                 // Weather detail
                 VStack(content: {
                     HStack(content: {
-                        VStack(spacing: 20, content: {
-                            Image(systemName: "sun.max")
-                                .font(.system(size: 40))
+                        VStack(spacing: 10, content: {
+                            AsyncImage(url: URL(string: "https://openweathermap.org/img/wn/\(weather.weather[0].icon)@2x.png")) { image in
+                                image.resizable()
+                                    .aspectRatio(contentMode: .fit)
+                                    .frame(width: 50, height: 50)
+                            } placeholder: {
+                                ProgressView()
+                            }
+
                             let description: String = WeatherCodes(rawValue: weather.weather[0].id)?.description ?? weather.weather[0].description
                             Text(description)
                         })
@@ -62,6 +68,7 @@ struct WeatherView: View {
             .padding()
             .frame(maxWidth: .infinity, alignment: .leading)
             
+            // weather specifics
             VStack {
                 Spacer()
                 
@@ -86,15 +93,13 @@ struct WeatherView: View {
                 .frame(maxWidth: .infinity, alignment: .leading)
                 .padding()
                 .padding(.bottom, 20)
-                .foregroundStyle(Color(hue: 0.633, saturation: 0.406, brightness: 0.741)
-                )
+                .foregroundStyle(Color(hue: 0.633, saturation: 0.406, brightness: 0.741))
                 .background(.white)
                 .cornerRadius(20, corners: [.topLeft, .topRight])
             }
         }
         .ignoresSafeArea(.keyboard)
-        .background(Color(hue: 0.633, saturation: 0.406, brightness: 0.741)
-        )
+        .background(Color(hue: 0.633, saturation: 0.406, brightness: 0.741))
         .preferredColorScheme(.dark)
         
     }
