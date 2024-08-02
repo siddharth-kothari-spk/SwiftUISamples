@@ -15,6 +15,7 @@
 		B1F3B0C82C5CD88600EC2B53 /* ToDoDemoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1F3B0C72C5CD88600EC2B53 /* ToDoDemoUITests.swift */; };
 		B1F3B0CA2C5CD88600EC2B53 /* ToDoDemoUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1F3B0C92C5CD88600EC2B53 /* ToDoDemoUITestsLaunchTests.swift */; };
 		B1F3B0D82C5CD95F00EC2B53 /* TasksView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1F3B0D72C5CD95F00EC2B53 /* TasksView.swift */; };
+		B1F3B0DB2C5CDCE800EC2B53 /* TaskRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1F3B0DA2C5CDCE800EC2B53 /* TaskRow.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,6 +47,7 @@
 		B1F3B0C72C5CD88600EC2B53 /* ToDoDemoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoDemoUITests.swift; sourceTree = "<group>"; };
 		B1F3B0C92C5CD88600EC2B53 /* ToDoDemoUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoDemoUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		B1F3B0D72C5CD95F00EC2B53 /* TasksView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TasksView.swift; sourceTree = "<group>"; };
+		B1F3B0DA2C5CDCE800EC2B53 /* TaskRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskRow.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,6 +98,7 @@
 		B1F3B0AB2C5CD88300EC2B53 /* ToDoDemo */ = {
 			isa = PBXGroup;
 			children = (
+				B1F3B0D92C5CDCD700EC2B53 /* Components */,
 				B1F3B0D62C5CD94C00EC2B53 /* Views */,
 				B1F3B0AC2C5CD88300EC2B53 /* ToDoDemoApp.swift */,
 				B1F3B0B02C5CD88500EC2B53 /* Assets.xcassets */,
@@ -136,6 +139,14 @@
 				B1F3B0D72C5CD95F00EC2B53 /* TasksView.swift */,
 			);
 			path = Views;
+			sourceTree = "<group>";
+		};
+		B1F3B0D92C5CDCD700EC2B53 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				B1F3B0DA2C5CDCE800EC2B53 /* TaskRow.swift */,
+			);
+			path = Components;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -271,6 +282,7 @@
 				B1F3B0AF2C5CD88300EC2B53 /* ContentView.swift in Sources */,
 				B1F3B0D82C5CD95F00EC2B53 /* TasksView.swift in Sources */,
 				B1F3B0AD2C5CD88300EC2B53 /* ToDoDemoApp.swift in Sources */,
+				B1F3B0DB2C5CDCE800EC2B53 /* TaskRow.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
