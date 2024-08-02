@@ -58,6 +58,18 @@ enum WeatherCodes: Int {
     case shower_snow = 621
     case heavy_shower_snow = 622
     
+    // 7xx series: atmosphere
+    case mist = 701
+    case smoke = 711
+    case haze = 721
+    case dust_whirls = 731
+    case fog = 741
+    case sand = 751
+    case dust = 761
+    case ash = 762
+    case squalls = 771
+    case tornado = 781
+    
     // clouds
     case scattered_clouds_25_50_percent = 802
     
@@ -189,6 +201,37 @@ enum WeatherCodes: Int {
             
         case .heavy_shower_snow:
             return "heavy shower snow"
+            
+        // atmosphere
+        case .mist:
+            return "mist"
+            
+        case .smoke:
+            return "smoke"
+            
+        case .haze:
+            return "haze"
+            
+        case .dust_whirls:
+            return "sand/dust whirls"
+            
+        case .fog:
+            return "fog"
+            
+        case .sand:
+            return "sand"
+            
+        case .dust:
+            return "dust"
+            
+        case .ash:
+            return "volcanic ash"
+            
+        case .squalls:
+            return "squalls"
+            
+        case .tornado:
+            return "tornado"
             
         // clounds
         case .scattered_clouds_25_50_percent:
