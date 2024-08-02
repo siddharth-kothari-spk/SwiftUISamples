@@ -45,6 +45,19 @@ enum WeatherCodes: Int {
     case heavy_intensity_shower_rain = 522
     case ragged_shower_rain = 531
     
+    // 6xx series: snow
+    case light_snow = 600
+    case snow = 601
+    case heavy_snow = 602
+    case sleet = 611
+    case light_shower_sleet = 612
+    case shower_sleet = 613
+    case light_rain_and_snow = 615
+    case rain_and_snow = 616
+    case light_shower_snow = 620
+    case shower_snow = 621
+    case heavy_shower_snow = 622
+    
     // clouds
     case scattered_clouds_25_50_percent = 802
     
@@ -142,6 +155,40 @@ enum WeatherCodes: Int {
             
         case .ragged_shower_rain:
             return "ragged shower rain"
+            
+        // snow
+        case .light_snow:
+            return "light snow"
+            
+        case .snow:
+            return "snow"
+            
+        case .heavy_snow:
+            return "heavy snow"
+            
+        case .sleet:
+            return "sleet"
+            
+        case .light_shower_sleet:
+            return "light shower sleet"
+            
+        case .shower_sleet:
+            return "shower sleet"
+          
+        case .light_rain_and_snow:
+            return "light rain and snow"
+            
+        case .rain_and_snow:
+            return "rain and snow"
+            
+        case .light_shower_snow:
+            return "light shower snow"
+            
+        case .shower_snow:
+            return "shower snow"
+            
+        case .heavy_shower_snow:
+            return "heavy shower snow"
             
         // clounds
         case .scattered_clouds_25_50_percent:
