@@ -71,8 +71,11 @@ enum WeatherCodes: Int {
     case tornado = 781
     
     // clouds
+    case clear = 800
+    case few_clouds_11_25_percent = 801
     case scattered_clouds_25_50_percent = 802
-    
+    case broken_clouds_51_84_percent = 803
+    case overcast_clouds_85_100_percent = 804
     
     public var description: String {
         
@@ -234,8 +237,20 @@ enum WeatherCodes: Int {
             return "tornado"
             
         // clounds
+        case .clear:
+            return "clear sky"
+            
+        case .few_clouds_11_25_percent:
+            return "few clouds: 11-25%"
+            
         case .scattered_clouds_25_50_percent:
             return "scattered clouds: 25-50%"
+            
+        case .broken_clouds_51_84_percent:
+            return "broken clouds: 51-84%"
+            
+        case .overcast_clouds_85_100_percent:
+            return "overcast clouds: 85-100%"
         }
         
         
