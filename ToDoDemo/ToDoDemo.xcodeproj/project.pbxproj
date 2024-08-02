@@ -18,6 +18,7 @@
 		B1F3B0DB2C5CDCE800EC2B53 /* TaskRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1F3B0DA2C5CDCE800EC2B53 /* TaskRow.swift */; };
 		B1F3B0DD2C5CE4C900EC2B53 /* AddTaskView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1F3B0DC2C5CE4C900EC2B53 /* AddTaskView.swift */; };
 		B1F3B0E02C5CE56F00EC2B53 /* Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1F3B0DF2C5CE56F00EC2B53 /* Utilities.swift */; };
+		B1F3B0E22C5CECB400EC2B53 /* AddTaskButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1F3B0E12C5CECB400EC2B53 /* AddTaskButton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,6 +53,7 @@
 		B1F3B0DA2C5CDCE800EC2B53 /* TaskRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskRow.swift; sourceTree = "<group>"; };
 		B1F3B0DC2C5CE4C900EC2B53 /* AddTaskView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddTaskView.swift; sourceTree = "<group>"; };
 		B1F3B0DF2C5CE56F00EC2B53 /* Utilities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utilities.swift; sourceTree = "<group>"; };
+		B1F3B0E12C5CECB400EC2B53 /* AddTaskButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddTaskButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -151,6 +153,7 @@
 			isa = PBXGroup;
 			children = (
 				B1F3B0DA2C5CDCE800EC2B53 /* TaskRow.swift */,
+				B1F3B0E12C5CECB400EC2B53 /* AddTaskButton.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -299,6 +302,7 @@
 				B1F3B0D82C5CD95F00EC2B53 /* TasksView.swift in Sources */,
 				B1F3B0AD2C5CD88300EC2B53 /* ToDoDemoApp.swift in Sources */,
 				B1F3B0DB2C5CDCE800EC2B53 /* TaskRow.swift in Sources */,
+				B1F3B0E22C5CECB400EC2B53 /* AddTaskButton.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
