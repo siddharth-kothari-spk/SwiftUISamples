@@ -17,7 +17,7 @@ struct TasksView: View {
             Spacer()
         }
         .frame(maxWidth: .infinity, maxHeight: .infinity)
-        .background(Color(hue: 0.259, saturation: 0.92, brightness: 0.907, opacity: 0.685))
+        .background(Utilities.backgroundColor())
 
 
     }
