@@ -33,6 +33,18 @@ enum WeatherCodes: Int {
     case heavy_shower_rain_and_drizzle = 314
     case shower_drizzle = 321
     
+    // 5xx series: rain
+    case light_rain = 500
+    case moderate_rain = 501
+    case heavy_intensity_rain = 502
+    case very_heavy_rain = 503
+    case extreme_rain = 504
+    case freezing_rain = 511
+    case light_intensity_shower_rain = 520
+    case shower_rain = 521
+    case heavy_intensity_shower_rain = 522
+    case ragged_shower_rain = 531
+    
     // clouds
     case scattered_clouds_25_50_percent = 802
     
@@ -99,7 +111,38 @@ enum WeatherCodes: Int {
             
         case .heavy_shower_rain_and_drizzle:
             return "heavy shower rain and drizzle"
-         
+            
+        // rain
+        case .light_rain:
+            return "light rain"
+            
+        case .moderate_rain:
+            return "moderate rain"
+            
+        case .heavy_intensity_rain:
+            return "heavy intensity rain"
+            
+        case .very_heavy_rain:
+            return "very heavy rain"
+            
+        case .extreme_rain:
+            return "extreme rain"
+            
+        case .freezing_rain:
+            return "freezing rain"
+            
+        case .light_intensity_shower_rain:
+            return "light intensity shower rain"
+            
+        case .shower_rain:
+            return "shower rain"
+            
+        case .heavy_intensity_shower_rain:
+            return "heavy intensity shower rain"
+            
+        case .ragged_shower_rain:
+            return "ragged shower rain"
+            
         // clounds
         case .scattered_clouds_25_50_percent:
             return "scattered clouds: 25-50%"
