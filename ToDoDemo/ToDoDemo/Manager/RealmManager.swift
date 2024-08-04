@@ -40,6 +40,7 @@ class RealmManager: ObservableObject {
                 try localRealm.write {
                     let newTask = Task(value: ["title": taskTitle, "completed": false])
                     localRealm.add(newTask)
+                    getTasks()
                     print("Added new task to Realm: \(newTask)")
                 }
             } catch {
@@ -54,6 +55,26 @@ class RealmManager: ObservableObject {
             tasks = []
             allTasks.forEach { task in
                 tasks.append(task)
+            }
+        }
+    }
+    
+    func updateTask(id: ObjectId, completed: Bool) {
+        if let localRealm = localRealm {
+            do {
+                
+                let taskToUpdate = localRealm.objects(Task.self).filter("id == %@", id)
+                guard !taskToUpdate.isEmpty else {
+                    return
+                }
+                
+                try localRealm.write {
+                    taskToUpdate[0].completed = completed
+                    getTasks()
+                    print("Updated task with id: \(id) with completion status: \(completed)")
+                }
+            } catch (let error) {
+                print("Error updating task with id: \(id), with error: \(error)")
             }
         }
     }
