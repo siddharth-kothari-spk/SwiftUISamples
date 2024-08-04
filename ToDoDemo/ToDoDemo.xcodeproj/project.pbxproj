@@ -21,6 +21,7 @@
 		B1F3B0E22C5CECB400EC2B53 /* AddTaskButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1F3B0E12C5CECB400EC2B53 /* AddTaskButton.swift */; };
 		B1F3B0E52C5F1C8F00EC2B53 /* Realm in Frameworks */ = {isa = PBXBuildFile; productRef = B1F3B0E42C5F1C8F00EC2B53 /* Realm */; };
 		B1F3B0E72C5F1C8F00EC2B53 /* RealmSwift in Frameworks */ = {isa = PBXBuildFile; productRef = B1F3B0E62C5F1C8F00EC2B53 /* RealmSwift */; };
+		B1F3B0E92C5F1DF000EC2B53 /* RealmManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1F3B0E82C5F1DF000EC2B53 /* RealmManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,6 +57,7 @@
 		B1F3B0DC2C5CE4C900EC2B53 /* AddTaskView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddTaskView.swift; sourceTree = "<group>"; };
 		B1F3B0DF2C5CE56F00EC2B53 /* Utilities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utilities.swift; sourceTree = "<group>"; };
 		B1F3B0E12C5CECB400EC2B53 /* AddTaskButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddTaskButton.swift; sourceTree = "<group>"; };
+		B1F3B0E82C5F1DF000EC2B53 /* RealmManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -114,6 +116,7 @@
 				B1F3B0AC2C5CD88300EC2B53 /* ToDoDemoApp.swift */,
 				B1F3B0B02C5CD88500EC2B53 /* Assets.xcassets */,
 				B1F3B0B22C5CD88500EC2B53 /* Preview Content */,
+				B1F3B0E82C5F1DF000EC2B53 /* RealmManager.swift */,
 			);
 			path = ToDoDemo;
 			sourceTree = "<group>";
@@ -308,6 +311,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B1F3B0E02C5CE56F00EC2B53 /* Utilities.swift in Sources */,
+				B1F3B0E92C5F1DF000EC2B53 /* RealmManager.swift in Sources */,
 				B1F3B0AF2C5CD88300EC2B53 /* ContentView.swift in Sources */,
 				B1F3B0DD2C5CE4C900EC2B53 /* AddTaskView.swift in Sources */,
 				B1F3B0D82C5CD95F00EC2B53 /* TasksView.swift in Sources */,
