@@ -91,7 +91,7 @@ class RealmManager: ObservableObject {
                 try localRealm.write {
                     localRealm.delete(taskToDelete)
                     getTasks()
-                    print("Deleted task with id: \(id))
+                    print("Deleted task with id: \(id)")
                 }
                 
             } catch (let error) {

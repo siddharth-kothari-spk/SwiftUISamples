@@ -15,7 +15,16 @@ struct TasksView: View {
                 .font(.title2)
                 .padding()
                 .frame(maxWidth: .infinity, alignment: .leading)
-            Spacer()
+            
+            List {
+                ForEach(realmManager.tasks, id: \.id) { task in
+                    TaskRow(task: task.title, completed: task.completed)
+                }
+            }
+            .onAppear(perform: {
+                UITableView.appearance().backgroundColor = UIColor.clear
+                UITableViewCell.appearance().backgroundColor = UIColor.clear
+            })
         }
         .frame(maxWidth: .infinity, maxHeight: .infinity)
         .background(Utilities.backgroundColor())
