@@ -11,6 +11,7 @@ struct AddTaskView: View {
     
     @State private var taskToAdd: String = ""
     @Environment(\.dismiss) var dismiss
+    @EnvironmentObject var realmManager: RealmManager
     
     var body: some View {
         VStack(alignment: .leading, spacing: 20, content: {
@@ -22,7 +23,9 @@ struct AddTaskView: View {
                 .textFieldStyle(.roundedBorder)
             
             Button {
-                print("Task added")
+                if taskToAdd != "" {
+                    realmManager.addTask(taskTitle: taskToAdd)
+                }
                 dismiss()
             } label: {
                 Text("Add task")
@@ -43,4 +46,5 @@ struct AddTaskView: View {
 
 #Preview {
     AddTaskView()
+        .environmentObject(RealmManager())
 }
