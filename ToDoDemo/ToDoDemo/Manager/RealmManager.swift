@@ -10,9 +10,11 @@ import RealmSwift
 
 class RealmManager: ObservableObject {
     private(set) var localRealm: Realm?
+    @Published private(set) var tasks: [Task] = []
     
     init() {
         openRealm()
+        getTasks()
     }
     
     func openRealm() {
@@ -42,6 +44,16 @@ class RealmManager: ObservableObject {
                 }
             } catch {
                 print("Could not found realm: \(error)")
+            }
+        }
+    }
+    
+    func getTasks() {
+        if let localRealm = localRealm {
+            let allTasks = localRealm.objects(Task.self).sorted(byKeyPath: "completed")
+            tasks = []
+            allTasks.forEach { task in
+                tasks.append(task)
             }
         }
     }
