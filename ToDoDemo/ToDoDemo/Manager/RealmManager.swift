@@ -18,7 +18,11 @@ class RealmManager: ObservableObject {
     func openRealm() {
         
         do {
-            let configuration = Realm.Configuration(schemaVersion: 1)
+            let configuration = Realm.Configuration(schemaVersion: 1) { migration, oldSchemaVersion in
+                if oldSchemaVersion > 1 {
+                    // do changes for migration
+                }
+            }
             
             Realm.Configuration.defaultConfiguration = configuration
             
