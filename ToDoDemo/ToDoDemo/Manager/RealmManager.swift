@@ -31,4 +31,18 @@ class RealmManager: ObservableObject {
             print("Error opening realm: \(error)")
         }
     }
+    
+    func addTask(taskTitle: String) {
+        if let localRealm = localRealm {
+            do {
+                try localRealm.write {
+                    let newTask = Task(value: ["title": taskTitle, "completed": false])
+                    localRealm.add(newTask)
+                    print("Added new task to Realm: \(newTask)")
+                }
+            } catch {
+                print("Could not found realm: \(error)")
+            }
+        }
+    }
 }
