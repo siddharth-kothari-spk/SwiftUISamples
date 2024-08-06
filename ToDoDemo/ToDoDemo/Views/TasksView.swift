@@ -32,7 +32,7 @@ struct TasksView: View {
 //                            }
                     }
                     
-                }
+                } // TODO: getting crash on deleting items
                 .onDelete(perform: { indexSet in
                     for index in indexSet {
                         let task = realmManager.tasks[index]
