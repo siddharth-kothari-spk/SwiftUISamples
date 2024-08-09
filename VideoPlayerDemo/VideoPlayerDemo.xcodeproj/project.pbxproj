@@ -98,9 +98,9 @@
 		B1F3B0FC2C64641400EC2B53 /* VideoPlayerDemo */ = {
 			isa = PBXGroup;
 			children = (
+				B1F3B12C2C65B15100EC2B53 /* Views */,
 				B1F3B1272C6464E000EC2B53 /* Components */,
 				B1F3B0FD2C64641400EC2B53 /* VideoPlayerDemoApp.swift */,
-				B1F3B0FF2C64641400EC2B53 /* ContentView.swift */,
 				B1F3B1012C64641A00EC2B53 /* Assets.xcassets */,
 				B1F3B1032C64641A00EC2B53 /* Preview Content */,
 				B1F3B12A2C65B03E00EC2B53 /* VideoManager.swift */,
@@ -139,6 +139,14 @@
 				B1F3B1282C64657300EC2B53 /* QueryTag.swift */,
 			);
 			path = Components;
+			sourceTree = "<group>";
+		};
+		B1F3B12C2C65B15100EC2B53 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				B1F3B0FF2C64641400EC2B53 /* ContentView.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

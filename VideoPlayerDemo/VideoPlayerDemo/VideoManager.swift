@@ -8,5 +8,5 @@
 import Foundation
 
 enum Query: String, CaseIterable {
-    case nature, animals, people, ocean, food, cars
+    case nature, animals, people, ocean, food
 }
