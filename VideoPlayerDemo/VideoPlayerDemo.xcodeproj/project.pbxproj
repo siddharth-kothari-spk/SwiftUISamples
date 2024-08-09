@@ -16,6 +16,7 @@
 		B1F3B11B2C64641A00EC2B53 /* VideoPlayerDemoUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1F3B11A2C64641A00EC2B53 /* VideoPlayerDemoUITestsLaunchTests.swift */; };
 		B1F3B1292C64657300EC2B53 /* QueryTag.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1F3B1282C64657300EC2B53 /* QueryTag.swift */; };
 		B1F3B12B2C65B03E00EC2B53 /* VideoManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1F3B12A2C65B03E00EC2B53 /* VideoManager.swift */; };
+		B1F3B12E2C65B2CB00EC2B53 /* VideoCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1F3B12D2C65B2CB00EC2B53 /* VideoCard.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +49,7 @@
 		B1F3B11A2C64641A00EC2B53 /* VideoPlayerDemoUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoPlayerDemoUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		B1F3B1282C64657300EC2B53 /* QueryTag.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QueryTag.swift; sourceTree = "<group>"; };
 		B1F3B12A2C65B03E00EC2B53 /* VideoManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoManager.swift; sourceTree = "<group>"; };
+		B1F3B12D2C65B2CB00EC2B53 /* VideoCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoCard.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -145,6 +147,7 @@
 			isa = PBXGroup;
 			children = (
 				B1F3B0FF2C64641400EC2B53 /* ContentView.swift */,
+				B1F3B12D2C65B2CB00EC2B53 /* VideoCard.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -280,6 +283,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B1F3B1002C64641400EC2B53 /* ContentView.swift in Sources */,
+				B1F3B12E2C65B2CB00EC2B53 /* VideoCard.swift in Sources */,
 				B1F3B1292C64657300EC2B53 /* QueryTag.swift in Sources */,
 				B1F3B0FE2C64641400EC2B53 /* VideoPlayerDemoApp.swift in Sources */,
 				B1F3B12B2C65B03E00EC2B53 /* VideoManager.swift in Sources */,
