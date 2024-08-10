@@ -8,10 +8,11 @@
 import SwiftUI
 
 struct VideoCard: View {
+    var video: Video
     var body: some View {
         ZStack {
             ZStack(alignment: .bottomLeading, content: {
-                AsyncImage(url: URL(string: "")) { image in
+                AsyncImage(url: URL(string: video.image)) { image in
                     image
                         .resizable()
                         .aspectRatio(contentMode: .fill)
@@ -50,5 +51,5 @@ struct VideoCard: View {
 }
 
 #Preview {
-    VideoCard()
+    VideoCard(video: previewVideo)
 }

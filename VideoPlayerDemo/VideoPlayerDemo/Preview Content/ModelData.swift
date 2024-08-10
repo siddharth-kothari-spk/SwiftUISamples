@@ -7,7 +7,7 @@
 
 import Foundation
 
-var previewVideos: ResponseBody = load("sample.json")
+var previewVideo: Video = load("video.json")
 func load<T: Decodable>(_ filename: String) -> T {
     let data: Data
     
