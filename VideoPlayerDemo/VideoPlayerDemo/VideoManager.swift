@@ -44,8 +44,11 @@ class VideoManager: ObservableObject {
             
             let decoder = JSONDecoder()
             let decodedData = try decoder.decode(ResponseBody.self, from: data)
-            self.videos = []
-            self.videos = decodedData.videos
+            // Publishing changes from background threads is not allowed; make sure to publish values from the main thread (via operators like receive(on:)) on model updates.
+            DispatchQueue.main.async {
+                self.videos = []
+                self.videos = decodedData.videos
+            }
             
         } catch (let error) {
             print("Error while fetching videos for query: \(topic) , \(error)")
