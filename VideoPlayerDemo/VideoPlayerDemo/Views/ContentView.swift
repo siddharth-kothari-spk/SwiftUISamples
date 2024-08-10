@@ -9,6 +9,8 @@ import SwiftUI
 
 struct ContentView: View {
     @StateObject var videoManager = VideoManager()
+    var columns = [GridItem(.adaptive(minimum: 150), spacing: 20)]
+    
     var body: some View {
         NavigationView {
             VStack {
@@ -19,18 +21,22 @@ struct ContentView: View {
                 }
                 ScrollView {
                     //VideoCard(video: previewVideo)
-                    ForEach(videoManager.videos, id: \.id) { video in
-                        NavigationLink {
-                            VideoView(video: video)
-                        } label: {
-                            VideoCard(video: video)
+                    LazyVGrid(columns: columns, spacing: 20) {
+                        ForEach(videoManager.videos, id: \.id) { video in
+                            NavigationLink {
+                                VideoView(video: video)
+                            } label: {
+                                VideoCard(video: video)
+                            }
                         }
                     }
+                    .padding()
                 }
                 .frame(maxWidth: .infinity, maxHeight: .infinity)
             }
             .padding()
         .background(Color("AccentColor"))
+        .toolbar(.hidden)
         }
     }
 }
