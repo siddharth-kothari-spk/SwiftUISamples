@@ -16,21 +16,28 @@ struct ContentView: View {
             VStack {
                 HStack {
                     ForEach(Query.allCases, id: \.self) { searchQuery in
-                        QueryTag(query: searchQuery, isSelected: true)
+                        QueryTag(query: searchQuery, isSelected: videoManager.selectedQuery == searchQuery)
+                            .onTapGesture(perform: {
+                                videoManager.selectedQuery = searchQuery
+                            })
                     }
                 }
                 ScrollView {
-                    //VideoCard(video: previewVideo)
-                    LazyVGrid(columns: columns, spacing: 20) {
-                        ForEach(videoManager.videos, id: \.id) { video in
-                            NavigationLink {
-                                VideoView(video: video)
-                            } label: {
-                                VideoCard(video: video)
+                    if videoManager.videos.isEmpty {
+                        ProgressView()
+                    }
+                    else {
+                        LazyVGrid(columns: columns, spacing: 20) {
+                            ForEach(videoManager.videos, id: \.id) { video in
+                                NavigationLink {
+                                    VideoView(video: video)
+                                } label: {
+                                    VideoCard(video: video)
+                                }
                             }
                         }
+                        .padding()
                     }
-                    .padding()
                 }
                 .frame(maxWidth: .infinity, maxHeight: .infinity)
             }

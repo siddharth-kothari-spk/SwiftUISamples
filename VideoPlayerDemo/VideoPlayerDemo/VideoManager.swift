@@ -42,7 +42,6 @@ class VideoManager: ObservableObject {
                 fatalError("Not a 200 response")
             }
             
-            print(data)
             let decoder = JSONDecoder()
             let decodedData = try decoder.decode(ResponseBody.self, from: data)
             self.videos = []
