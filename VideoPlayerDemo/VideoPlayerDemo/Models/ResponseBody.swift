@@ -29,7 +29,7 @@ struct ResponseBody: Codable {
 }
 
 // MARK: - Video
-struct Video: Codable {
+struct Video: Codable, Identifiable {
     let id, width, height: Int
     let url: String
     let image: String
@@ -46,14 +46,14 @@ struct Video: Codable {
 }
 
 // MARK: - User
-struct User: Codable {
+struct User: Codable, Identifiable {
     let id: Int
     let name: String
     let url: String
 }
 
 // MARK: - VideoFile
-struct VideoFile: Codable {
+struct VideoFile: Codable, Identifiable {
     let id: Int
     let quality, fileType: String
     let width, height: Int?
@@ -67,7 +67,7 @@ struct VideoFile: Codable {
 }
 
 // MARK: - VideoPicture
-struct VideoPicture: Codable {
+struct VideoPicture: Codable, Identifiable {
     let id: Int
     let picture: String
     let nr: Int
