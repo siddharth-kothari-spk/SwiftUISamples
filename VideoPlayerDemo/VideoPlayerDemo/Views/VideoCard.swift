@@ -27,10 +27,10 @@ struct VideoCard: View {
                 }
                 
                 VStack(alignment: .leading) {
-                    Text("50 sec")
+                    Text("\(video.duration) sec")
                         .font(.caption.bold())
                     
-                    Text("By XYZ")
+                    Text("By \(video.user.name)")
                         .font(.caption.bold())
                         .multilineTextAlignment(.leading) // so if content goes in more than 1 line it does not shift to center
                 }
