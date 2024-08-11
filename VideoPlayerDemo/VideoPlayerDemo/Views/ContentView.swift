@@ -41,7 +41,6 @@ struct ContentView: View {
                 }
                 .frame(maxWidth: .infinity, maxHeight: .infinity)
             }
-            .padding()
         .background(Color("AccentColor"))
         .toolbar(.hidden)
         }
