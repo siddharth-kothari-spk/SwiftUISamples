@@ -14,7 +14,7 @@ struct VideoView: View {
     
     var body: some View {
         VideoPlayer(player: player)
-            .ignoresSafeArea(edges: .all)
+            .ignoresSafeArea(.all)
             .onAppear(perform: {
                 if let link = video.videoFiles.first?.link, 
                     let url = URL(string: link) {
