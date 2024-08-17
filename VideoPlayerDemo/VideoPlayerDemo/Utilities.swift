@@ -9,6 +9,6 @@ import Foundation
 
 class Utilities {
     static func apiKey() -> String {
-        return ""
+        return "qrItj6MchLS4i1pYJ2YOV6T4kxm3czTXFB7EKdutxqnd2gGb9rFLMuuH"
     }
 }
