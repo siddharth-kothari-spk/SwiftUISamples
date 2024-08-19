@@ -39,9 +39,14 @@ struct ContentView: View {
             }, label: {
                 Text("Test Button")
                     .padding(.all, 10.0)
-                    .frame(width: 300.0)
-                    .border(Color("AccentColor"), width: 1)
+                    .frame(maxWidth: .infinity) // done so that fix width doesn't create issue on diff devices like watch and iPad
+                    //.border(Color("AccentColor"), width: 1)
+                    .background(
+                        RoundedRectangle(cornerRadius: 10) // this covers whole background
+                            .stroke(lineWidth: 1.0)
+                    )
             })
+            .tint(.background) // applies color to all elements inside button
            
             
             
