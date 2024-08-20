@@ -48,8 +48,14 @@ struct ContentView: View {
             })
             .tint(.black) // applies color to all elements inside button
         }
+        .padding(30)
         .background(Color("Background"))
-        .padding(.all)
+       // .background(RoundedRectangle(cornerRadius: 10).stroke()) // goes to backside
+        // we need overlay to come on top
+        .overlay(content: {
+            RoundedRectangle(cornerRadius: 10).stroke()
+        })
+        .padding(10)
     }
 }
 
