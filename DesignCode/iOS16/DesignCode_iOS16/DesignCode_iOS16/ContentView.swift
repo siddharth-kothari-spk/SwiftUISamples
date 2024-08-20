@@ -16,11 +16,14 @@ struct ContentView: View {
                 .foregroundStyle(.tint)
                 .font(.system(size: 50))
                 .fontWeight(.thin)
+            
             Text("Hello, world!")
                 .font(.largeTitle)
                 .fontWeight(.bold)
+            
             Text("Drag and drop the view for multiline text with some random data")
                 .multilineTextAlignment(.center)
+            
             // Currently button is only tappable where text is present but not on entire width. To resolve it we will use different variation of Button where we can add Text view inside it and then apply all modifiers on it.
             
             // Before:
@@ -46,10 +49,10 @@ struct ContentView: View {
                             .stroke(lineWidth: 1.0)
                     )
             })
-            .tint(.black) // applies color to all elements inside button
+            .tint(.primary) // applies color to all elements inside button
         }
         .padding(30)
-        .background(Color("Background"))
+        .background(.ultraThinMaterial) // check Material enum
        // .background(RoundedRectangle(cornerRadius: 10).stroke()) // goes to backside
         // we need overlay to come on top
         .overlay(content: {
@@ -61,4 +64,5 @@ struct ContentView: View {
 
 #Preview {
     ContentView()
+        .background(Image("Wallpaper 1"))
 }
