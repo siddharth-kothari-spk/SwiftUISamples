@@ -32,8 +32,23 @@ struct ContentView: View {
                     .frame(width: 250, height: 250)
                     .foregroundStyle(.pink)
                 
+                Circle()
+                    .trim(from: 0.0, to: 0.12)
+                    .stroke(style: StrokeStyle(lineWidth: 3.0, lineCap: .round, lineJoin: .round))
+                    .frame(width: 250, height: 250)
+                    .rotationEffect(.degrees(-180))
+                    .foregroundStyle(.blue)
             }
+            .rotationEffect(.degrees(spin ? 360 : 0))
         }
+        .onAppear(perform: {
+            withAnimation(.linear(duration: 3).repeatForever(autoreverses: false)) {
+                spin = true
+            }
+            withAnimation(.linear(duration: 1).repeatForever(autoreverses: false)) {
+                scale.toggle()
+            }
+        })
     }
 }
 
