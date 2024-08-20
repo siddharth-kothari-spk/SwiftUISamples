@@ -46,12 +46,9 @@ struct ContentView: View {
                             .stroke(lineWidth: 1.0)
                     )
             })
-            .tint(.background) // applies color to all elements inside button
-           
-            
-            
-                
+            .tint(.black) // applies color to all elements inside button
         }
+        .background(Color("Background"))
         .padding(.all)
     }
 }
