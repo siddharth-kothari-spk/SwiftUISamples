@@ -17,12 +17,14 @@ struct ContentView: View {
                 .font(.system(size: 50))
                 .fontWeight(.thin)
             
-            Text("Hello, world!")
-                .font(.largeTitle)
+            Text("Hello, world!".localizedCapitalized)
+                .font(.largeTitle.width(.condensed)) // A width to use for fonts that have multiple widths
                 .fontWeight(.bold)
             
             Text("Drag and drop the view for multiline text with some random data")
                 .multilineTextAlignment(.center)
+                .foregroundColor(.secondary) // for vibrancy (Glossary A)
+                .fontWeight(.medium)
             
             // Currently button is only tappable where text is present but not on entire width. To resolve it we will use different variation of Button where we can add Text view inside it and then apply all modifiers on it.
             
@@ -47,6 +49,7 @@ struct ContentView: View {
                     .background(
                         RoundedRectangle(cornerRadius: 10) // this covers whole background
                             .stroke(lineWidth: 1.0)
+                            .foregroundColor(.secondary) // for vibrancy (Glossary A)
                     )
             })
             .tint(.primary) // applies color to all elements inside button
@@ -64,5 +67,9 @@ struct ContentView: View {
 
 #Preview {
     ContentView()
-        .background(Image("Wallpaper 1"))
+        .background(Image("Wallpaper 4"))
 }
+
+
+// Glossary
+// A. vibrancy refers to how our text seems to be of different color based on background. For this we keep foreground style as secondary and now based on background image (Material enum) it changes appearance
