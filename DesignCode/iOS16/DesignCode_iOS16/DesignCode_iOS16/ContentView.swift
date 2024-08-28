@@ -61,7 +61,9 @@ struct ContentView: View {
        // .background(RoundedRectangle(cornerRadius: 10).stroke()) // goes to backside
         // we need overlay to come on top
         .overlay(content: {
-            RoundedRectangle(cornerRadius: 10).stroke()
+            RoundedRectangle(cornerRadius: 10)
+                .stroke()
+                .foregroundStyle(.linearGradient(colors: [.white.opacity(0.2), .clear], startPoint: .topLeading, endPoint: .bottomTrailing))
         })
         .padding(10)
     }
