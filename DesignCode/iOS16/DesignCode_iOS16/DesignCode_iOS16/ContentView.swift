@@ -46,7 +46,7 @@ struct ContentView: View {
                     .padding(.all, 10.0)
                     .frame(maxWidth: .infinity) // done so that fix width doesn't create issue on diff devices like watch and iPad
                     //.border(Color("AccentColor"), width: 1)
-                    .background(.blue.opacity(0.2).gradient)
+                    .background(.blue.opacity(0.8).gradient)
                     .background(
                         RoundedRectangle(cornerRadius: 10) // this covers whole background
                             .stroke(lineWidth: 1.0)
@@ -55,6 +55,7 @@ struct ContentView: View {
                     )
             })
             .tint(.primary) // applies color to all elements inside button
+            .shadow(color: .green, radius: 10) // adding contrast by shadow. shadow might not be properly visibile due to view background opacity
         }
         .padding(30)
         .background(.ultraThinMaterial) // check Material enum
@@ -65,6 +66,7 @@ struct ContentView: View {
                 .stroke()
                 .foregroundStyle(.linearGradient(colors: [.white.opacity(0.2), .clear], startPoint: .topLeading, endPoint: .bottomTrailing))
         })
+        .shadow(color: .black.opacity(0.6), radius: 20, y: 20) // adding contrast by shadow
         .padding(10)
     }
 }
