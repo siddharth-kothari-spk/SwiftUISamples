@@ -46,10 +46,12 @@ struct ContentView: View {
                     .padding(.all, 10.0)
                     .frame(maxWidth: .infinity) // done so that fix width doesn't create issue on diff devices like watch and iPad
                     //.border(Color("AccentColor"), width: 1)
+                    .background(.blue.opacity(0.2).gradient)
                     .background(
                         RoundedRectangle(cornerRadius: 10) // this covers whole background
                             .stroke(lineWidth: 1.0)
-                            .foregroundColor(.secondary) // for vibrancy (Glossary A)
+                           // .foregroundColor(.secondary) // for vibrancy (Glossary A)
+                            .foregroundStyle(.linearGradient(colors: [.red, .yellow], startPoint: .topLeading, endPoint: .bottomTrailing)) // gradient
                     )
             })
             .tint(.primary) // applies color to all elements inside button
