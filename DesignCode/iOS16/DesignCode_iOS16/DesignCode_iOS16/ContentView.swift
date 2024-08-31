@@ -67,6 +67,7 @@ struct ContentView: View {
                 .foregroundStyle(.linearGradient(colors: [.white.opacity(0.2), .clear], startPoint: .topLeading, endPoint: .bottomTrailing))
         })
         .shadow(color: .green.opacity(0.6), radius: 20, y: 20) // adding contrast by shadow
+        .frame(maxWidth: 500)
         .padding(10)
         .dynamicTypeSize(.xSmall ... .xxxLarge)
     }
