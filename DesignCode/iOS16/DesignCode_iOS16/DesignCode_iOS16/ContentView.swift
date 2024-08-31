@@ -49,13 +49,13 @@ struct ContentView: View {
                     .background(.blue.opacity(0.8).gradient)
                     .background(
                         RoundedRectangle(cornerRadius: 10) // this covers whole background
-                            .stroke(lineWidth: 1.0)
+                            .stroke(lineWidth: 5.0)
                            // .foregroundColor(.secondary) // for vibrancy (Glossary A)
-                            .foregroundStyle(.linearGradient(colors: [.red, .yellow], startPoint: .topLeading, endPoint: .bottomTrailing)) // gradient
+                            .foregroundStyle(.linearGradient(colors: [.red.opacity(0.5), .yellow.opacity(0.5), .red.opacity(0.5), .yellow.opacity(0.5)], startPoint: .topLeading, endPoint: .bottomTrailing)) // gradient
                     )
             })
             .tint(.primary) // applies color to all elements inside button
-            .shadow(color: .green, radius: 10) // adding contrast by shadow. shadow might not be properly visibile due to view background opacity
+           // .shadow(color: .green, radius: 10) // adding contrast by shadow. shadow might not be properly visibile due to view background opacity
         }
         .padding(30)
         .background(.ultraThinMaterial) // check Material enum
@@ -66,7 +66,7 @@ struct ContentView: View {
                 .stroke()
                 .foregroundStyle(.linearGradient(colors: [.white.opacity(0.2), .clear], startPoint: .topLeading, endPoint: .bottomTrailing))
         })
-        .shadow(color: .black.opacity(0.6), radius: 20, y: 20) // adding contrast by shadow
+        .shadow(color: .green.opacity(0.6), radius: 20, y: 20) // adding contrast by shadow
         .padding(10)
     }
 }
