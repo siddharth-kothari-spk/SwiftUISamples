@@ -68,6 +68,7 @@ struct ContentView: View {
         })
         .shadow(color: .green.opacity(0.6), radius: 20, y: 20) // adding contrast by shadow
         .padding(10)
+        .dynamicTypeSize(.xSmall ... .xxxLarge)
     }
 }
 
