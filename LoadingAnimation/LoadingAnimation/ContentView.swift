@@ -10,14 +10,16 @@
 import SwiftUI
 
 struct ContentView: View {
+    @State var currentIndex = 0
+    let colours: [Color] = [.orange, .blue, .red, .cyan, .yellow, .green]
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("Hello, world!")
-        }
-        .padding()
+        HStack(spacing: 6, content: {
+            ForEach(colours, id: \.self) { colour in
+                RoundedRectangle(cornerRadius: 25.0)
+                    .fill(colour)
+                    .frame(width: 5, height: 100)
+            }
+        })
     }
 }
 
