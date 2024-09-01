@@ -14,12 +14,21 @@ struct ContentView: View {
     let colours: [Color] = [.orange, .blue, .red, .cyan, .yellow, .green]
     var body: some View {
         HStack(spacing: 6, content: {
-            ForEach(colours, id: \.self) { colour in
+            ForEach(0..<colours.count) { index in
                 RoundedRectangle(cornerRadius: 25.0)
-                    .fill(colour)
-                    .frame(width: 5, height: 100)
+                    .fill(colours[index])
+                    .frame(width: 5, height: currentIndex == index ? 100 : 5 )
             }
         })
+        .onAppear(perform: {
+            startAnimation()
+        })
+    }
+    
+    func startAnimation() {
+        Timer.scheduledTimer(withTimeInterval: 0.25, repeats: true) { timer in
+            currentIndex = (currentIndex + 1) % colours.count
+        }
     }
 }
 
