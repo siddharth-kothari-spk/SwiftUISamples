@@ -19,6 +19,8 @@ struct ContentView: View {
                     .fill(colours[index])
                     .frame(width: 5, height: currentIndex == index ? 100 : 5 )
             }
+            .animation(.spring(duration: 0.9), value: currentIndex)
+            // check extension Animation for more options
         })
         .onAppear(perform: {
             startAnimation()
