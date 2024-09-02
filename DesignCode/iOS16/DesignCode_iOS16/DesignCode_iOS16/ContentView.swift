@@ -11,8 +11,18 @@ struct ContentView: View {
     @State var time = 0.25
     let timer = Timer.publish(every: 0.2, on: .main, in: .common).autoconnect()
     
+    @State var showMessage = true
+    
     var body: some View {
         content
+            .opacity(showMessage ? 1 : 0)
+            .scaleEffect(showMessage ? 1 : 0)
+            .rotation3DEffect(.degrees(showMessage ? 0 : 45),
+                              axis: (x: 10.0, y: 10.0, z: 100.0)
+            )
+            //.offset(y: showMessage ? 0 : 500) // content goes down
+           // .offset(x: showMessage ? 0 : 500) // content goes right
+            .blur(radius: showMessage ? 0 : 20)
     }
     
     var content: some View {
@@ -78,7 +88,9 @@ struct ContentView: View {
         
         // After:
         Button(action: {
-            
+            withAnimation(.easeInOut(duration: 1.0)) {
+                showMessage = false
+            }
         }, label: {
             Text("Test Button")
                 .padding(.all, 10.0)
