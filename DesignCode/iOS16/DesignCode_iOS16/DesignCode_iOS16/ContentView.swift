@@ -12,20 +12,15 @@ struct ContentView: View {
     let timer = Timer.publish(every: 0.2, on: .main, in: .common).autoconnect()
     
     var body: some View {
+        content
+    }
+    
+    var content: some View {
         VStack(alignment: .leading, spacing: 20.0) {
             sfIcon
-            
-            Text("Hello, world!".localizedCapitalized)
-                .font(.largeTitle.width(.condensed)) // A width to use for fonts that have multiple widths
-                .fontWeight(.bold)
-            
-            Text("Drag and drop the view for multiline text with some random data")
-                .multilineTextAlignment(.center)
-                .foregroundColor(.secondary) // for vibrancy (Glossary A)
-                .fontWeight(.medium)
-            
-           customButton
-           
+            text1
+            text2
+            customButton
         }
         .padding(30)
         .background(.ultraThinMaterial) // check Material enum
@@ -52,6 +47,19 @@ struct ContentView: View {
             .onReceive(timer, perform: { _ in
                 time = (time + 0.25).truncatingRemainder(dividingBy: 4.0)
             })
+    }
+    
+    var text1: some View {
+        Text("Hello, world!".localizedCapitalized)
+            .font(.largeTitle.width(.condensed)) // A width to use for fonts that have multiple widths
+            .fontWeight(.bold)
+    }
+    
+    var text2: some View {
+        Text("Drag and drop the view for multiline text with some random data")
+            .multilineTextAlignment(.center)
+            .foregroundColor(.secondary) // for vibrancy (Glossary A)
+            .fontWeight(.medium)
     }
     
     var customButton: some View {
