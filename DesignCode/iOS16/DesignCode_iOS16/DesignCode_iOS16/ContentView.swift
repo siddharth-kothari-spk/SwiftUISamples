@@ -8,14 +8,20 @@
 import SwiftUI
 
 struct ContentView: View {
+    @State var time = 0.25
+    let timer = Timer.publish(every: 0.2, on: .main, in: .common).autoconnect()
+    
     var body: some View {
         VStack(alignment: .leading, spacing: 20.0) {
-            Image(systemName: "cellularbars", variableValue: 0.5)
+            Image(systemName: "cellularbars", variableValue: time)
                 .foregroundColor(Color("AccentColor"))
                 .imageScale(.large)
                 .foregroundStyle(.tint)
                 .font(.system(size: 50))
                 .fontWeight(.thin)
+                .onReceive(timer, perform: { _ in
+                    time = (time + 0.25).truncatingRemainder(dividingBy: 4.0)
+                })
             
             Text("Hello, world!".localizedCapitalized)
                 .font(.largeTitle.width(.condensed)) // A width to use for fonts that have multiple widths
