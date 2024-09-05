@@ -10,12 +10,14 @@ import SwiftUI
 struct NavigationStackView: View {
     var body: some View {
         NavigationStack {
-            List(/*@START_MENU_TOKEN@*/0 ..< 5/*@END_MENU_TOKEN@*/) { item in
-                Text("Test navigation stack")
+            List(navigationItems) { item in
+                Text("ID: \(item.id)")
                 NavigationLink {
-                    Text("NAV link")
+                    Image(systemName: item.icon)
+                        .resizable()
+                        .frame(width: 100, height: 100)
                 } label: {
-                    Label("Test navigation link", systemImage: "circle.fill")
+                    Label(item.title, systemImage: item.icon)
                         .foregroundStyle(.primary)
                 }
 
