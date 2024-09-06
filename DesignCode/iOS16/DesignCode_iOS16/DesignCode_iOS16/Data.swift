@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct NavigationItem: Identifiable {
+struct NavigationItem: Identifiable, Hashable {
     var id = UUID()
     var title: String
     var icon: String
