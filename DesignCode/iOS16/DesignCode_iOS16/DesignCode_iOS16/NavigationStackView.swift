@@ -11,17 +11,21 @@ struct NavigationStackView: View {
     var body: some View {
         NavigationStack {
             List(navigationItems) { item in
-                Text("ID: \(item.id)")
                 NavigationLink {
-                    Image(systemName: item.icon)
-                        .resizable()
-                        .frame(width: 100, height: 100)
+                    VStack {
+                        Text("ID: \(item.id)")
+                            .padding(8)
+                            .multilineTextAlignment(.center)
+                        Image(systemName: item.icon)
+                            .resizable()
+                            .frame(width: 100, height: 100)
+                        .font(.largeTitle)
+                    }
+                    .padding()
                 } label: {
                     Label(item.title, systemImage: item.icon)
                         .foregroundStyle(.primary)
                 }
-
-                
             }
             .navigationTitle("navigation title")
             .navigationBarTitleDisplayMode(.inline)
