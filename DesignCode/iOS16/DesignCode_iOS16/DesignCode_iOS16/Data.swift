@@ -11,12 +11,21 @@ struct NavigationItem: Identifiable, Hashable {
     var id = UUID()
     var title: String
     var icon: String
+    var menu: Menu
 }
 
 var navigationItems = [
-    NavigationItem(title: "Trash", icon: "trash"),
-    NavigationItem(title: "Pencil", icon: "pencil"),
-    NavigationItem(title: "Eraser", icon: "eraser"),
-    NavigationItem(title: "Lasso", icon: "lasso"),
-    NavigationItem(title: "Folder", icon: "folder")
+    NavigationItem(title: "Trash", icon: "trash", menu: .trash),
+    NavigationItem(title: "Pencil", icon: "pencil", menu: .pencil),
+    NavigationItem(title: "Eraser", icon: "eraser", menu: .eraser),
+    NavigationItem(title: "Lasso", icon: "lasso", menu: .lasso),
+    NavigationItem(title: "Folder", icon: "folder", menu: .folder)
 ]
+
+enum Menu: String {
+    case trash
+    case pencil
+    case eraser
+    case lasso
+    case folder
+}

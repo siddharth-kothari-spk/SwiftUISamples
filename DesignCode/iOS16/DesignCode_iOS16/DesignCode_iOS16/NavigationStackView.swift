@@ -39,14 +39,45 @@ struct NavigationStackView: View {
                 }
                 .navigationDestination(for: NavigationItem.self) { item in
                     VStack {
+                        
+                        switch item.menu {
+                        case .trash:
+                            Text("ID: \(item.id)")
+                                .padding(8)
+                                .multilineTextAlignment(.center)
+                        
+                        case .pencil:
+                            Image(systemName: item.icon)
+                                .resizable()
+                                .frame(width: 50, height: 50)
+                                .foregroundStyle(.accent)
+                        
+                        case .eraser:
+                            Text("ID: \(item.id)")
+                                .padding(8)
+                                .multilineTextAlignment(.center)
+                        
+                        case .lasso:
+                            Image(systemName: item.icon)
+                                .resizable()
+                                .frame(width: 50, height: 50)
+                                .foregroundStyle(.accent)
+                        
+                        case .folder:
+                            Text("ID: \(item.id)")
+                                .padding(8)
+                                .multilineTextAlignment(.center)
+                        
+                        }
+                        
                         Text("ID: \(item.id)")
                             .padding(8)
                             .multilineTextAlignment(.leading)
                         Image(systemName: item.icon)
                             .resizable()
                             .frame(width: 100, height: 100)
-                            .font(.largeTitle)
                             .foregroundStyle(.accent)
+                        
                     }
                 }
                 .navigationTitle("navigation2")
