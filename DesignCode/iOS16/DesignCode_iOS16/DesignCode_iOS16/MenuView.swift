@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct MenuView: View {
-    @Binding var selectedItem: Menu
+    @AppStorage("selectedItem") var selectedItem: Menu = .eraser
     @Environment(\.dismiss) var dismiss
     var body: some View {
         List(navigationItems) { item in
@@ -28,5 +28,5 @@ struct MenuView: View {
 }
 
 #Preview {
-    MenuView(selectedItem: .constant(.pencil))
+    MenuView()
 }
