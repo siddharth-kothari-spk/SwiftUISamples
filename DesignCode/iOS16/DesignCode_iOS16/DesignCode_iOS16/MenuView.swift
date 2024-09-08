@@ -9,11 +9,13 @@ import SwiftUI
 
 struct MenuView: View {
     @Binding var selectedItem: Menu
+    @Environment(\.dismiss) var dismiss
     var body: some View {
         List(navigationItems) { item in
             Button(action: {
                 // change menu
                 selectedItem = item.menu
+                dismiss()
             }, label: {
                 Label(item.title, systemImage: item.icon)
                     .foregroundStyle(.purple)
