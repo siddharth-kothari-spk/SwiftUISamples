@@ -8,8 +8,17 @@
 import SwiftUI
 
 struct ContentView: View {
+    @State var showMessage = false
+    
     var body: some View {
         Text("Parent view")
+        Button("Show message") {
+            showMessage = true
+        }
+        .sheet(isPresented: $showMessage, content: {
+            NavigationStackView()
+                .presentationDetents([.medium, .large, .fraction(0.33), .height(600.0)])
+        })
     }
 }
 
