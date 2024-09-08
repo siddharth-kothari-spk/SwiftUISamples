@@ -8,10 +8,12 @@
 import SwiftUI
 
 struct MenuView: View {
+    @Binding var selectedItem: Menu
     var body: some View {
         List(navigationItems) { item in
             Button(action: {
                 // change menu
+                selectedItem = item.menu
             }, label: {
                 Label(item.title, systemImage: item.icon)
                     .foregroundStyle(.purple)
@@ -24,5 +26,5 @@ struct MenuView: View {
 }
 
 #Preview {
-    MenuView()
+    MenuView(selectedItem: .constant(.pencil))
 }
