@@ -10,6 +10,17 @@ import SwiftUI
 struct ContentView: View {
     @State var showMessage = false
     @State var selectedItem: Menu = .trash
+    @GestureState var press = false
+    
+    var longPress: some Gesture {
+        LongPressGesture(minimumDuration: 1)
+            .updating($press) { currentState, gestureState, transaction in
+                gestureState = currentState
+            }
+            .onEnded { value in
+                showMessage = true
+            }
+    }
     var body: some View {
         
         VStack {
@@ -36,6 +47,7 @@ struct ContentView: View {
                     .presentationDetents([.medium, .large])
             })
         }
+        .gesture(longPress)
     }
 }
 
