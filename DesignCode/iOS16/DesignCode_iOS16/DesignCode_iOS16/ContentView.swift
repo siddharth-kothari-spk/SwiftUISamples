@@ -23,31 +23,27 @@ struct ContentView: View {
     }
     var body: some View {
         
-        VStack {
-            Text("Parent view")
-            ZStack {
-                switch selectedItem {
-                case .trash:
-                    MessageView()
-                case .pencil:
-                    Text("pencil")
-                case .eraser:
-                    Text("eraser")
-                case .lasso:
-                    Text("lasso")
-                case .folder:
-                    Text("folder")
-                }
+        ZStack {
+            Color(.systemGroupedBackground).ignoresSafeArea()
+            switch selectedItem {
+            case .trash:
+                MessageView()
+            case .pencil:
+                Text("pencil")
+            case .eraser:
+                Text("eraser")
+            case .lasso:
+                Text("lasso")
+            case .folder:
+                Text("folder")
             }
-            Button("Show message") {
-                showMessage = true
-            }
-            .sheet(isPresented: $showMessage, content: {
-                MenuView(selectedItem: $selectedItem)
-                    .presentationDetents([.medium, .large])
-            })
         }
         .gesture(longPress)
+        .sheet(isPresented: $showMessage, content: {
+            MenuView(selectedItem: $selectedItem)
+                .presentationDetents([.medium, .large])
+        })
+        
     }
 }
 
