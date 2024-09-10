@@ -21,11 +21,12 @@ struct ContentView: View {
                     })
                 }
             }
-            
-            RoundedRectangle(cornerRadius: 12)
-                .foregroundStyle(.red.opacity(0.3))
-                .frame(width: .infinity, height: 50)
-                .padding()
+            .safeAreaInset(edge: .bottom) {
+                RoundedRectangle(cornerRadius: 12)
+                    .foregroundStyle(.red.opacity(0.3))
+                    .frame(width: .infinity, height: 50)
+                    .padding()
+            }
         }
         .navigationTitle("List Problem")
     }
