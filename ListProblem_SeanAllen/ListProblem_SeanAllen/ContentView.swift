@@ -5,6 +5,7 @@
 //  Created by Siddharth Kothari on 10/09/24.
 //
 
+// courtsey: https://www.youtube.com/watch?v=cpT02OtOasE&ab_channel=SeanAllen
 import SwiftUI
 
 struct ContentView: View {
