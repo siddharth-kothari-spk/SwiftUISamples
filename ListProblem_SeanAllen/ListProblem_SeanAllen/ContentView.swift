@@ -10,16 +10,16 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        List {
-            ForEach(0..<20) { _ in
-                cellView
+        NavigationView {
+            List {
+                ForEach(0..<20) { _ in
+                    cellView
+                }
             }
-        }
-        .safeAreaInset(edge: .bottom) {
-            RoundedRectangle(cornerRadius: 12)
-                .foregroundStyle(.red.opacity(0.3))
-                .frame(width: .infinity, height: 50)
-                .padding()
+            .safeAreaInset(edge: .bottom) {
+                bottomView
+            }
+            .navigationTitle("Test list")
         }
     }
     
@@ -31,6 +31,13 @@ struct ContentView: View {
             
             Text("Test title")
         })
+    }
+    
+    var bottomView: some View {
+        RoundedRectangle(cornerRadius: 12)
+            .foregroundStyle(.red.opacity(0.3))
+            .frame(width: .infinity, height: 50)
+            .padding(.all, 10)
     }
 }
 
