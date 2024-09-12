@@ -23,17 +23,20 @@ struct ChartView: View {
             
             Chart {
                 ForEach(chartData.reversed()) { item in
-                    LineMark(x: .value("Day", item.xAxis), y: .value("Value", item.yAxis), series: .value("Year", 2023))
+                    LineMark(x: .value("Day", item.xAxis), y: .value("Value", item.yAxis), series: .value("Year", "2023"))
                         .cornerRadius(10)
                         .interpolationMethod(.cardinal(tension: 0.5))
+                        .foregroundStyle(by: .value("Year", "2023"))
+                        .symbol(by: .value("Year", "2023"))
                 }
                 ForEach(chartData2.reversed()) { item in
-                    LineMark(x: .value("Day", item.xAxis), y: .value("Value", item.yAxis), series: .value("Year", 2024))
+                    LineMark(x: .value("Day", item.xAxis), y: .value("Value", item.yAxis), series: .value("Year", "2024"))
                         .cornerRadius(10)
                         .interpolationMethod(.cardinal(tension: 0.5))
+                        .foregroundStyle(by: .value("Year", "2024"))
+                        .symbol(by: .value("Year", "2024"))
                 }
             }
-            .foregroundStyle(.linearGradient(colors: [.orange, .red, .yellow, .green, .cyan], startPoint: .topLeading, endPoint: .bottomTrailing))
             .frame(height: 300)
         }
     }
