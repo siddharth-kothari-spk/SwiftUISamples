@@ -23,7 +23,12 @@ struct ChartView: View {
             
             Chart {
                 ForEach(chartData.reversed()) { item in
-                    LineMark(x: .value("Day", item.xAxis), y: .value("Value", item.yAxis))
+                    LineMark(x: .value("Day", item.xAxis), y: .value("Value", item.yAxis), series: .value("Year", 2023))
+                        .cornerRadius(10)
+                        .interpolationMethod(.cardinal(tension: 0.5))
+                }
+                ForEach(chartData2.reversed()) { item in
+                    LineMark(x: .value("Day", item.xAxis), y: .value("Value", item.yAxis), series: .value("Year", 2024))
                         .cornerRadius(10)
                         .interpolationMethod(.cardinal(tension: 0.5))
                 }
