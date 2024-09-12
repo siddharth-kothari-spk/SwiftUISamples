@@ -44,3 +44,11 @@ var chartData = [
     ChartValue(xAxis: "Sept 4", yAxis: 109.0),
     ChartValue(xAxis: "Sept 5", yAxis: 111.0)
 ]
+
+var chartData2 = [
+    ChartValue(xAxis: "Sept 1", yAxis: 89.0),
+    ChartValue(xAxis: "Sept 2", yAxis: 97.0),
+    ChartValue(xAxis: "Sept 3", yAxis: 23.0),
+    ChartValue(xAxis: "Sept 4", yAxis: 43.0),
+    ChartValue(xAxis: "Sept 5", yAxis: 88.0)
+]
