@@ -29,3 +29,18 @@ enum Menu: String {
     case lasso
     case folder
 }
+
+
+struct ChartValue: Identifiable {
+    var id = UUID()
+    var xAxis: String
+    var yAxis: Double
+}
+
+var chartData = [
+    ChartValue(xAxis: "Sept 1", yAxis: 100.0),
+    ChartValue(xAxis: "Sept 2", yAxis: 80.0),
+    ChartValue(xAxis: "Sept 3", yAxis: 63.0),
+    ChartValue(xAxis: "Sept 4", yAxis: 109.0),
+    ChartValue(xAxis: "Sept 5", yAxis: 111.0)
+]
