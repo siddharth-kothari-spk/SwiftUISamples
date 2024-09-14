@@ -32,6 +32,9 @@ struct NavigationStackView: View {
                     .listStyle(.plain)
                 }
                 
+                Text("Visit [Apple](https://www.apple.com) site")
+                    .tint(.blue)
+                
                 List(navigationItems) { item in
                     NavigationLink(value: item) {
                         Label(item.title, systemImage: item.icon)
