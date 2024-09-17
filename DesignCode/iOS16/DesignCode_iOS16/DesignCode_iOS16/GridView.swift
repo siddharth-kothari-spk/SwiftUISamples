@@ -17,22 +17,50 @@ struct GridView: View {
                 Text("Rating")
                     .gridColumnAlignment(.trailing)
             }
+            .font(.footnote)
+            .foregroundStyle(.blue.opacity(0.5))
+            
             Divider()
                 .gridCellUnsizedAxes(.horizontal)
             GridRow {
-                Text("4")
-                ProgressView(value: 0.2)
+                Text("15")
+                    .frame(width: 30, alignment: .trailing)
+                ProgressView(value: 0.15)
+                   // .gridCellUnsizedAxes(.horizontal) // so now cell takes min instead of max space but follows size of the respective column
+                    .frame(maxWidth: 250)
+                RatingView(rating: 1)
+            }
+            
+            GridRow {
+                Text("32")
+                ProgressView(value: 0.32)
                    // .gridCellUnsizedAxes(.horizontal) // so now cell takes min instead of max space but follows size of the respective column
                     .frame(maxWidth: 250)
                 RatingView(rating: 2)
             }
             
             GridRow {
-                Text("8")
-                ProgressView(value: 0.4)
+                Text("49")
+                ProgressView(value: 0.49)
+                   // .gridCellUnsizedAxes(.horizontal) // so now cell takes min instead of max space but follows size of the respective column
+                    .frame(maxWidth: 250)
+                RatingView(rating: 3)
+            }
+            
+            GridRow {
+                Text("67")
+                ProgressView(value: 0.67)
                    // .gridCellUnsizedAxes(.horizontal) // so now cell takes min instead of max space but follows size of the respective column
                     .frame(maxWidth: 250)
                 RatingView(rating: 4)
+            }
+            
+            GridRow {
+                Text("89")
+                ProgressView(value: 0.89)
+                   // .gridCellUnsizedAxes(.horizontal) // so now cell takes min instead of max space but follows size of the respective column
+                    .frame(maxWidth: 250)
+                RatingView(rating: 5)
             }
         }
         .padding()
