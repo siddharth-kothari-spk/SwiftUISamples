@@ -23,16 +23,16 @@ struct GridView: View {
                 Text("4")
                 ProgressView(value: 0.2)
                    // .gridCellUnsizedAxes(.horizontal) // so now cell takes min instead of max space but follows size of the respective column
-                    .frame(width: 250)
-                Image(systemName: "star")
+                    .frame(maxWidth: 250)
+                RatingView(rating: 2)
             }
             
             GridRow {
                 Text("8")
                 ProgressView(value: 0.4)
                    // .gridCellUnsizedAxes(.horizontal) // so now cell takes min instead of max space but follows size of the respective column
-                    .frame(width: 250)
-                Image(systemName: "star")
+                    .frame(maxWidth: 250)
+                RatingView(rating: 4)
             }
         }
         .padding()
@@ -41,4 +41,16 @@ struct GridView: View {
 
 #Preview {
     GridView()
+}
+
+struct RatingView: View {
+    var rating: Int = 2
+    var items: [Int] = [1,2,3,4,5]
+    var body: some View {
+        HStack(spacing: 0) {
+            ForEach(items, id: \.self) { item in
+                Image(systemName: item <= rating ? "star.fill" : "star")
+            }
+        }
+    }
 }
