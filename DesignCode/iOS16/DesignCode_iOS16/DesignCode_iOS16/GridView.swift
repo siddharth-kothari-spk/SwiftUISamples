@@ -17,10 +17,21 @@ struct GridView: View {
                 Text("Rating")
                     .gridColumnAlignment(.trailing)
             }
+            Divider()
+                .gridCellUnsizedAxes(.horizontal)
             GridRow {
                 Text("4")
                 ProgressView(value: 0.2)
-                    .gridCellUnsizedAxes(.horizontal) // so now cell takes min instead of max space but follows size of the respective column
+                   // .gridCellUnsizedAxes(.horizontal) // so now cell takes min instead of max space but follows size of the respective column
+                    .frame(width: 250)
+                Image(systemName: "star")
+            }
+            
+            GridRow {
+                Text("8")
+                ProgressView(value: 0.4)
+                   // .gridCellUnsizedAxes(.horizontal) // so now cell takes min instead of max space but follows size of the respective column
+                    .frame(width: 250)
                 Image(systemName: "star")
             }
         }
