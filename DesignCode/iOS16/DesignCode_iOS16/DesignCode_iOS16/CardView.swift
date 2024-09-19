@@ -12,7 +12,7 @@ struct CardView: View {
         VStack {
             Image(systemName: "aspectratio")
                 .frame(width: 50, height: 50)
-                .background(MyIcon2().stroke())
+               // .background(MyIcon2().stroke())
             
             Text("Upto 8K".uppercased())
                 .font(.title3.width(.condensed).bold())
@@ -20,9 +20,13 @@ struct CardView: View {
             Text("Your image will look great whether on mobile or on desktop either zoomed in or zoomed out")
                 .font(.footnote)
                 .multilineTextAlignment(.center)
+                .frame(maxWidth: .infinity)
+                .padding()
         }
+        .padding(16)
         .background(.black)
         .foregroundStyle(.white)
+        .clipShape(Capsule())
         
             
     }
