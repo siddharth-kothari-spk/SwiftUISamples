@@ -11,7 +11,8 @@ struct CardView: View {
     var body: some View {
         VStack {
             Image(systemName: "aspectratio")
-                .frame(width: 50, height: 50)
+                .frame(width: 100, height: 100)
+                .foregroundStyle(.linearGradient(colors: [.init(white: 0.7), .clear], startPoint: .topLeading, endPoint: .bottomTrailing))
                // .background(MyIcon2().stroke())
             
             Text("Upto 8K".uppercased())
