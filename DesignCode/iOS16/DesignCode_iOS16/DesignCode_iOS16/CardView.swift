@@ -9,6 +9,17 @@ import SwiftUI
 
 struct CardView: View {
     var body: some View {
+        Grid {
+            GridRow {
+                card
+                card
+            }
+            GridRow {
+                card.gridCellColumns(2)
+            }
+        }
+    }
+    var card: some View {
         VStack {
             Image(systemName: "aspectratio")
                 .frame(width: 100, height: 100)
@@ -17,17 +28,24 @@ struct CardView: View {
             
             Text("Upto 8K".uppercased())
                 .font(.title3.width(.condensed).bold())
+                .foregroundStyle(.linearGradient(colors: [.init(red: 0.0, green: 0.0, blue: 0.7).opacity(0.9), .red], startPoint: .topLeading, endPoint: .bottomTrailing))
             
             Text("Your image will look great whether on mobile or on desktop either zoomed in or zoomed out")
+                .foregroundStyle(.linearGradient(colors: [.red, .init(red: 0.0, green: 0.0, blue: 0.7).opacity(0.9)], startPoint: .topLeading, endPoint: .bottomTrailing))
                 .font(.footnote)
                 .multilineTextAlignment(.center)
                 .frame(maxWidth: .infinity)
                 .padding()
         }
+        .frame(maxHeight: .infinity)
         .padding(16)
         .background(.black)
         .foregroundStyle(.white)
-        .clipShape(Capsule())
+        .overlay {
+            RoundedRectangle(cornerRadius: 20.0)
+                .stroke()
+                .fill(.orange.opacity(0.5))
+        }
         
             
     }

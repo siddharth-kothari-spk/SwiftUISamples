@@ -29,7 +29,7 @@ struct ContentView: View {
             case .trash:
                 MessageView()
             case .pencil:
-                Text("pencil")
+                CardView()
             case .eraser:
                 Text("eraser")
             case .lasso:
