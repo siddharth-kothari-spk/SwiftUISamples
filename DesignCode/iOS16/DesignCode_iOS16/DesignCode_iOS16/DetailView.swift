@@ -9,16 +9,28 @@ import SwiftUI
 
 struct DetailView: View {
     var body: some View {
-        ViewThatFits {
-            //ViewThatFits evaluates its child views in the order you provide them to the initializer. It selects the first child whose ideal size on the constrained axes fits within the proposed size.
-            HStack(content: {
-                ChartView()
-            })
-            VStack(content: {
-                ChartView()
-                CardView()
-                GridView()
-            })
+        ScrollView {
+            ViewThatFits {
+                //ViewThatFits evaluates its child views in the order you provide them to the initializer. It selects the first child whose ideal size on the constrained axes fits within the proposed size.
+                HStack(content: {
+                    VStack(content: {
+                        ChartView()
+                        CardView()
+                    })
+                    VStack(content: {
+                        MenuView()
+                            .frame(width: 300)
+                        GridView()
+                            .frame(width:300)
+                    })
+                    
+                })
+                VStack(content: {
+                    MenuView()
+                    CardView()
+                    GridView()
+                })
+            }
         }
        
     }
