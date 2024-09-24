@@ -29,7 +29,7 @@ struct ContentView: View {
             case .trash:
                 MessageView()
             case .pencil:
-                Text("pencil")
+                DetailView()
             case .eraser:
                 Text("eraser")
             case .lasso:
@@ -37,6 +37,9 @@ struct ContentView: View {
             case .folder:
                 Text("folder")
             }
+        }
+        .onTapGesture {
+         // empty tapgesture to use scroll view when we have long press gesture
         }
         .gesture(longPress)
         .sheet(isPresented: $showMessage, content: {
