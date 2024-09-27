@@ -36,7 +36,14 @@ struct CustomLayout: Layout {
     
     func placeSubviews(in bounds: CGRect, proposal: ProposedViewSize, subviews: Subviews, cache: inout ()) {
         for (index, subView) in subviews.enumerated() {
-            subView.place(at: CGPoint(x: 50 * index, y: 100 * index), proposal: .unspecified)
+            
+            // position
+            var point = CGPoint(x: 50 * index, y: 50 * index)
+            
+            // center
+            point.x += bounds.midX
+            point.y += bounds.midY
+            subView.place(at:point , proposal: .unspecified)
         }
     }
     
