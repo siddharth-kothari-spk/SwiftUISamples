@@ -43,7 +43,10 @@ struct CustomLayout: Layout {
             // center
             point.x += bounds.midX
             point.y += bounds.midY
-            subView.place(at:point , proposal: .unspecified)
+            
+            subView.place(at: point,
+                          anchor: .center,
+                          proposal: .unspecified)
         }
     }
     
