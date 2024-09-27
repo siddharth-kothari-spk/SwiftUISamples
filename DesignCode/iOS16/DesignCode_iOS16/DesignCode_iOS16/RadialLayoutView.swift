@@ -39,6 +39,7 @@ struct CustomLayout: Layout {
             
             // position
             var point = CGPoint(x: 50 * index, y: 50 * index)
+                .applying(CGAffineTransform(rotationAngle: 30))
             
             // center
             point.x += bounds.midX
