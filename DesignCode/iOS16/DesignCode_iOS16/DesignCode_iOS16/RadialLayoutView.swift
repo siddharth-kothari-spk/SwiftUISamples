@@ -9,7 +9,7 @@ import SwiftUI
 
 struct RadialLayoutView: View {
     var body: some View {
-        HStack {
+        CustomLayout {
             ForEach(/*@START_MENU_TOKEN@*/0 ..< 5/*@END_MENU_TOKEN@*/) { item in
                 Circle()
                     .frame(width: 44)
@@ -24,4 +24,18 @@ struct RadialLayoutView: View {
 
 #Preview {
     RadialLayoutView()
+}
+
+struct CustomLayout: Layout {
+    func sizeThatFits(proposal: ProposedViewSize, subviews: Subviews, cache: inout ()) -> CGSize {
+        proposal.replacingUnspecifiedDimensions()
+        /// Use the default value to prevent a flexible view from disappearing
+        /// into a zero-sized frame, and ensure the unspecified value remains
+        /// visible during debugging.
+    }
+    
+    func placeSubviews(in bounds: CGRect, proposal: ProposedViewSize, subviews: Subviews, cache: inout ()) {
+        subviews[0].place(at: CGPoint(x: 100.0, y: 100.0), proposal: .unspecified)
+    }
+    
 }
