@@ -17,7 +17,20 @@ struct ContentView: View {
         .overlay {
             // One of the possible options of adding a border is overlaying another shape with the stroke applied on it.
             Capsule()
-                .stroke(lineWidth: 2.0)
+                .stroke(lineWidth: 5.0)
+                .fill(
+                    LinearGradient(
+                        // Instance of Gradient type we pass as the first parameter defines how different colors we pass into are represented along the LinearGradient.
+                        gradient: Gradient(stops: [
+                        .init(color: .red.opacity(0.4), location: 0.0),
+                        .init(color: .blue.opacity(0.0), location: 0.4),
+                        .init(color: .red.opacity(0.0), location: 0.6),
+                        .init(color: .blue.opacity(0.1), location: 1.0)]),
+                        // Unit is a normalized value in range from 0.0 to 1.0. Normalized means that it represents a relative value
+                        startPoint: .init(x: 0.16, y: -0.4),
+                        endPoint: .init(x: 0.2, y: 1.5))
+                    // For example, we have a shape that is 300 width and 400 height. A unit point (x: 0.2, y: 0.4) within this shape has absolute coordinates (x: 0.2 * 300, y: 0.4 * 400), or (x: 60, y: 160).
+                )
         }
       Text("Spatial Borders ✨")
         .font(.system(size: 17.0, weight: .medium))
