@@ -11,6 +11,7 @@
 		B14D5E242CA7A46F00F91CBF /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B14D5E232CA7A46F00F91CBF /* ContentView.swift */; };
 		B14D5E262CA7A47100F91CBF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B14D5E252CA7A47100F91CBF /* Assets.xcassets */; };
 		B14D5E292CA7A47100F91CBF /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B14D5E282CA7A47100F91CBF /* Preview Assets.xcassets */; };
+		B14D5E302CA8EB6F00F91CBF /* AnalogueButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = B14D5E2F2CA8EB6F00F91CBF /* AnalogueButton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +20,7 @@
 		B14D5E232CA7A46F00F91CBF /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		B14D5E252CA7A47100F91CBF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B14D5E282CA7A47100F91CBF /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		B14D5E2F2CA8EB6F00F91CBF /* AnalogueButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnalogueButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,6 +55,7 @@
 			children = (
 				B14D5E212CA7A46F00F91CBF /* Spatial_BordersApp.swift */,
 				B14D5E232CA7A46F00F91CBF /* ContentView.swift */,
+				B14D5E2F2CA8EB6F00F91CBF /* AnalogueButton.swift */,
 				B14D5E252CA7A47100F91CBF /* Assets.xcassets */,
 				B14D5E272CA7A47100F91CBF /* Preview Content */,
 			);
@@ -137,6 +140,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B14D5E302CA8EB6F00F91CBF /* AnalogueButton.swift in Sources */,
 				B14D5E242CA7A46F00F91CBF /* ContentView.swift in Sources */,
 				B14D5E222CA7A46F00F91CBF /* Spatial_BordersApp.swift in Sources */,
 			);
