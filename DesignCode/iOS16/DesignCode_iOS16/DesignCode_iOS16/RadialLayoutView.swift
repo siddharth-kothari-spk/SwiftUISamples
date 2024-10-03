@@ -9,17 +9,27 @@ import SwiftUI
 
 struct RadialLayoutView: View {
     var icons = ["calendar", "message", "figure", "pencil.circle.fill"]
+    var numbers = [12,1,2,3,4,5,6,7,8,9,10,11]
+    
     var body: some View {
-        RadialLayout {
-            ForEach(icons, id:\.self) { item in
-                Circle()
-                    .frame(width: 44)
-                    .foregroundStyle(.black)
-                    .overlay {
-                        Image(systemName: item)
-                            .foregroundStyle(.white)
+        ZStack {
+            RadialLayout {
+                ForEach(icons, id:\.self) { item in
+                    Circle()
+                        .frame(width: 44)
+                        .foregroundStyle(.black)
+                        .overlay {
+                            Image(systemName: item)
+                                .foregroundStyle(.white)
+                    }
                 }
             }
+            .frame(width: 120)
+            
+            Text("12")
+                .font(.system(.title, design: .rounded))
+                .bold()
+                .foregroundStyle(.black)
         }
     }
 }
