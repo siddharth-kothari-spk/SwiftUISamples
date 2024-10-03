@@ -26,10 +26,14 @@ struct RadialLayoutView: View {
             }
             .frame(width: 120)
             
-            Text("12")
-                .font(.system(.title, design: .rounded))
-                .bold()
-                .foregroundStyle(.black)
+            RadialLayout {
+                ForEach(numbers, id: \.self) { item in
+                    Text("\(item)")
+                        .font(.system(.title, design: .rounded))
+                        .bold()
+                    .foregroundStyle(.black)
+                }
+            }
         }
     }
 }
@@ -80,7 +84,7 @@ struct RadialLayout: Layout {
         for (index, subView) in subviews.enumerated() {
             
             // position
-            var point = CGPoint(x: 0, y: radius)
+            var point = CGPoint(x: 0, y: -radius)
                 .applying(CGAffineTransform(rotationAngle: angle * Double(index)))
             
             // center
