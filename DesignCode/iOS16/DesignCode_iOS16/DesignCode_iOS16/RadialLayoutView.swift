@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct RadialLayoutView: View {
-    var icons = ["calendar", "message", "figure", "calendar"]
+    var icons = ["calendar", "message", "figure", "pencil.circle.fill"]
     var body: some View {
         RadialLayout {
             ForEach(icons, id:\.self) { item in
@@ -65,12 +65,13 @@ struct RadialLayout: Layout {
     func placeSubviews(in bounds: CGRect, proposal: ProposedViewSize, subviews: Subviews, cache: inout ()) {
         
         let radius = bounds.width / 3.0
+        let angle = Angle.degrees(360.0 / Double(subviews.count)).radians
         
         for (index, subView) in subviews.enumerated() {
             
             // position
             var point = CGPoint(x: 0, y: radius)
-                .applying(CGAffineTransform(rotationAngle: 60))
+                .applying(CGAffineTransform(rotationAngle: angle * Double(index)))
             
             // center
             point.x += bounds.midX
