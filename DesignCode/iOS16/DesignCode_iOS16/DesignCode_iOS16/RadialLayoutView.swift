@@ -34,6 +34,16 @@ struct RadialLayoutView: View {
                     .foregroundStyle(.black)
                 }
             }
+            .frame(width: 240)
+            
+            RadialLayout {
+                ForEach(numbers, id: \.self) { item in
+                    Text("\(item * 5)")
+                        .font(.system(.caption2, design: .rounded))
+                        .foregroundStyle(.black)
+                }
+            }
+            .frame(width: 360)
         }
     }
 }
