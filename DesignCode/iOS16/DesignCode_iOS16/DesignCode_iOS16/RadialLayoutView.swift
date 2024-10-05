@@ -44,6 +44,16 @@ struct RadialLayoutView: View {
                 }
             }
             .frame(width: 360)
+            
+            Circle()
+                .strokeBorder(style: StrokeStyle(lineWidth: 5, dash: [1, 12])) // returns ChartSymbolShape
+                //.stroke(style: StrokeStyle(lineWidth: 10, dash: [1, 12])) // returns Shape
+                .frame(width: 220)
+            
+            Circle()
+                //.strokeBorder(style: StrokeStyle(lineWidth: 5, dash: [1, 12])) // returns ChartSymbolShape
+                .stroke(style: StrokeStyle(lineWidth: 10, dash: [1, 12])) // returns Shape
+                .frame(width: 280)
         }
     }
 }
