@@ -11,9 +11,12 @@ struct RadialLayoutView: View {
     var icons = ["calendar", "message", "figure", "pencil.circle.fill"]
     var numbers = [12,1,2,3,4,5,6,7,8,9,10,11]
     
+    @State var isRadial = true
+    
     var body: some View {
+        let layout = isRadial ? AnyLayout(RadialLayout()) : AnyLayout(CustomLayout())
         ZStack {
-            RadialLayout {
+            layout {
                 ForEach(icons, id:\.self) { item in
                     Circle()
                         .frame(width: 44)
@@ -26,21 +29,23 @@ struct RadialLayoutView: View {
             }
             .frame(width: 120)
             
-            RadialLayout {
+            layout {
                 ForEach(numbers, id: \.self) { item in
                     Text("\(item)")
                         .font(.system(.title, design: .rounded))
                         .bold()
                     .foregroundStyle(.black)
+                    .offset(x: isRadial ? 0 : 50)
                 }
             }
             .frame(width: 240)
             
-            RadialLayout {
+            layout {
                 ForEach(numbers, id: \.self) { item in
                     Text("\(item * 5)")
                         .font(.system(.caption2, design: .rounded))
                         .foregroundStyle(.black)
+                        .offset(x: isRadial ? 0 : 100)
                 }
             }
             .frame(width: 360)
@@ -54,6 +59,11 @@ struct RadialLayoutView: View {
                 //.strokeBorder(style: StrokeStyle(lineWidth: 5, dash: [1, 12])) // returns ChartSymbolShape
                 .stroke(style: StrokeStyle(lineWidth: 10, dash: [1, 12])) // returns Shape
                 .frame(width: 280)
+        }
+        .onTapGesture {
+            withAnimation {
+                isRadial.toggle()
+            }
         }
     }
 }
