@@ -84,8 +84,8 @@ struct CustomLayout: Layout {
         for (index, subView) in subviews.enumerated() {
             
             // position
-            var point = CGPoint(x: 50 * index, y: 50 * index)
-                .applying(CGAffineTransform(rotationAngle: 30))
+            var point = CGPoint(x: 15 * index, y: 15 * index)
+                .applying(CGAffineTransform(rotationAngle:  CGFloat(5 * index + 5)))
             
             // center
             point.x += bounds.midX
