@@ -17,18 +17,31 @@ struct RadialLayoutView: View {
         let layout = isRadial ? AnyLayout(RadialLayout()) : AnyLayout(CustomLayout())
         ZStack {
             
+            Rectangle()
+                .fill(.gray)
+            
             Circle()
-                .foregroundStyle(.white.shadow(.inner(color: .gray, radius: 30, x: 30, y: 30)))
-                .frame(width: 300)
-                //.foregroundStyle(.red.shadow(.inner(color: .blue.opacity(0.5), radius: 30, x: 50, y: 150)))
-                //.foregroundStyle(.red.shadow(.drop(color: .blue, radius: 30, x: 30, y: 30)))
+                .foregroundStyle(
+                    .green
+                        .shadow(.inner(color: .yellow, radius: 30, x: 30, y: 30))
+                        .shadow(.inner(color: .blue, radius: 0, x: 1, y: 1)) // blue thin line top left
+                        .shadow(.inner(color: .red, radius: 0, x: -1, y: -1)) // red thin line bottom right
+                )
+                .frame(width: 360)
             
             Circle()
                 .foregroundStyle(
                     .red
                         .shadow(.inner(color: .blue, radius: 30, x: -30, y: -30))
-                        .shadow(.drop(color: .red, radius: 30, x: 30, y: 30))
+                        .shadow(.drop(color: .orange.opacity(0.2), radius: 30, x: 30, y: 30))
                 )
+                .frame(width: 320)
+            
+            Circle()
+                .foregroundStyle(.white.shadow(.inner(color: .gray, radius: 30, x: 30, y: 30)))
+                .frame(width: 300)
+                //.foregroundStyle(.red.shadow(.inner(color: .blue.opacity(0.5), radius: 30, x: 50, y: 150)))
+                //.foregroundStyle(.red.shadow(.drop(color: .blue, radius: 30, x: 30, y: 30)))
             
             layout {
                 ForEach(icons, id:\.self) { item in
