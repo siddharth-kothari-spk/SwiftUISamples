@@ -18,7 +18,9 @@ struct RadialLayoutView: View {
         ZStack {
             
             Circle()
-                .foregroundStyle(.white.shadow(.inner(radius: 30)))
+                //.foregroundStyle(.white.shadow(.inner(color: .gray, radius: 30, x: 30, y: 30)))
+                //.foregroundStyle(.red.shadow(.inner(color: .blue.opacity(0.5), radius: 30, x: 50, y: 150)))
+                .foregroundStyle(.red.shadow(.drop(color: .blue, radius: 30, x: 30, y: 30)))
             
             layout {
                 ForEach(icons, id:\.self) { item in
