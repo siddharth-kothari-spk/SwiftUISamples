@@ -21,7 +21,8 @@ struct RadialLayoutView: View {
             
             Rectangle()
                 .fill(.gray)
-            
+           
+           // adding clock case
            clockCase
             
             layout {
@@ -67,32 +68,10 @@ struct RadialLayoutView: View {
                 //.strokeBorder(style: StrokeStyle(lineWidth: 5, dash: [1, 12])) // returns ChartSymbolShape
                 .stroke(style: StrokeStyle(lineWidth: 10, dash: [1, 12])) // returns Shape
                 .frame(width: 280)
-            
-            // hour hand
-            RoundedRectangle(cornerRadius: 4)
-                .foregroundStyle(.black)
-                .frame(width: 8, height: 70)
-                .overlay {
-                    // to show hand prominenetly
-                    RoundedRectangle(cornerRadius: 4).stroke().fill(.white)
-                }
-                .offset(y: -30) // to put in center
-                .rotationEffect(Angle(degrees: hour))
-                .shadow(radius: 5, y: 5)
-                .animation(.linear(duration: 60), value: hour)
-            
-            // minute hand
-            RoundedRectangle(cornerRadius: 4)
-                .foregroundStyle(.black)
-                .frame(width: 8, height: 100)
-                .overlay {
-                    // to show hand prominenetly
-                    RoundedRectangle(cornerRadius: 4).stroke().fill(.white)
-                }
-                .offset(y: -45) // to put in center
-                .rotationEffect(Angle(degrees: minute))
-                .shadow(radius: 5, y: 5)
-                .animation(.linear(duration: 10).repeatCount(12, autoreverses: false), value: minute)
+           
+            // adding clock hands
+            clockHands
+        
         }
         .onAppear(perform: {
             hour = 360
@@ -130,6 +109,41 @@ struct RadialLayoutView: View {
                 //.foregroundStyle(.red.shadow(.inner(color: .blue.opacity(0.5), radius: 30, x: 50, y: 150)))
                 //.foregroundStyle(.red.shadow(.drop(color: .blue, radius: 30, x: 30, y: 30)))
         }
+    }
+    
+    var clockHands: some View {
+        ZStack(content:{
+            // hour hand
+            RoundedRectangle(cornerRadius: 4)
+                .foregroundStyle(.black)
+                .frame(width: 8, height: 70)
+                .overlay {
+                    // to show hand prominenetly
+                    RoundedRectangle(cornerRadius: 4).stroke().fill(.white)
+                }
+                .offset(y: -30) // to put in center
+                .rotationEffect(Angle(degrees: hour))
+                .shadow(radius: 5, y: 5)
+                .animation(.linear(duration: 60), value: hour)
+            
+            // minute hand
+            RoundedRectangle(cornerRadius: 4)
+                .foregroundStyle(.black)
+                .frame(width: 8, height: 100)
+                .overlay {
+                    // to show hand prominenetly
+                    RoundedRectangle(cornerRadius: 4).stroke().fill(.white)
+                }
+                .offset(y: -45) // to put in center
+                .rotationEffect(Angle(degrees: minute))
+                .shadow(radius: 5, y: 5)
+                .animation(.linear(duration: 10).repeatCount(12, autoreverses: false), value: minute)
+            
+            // pin for minute and hour hand
+            Circle()
+                .fill(.red)
+                .frame(width: 10)
+        })
     }
 }
 
