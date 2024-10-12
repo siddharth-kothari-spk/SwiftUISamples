@@ -12,6 +12,8 @@ struct RadialLayoutView: View {
     var numbers = [12,1,2,3,4,5,6,7,8,9,10,11]
     
     @State var isRadial = true
+    @State var hour: Double = 0
+    @State var minute: Double = 0
     
     var body: some View {
         let layout = isRadial ? AnyLayout(RadialLayout()) : AnyLayout(CustomLayout())
@@ -65,7 +67,24 @@ struct RadialLayoutView: View {
                 //.strokeBorder(style: StrokeStyle(lineWidth: 5, dash: [1, 12])) // returns ChartSymbolShape
                 .stroke(style: StrokeStyle(lineWidth: 10, dash: [1, 12])) // returns Shape
                 .frame(width: 280)
+            
+            // hour hand
+            RoundedRectangle(cornerRadius: 4)
+                .foregroundStyle(.black)
+                .frame(width: 8, height: 70)
+                .overlay {
+                    // to show hand prominenetly
+                    RoundedRectangle(cornerRadius: 4).stroke().fill(.white)
+                }
+                .offset(y: -30) // to put in center
+                .rotationEffect(Angle(degrees: hour))
+                .shadow(radius: 5, y: 5)
+                .animation(.linear(duration: 60), value: hour)
         }
+        .onAppear(perform: {
+            hour = 360
+            minute = 360
+        })
         .onTapGesture {
             withAnimation {
                 isRadial.toggle()
