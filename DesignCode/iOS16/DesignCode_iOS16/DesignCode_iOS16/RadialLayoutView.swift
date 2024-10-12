@@ -80,6 +80,19 @@ struct RadialLayoutView: View {
                 .rotationEffect(Angle(degrees: hour))
                 .shadow(radius: 5, y: 5)
                 .animation(.linear(duration: 60), value: hour)
+            
+            // minute hand
+            RoundedRectangle(cornerRadius: 4)
+                .foregroundStyle(.black)
+                .frame(width: 8, height: 100)
+                .overlay {
+                    // to show hand prominenetly
+                    RoundedRectangle(cornerRadius: 4).stroke().fill(.white)
+                }
+                .offset(y: -45) // to put in center
+                .rotationEffect(Angle(degrees: minute))
+                .shadow(radius: 5, y: 5)
+                .animation(.linear(duration: 10), value: minute)
         }
         .onAppear(perform: {
             hour = 360
