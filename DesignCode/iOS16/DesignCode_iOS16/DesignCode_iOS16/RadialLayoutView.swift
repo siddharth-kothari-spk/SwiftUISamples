@@ -92,7 +92,7 @@ struct RadialLayoutView: View {
                 .offset(y: -45) // to put in center
                 .rotationEffect(Angle(degrees: minute))
                 .shadow(radius: 5, y: 5)
-                .animation(.linear(duration: 10), value: minute)
+                .animation(.linear(duration: 10).repeatCount(12, autoreverses: false), value: minute)
         }
         .onAppear(perform: {
             hour = 360
