@@ -30,8 +30,9 @@ struct CardReflectionView: View {
                             .frame(width: 400)
                         Image("Logo 3")
                             .resizable()
-                            .aspectRatio(contentMode: .fit)
+                            .aspectRatio(contentMode: .fill)
                             .frame(width: 392, height: 600)
+                            .blendMode(.overlay) // to compose view with overlapping views
                     }
                 }
         }
