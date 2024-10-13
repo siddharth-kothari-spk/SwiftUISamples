@@ -15,6 +15,7 @@
 		B1175A842C9B120400C51019 /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1175A832C9B120400C51019 /* CardView.swift */; };
 		B14D5E122CA2DF8400F91CBF /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B14D5E112CA2DF8400F91CBF /* DetailView.swift */; };
 		B14D5E142CA6495600F91CBF /* RadialLayoutView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B14D5E132CA6495600F91CBF /* RadialLayoutView.swift */; };
+		B154BB3E2CBBDECC007031A6 /* CardReflectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B154BB3D2CBBDECC007031A6 /* CardReflectionView.swift */; };
 		B15CBC872C7043D5004A6F23 /* DesignCode_iOS16App.swift in Sources */ = {isa = PBXBuildFile; fileRef = B15CBC862C7043D5004A6F23 /* DesignCode_iOS16App.swift */; };
 		B15CBC892C7043D5004A6F23 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B15CBC882C7043D5004A6F23 /* ContentView.swift */; };
 		B15CBC8B2C7043D6004A6F23 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B15CBC8A2C7043D6004A6F23 /* Assets.xcassets */; };
@@ -31,6 +32,7 @@
 		B1175A832C9B120400C51019 /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
 		B14D5E112CA2DF8400F91CBF /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
 		B14D5E132CA6495600F91CBF /* RadialLayoutView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RadialLayoutView.swift; sourceTree = "<group>"; };
+		B154BB3D2CBBDECC007031A6 /* CardReflectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardReflectionView.swift; sourceTree = "<group>"; };
 		B15CBC832C7043D5004A6F23 /* DesignCode_iOS16.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DesignCode_iOS16.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B15CBC862C7043D5004A6F23 /* DesignCode_iOS16App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DesignCode_iOS16App.swift; sourceTree = "<group>"; };
 		B15CBC882C7043D5004A6F23 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -80,6 +82,7 @@
 				B1175A832C9B120400C51019 /* CardView.swift */,
 				B14D5E112CA2DF8400F91CBF /* DetailView.swift */,
 				B14D5E132CA6495600F91CBF /* RadialLayoutView.swift */,
+				B154BB3D2CBBDECC007031A6 /* CardReflectionView.swift */,
 				B15CBC8A2C7043D6004A6F23 /* Assets.xcassets */,
 				B15CBC8C2C7043D6004A6F23 /* Preview Content */,
 			);
@@ -175,6 +178,7 @@
 				B15CBC872C7043D5004A6F23 /* DesignCode_iOS16App.swift in Sources */,
 				B1120C522C893D8E00FC7B80 /* Data.swift in Sources */,
 				B1120C542C8D38C800FC7B80 /* MessageView.swift in Sources */,
+				B154BB3E2CBBDECC007031A6 /* CardReflectionView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
