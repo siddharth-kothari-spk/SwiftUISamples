@@ -18,6 +18,22 @@ struct CardReflectionView: View {
                 .frame(height: 600)
                 .clipShape(RoundedRectangle(cornerRadius: 50))
                 .scaleEffect(0.9)
+                .overlay {
+                    ZStack {
+                        Image("Logo 1")
+                            .resizable()
+                            .aspectRatio(contentMode: .fit)
+                            .frame(width: 180)
+                        Image("Logo 2")
+                            .resizable()
+                            .aspectRatio(contentMode: .fit)
+                            .frame(width: 400)
+                        Image("Logo 3")
+                            .resizable()
+                            .aspectRatio(contentMode: .fit)
+                            .frame(width: 392, height: 600)
+                    }
+                }
         }
     }
 }
