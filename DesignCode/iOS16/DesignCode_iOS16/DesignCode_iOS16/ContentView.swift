@@ -31,7 +31,7 @@ struct ContentView: View {
             case .pencil:
                 DetailView()
             case .eraser:
-                Text("eraser")
+                CardReflectionView()
             case .lasso:
                 CardView()
             case .folder:

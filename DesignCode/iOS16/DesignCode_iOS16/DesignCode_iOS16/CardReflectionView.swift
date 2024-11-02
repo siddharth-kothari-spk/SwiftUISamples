@@ -35,6 +35,15 @@ struct CardReflectionView: View {
                             .blendMode(.overlay) // to compose view with overlapping views
                     }
                 }
+                .overlay {
+                    Image("Gloss 1")
+                        .resizable()
+                        .aspectRatio(contentMode: .fill)
+                        .mask {
+                            LinearGradient(colors: [.clear, .white,.clear, .white,.clear, .white,.clear, .white,.clear], startPoint: .topLeading, endPoint: .bottomTrailing)
+                                .frame(width: 392)
+                        }
+                }
         }
     }
 }
