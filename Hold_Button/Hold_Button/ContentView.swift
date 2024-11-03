@@ -27,7 +27,10 @@ struct ContentView: View {
             Text(isSuccess ? "Account Deleted": "Hold to delete").bold()
         }
         .onLongPressGesture(minimumDuration: 2, maximumDistance: 50) {
-            print("test")
+            // on completion
+            withAnimation {
+                isSuccess = true
+            }
         } onPressingChanged: { isPressing in
            if isPressing {
                 withAnimation(.linear(duration: 2)) {
