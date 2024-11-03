@@ -26,6 +26,25 @@ struct ContentView: View {
             
             Text(isSuccess ? "Account Deleted": "Hold to delete").bold()
         }
+        .onLongPressGesture(minimumDuration: 2, maximumDistance: 50) {
+            print("test")
+        } onPressingChanged: { isPressing in
+           if isPressing {
+                withAnimation(.linear(duration: 2)) {
+                    isComplete = true
+                }
+            }
+            else {
+                DispatchQueue.main.asyncAfter(deadline: .now() + 0.1) {
+                    if !isSuccess {
+                        withAnimation {
+                            isComplete = false
+                        }
+                    }
+                }
+            }
+        }
+
         
     }
 }
