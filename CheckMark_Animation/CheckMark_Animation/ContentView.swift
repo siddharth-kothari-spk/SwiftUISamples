@@ -18,6 +18,7 @@ struct ContentView: View {
             ForEach(0..<6) { index in
                 Circle()
                     .frame(width: 30, height: 30)
+                    .scaleEffect(isAnimated ? 0 : 1)
             }
         }
         .foregroundStyle(isTapped ? .indigo : .blue)
