@@ -24,6 +24,8 @@ struct ContentView: View {
                     //.opacity(isAnimated ? 1 : 0) // not needed
             }
             Image(systemName: isTapped ? "checkmark.circle" : "circle")
+                .contentTransition(.symbolEffect)
+                .font(.largeTitle)
         }
         .foregroundStyle(isTapped ? .indigo : .blue)
         .onTapGesture {
