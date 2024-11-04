@@ -20,6 +20,7 @@ struct ContentView: View {
                     .frame(width: 30, height: 30)
                     .scaleEffect(isAnimated ? 0 : 1)
                     .offset(y: isAnimated ? -50 : 0)
+                    .rotationEffect(.degrees(Double(index) * 60))
             }
         }
         .foregroundStyle(isTapped ? .indigo : .blue)
