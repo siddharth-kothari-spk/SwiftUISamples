@@ -19,6 +19,7 @@ struct ContentView: View {
                 Circle()
                     .frame(width: 30, height: 30)
                     .scaleEffect(isAnimated ? 0 : 1)
+                    .offset(y: isAnimated ? -50 : 0)
             }
         }
         .foregroundStyle(isTapped ? .indigo : .blue)
