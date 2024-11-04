@@ -21,7 +21,9 @@ struct ContentView: View {
                     .scaleEffect(isAnimated ? 0 : 1)
                     .offset(y: isAnimated ? -50 : 0)
                     .rotationEffect(.degrees(Double(index) * 60))
+                    //.opacity(isAnimated ? 1 : 0) // not needed
             }
+            Image(systemName: isTapped ? "checkmark.circle" : "circle")
         }
         .foregroundStyle(isTapped ? .indigo : .blue)
         .onTapGesture {
