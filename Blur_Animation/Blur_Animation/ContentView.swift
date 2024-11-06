@@ -18,6 +18,7 @@ struct ContentView: View {
                 
                 Text(String(alphabet))
                     .font(.largeTitle.bold())
+                    .offset(y: isVisible ? 0 : -30)
                     .animation(
                         .easeOut(duration: 0.3)
                         .delay(Double(index) * 0.1), value: isVisible)
