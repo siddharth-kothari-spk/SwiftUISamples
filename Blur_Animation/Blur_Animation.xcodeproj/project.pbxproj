@@ -14,6 +14,7 @@
 		B11A655C2CDB00640015938D /* Blur_AnimationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B11A655B2CDB00640015938D /* Blur_AnimationTests.swift */; };
 		B11A65662CDB00640015938D /* Blur_AnimationUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B11A65652CDB00640015938D /* Blur_AnimationUITests.swift */; };
 		B11A65682CDB00640015938D /* Blur_AnimationUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B11A65672CDB00640015938D /* Blur_AnimationUITestsLaunchTests.swift */; };
+		B11A65752CDB049F0015938D /* blur animation.mov in Resources */ = {isa = PBXBuildFile; fileRef = B11A65742CDB049E0015938D /* blur animation.mov */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +45,7 @@
 		B11A65612CDB00640015938D /* Blur_AnimationUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Blur_AnimationUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B11A65652CDB00640015938D /* Blur_AnimationUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Blur_AnimationUITests.swift; sourceTree = "<group>"; };
 		B11A65672CDB00640015938D /* Blur_AnimationUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Blur_AnimationUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		B11A65742CDB049E0015938D /* blur animation.mov */ = {isa = PBXFileReference; lastKnownFileType = video.quicktime; path = "blur animation.mov"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,6 +98,7 @@
 			children = (
 				B11A654A2CDB00600015938D /* Blur_AnimationApp.swift */,
 				B11A654C2CDB00600015938D /* ContentView.swift */,
+				B11A65742CDB049E0015938D /* blur animation.mov */,
 				B11A654E2CDB00640015938D /* Assets.xcassets */,
 				B11A65502CDB00640015938D /* Preview Content */,
 			);
@@ -232,6 +235,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B11A65522CDB00640015938D /* Preview Assets.xcassets in Resources */,
+				B11A65752CDB049F0015938D /* blur animation.mov in Resources */,
 				B11A654F2CDB00640015938D /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
