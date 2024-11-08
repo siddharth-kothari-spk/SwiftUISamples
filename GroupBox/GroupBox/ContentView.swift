@@ -12,7 +12,6 @@ struct ContentView: View {
     var body: some View {
         GroupBox {
             Text("GroupBox sample demo text ")
-                .background(.thickMaterial, in: Capsule())
                 .padding(20)
         } label: {
             
@@ -25,7 +24,7 @@ struct ContentView: View {
                 
                 Text("Demo title")
                     .font(.title)
-                    .background(in: Capsule(style: .continuous), fillStyle: FillStyle(eoFill: true))
+                    .foregroundStyle(.orange)
             }
         }
 
