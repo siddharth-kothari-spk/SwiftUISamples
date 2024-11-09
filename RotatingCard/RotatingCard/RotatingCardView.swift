@@ -14,13 +14,13 @@ struct RotatingCardView: View {
     var show: Bool
     
     var body: some View {
-        Image(systemName: imageName)
+        Image(imageName)
             .resizable()
             .scaledToFill()
             .frame(width: 230, height: 290)
             .rotation3DEffect(
                 .radians(show ? 1 : 0),
-                                      axis: (x: 0.8, y: 1.3, z: 0.3),
+                axis: (x: 0.8, y: 1.3, z: 0.3),
                 anchor: .center,
                 anchorZ: 0.0,
                 perspective: show ? 0.5 : 0
@@ -31,5 +31,5 @@ struct RotatingCardView: View {
 }
 
 #Preview {
-    RotatingCardView(imageName: "moon.stars.circle", rotatingAngle: 30, yOffset: 0.5, show: true)
+    RotatingCardView(imageName: "pic1", rotatingAngle: 0, yOffset: 0.5, show: false)
 }

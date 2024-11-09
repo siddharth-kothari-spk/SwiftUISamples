@@ -9,14 +9,18 @@
 import SwiftUI
 
 struct ContentView: View {
+    @State var show = false
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("Hello, world!")
+        ZStack(content: {
+            RotatingCardView(imageName: "pic1", rotatingAngle: -60, yOffset: 60, show: show)
+            RotatingCardView(imageName: "pic2", rotatingAngle: -60, yOffset: 0, show: show)
+            RotatingCardView(imageName: "pic3", rotatingAngle: -60, yOffset: -60, show: show)
+        })
+        .onTapGesture {
+            withAnimation(.bouncy(duration: 0.5, extraBounce: 0.01)) {
+                show.toggle()
+            }
         }
-        .padding()
     }
 }
 
