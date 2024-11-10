@@ -15,7 +15,9 @@ struct ContentView: View {
     var body: some View {
         ZStack(content: {
             Circle()
+                .stroke(lineWidth: 25) // to create donut shape
                 .frame(width: 150, height: 150)
+                .foregroundStyle(.gray.opacity(0.3))
         })
     }
 }
