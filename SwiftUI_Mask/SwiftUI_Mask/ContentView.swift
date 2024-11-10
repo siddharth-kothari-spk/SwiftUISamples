@@ -30,6 +30,11 @@ struct ContentView: View {
                         .rotationEffect(.degrees(degrees))
                 }
         })
+        .onAppear(perform: {
+            withAnimation(.linear(duration: 1).repeatForever(autoreverses: false)) {
+                degrees += 360
+            }
+        })
     }
 }
 
