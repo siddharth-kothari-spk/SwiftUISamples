@@ -23,6 +23,10 @@ struct ContentView: View {
                 .stroke(lineWidth: 25)
                 .frame(width: 150, height: 150)
                 .foregroundStyle(AngularGradient.init(gradient: Gradient(colors: gradientColors), center: .center, angle: .degrees(0)))
+                .mask {
+                    Circle()
+                        .stroke(style: StrokeStyle(lineWidth: 25, lineCap: .round, lineJoin: .round))
+                }
         })
     }
 }
