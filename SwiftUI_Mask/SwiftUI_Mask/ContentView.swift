@@ -25,6 +25,7 @@ struct ContentView: View {
                 .foregroundStyle(AngularGradient.init(gradient: Gradient(colors: gradientColors), center: .center, angle: .degrees(0)))
                 .mask {
                     Circle()
+                        .trim(from: 0.0, to: 0.15)
                         .stroke(style: StrokeStyle(lineWidth: 25, lineCap: .round, lineJoin: .round))
                 }
         })
