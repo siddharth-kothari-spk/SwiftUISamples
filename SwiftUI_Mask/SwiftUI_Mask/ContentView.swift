@@ -27,6 +27,7 @@ struct ContentView: View {
                     Circle()
                         .trim(from: 0.0, to: 0.15)
                         .stroke(style: StrokeStyle(lineWidth: 25, lineCap: .round, lineJoin: .round))
+                        .rotationEffect(.degrees(degrees))
                 }
         })
     }
