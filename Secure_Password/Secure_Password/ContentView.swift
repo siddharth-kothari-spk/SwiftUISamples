@@ -17,12 +17,22 @@ struct ContentView: View {
         HStack(content: {
             Image(systemName: "lock.fill")
                 .padding(.leading)
-            SecureField("Passowrd", text: $password)
+            SecureField("Password", text: $password)
                 .padding(.leading,8)
                 .focused($isFocussed)
                 .frame(height: 50)
         })
         .background(Color(.systemGray6), in: .rect(cornerRadius: 12))
+        .overlay {
+            ZStack(content: {
+                RoundedRectangle(cornerRadius: 12)
+                    .stroke(isFocussed ? .blue.opacity(0.1): .clear, lineWidth: 8)
+                    .padding(-3) // outer highlighting
+                
+                RoundedRectangle(cornerRadius: 12)
+                    .stroke(isFocussed ? .green : .clear, lineWidth: 2) // boundary highlight
+            })
+        }
         .padding()
     }
 }
