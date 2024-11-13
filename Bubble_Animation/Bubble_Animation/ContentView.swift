@@ -18,6 +18,17 @@ struct ContentView: View {
         }
         .padding()
     }
+    
+    func createBubbles() {
+        for _ in 0..<100 {
+            let size = CGFloat.random(in: 5...15)
+            let positionX = CGFloat.random(in: 0...UIScreen.main.bounds.width)
+            let positionY = UIScreen.main.bounds.height + size
+            let speed = Double.random(in: 4.0...8.0)
+            let opacity = Double.random(in: 0.5...1.0)
+            let bubble = Bubble(size: size, positionX: positionX, positionY: positionY, speed: speed, opacity: opacity)
+        }
+    }
 }
 
 #Preview {
