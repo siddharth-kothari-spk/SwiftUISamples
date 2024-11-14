@@ -46,7 +46,7 @@ struct ContentView: View {
         var bubble = bubbles[index]
         
         DispatchQueue.main.asyncAfter(deadline: .now() + delay, execute: DispatchWorkItem(block: {
-            withAnimation(.easeOut(duration: bubble.speed)) {
+            withAnimation(.easeOut(duration: bubble.speed).repeatForever(autoreverses: false)) {
                 bubble.positionY = -100
                 bubble.opacity = 0
                 bubbles[index] = bubble
