@@ -9,6 +9,7 @@
 import SwiftUI
 
 struct ContentView: View {
+    @State private var bubbles: [Bubble] = []
     var body: some View {
         VStack {
             Image(systemName: "globe")
@@ -27,7 +28,21 @@ struct ContentView: View {
             let speed = Double.random(in: 4.0...8.0)
             let opacity = Double.random(in: 0.5...1.0)
             let bubble = Bubble(size: size, positionX: positionX, positionY: positionY, speed: speed, opacity: opacity)
+            bubbles.append(bubble)
         }
+    }
+    
+    func animateBubble(at index: Int) {
+        let delay = Double.random(in: 0...5)
+        var bubble = bubbles[index]
+        
+        DispatchQueue.main.asyncAfter(deadline: .now() + delay, execute: DispatchWorkItem(block: {
+            withAnimation(.easeOut(duration: bubble.speed)) {
+                bubble.positionY = -100
+                bubble.opacity = 0
+                bubbles[index] = bubble
+            }
+        }))
     }
 }
 
