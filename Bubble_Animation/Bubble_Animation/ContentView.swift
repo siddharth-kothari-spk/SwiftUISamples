@@ -11,13 +11,22 @@ import SwiftUI
 struct ContentView: View {
     @State private var bubbles: [Bubble] = []
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("Hello, world!")
-        }
-        .padding()
+        ZStack(content: {
+            ForEach(bubbles.indices, id: \.self) { index in
+                let bubble = bubbles[index]
+                Circle()
+                    .frame(width: bubble.size, height: bubble.size)
+                    .position(x: bubble.positionX, y: bubble.positionY)
+                    .opacity(bubble.opacity)
+                    .onAppear(perform: {
+                        animateBubble(at: index)
+                    })
+            }
+        })
+        .edgesIgnoringSafeArea(.all)
+        .onAppear(perform: {
+            createBubbles()
+        })
     }
     
     func createBubbles() {
