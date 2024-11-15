@@ -40,6 +40,8 @@ struct ContentView: View {
                     .padding(.horizontal)
                     .frame(height: 50)
                     .frame(maxWidth: .infinity)
+                    .opacity(index == 0 ? 1 : (show ? 1 : opacityValue))
+                    .background(.thinMaterial, in: RoundedRectangle(cornerRadius: 25.0))
                 }
             })
             .onTapGesture {
