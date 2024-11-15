@@ -42,6 +42,10 @@ struct ContentView: View {
                     .frame(maxWidth: .infinity)
                     .opacity(index == 0 ? 1 : (show ? 1 : opacityValue))
                     .background(.thinMaterial, in: RoundedRectangle(cornerRadius: 25.0))
+                    .zIndex(Double(-1 * index))
+                    .scaleEffect(show ? 1 : scaleValue)
+                    .opacity(show ? 1 : opacityValue)
+                    .offset(y: CGFloat(show ? 0 * index : -56 * index))
                 }
             })
             .onTapGesture {
