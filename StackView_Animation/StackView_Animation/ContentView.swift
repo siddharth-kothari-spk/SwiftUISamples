@@ -21,7 +21,26 @@ struct ContentView: View {
     var body: some View {
         ScrollView {
             VStack(spacing: 12, content: {
-                /*@START_MENU_TOKEN@*/Text("Placeholder")/*@END_MENU_TOKEN@*/
+                ForEach(tasks.indices, id: \.self) { index in
+                    let task = tasks[index]
+                    let scaleValue = 1.0 - (CGFloat(index) * 0.02)
+                    let opacityValue = 1.0 - (CGFloat(index) * 0.2)
+                    
+                    HStack(content: {
+                        Text(task.title)
+                            .strikethrough(task.isComplete, color: .white)
+                        
+                        Spacer()
+                        
+                        Image(systemName: task.isComplete ? "checkmark.circle.fill" : "circle")
+                            .font(.title2)
+                            .contentTransition(.symbolEffect)
+                    })
+                    .bold()
+                    .padding(.horizontal)
+                    .frame(height: 50)
+                    .frame(maxWidth: .infinity)
+                }
             })
             .onTapGesture {
                 withAnimation {
