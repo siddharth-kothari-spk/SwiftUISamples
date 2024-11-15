@@ -19,13 +19,17 @@ struct ContentView: View {
     @State var show = false
     
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("Hello, world!")
+        ScrollView {
+            VStack(spacing: 12, content: {
+                /*@START_MENU_TOKEN@*/Text("Placeholder")/*@END_MENU_TOKEN@*/
+            })
+            .onTapGesture {
+                withAnimation {
+                    show.toggle()
+                }
+            }
         }
-        .padding()
+        .frame(height: show ? nil : 50, alignment: .top)
     }
 }
 
