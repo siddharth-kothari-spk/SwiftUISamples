@@ -16,6 +16,7 @@ struct ContentView: View {
     var body: some View {
         Text(title[index])
             .font(.system(.largeTitle, design: .monospaced))
+            .contentTransition(.numericText())
             .shadow(color: color[index], radius: 5)
             .shadow(color: color[index], radius: 25)
             .shadow(color: color[index], radius: 50)
