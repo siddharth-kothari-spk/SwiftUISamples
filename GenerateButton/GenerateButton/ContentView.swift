@@ -15,6 +15,18 @@ struct ContentView: View {
         ZStack {
             Color.gray.opacity(0.2)
                 .ignoresSafeArea()
+            
+            ZStack {
+                VStack {
+                    Capsule()
+                        .frame(width: 160, height: 55)
+                    .foregroundStyle(RadialGradient(colors: show ? [.orange, .white] : [.gray.opacity(0.2)], center: .bottom, startRadius: 20, endRadius: 10))
+                    
+                    Capsule()
+                        .frame(width: 160, height: 55)
+                    .foregroundStyle(RadialGradient(colors: show ? [.orange, .white] : [.gray.opacity(0.2)], center: .bottom, startRadius: 10, endRadius: -10))
+                }
+            }
         }
         .onTapGesture(perform: {
             withAnimation {
