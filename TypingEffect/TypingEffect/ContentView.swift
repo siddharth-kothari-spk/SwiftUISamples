@@ -32,6 +32,21 @@ struct ContentView: View {
             }
         })
     }
+    
+    func typing() {
+        displayItem = ""
+        for (index, character) in fullItem.enumerated() {
+            DispatchQueue.main.asyncAfter(deadline: .now() + typingSpeed * Double(index), execute: DispatchWorkItem(block: {
+                    displayItem.append(character)
+                if index == fullItem.count - 1 {
+                    show = false
+                }
+                else {
+                    show.toggle()
+                }
+            }))
+        }
+    }
 }
 
 #Preview {
