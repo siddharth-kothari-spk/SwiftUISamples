@@ -13,7 +13,7 @@ struct ContentView: View {
     @State var displayItem = ""
     @State var show = false
 
-    let fullItem = "My name is Nikku"
+    let fullItem = "My name is Nikku. \nMy name is Nikku"
     let typingSpeed = 0.15
     
     var body: some View {
@@ -22,18 +22,19 @@ struct ContentView: View {
                 .font(.largeTitle.monospacedDigit())
             
             Rectangle()
-                .frame(width: 5, height: 50)
+                .frame(width: 5, height: 100)
                 .opacity(show ? 1 : 0)
         }
         .foregroundStyle(.orange.opacity(0.8))
         .onAppear(perform: {
-            withAnimation(.linear(duration: 0.5).repeatForever(autoreverses: false)) {
+            withAnimation(.linear(duration: 0.5)) {
                 show.toggle()
             }
+        typingEffect()
         })
     }
     
-    func typing() {
+    func typingEffect() {
         displayItem = ""
         for (index, character) in fullItem.enumerated() {
             DispatchQueue.main.asyncAfter(deadline: .now() + typingSpeed * Double(index), execute: DispatchWorkItem(block: {
