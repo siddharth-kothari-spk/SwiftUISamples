@@ -1,0 +1,593 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		B1BFE8262CEEB89A00E3D421 /* TypingEffectApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1BFE8252CEEB89A00E3D421 /* TypingEffectApp.swift */; };
+		B1BFE8282CEEB89A00E3D421 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1BFE8272CEEB89A00E3D421 /* ContentView.swift */; };
+		B1BFE82A2CEEB89E00E3D421 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B1BFE8292CEEB89E00E3D421 /* Assets.xcassets */; };
+		B1BFE82D2CEEB89E00E3D421 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B1BFE82C2CEEB89E00E3D421 /* Preview Assets.xcassets */; };
+		B1BFE8372CEEB89E00E3D421 /* TypingEffectTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1BFE8362CEEB89E00E3D421 /* TypingEffectTests.swift */; };
+		B1BFE8412CEEB89E00E3D421 /* TypingEffectUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1BFE8402CEEB89E00E3D421 /* TypingEffectUITests.swift */; };
+		B1BFE8432CEEB89E00E3D421 /* TypingEffectUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1BFE8422CEEB89E00E3D421 /* TypingEffectUITestsLaunchTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		B1BFE8332CEEB89E00E3D421 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B1BFE81A2CEEB89A00E3D421 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B1BFE8212CEEB89A00E3D421;
+			remoteInfo = TypingEffect;
+		};
+		B1BFE83D2CEEB89E00E3D421 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B1BFE81A2CEEB89A00E3D421 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B1BFE8212CEEB89A00E3D421;
+			remoteInfo = TypingEffect;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		B1BFE8222CEEB89A00E3D421 /* TypingEffect.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TypingEffect.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B1BFE8252CEEB89A00E3D421 /* TypingEffectApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TypingEffectApp.swift; sourceTree = "<group>"; };
+		B1BFE8272CEEB89A00E3D421 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		B1BFE8292CEEB89E00E3D421 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		B1BFE82C2CEEB89E00E3D421 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		B1BFE8322CEEB89E00E3D421 /* TypingEffectTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TypingEffectTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B1BFE8362CEEB89E00E3D421 /* TypingEffectTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TypingEffectTests.swift; sourceTree = "<group>"; };
+		B1BFE83C2CEEB89E00E3D421 /* TypingEffectUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TypingEffectUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B1BFE8402CEEB89E00E3D421 /* TypingEffectUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TypingEffectUITests.swift; sourceTree = "<group>"; };
+		B1BFE8422CEEB89E00E3D421 /* TypingEffectUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TypingEffectUITestsLaunchTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B1BFE81F2CEEB89A00E3D421 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B1BFE82F2CEEB89E00E3D421 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B1BFE8392CEEB89E00E3D421 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		B1BFE8192CEEB89A00E3D421 = {
+			isa = PBXGroup;
+			children = (
+				B1BFE8242CEEB89A00E3D421 /* TypingEffect */,
+				B1BFE8352CEEB89E00E3D421 /* TypingEffectTests */,
+				B1BFE83F2CEEB89E00E3D421 /* TypingEffectUITests */,
+				B1BFE8232CEEB89A00E3D421 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		B1BFE8232CEEB89A00E3D421 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B1BFE8222CEEB89A00E3D421 /* TypingEffect.app */,
+				B1BFE8322CEEB89E00E3D421 /* TypingEffectTests.xctest */,
+				B1BFE83C2CEEB89E00E3D421 /* TypingEffectUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B1BFE8242CEEB89A00E3D421 /* TypingEffect */ = {
+			isa = PBXGroup;
+			children = (
+				B1BFE8252CEEB89A00E3D421 /* TypingEffectApp.swift */,
+				B1BFE8272CEEB89A00E3D421 /* ContentView.swift */,
+				B1BFE8292CEEB89E00E3D421 /* Assets.xcassets */,
+				B1BFE82B2CEEB89E00E3D421 /* Preview Content */,
+			);
+			path = TypingEffect;
+			sourceTree = "<group>";
+		};
+		B1BFE82B2CEEB89E00E3D421 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				B1BFE82C2CEEB89E00E3D421 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		B1BFE8352CEEB89E00E3D421 /* TypingEffectTests */ = {
+			isa = PBXGroup;
+			children = (
+				B1BFE8362CEEB89E00E3D421 /* TypingEffectTests.swift */,
+			);
+			path = TypingEffectTests;
+			sourceTree = "<group>";
+		};
+		B1BFE83F2CEEB89E00E3D421 /* TypingEffectUITests */ = {
+			isa = PBXGroup;
+			children = (
+				B1BFE8402CEEB89E00E3D421 /* TypingEffectUITests.swift */,
+				B1BFE8422CEEB89E00E3D421 /* TypingEffectUITestsLaunchTests.swift */,
+			);
+			path = TypingEffectUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		B1BFE8212CEEB89A00E3D421 /* TypingEffect */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B1BFE8462CEEB89E00E3D421 /* Build configuration list for PBXNativeTarget "TypingEffect" */;
+			buildPhases = (
+				B1BFE81E2CEEB89A00E3D421 /* Sources */,
+				B1BFE81F2CEEB89A00E3D421 /* Frameworks */,
+				B1BFE8202CEEB89A00E3D421 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TypingEffect;
+			productName = TypingEffect;
+			productReference = B1BFE8222CEEB89A00E3D421 /* TypingEffect.app */;
+			productType = "com.apple.product-type.application";
+		};
+		B1BFE8312CEEB89E00E3D421 /* TypingEffectTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B1BFE8492CEEB89E00E3D421 /* Build configuration list for PBXNativeTarget "TypingEffectTests" */;
+			buildPhases = (
+				B1BFE82E2CEEB89E00E3D421 /* Sources */,
+				B1BFE82F2CEEB89E00E3D421 /* Frameworks */,
+				B1BFE8302CEEB89E00E3D421 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B1BFE8342CEEB89E00E3D421 /* PBXTargetDependency */,
+			);
+			name = TypingEffectTests;
+			productName = TypingEffectTests;
+			productReference = B1BFE8322CEEB89E00E3D421 /* TypingEffectTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		B1BFE83B2CEEB89E00E3D421 /* TypingEffectUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B1BFE84C2CEEB89E00E3D421 /* Build configuration list for PBXNativeTarget "TypingEffectUITests" */;
+			buildPhases = (
+				B1BFE8382CEEB89E00E3D421 /* Sources */,
+				B1BFE8392CEEB89E00E3D421 /* Frameworks */,
+				B1BFE83A2CEEB89E00E3D421 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B1BFE83E2CEEB89E00E3D421 /* PBXTargetDependency */,
+			);
+			name = TypingEffectUITests;
+			productName = TypingEffectUITests;
+			productReference = B1BFE83C2CEEB89E00E3D421 /* TypingEffectUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B1BFE81A2CEEB89A00E3D421 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1530;
+				LastUpgradeCheck = 1530;
+				TargetAttributes = {
+					B1BFE8212CEEB89A00E3D421 = {
+						CreatedOnToolsVersion = 15.3;
+					};
+					B1BFE8312CEEB89E00E3D421 = {
+						CreatedOnToolsVersion = 15.3;
+						TestTargetID = B1BFE8212CEEB89A00E3D421;
+					};
+					B1BFE83B2CEEB89E00E3D421 = {
+						CreatedOnToolsVersion = 15.3;
+						TestTargetID = B1BFE8212CEEB89A00E3D421;
+					};
+				};
+			};
+			buildConfigurationList = B1BFE81D2CEEB89A00E3D421 /* Build configuration list for PBXProject "TypingEffect" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = B1BFE8192CEEB89A00E3D421;
+			productRefGroup = B1BFE8232CEEB89A00E3D421 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B1BFE8212CEEB89A00E3D421 /* TypingEffect */,
+				B1BFE8312CEEB89E00E3D421 /* TypingEffectTests */,
+				B1BFE83B2CEEB89E00E3D421 /* TypingEffectUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B1BFE8202CEEB89A00E3D421 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B1BFE82D2CEEB89E00E3D421 /* Preview Assets.xcassets in Resources */,
+				B1BFE82A2CEEB89E00E3D421 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B1BFE8302CEEB89E00E3D421 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B1BFE83A2CEEB89E00E3D421 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B1BFE81E2CEEB89A00E3D421 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B1BFE8282CEEB89A00E3D421 /* ContentView.swift in Sources */,
+				B1BFE8262CEEB89A00E3D421 /* TypingEffectApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B1BFE82E2CEEB89E00E3D421 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B1BFE8372CEEB89E00E3D421 /* TypingEffectTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B1BFE8382CEEB89E00E3D421 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B1BFE8432CEEB89E00E3D421 /* TypingEffectUITestsLaunchTests.swift in Sources */,
+				B1BFE8412CEEB89E00E3D421 /* TypingEffectUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		B1BFE8342CEEB89E00E3D421 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B1BFE8212CEEB89A00E3D421 /* TypingEffect */;
+			targetProxy = B1BFE8332CEEB89E00E3D421 /* PBXContainerItemProxy */;
+		};
+		B1BFE83E2CEEB89E00E3D421 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B1BFE8212CEEB89A00E3D421 /* TypingEffect */;
+			targetProxy = B1BFE83D2CEEB89E00E3D421 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		B1BFE8442CEEB89E00E3D421 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		B1BFE8452CEEB89E00E3D421 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		B1BFE8472CEEB89E00E3D421 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"TypingEffect/Preview Content\"";
+				DEVELOPMENT_TEAM = Q4WH2ZZWCT;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.siddharthkothari.TypingEffect;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		B1BFE8482CEEB89E00E3D421 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"TypingEffect/Preview Content\"";
+				DEVELOPMENT_TEAM = Q4WH2ZZWCT;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.siddharthkothari.TypingEffect;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		B1BFE84A2CEEB89E00E3D421 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = Q4WH2ZZWCT;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.siddharthkothari.TypingEffectTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TypingEffect.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/TypingEffect";
+			};
+			name = Debug;
+		};
+		B1BFE84B2CEEB89E00E3D421 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = Q4WH2ZZWCT;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.siddharthkothari.TypingEffectTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TypingEffect.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/TypingEffect";
+			};
+			name = Release;
+		};
+		B1BFE84D2CEEB89E00E3D421 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = Q4WH2ZZWCT;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.siddharthkothari.TypingEffectUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = TypingEffect;
+			};
+			name = Debug;
+		};
+		B1BFE84E2CEEB89E00E3D421 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = Q4WH2ZZWCT;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.siddharthkothari.TypingEffectUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = TypingEffect;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B1BFE81D2CEEB89A00E3D421 /* Build configuration list for PBXProject "TypingEffect" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B1BFE8442CEEB89E00E3D421 /* Debug */,
+				B1BFE8452CEEB89E00E3D421 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B1BFE8462CEEB89E00E3D421 /* Build configuration list for PBXNativeTarget "TypingEffect" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B1BFE8472CEEB89E00E3D421 /* Debug */,
+				B1BFE8482CEEB89E00E3D421 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B1BFE8492CEEB89E00E3D421 /* Build configuration list for PBXNativeTarget "TypingEffectTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B1BFE84A2CEEB89E00E3D421 /* Debug */,
+				B1BFE84B2CEEB89E00E3D421 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B1BFE84C2CEEB89E00E3D421 /* Build configuration list for PBXNativeTarget "TypingEffectUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B1BFE84D2CEEB89E00E3D421 /* Debug */,
+				B1BFE84E2CEEB89E00E3D421 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = B1BFE81A2CEEB89A00E3D421 /* Project object */;
+}
