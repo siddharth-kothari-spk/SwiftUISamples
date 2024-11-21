@@ -20,10 +20,17 @@ struct ContentView: View {
         HStack {
             Text(displayItem)
                 .font(.largeTitle.monospacedDigit())
+            
             Rectangle()
                 .frame(width: 5, height: 50)
+                .opacity(show ? 1 : 0)
         }
         .foregroundStyle(.orange.opacity(0.8))
+        .onAppear(perform: {
+            withAnimation(.linear(duration: 0.5).repeatForever(autoreverses: false)) {
+                show.toggle()
+            }
+        })
     }
 }
 
