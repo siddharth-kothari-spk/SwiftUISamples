@@ -9,15 +9,18 @@
 import SwiftUI
 
 struct ContentView: View {
+    @State var show = false
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("Hello, world!")
-        }
-        .padding()
+        TextView(text: "Hidden Text", show: show)
+            .animation(.spring.delay(1.2), value: show)
+        
+        TextView(text: "Animation", show: show)
+            .animation(.spring.delay(1), value: show)
+            .onAppear(perform: {
+                show = true
+            })
     }
+    
 }
 
 #Preview {
