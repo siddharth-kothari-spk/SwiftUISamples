@@ -24,6 +24,8 @@ struct InfoTextField: View {
             Text(title)
                 .padding(.horizontal)
                 .offset(y: (isActive || !text.isEmpty) ? -50 : 0) // moves placeholder on top of TextField once it has value or is focussed
+                .foregroundStyle(isActive ? .primary : .secondary)
+                .animation(.easeOut, value: isActive)
         }
     }
 }
