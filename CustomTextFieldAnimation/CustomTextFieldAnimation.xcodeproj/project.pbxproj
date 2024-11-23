@@ -14,6 +14,7 @@
 		B12436EF2CF1A368004A6305 /* CustomTextFieldAnimationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B12436EE2CF1A368004A6305 /* CustomTextFieldAnimationTests.swift */; };
 		B12436F92CF1A368004A6305 /* CustomTextFieldAnimationUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B12436F82CF1A368004A6305 /* CustomTextFieldAnimationUITests.swift */; };
 		B12436FB2CF1A368004A6305 /* CustomTextFieldAnimationUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B12436FA2CF1A368004A6305 /* CustomTextFieldAnimationUITestsLaunchTests.swift */; };
+		B12437082CF1A4EB004A6305 /* InfoTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = B12437072CF1A4EB004A6305 /* InfoTextField.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +45,7 @@
 		B12436F42CF1A368004A6305 /* CustomTextFieldAnimationUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CustomTextFieldAnimationUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B12436F82CF1A368004A6305 /* CustomTextFieldAnimationUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTextFieldAnimationUITests.swift; sourceTree = "<group>"; };
 		B12436FA2CF1A368004A6305 /* CustomTextFieldAnimationUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTextFieldAnimationUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		B12437072CF1A4EB004A6305 /* InfoTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoTextField.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,6 +98,7 @@
 			children = (
 				B12436DD2CF1A366004A6305 /* CustomTextFieldAnimationApp.swift */,
 				B12436DF2CF1A366004A6305 /* ContentView.swift */,
+				B12437072CF1A4EB004A6305 /* InfoTextField.swift */,
 				B12436E12CF1A368004A6305 /* Assets.xcassets */,
 				B12436E32CF1A368004A6305 /* Preview Content */,
 			);
@@ -257,6 +260,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B12437082CF1A4EB004A6305 /* InfoTextField.swift in Sources */,
 				B12436E02CF1A366004A6305 /* ContentView.swift in Sources */,
 				B12436DE2CF1A366004A6305 /* CustomTextFieldAnimationApp.swift in Sources */,
 			);
