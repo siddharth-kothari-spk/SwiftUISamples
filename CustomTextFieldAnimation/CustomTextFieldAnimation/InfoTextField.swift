@@ -31,6 +31,18 @@ struct InfoTextField: View {
     }
 }
 
-//#Preview {
-//    InfoTextField()
-//}
+/*
+#Preview {
+//    @State var testString: String = "testString"
+//    InfoTextField(title: "Test", text: $testString)
+    
+    @State var testString: String = "testString"
+       @FocusState var isFocused
+
+       InfoTextField(title: "Test", text: $testString)
+           .focused($isFocused)
+           .onTapGesture {
+               isFocused = true
+           }
+}
+*/
