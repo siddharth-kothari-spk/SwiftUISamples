@@ -10,19 +10,13 @@
 import SwiftUI
 
 struct ContentView: View {
-    @FocusState var isActive
-    /// A property wrapper type that can read and write a value that SwiftUI updates
-    /// as the placement of focus within the scene changes.
-    
     @State var emailField = ""
     @State var nameField = ""
     
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("Hello, world!")
+        VStack(spacing: 45) {
+            InfoTextField(title: "Name", text: $nameField)
+            InfoTextField(title: "Email", text: $emailField)
         }
         .padding()
     }

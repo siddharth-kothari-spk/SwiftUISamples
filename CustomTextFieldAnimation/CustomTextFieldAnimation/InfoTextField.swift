@@ -12,6 +12,7 @@ struct InfoTextField: View {
     @Binding var text: String
     /// A property wrapper type that can read and write a value owned by a source of truth.
     @FocusState var isActive
+    /// A property wrapper type that can read and write a value that SwiftUI updates as the placement of focus within the scene changes.
     var body: some View {
         ZStack(alignment: .leading) {
             TextField("", text: $text)
