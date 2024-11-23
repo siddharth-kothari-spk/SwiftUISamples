@@ -20,6 +20,10 @@ struct InfoTextField: View {
                 .frame(height: 55)
                 .focused($isActive)
                 .background(.gray.opacity(0.3), in: .rect(cornerRadius: 16))
+            
+            Text(title)
+                .padding(.horizontal)
+                .offset(y: (isActive || !text.isEmpty) ? -50 : 0) // moves placeholder on top of TextField once it has value or is focussed
         }
     }
 }
