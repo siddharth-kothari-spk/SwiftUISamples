@@ -9,14 +9,20 @@
 import SwiftUI
 
 struct ContentView: View {
+    let outerIcons = ["square.and.arrow.up", "pencil.circle.fill", "scribble.variable", "pencil.tip.crop.circle.fill", "paperplane.circle.fill", "externaldrive.fill.badge.timemachine", "doc.zipper", "pencil.and.list.clipboard.rtl", "doc.text.magnifyingglass", "apple.terminal.on.rectangle.fill"]
+    
+    @State var degrees: CGFloat = 0.0
+    
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("Hello, world!")
+        ZStack {
+            ForEach(0..<outerIcons.count, id: \.self) { index in
+                VStack {
+                    Image(systemName: outerIcons[index])
+                        .font(.title)
+                        .symbolRenderingMode(.multicolor)  /// Sets the rendering mode for symbol images within this view.
+                }
+            }
         }
-        .padding()
     }
 }
 
