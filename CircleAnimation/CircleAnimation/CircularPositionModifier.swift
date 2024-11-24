@@ -23,3 +23,9 @@ struct CircularPositionModifier: ViewModifier {
             )
     }
 }
+
+extension View {
+    func circularPosition(index: Int, totalCount: Int, radius: CGFloat) -> some View {
+        self.modifier(CircularPositionModifier(index: index, totalCount: totalCount, radius: radius))
+    }
+}
