@@ -21,6 +21,7 @@ struct ContentView: View {
                         .font(.title)
                         .symbolRenderingMode(.multicolor)  /// Sets the rendering mode for symbol images within this view.
                 }
+                .circularPosition(index: index, totalCount: outerIcons.count, radius: 150)
             }
         }
     }
