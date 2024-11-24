@@ -20,10 +20,17 @@ struct ContentView: View {
                     Image(systemName: outerIcons[index])
                         .font(.title)
                         .symbolRenderingMode(.multicolor)  /// Sets the rendering mode for symbol images within this view.
+                        .rotationEffect(.degrees(-degrees)) // rotating image
                 }
                 .circularPosition(index: index, totalCount: outerIcons.count, radius: 150)
+                .rotationEffect(.degrees(degrees)) // rotating after modifier applied
             }
         }
+        .onAppear(perform: {
+            withAnimation(.linear(duration: 25).repeatForever(autoreverses: false)) {
+                degrees = 360
+            }
+        })
     }
 }
 
