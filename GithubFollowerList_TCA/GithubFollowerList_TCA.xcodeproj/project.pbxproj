@@ -44,6 +44,7 @@
 		B12437642CF563E1004A6305 /* GithubFollowerList_TCAUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GithubFollowerList_TCAUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B12437682CF563E1004A6305 /* GithubFollowerList_TCAUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GithubFollowerList_TCAUITests.swift; sourceTree = "<group>"; };
 		B124376A2CF563E1004A6305 /* GithubFollowerList_TCAUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GithubFollowerList_TCAUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		B12437772CF565A5004A6305 /* Requirements.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = Requirements.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,6 +97,7 @@
 			children = (
 				B124374D2CF563DD004A6305 /* GithubFollowerList_TCAApp.swift */,
 				B124374F2CF563DD004A6305 /* ContentView.swift */,
+				B12437772CF565A5004A6305 /* Requirements.md */,
 				B12437512CF563E0004A6305 /* Assets.xcassets */,
 				B12437532CF563E0004A6305 /* Preview Content */,
 			);
