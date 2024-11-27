@@ -17,6 +17,7 @@ struct ContentView: View {
                 .resizable()
                 .scaledToFill()
                 .frame(width: 300, height: 400)
+                .zIndex(flip2 ? 1: 0)
             
             Image(.card2)
                 .resizable()
@@ -24,6 +25,15 @@ struct ContentView: View {
                 .frame(width: 300, height: 400)
         }
         .clipShape(.rect(cornerRadius: 24))
+        .rotation3DEffect(
+            .degrees(flip ? 180 : 0),
+                                  axis: (x: 0.0, y: 1.0, z: 0.0)
+        )
+        .onTapGesture(perform: {
+            withAnimation(.spring(duration: 1.0)) {
+                flip.toggle()
+            }
+        })
     }
 }
 
