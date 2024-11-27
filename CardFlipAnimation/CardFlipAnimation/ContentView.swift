@@ -33,6 +33,11 @@ struct ContentView: View {
             withAnimation(.spring(duration: 1.0)) {
                 flip.toggle()
             }
+            DispatchQueue.main.asyncAfter(deadline: .now() + 0.2) {
+                withAnimation(.spring(duration: 1.0)) {
+                    flip2.toggle()
+                }
+            }
         })
     }
 }
