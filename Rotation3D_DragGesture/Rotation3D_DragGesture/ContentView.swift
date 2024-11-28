@@ -40,10 +40,16 @@ struct ContentView: View {
         )
         .gesture(
             DragGesture()
-                .onChanged({ dragGestureValue in
+                .onChanged({ dragGestureValueChanged in
                     withAnimation {
-                        valueTransition = dragGestureValue.translation
+                        valueTransition = dragGestureValueChanged.translation
                         isDragging = true
+                    }
+                })
+                .onEnded({ dragGestureValueEnded in
+                    withAnimation {
+                        valueTransition = dragGestureValueEnded.translation
+                        isDragging = false
                     }
                 })
         )
