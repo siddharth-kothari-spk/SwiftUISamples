@@ -32,7 +32,21 @@ struct ContentView: View {
         .offset(x: valueTransition.width / 10, y: valueTransition.height / 10)
         .frame(width: 320, height: 660)
         .background(.black)
-        .clipShape(.rect(cornerRadii: RectangleCornerRadii(topLeading: 50, bottomLeading: 5, bottomTrailing: 50, topTrailing: 5)))
+        .clipShape(.rect(cornerRadii: RectangleCornerRadii(topLeading: 50, bottomLeading: 5, bottomTrailing: 50, topTrailing: 5))
+        )
+        .rotation3DEffect(
+            .degrees(isDragging ? 20 : 0),
+            axis: (x: -valueTransition.height, y: valueTransition.width, z: 0.0)
+        )
+        .gesture(
+            DragGesture()
+                .onChanged({ dragGestureValue in
+                    withAnimation {
+                        valueTransition = dragGestureValue.translation
+                        isDragging = true
+                    }
+                })
+        )
         
     }
 }
