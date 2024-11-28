@@ -1,0 +1,593 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		B12437C12CF89936004A6305 /* Rotation3D_DragGestureApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B12437C02CF89936004A6305 /* Rotation3D_DragGestureApp.swift */; };
+		B12437C32CF89936004A6305 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B12437C22CF89936004A6305 /* ContentView.swift */; };
+		B12437C52CF8993A004A6305 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B12437C42CF8993A004A6305 /* Assets.xcassets */; };
+		B12437C82CF8993A004A6305 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B12437C72CF8993A004A6305 /* Preview Assets.xcassets */; };
+		B12437D22CF8993A004A6305 /* Rotation3D_DragGestureTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B12437D12CF8993A004A6305 /* Rotation3D_DragGestureTests.swift */; };
+		B12437DC2CF8993A004A6305 /* Rotation3D_DragGestureUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B12437DB2CF8993A004A6305 /* Rotation3D_DragGestureUITests.swift */; };
+		B12437DE2CF8993A004A6305 /* Rotation3D_DragGestureUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B12437DD2CF8993A004A6305 /* Rotation3D_DragGestureUITestsLaunchTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		B12437CE2CF8993A004A6305 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B12437B52CF89936004A6305 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B12437BC2CF89936004A6305;
+			remoteInfo = Rotation3D_DragGesture;
+		};
+		B12437D82CF8993A004A6305 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B12437B52CF89936004A6305 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B12437BC2CF89936004A6305;
+			remoteInfo = Rotation3D_DragGesture;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		B12437BD2CF89936004A6305 /* Rotation3D_DragGesture.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Rotation3D_DragGesture.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B12437C02CF89936004A6305 /* Rotation3D_DragGestureApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Rotation3D_DragGestureApp.swift; sourceTree = "<group>"; };
+		B12437C22CF89936004A6305 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		B12437C42CF8993A004A6305 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		B12437C72CF8993A004A6305 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		B12437CD2CF8993A004A6305 /* Rotation3D_DragGestureTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Rotation3D_DragGestureTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B12437D12CF8993A004A6305 /* Rotation3D_DragGestureTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Rotation3D_DragGestureTests.swift; sourceTree = "<group>"; };
+		B12437D72CF8993A004A6305 /* Rotation3D_DragGestureUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Rotation3D_DragGestureUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B12437DB2CF8993A004A6305 /* Rotation3D_DragGestureUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Rotation3D_DragGestureUITests.swift; sourceTree = "<group>"; };
+		B12437DD2CF8993A004A6305 /* Rotation3D_DragGestureUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Rotation3D_DragGestureUITestsLaunchTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B12437BA2CF89936004A6305 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B12437CA2CF8993A004A6305 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B12437D42CF8993A004A6305 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		B12437B42CF89936004A6305 = {
+			isa = PBXGroup;
+			children = (
+				B12437BF2CF89936004A6305 /* Rotation3D_DragGesture */,
+				B12437D02CF8993A004A6305 /* Rotation3D_DragGestureTests */,
+				B12437DA2CF8993A004A6305 /* Rotation3D_DragGestureUITests */,
+				B12437BE2CF89936004A6305 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		B12437BE2CF89936004A6305 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B12437BD2CF89936004A6305 /* Rotation3D_DragGesture.app */,
+				B12437CD2CF8993A004A6305 /* Rotation3D_DragGestureTests.xctest */,
+				B12437D72CF8993A004A6305 /* Rotation3D_DragGestureUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B12437BF2CF89936004A6305 /* Rotation3D_DragGesture */ = {
+			isa = PBXGroup;
+			children = (
+				B12437C02CF89936004A6305 /* Rotation3D_DragGestureApp.swift */,
+				B12437C22CF89936004A6305 /* ContentView.swift */,
+				B12437C42CF8993A004A6305 /* Assets.xcassets */,
+				B12437C62CF8993A004A6305 /* Preview Content */,
+			);
+			path = Rotation3D_DragGesture;
+			sourceTree = "<group>";
+		};
+		B12437C62CF8993A004A6305 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				B12437C72CF8993A004A6305 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		B12437D02CF8993A004A6305 /* Rotation3D_DragGestureTests */ = {
+			isa = PBXGroup;
+			children = (
+				B12437D12CF8993A004A6305 /* Rotation3D_DragGestureTests.swift */,
+			);
+			path = Rotation3D_DragGestureTests;
+			sourceTree = "<group>";
+		};
+		B12437DA2CF8993A004A6305 /* Rotation3D_DragGestureUITests */ = {
+			isa = PBXGroup;
+			children = (
+				B12437DB2CF8993A004A6305 /* Rotation3D_DragGestureUITests.swift */,
+				B12437DD2CF8993A004A6305 /* Rotation3D_DragGestureUITestsLaunchTests.swift */,
+			);
+			path = Rotation3D_DragGestureUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		B12437BC2CF89936004A6305 /* Rotation3D_DragGesture */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B12437E12CF8993A004A6305 /* Build configuration list for PBXNativeTarget "Rotation3D_DragGesture" */;
+			buildPhases = (
+				B12437B92CF89936004A6305 /* Sources */,
+				B12437BA2CF89936004A6305 /* Frameworks */,
+				B12437BB2CF89936004A6305 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Rotation3D_DragGesture;
+			productName = Rotation3D_DragGesture;
+			productReference = B12437BD2CF89936004A6305 /* Rotation3D_DragGesture.app */;
+			productType = "com.apple.product-type.application";
+		};
+		B12437CC2CF8993A004A6305 /* Rotation3D_DragGestureTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B12437E42CF8993A004A6305 /* Build configuration list for PBXNativeTarget "Rotation3D_DragGestureTests" */;
+			buildPhases = (
+				B12437C92CF8993A004A6305 /* Sources */,
+				B12437CA2CF8993A004A6305 /* Frameworks */,
+				B12437CB2CF8993A004A6305 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B12437CF2CF8993A004A6305 /* PBXTargetDependency */,
+			);
+			name = Rotation3D_DragGestureTests;
+			productName = Rotation3D_DragGestureTests;
+			productReference = B12437CD2CF8993A004A6305 /* Rotation3D_DragGestureTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		B12437D62CF8993A004A6305 /* Rotation3D_DragGestureUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B12437E72CF8993A004A6305 /* Build configuration list for PBXNativeTarget "Rotation3D_DragGestureUITests" */;
+			buildPhases = (
+				B12437D32CF8993A004A6305 /* Sources */,
+				B12437D42CF8993A004A6305 /* Frameworks */,
+				B12437D52CF8993A004A6305 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B12437D92CF8993A004A6305 /* PBXTargetDependency */,
+			);
+			name = Rotation3D_DragGestureUITests;
+			productName = Rotation3D_DragGestureUITests;
+			productReference = B12437D72CF8993A004A6305 /* Rotation3D_DragGestureUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B12437B52CF89936004A6305 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1530;
+				LastUpgradeCheck = 1530;
+				TargetAttributes = {
+					B12437BC2CF89936004A6305 = {
+						CreatedOnToolsVersion = 15.3;
+					};
+					B12437CC2CF8993A004A6305 = {
+						CreatedOnToolsVersion = 15.3;
+						TestTargetID = B12437BC2CF89936004A6305;
+					};
+					B12437D62CF8993A004A6305 = {
+						CreatedOnToolsVersion = 15.3;
+						TestTargetID = B12437BC2CF89936004A6305;
+					};
+				};
+			};
+			buildConfigurationList = B12437B82CF89936004A6305 /* Build configuration list for PBXProject "Rotation3D_DragGesture" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = B12437B42CF89936004A6305;
+			productRefGroup = B12437BE2CF89936004A6305 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B12437BC2CF89936004A6305 /* Rotation3D_DragGesture */,
+				B12437CC2CF8993A004A6305 /* Rotation3D_DragGestureTests */,
+				B12437D62CF8993A004A6305 /* Rotation3D_DragGestureUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B12437BB2CF89936004A6305 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B12437C82CF8993A004A6305 /* Preview Assets.xcassets in Resources */,
+				B12437C52CF8993A004A6305 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B12437CB2CF8993A004A6305 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B12437D52CF8993A004A6305 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B12437B92CF89936004A6305 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B12437C32CF89936004A6305 /* ContentView.swift in Sources */,
+				B12437C12CF89936004A6305 /* Rotation3D_DragGestureApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B12437C92CF8993A004A6305 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B12437D22CF8993A004A6305 /* Rotation3D_DragGestureTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B12437D32CF8993A004A6305 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B12437DC2CF8993A004A6305 /* Rotation3D_DragGestureUITests.swift in Sources */,
+				B12437DE2CF8993A004A6305 /* Rotation3D_DragGestureUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		B12437CF2CF8993A004A6305 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B12437BC2CF89936004A6305 /* Rotation3D_DragGesture */;
+			targetProxy = B12437CE2CF8993A004A6305 /* PBXContainerItemProxy */;
+		};
+		B12437D92CF8993A004A6305 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B12437BC2CF89936004A6305 /* Rotation3D_DragGesture */;
+			targetProxy = B12437D82CF8993A004A6305 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		B12437DF2CF8993A004A6305 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		B12437E02CF8993A004A6305 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		B12437E22CF8993A004A6305 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Rotation3D_DragGesture/Preview Content\"";
+				DEVELOPMENT_TEAM = Q4WH2ZZWCT;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.siddharthkothari.Rotation3D-DragGesture";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		B12437E32CF8993A004A6305 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Rotation3D_DragGesture/Preview Content\"";
+				DEVELOPMENT_TEAM = Q4WH2ZZWCT;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.siddharthkothari.Rotation3D-DragGesture";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		B12437E52CF8993A004A6305 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = Q4WH2ZZWCT;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.siddharthkothari.Rotation3D-DragGestureTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Rotation3D_DragGesture.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Rotation3D_DragGesture";
+			};
+			name = Debug;
+		};
+		B12437E62CF8993A004A6305 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = Q4WH2ZZWCT;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.siddharthkothari.Rotation3D-DragGestureTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Rotation3D_DragGesture.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Rotation3D_DragGesture";
+			};
+			name = Release;
+		};
+		B12437E82CF8993A004A6305 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = Q4WH2ZZWCT;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.siddharthkothari.Rotation3D-DragGestureUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Rotation3D_DragGesture;
+			};
+			name = Debug;
+		};
+		B12437E92CF8993A004A6305 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = Q4WH2ZZWCT;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.siddharthkothari.Rotation3D-DragGestureUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Rotation3D_DragGesture;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B12437B82CF89936004A6305 /* Build configuration list for PBXProject "Rotation3D_DragGesture" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B12437DF2CF8993A004A6305 /* Debug */,
+				B12437E02CF8993A004A6305 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B12437E12CF8993A004A6305 /* Build configuration list for PBXNativeTarget "Rotation3D_DragGesture" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B12437E22CF8993A004A6305 /* Debug */,
+				B12437E32CF8993A004A6305 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B12437E42CF8993A004A6305 /* Build configuration list for PBXNativeTarget "Rotation3D_DragGestureTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B12437E52CF8993A004A6305 /* Debug */,
+				B12437E62CF8993A004A6305 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B12437E72CF8993A004A6305 /* Build configuration list for PBXNativeTarget "Rotation3D_DragGestureUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B12437E82CF8993A004A6305 /* Debug */,
+				B12437E92CF8993A004A6305 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = B12437B52CF89936004A6305 /* Project object */;
+}
