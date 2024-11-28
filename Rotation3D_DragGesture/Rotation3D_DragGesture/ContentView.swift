@@ -29,6 +29,11 @@ struct ContentView: View {
                 .opacity(0.7)
             
         }
+        .offset(x: valueTransition.width / 10, y: valueTransition.height / 10)
+        .frame(width: 320, height: 660)
+        .background(.black)
+        .clipShape(.rect(cornerRadii: RectangleCornerRadii(topLeading: 50, bottomLeading: 5, bottomTrailing: 50, topTrailing: 5)))
+        
     }
 }
 
