@@ -6,12 +6,16 @@
 //
 
 import SwiftUI
+import ComposableArchitecture
 
 @main
 struct GithubFollowerList_TCAApp: App {
+    static let store = StoreOf<FollowerListFeature>(initialState: FollowerListFeature.State(), reducer: {
+        FollowerListFeature()
+    })
     var body: some Scene {
         WindowGroup {
-            FollowerListView()
+            FollowerListView(store: GithubFollowerList_TCAApp.store)
         }
     }
 }
