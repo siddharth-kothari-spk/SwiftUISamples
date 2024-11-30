@@ -11,7 +11,7 @@ import SwiftUI
 struct GithubFollowerList_TCAApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            FollowerListView()
         }
     }
 }

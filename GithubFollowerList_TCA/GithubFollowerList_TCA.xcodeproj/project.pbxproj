@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		B124374E2CF563DD004A6305 /* GithubFollowerList_TCAApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B124374D2CF563DD004A6305 /* GithubFollowerList_TCAApp.swift */; };
-		B12437502CF563DD004A6305 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B124374F2CF563DD004A6305 /* ContentView.swift */; };
+		B12437502CF563DD004A6305 /* FollowerListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B124374F2CF563DD004A6305 /* FollowerListView.swift */; };
 		B12437522CF563E0004A6305 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B12437512CF563E0004A6305 /* Assets.xcassets */; };
 		B12437552CF563E0004A6305 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B12437542CF563E0004A6305 /* Preview Assets.xcassets */; };
 		B124375F2CF563E1004A6305 /* GithubFollowerList_TCATests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B124375E2CF563E1004A6305 /* GithubFollowerList_TCATests.swift */; };
@@ -40,7 +40,7 @@
 /* Begin PBXFileReference section */
 		B124374A2CF563DD004A6305 /* GithubFollowerList_TCA.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GithubFollowerList_TCA.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B124374D2CF563DD004A6305 /* GithubFollowerList_TCAApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GithubFollowerList_TCAApp.swift; sourceTree = "<group>"; };
-		B124374F2CF563DD004A6305 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		B124374F2CF563DD004A6305 /* FollowerListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FollowerListView.swift; sourceTree = "<group>"; };
 		B12437512CF563E0004A6305 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B12437542CF563E0004A6305 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		B124375A2CF563E1004A6305 /* GithubFollowerList_TCATests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GithubFollowerList_TCATests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -103,11 +103,11 @@
 		B124374C2CF563DD004A6305 /* GithubFollowerList_TCA */ = {
 			isa = PBXGroup;
 			children = (
+				B12437782CF5673C004A6305 /* Models */,
 				B12437F02CFAB1A1004A6305 /* Views */,
 				B12437EF2CFAB0AB004A6305 /* Features */,
 				B124374D2CF563DD004A6305 /* GithubFollowerList_TCAApp.swift */,
 				B12437772CF565A5004A6305 /* Requirements.md */,
-				B12437782CF5673C004A6305 /* Models */,
 				B12437512CF563E0004A6305 /* Assets.xcassets */,
 				B12437532CF563E0004A6305 /* Preview Content */,
 			);
@@ -159,7 +159,7 @@
 		B12437F02CFAB1A1004A6305 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				B124374F2CF563DD004A6305 /* ContentView.swift */,
+				B124374F2CF563DD004A6305 /* FollowerListView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -302,7 +302,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B12437EB2CF9B04F004A6305 /* FollowerListFeature.swift in Sources */,
-				B12437502CF563DD004A6305 /* ContentView.swift in Sources */,
+				B12437502CF563DD004A6305 /* FollowerListView.swift in Sources */,
 				B124374E2CF563DD004A6305 /* GithubFollowerList_TCAApp.swift in Sources */,
 				B12437ED2CFAB044004A6305 /* Follower.swift in Sources */,
 			);
