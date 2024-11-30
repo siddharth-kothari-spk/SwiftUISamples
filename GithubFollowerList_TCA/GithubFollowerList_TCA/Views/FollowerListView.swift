@@ -9,19 +9,30 @@
 
 
 import SwiftUI
+import ComposableArchitecture
 
 struct FollowerListView: View {
+    // The Store represents the runtime of your feature. That is, it is the object that can process actions in order to update state, and it can execute effects and feed data from those effects back into the system.
+    // The store can be held onto as a let. Observation of the data in the store happens automatically with the ObservableState() macro.
+    
+    let store: StoreOf<FollowerListFeature>
+    
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("Hello, world!")
+            List {
+                ForEach(store.state.followers) { follower in
+                    HStack(alignment: .center, spacing: 20) {
+                        AsyncImage(url:follower.avatarUrl)
+                            .frame(width: 50, height: 50)
+                        Text(follower.login)
+                    }
+                }
+            }
+            .onAppear {
+                store.send(.fetchData)
+            }
         }
-        .padding()
-    }
 }
 
-#Preview {
-    FollowerListView()
-}
+//#Preview {
+//    FollowerListView(store: .init(initialState: <#T##Reducer.State#>, reducer: <#T##() -> Reducer#>))
+//}
