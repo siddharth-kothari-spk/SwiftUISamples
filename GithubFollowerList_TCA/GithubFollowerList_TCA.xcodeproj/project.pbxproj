@@ -16,6 +16,7 @@
 		B124376B2CF563E1004A6305 /* GithubFollowerList_TCAUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B124376A2CF563E1004A6305 /* GithubFollowerList_TCAUITestsLaunchTests.swift */; };
 		B124377A2CF56774004A6305 /* Response.json in Resources */ = {isa = PBXBuildFile; fileRef = B12437792CF56774004A6305 /* Response.json */; };
 		B124377D2CF56CBB004A6305 /* ComposableArchitecture in Frameworks */ = {isa = PBXBuildFile; productRef = B124377C2CF56CBB004A6305 /* ComposableArchitecture */; };
+		B12437EB2CF9B04F004A6305 /* Feature.swift in Sources */ = {isa = PBXBuildFile; fileRef = B12437EA2CF9B04F004A6305 /* Feature.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +49,7 @@
 		B124376A2CF563E1004A6305 /* GithubFollowerList_TCAUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GithubFollowerList_TCAUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		B12437772CF565A5004A6305 /* Requirements.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = Requirements.md; sourceTree = "<group>"; };
 		B12437792CF56774004A6305 /* Response.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Response.json; sourceTree = "<group>"; };
+		B12437EA2CF9B04F004A6305 /* Feature.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Feature.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -138,6 +140,7 @@
 			isa = PBXGroup;
 			children = (
 				B12437792CF56774004A6305 /* Response.json */,
+				B12437EA2CF9B04F004A6305 /* Feature.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -279,6 +282,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B12437EB2CF9B04F004A6305 /* Feature.swift in Sources */,
 				B12437502CF563DD004A6305 /* ContentView.swift in Sources */,
 				B124374E2CF563DD004A6305 /* GithubFollowerList_TCAApp.swift in Sources */,
 			);
