@@ -8,15 +8,8 @@
 import Foundation
 import ComposableArchitecture
 
-struct Follower: Identifiable {
-    let id: Int
-    let login: String
-    let avatarUrl: URL
-    let htmlUrl: URL
-}
-
 @Reducer
-struct FollowerFeature {
+struct FollowerListFeature {
     // if feature is to be observed by SwiftUI, which is usually the case, you must annotate its state with the ObservableState() macro. It is the Composable Architecture’s version of @Observable, but tuned to value types
     @ObservableState
     // create a State type that holds the state your feature needs to do its job. generally struct
