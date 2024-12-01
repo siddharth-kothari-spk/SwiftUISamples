@@ -20,7 +20,18 @@ struct FollowerListView: View {
     var body: some View {
             List {
                 ForEach(store.followers, id: \.self) { follower in
-                    Text(follower.login)
+                    HStack(content: {
+                        
+                        AsyncImage(url: URL(string: follower.avatarURL)) { image in
+                            image.resizable()
+                                .frame(width: 80, height: 80)
+                                .clipShape(Circle())
+                        } placeholder: {
+                            ProgressView()
+                        }
+
+                        Text(follower.login)
+                    })
                 }
             }
             .onAppear {
