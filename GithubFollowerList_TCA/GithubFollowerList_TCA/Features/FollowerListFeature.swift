@@ -7,6 +7,9 @@
 
 import Foundation
 import ComposableArchitecture
+// api used: https://docs.github.com/en/rest/users/followers?apiVersion=2022-11-28#list-the-people-a-user-follows
+//  https://api.github.com/users/USERNAME/following
+
 
 @Reducer
 struct FollowerListFeature {
@@ -32,12 +35,26 @@ struct FollowerListFeature {
                 
             case .fetchData:
                 print("add code to fetch data")
-                return .none // currently returning none, will be updated as we progress
+                state.isLoading = true
+                return .run { send in
+                    if let url = URL(string: "https://api.github.com/users/siddharth-kothari-spk/following") {
+                        let (data, _) = try await URLSession.shared.data(from: url)
+                        let followers = try JSONDecoder().decode([Follower].self, from: data)
+                        await send(.fetchDataSuccess(followers))
+                    }
+                    else {
+                       await send(.fetchDataFailure(DataError.fetchDataFailure))
+                    }
+                }
             case .fetchDataSuccess(let followers):
                 print("fetch data success")
+                state.isLoading = false
+                state.followers = followers
                 return .none
             case .fetchDataFailure(let error):
                 print("fetch data failure")
+                state.isLoading = false
+                state.error = error
                 return .none
             case .selectFollower(let follower):
                 print("select follower")
