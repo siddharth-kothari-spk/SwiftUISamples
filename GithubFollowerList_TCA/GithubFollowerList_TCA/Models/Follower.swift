@@ -43,3 +43,5 @@ struct Follower: Identifiable {
 }
 
 extension Follower: Decodable {}
+
+extension Follower: Hashable {}

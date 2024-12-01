@@ -19,12 +19,8 @@ struct FollowerListView: View {
     
     var body: some View {
             List {
-                ForEach(store.state.followers) { follower in
-                    HStack(alignment: .center, spacing: 20) {
-                        AsyncImage(url:follower.avatarUrl)
-                            .frame(width: 50, height: 50)
-                        Text(follower.login)
-                    }
+                ForEach(store.followers, id: \.self) { follower in
+                    Text(follower.login)
                 }
             }
             .onAppear {
