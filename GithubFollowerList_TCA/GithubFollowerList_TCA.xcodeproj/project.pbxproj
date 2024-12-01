@@ -18,6 +18,7 @@
 		B124377D2CF56CBB004A6305 /* ComposableArchitecture in Frameworks */ = {isa = PBXBuildFile; productRef = B124377C2CF56CBB004A6305 /* ComposableArchitecture */; };
 		B12437EB2CF9B04F004A6305 /* FollowerListFeature.swift in Sources */ = {isa = PBXBuildFile; fileRef = B12437EA2CF9B04F004A6305 /* FollowerListFeature.swift */; };
 		B12437ED2CFAB044004A6305 /* Follower.swift in Sources */ = {isa = PBXBuildFile; fileRef = B12437EC2CFAB044004A6305 /* Follower.swift */; };
+		B12437F22CFC0398004A6305 /* DataError.swift in Sources */ = {isa = PBXBuildFile; fileRef = B12437F12CFC0398004A6305 /* DataError.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,6 +53,7 @@
 		B12437792CF56774004A6305 /* Response.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Response.json; sourceTree = "<group>"; };
 		B12437EA2CF9B04F004A6305 /* FollowerListFeature.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FollowerListFeature.swift; sourceTree = "<group>"; };
 		B12437EC2CFAB044004A6305 /* Follower.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Follower.swift; sourceTree = "<group>"; };
+		B12437F12CFC0398004A6305 /* DataError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataError.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -144,6 +146,7 @@
 			children = (
 				B12437792CF56774004A6305 /* Response.json */,
 				B12437EC2CFAB044004A6305 /* Follower.swift */,
+				B12437F12CFC0398004A6305 /* DataError.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -301,6 +304,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B12437F22CFC0398004A6305 /* DataError.swift in Sources */,
 				B12437EB2CF9B04F004A6305 /* FollowerListFeature.swift in Sources */,
 				B12437502CF563DD004A6305 /* FollowerListView.swift in Sources */,
 				B124374E2CF563DD004A6305 /* GithubFollowerList_TCAApp.swift in Sources */,
