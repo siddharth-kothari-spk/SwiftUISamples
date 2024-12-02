@@ -12,8 +12,20 @@ struct FollowerProfileView: View {
     let store: StoreOf<FollowerProfileFeature>
     
     var body: some View {
-        Text(store.follower.avatarURL)
-            .background(.blue)
+        VStack(content: {
+            AsyncImage(url: URL(string:store.follower.avatarURL)) { image in
+                image.resizable()
+                    .frame(width: 200, height: 200)
+                    .clipShape(RoundedRectangle(cornerRadius: 25))
+            } placeholder: {
+                ProgressView {
+                    Text("Image loading")
+                }
+            }
+                        
+            Text("Git username: \(store.follower.login)")
+            Text("Github link: \(store.follower.htmlURL)")
+        })
     }
 }
 
