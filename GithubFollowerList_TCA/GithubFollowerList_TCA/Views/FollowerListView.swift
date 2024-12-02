@@ -18,34 +18,38 @@ struct FollowerListView: View {
     let store: StoreOf<FollowerListFeature>
     
     var body: some View {
-        List {
-            ForEach(store.followers, id: \.self) { follower in
-                let followerProfileStore = StoreOf<FollowerProfileFeature>(initialState: FollowerProfileFeature.State(follower: follower)) {
-                    FollowerProfileFeature()
-                }
-                
-                NavigationLink {
-                    FollowerProfileView(store: followerProfileStore)
-                } label: {
-                    HStack(content: {
-                        
-                        AsyncImage(url: URL(string: follower.avatarURL)) { image in
-                            image.resizable()
-                                .frame(width: 80, height: 80)
-                                .clipShape(Circle())
-                        } placeholder: {
-                            ProgressView()
-                        }
+        NavigationStack {
+            List {
+                ForEach(store.followers, id: \.self) { follower in
+                    let followerProfileStore = StoreOf<FollowerProfileFeature>(initialState: FollowerProfileFeature.State(follower: follower)) {
+                        FollowerProfileFeature()
+                    }
+                    
+                    NavigationLink {
+                        FollowerProfileView(store: followerProfileStore)
+                    } label: {
+                        HStack(content: {
+                            
+                            AsyncImage(url: URL(string: follower.avatarURL)) { image in
+                                image.resizable()
+                                    .frame(width: 80, height: 80)
+                                    .clipShape(Circle())
+                            } placeholder: {
+                                ProgressView()
+                            }
 
-                        Text(follower.login)
-                    })
+                            Text(follower.login)
+                        })
+                    }
                 }
             }
-        }
             .onAppear {
                 store.send(.fetchData)
             }
+            .navigationTitle("FollowingList")
         }
+       
+    }
 }
 
 //#Preview {
