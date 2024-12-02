@@ -18,8 +18,15 @@ struct FollowerListView: View {
     let store: StoreOf<FollowerListFeature>
     
     var body: some View {
-            List {
-                ForEach(store.followers, id: \.self) { follower in
+        List {
+            ForEach(store.followers, id: \.self) { follower in
+                let followerProfileStore = StoreOf<FollowerProfileFeature>(initialState: FollowerProfileFeature.State(follower: follower)) {
+                    FollowerProfileFeature()
+                }
+                
+                NavigationLink {
+                    FollowerProfileView(store: followerProfileStore)
+                } label: {
                     HStack(content: {
                         
                         AsyncImage(url: URL(string: follower.avatarURL)) { image in
@@ -34,6 +41,7 @@ struct FollowerListView: View {
                     })
                 }
             }
+        }
             .onAppear {
                 store.send(.fetchData)
             }
