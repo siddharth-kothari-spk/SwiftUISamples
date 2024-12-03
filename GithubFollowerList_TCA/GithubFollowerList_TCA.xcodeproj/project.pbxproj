@@ -22,6 +22,9 @@
 		B12437F42CFC780E004A6305 /* FollowerProfileFeature.swift in Sources */ = {isa = PBXBuildFile; fileRef = B12437F32CFC780D004A6305 /* FollowerProfileFeature.swift */; };
 		B12437F62CFC7D51004A6305 /* FollowerProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B12437F52CFC7D51004A6305 /* FollowerProfileView.swift */; };
 		B12437F92CFEA174004A6305 /* Repo.swift in Sources */ = {isa = PBXBuildFile; fileRef = B12437F82CFEA174004A6305 /* Repo.swift */; };
+		B12437FC2CFEA5B4004A6305 /* JSONNull.swift in Sources */ = {isa = PBXBuildFile; fileRef = B12437FB2CFEA5B4004A6305 /* JSONNull.swift */; };
+		B12437FE2CFEA5E0004A6305 /* JSONCodingKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = B12437FD2CFEA5E0004A6305 /* JSONCodingKey.swift */; };
+		B12438002CFEA602004A6305 /* JSONAny.swift in Sources */ = {isa = PBXBuildFile; fileRef = B12437FF2CFEA602004A6305 /* JSONAny.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -61,6 +64,9 @@
 		B12437F52CFC7D51004A6305 /* FollowerProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FollowerProfileView.swift; sourceTree = "<group>"; };
 		B12437F72CFEA043004A6305 /* ReposResponse.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = ReposResponse.json; sourceTree = "<group>"; };
 		B12437F82CFEA174004A6305 /* Repo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Repo.swift; sourceTree = "<group>"; };
+		B12437FB2CFEA5B4004A6305 /* JSONNull.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSONNull.swift; sourceTree = "<group>"; };
+		B12437FD2CFEA5E0004A6305 /* JSONCodingKey.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSONCodingKey.swift; sourceTree = "<group>"; };
+		B12437FF2CFEA602004A6305 /* JSONAny.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSONAny.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -112,6 +118,7 @@
 		B124374C2CF563DD004A6305 /* GithubFollowerList_TCA */ = {
 			isa = PBXGroup;
 			children = (
+				B12437FA2CFEA59C004A6305 /* Helpers */,
 				B12437782CF5673C004A6305 /* Models */,
 				B12437F02CFAB1A1004A6305 /* Views */,
 				B12437EF2CFAB0AB004A6305 /* Features */,
@@ -176,6 +183,16 @@
 				B12437F52CFC7D51004A6305 /* FollowerProfileView.swift */,
 			);
 			path = Views;
+			sourceTree = "<group>";
+		};
+		B12437FA2CFEA59C004A6305 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				B12437FB2CFEA5B4004A6305 /* JSONNull.swift */,
+				B12437FD2CFEA5E0004A6305 /* JSONCodingKey.swift */,
+				B12437FF2CFEA602004A6305 /* JSONAny.swift */,
+			);
+			path = Helpers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -318,7 +335,10 @@
 				B12437F22CFC0398004A6305 /* DataError.swift in Sources */,
 				B12437EB2CF9B04F004A6305 /* FollowerListFeature.swift in Sources */,
 				B12437F42CFC780E004A6305 /* FollowerProfileFeature.swift in Sources */,
+				B12438002CFEA602004A6305 /* JSONAny.swift in Sources */,
+				B12437FC2CFEA5B4004A6305 /* JSONNull.swift in Sources */,
 				B12437F92CFEA174004A6305 /* Repo.swift in Sources */,
+				B12437FE2CFEA5E0004A6305 /* JSONCodingKey.swift in Sources */,
 				B12437F62CFC7D51004A6305 /* FollowerProfileView.swift in Sources */,
 				B12437502CF563DD004A6305 /* FollowerListView.swift in Sources */,
 				B124374E2CF563DD004A6305 /* GithubFollowerList_TCAApp.swift in Sources */,
