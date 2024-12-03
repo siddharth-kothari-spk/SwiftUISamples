@@ -8,11 +8,14 @@
 import Foundation
 import ComposableArchitecture
 
+// api: https://api.github.com/users/USERNAME/repos
+
 @Reducer
 struct FollowerProfileFeature {
     @ObservableState
     struct State {
         let follower: Follower
+        var repos: [Repo] = []
     }
     
     enum Action {
@@ -26,6 +29,7 @@ struct FollowerProfileFeature {
             switch action {
             case .fetchAdditionalDetails:
                 print("fetch additional details")
+                print(state.follower.reposURL)
                 return .none
             case .fetchAdditionalDetailsSuccess:
                 print("")
