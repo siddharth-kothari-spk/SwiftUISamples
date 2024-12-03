@@ -14,7 +14,7 @@
 		B124375F2CF563E1004A6305 /* GithubFollowerList_TCATests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B124375E2CF563E1004A6305 /* GithubFollowerList_TCATests.swift */; };
 		B12437692CF563E1004A6305 /* GithubFollowerList_TCAUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B12437682CF563E1004A6305 /* GithubFollowerList_TCAUITests.swift */; };
 		B124376B2CF563E1004A6305 /* GithubFollowerList_TCAUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B124376A2CF563E1004A6305 /* GithubFollowerList_TCAUITestsLaunchTests.swift */; };
-		B124377A2CF56774004A6305 /* Response.json in Resources */ = {isa = PBXBuildFile; fileRef = B12437792CF56774004A6305 /* Response.json */; };
+		B124377A2CF56774004A6305 /* FollowingResponse.json in Resources */ = {isa = PBXBuildFile; fileRef = B12437792CF56774004A6305 /* FollowingResponse.json */; };
 		B124377D2CF56CBB004A6305 /* ComposableArchitecture in Frameworks */ = {isa = PBXBuildFile; productRef = B124377C2CF56CBB004A6305 /* ComposableArchitecture */; };
 		B12437EB2CF9B04F004A6305 /* FollowerListFeature.swift in Sources */ = {isa = PBXBuildFile; fileRef = B12437EA2CF9B04F004A6305 /* FollowerListFeature.swift */; };
 		B12437ED2CFAB044004A6305 /* Follower.swift in Sources */ = {isa = PBXBuildFile; fileRef = B12437EC2CFAB044004A6305 /* Follower.swift */; };
@@ -52,12 +52,13 @@
 		B12437682CF563E1004A6305 /* GithubFollowerList_TCAUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GithubFollowerList_TCAUITests.swift; sourceTree = "<group>"; };
 		B124376A2CF563E1004A6305 /* GithubFollowerList_TCAUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GithubFollowerList_TCAUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		B12437772CF565A5004A6305 /* Requirements.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = Requirements.md; sourceTree = "<group>"; };
-		B12437792CF56774004A6305 /* Response.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Response.json; sourceTree = "<group>"; };
+		B12437792CF56774004A6305 /* FollowingResponse.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = FollowingResponse.json; sourceTree = "<group>"; };
 		B12437EA2CF9B04F004A6305 /* FollowerListFeature.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FollowerListFeature.swift; sourceTree = "<group>"; };
 		B12437EC2CFAB044004A6305 /* Follower.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Follower.swift; sourceTree = "<group>"; };
 		B12437F12CFC0398004A6305 /* DataError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataError.swift; sourceTree = "<group>"; };
 		B12437F32CFC780D004A6305 /* FollowerProfileFeature.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FollowerProfileFeature.swift; sourceTree = "<group>"; };
 		B12437F52CFC7D51004A6305 /* FollowerProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FollowerProfileView.swift; sourceTree = "<group>"; };
+		B12437F72CFEA043004A6305 /* ReposResponse.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = ReposResponse.json; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -148,7 +149,8 @@
 		B12437782CF5673C004A6305 /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				B12437792CF56774004A6305 /* Response.json */,
+				B12437792CF56774004A6305 /* FollowingResponse.json */,
+				B12437F72CFEA043004A6305 /* ReposResponse.json */,
 				B12437EC2CFAB044004A6305 /* Follower.swift */,
 				B12437F12CFC0398004A6305 /* DataError.swift */,
 			);
@@ -283,7 +285,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B124377A2CF56774004A6305 /* Response.json in Resources */,
+				B124377A2CF56774004A6305 /* FollowingResponse.json in Resources */,
 				B12437552CF563E0004A6305 /* Preview Assets.xcassets in Resources */,
 				B12437522CF563E0004A6305 /* Assets.xcassets in Resources */,
 			);
