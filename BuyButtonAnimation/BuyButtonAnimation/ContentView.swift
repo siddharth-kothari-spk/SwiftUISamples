@@ -43,6 +43,21 @@ struct ContentView: View {
         }
         .frame(width: start ? 65 : 190, height: 65)
         .background(.black, in: Capsule())
+        .onTapGesture {
+            loading = true
+            withAnimation {
+                start.toggle()
+            }
+            if start {
+                DispatchQueue.main.asyncAfter(deadline: .now() + 3, execute: DispatchWorkItem(block: {
+                    loading = false
+                    withAnimation {
+                        showCheckmark = true
+                        spin = false
+                    }
+                }))
+            }
+        }
     }
 }
 
