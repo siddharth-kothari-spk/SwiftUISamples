@@ -21,6 +21,11 @@ struct ContentView: View {
                 Circle()
                     .frame(width: 55, height: 55)
                     .foregroundStyle(AngularGradient(gradient: Gradient(colors: [.black, .yellow]), center: .center, angle: .degrees(spin ? 360 : 0)))
+                    .mask {
+                        Circle()
+                            .stroke(lineWidth: 5)
+                            .frame(width: 55, height: 55)
+                    }
             }
         }
         .frame(width: start ? 65 : 190, height: 65)
