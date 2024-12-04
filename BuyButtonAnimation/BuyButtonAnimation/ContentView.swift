@@ -16,13 +16,15 @@ struct ContentView: View {
     @State var icons = ["gift.fill", "cart.fill", "bag.fill", "creditcard.fill", "tag.fill", "bag.fill"]
     
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("Hello, world!")
+        ZStack {
+            Group {
+                Circle()
+                    .frame(width: 55, height: 55)
+                    .foregroundStyle(AngularGradient(gradient: Gradient(colors: [.black, .yellow]), center: .center, angle: .degrees(spin ? 360 : 0)))
+            }
         }
-        .padding()
+        .frame(width: start ? 65 : 190, height: 65)
+        .background(.black, in: Capsule())
     }
 }
 
