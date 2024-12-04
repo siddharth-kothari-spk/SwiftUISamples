@@ -27,6 +27,13 @@ struct ContentView: View {
                             .frame(width: 55, height: 55)
                     }
             }
+            .opacity(loading ? 1 : 0)
+            
+            if !start {
+                Text("Buy now")
+                    .font(.title2)
+                    .foregroundStyle(.yellow)
+            }
         }
         .frame(width: start ? 65 : 190, height: 65)
         .background(.black, in: Capsule())
