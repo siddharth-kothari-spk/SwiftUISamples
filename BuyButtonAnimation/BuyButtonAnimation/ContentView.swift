@@ -58,6 +58,11 @@ struct ContentView: View {
                 }))
             }
         }
+        .onAppear(perform: {
+            withAnimation(.linear(duration: 2).repeatForever(autoreverses: false)) {
+                spin.toggle()
+            }
+        })
     }
 }
 
