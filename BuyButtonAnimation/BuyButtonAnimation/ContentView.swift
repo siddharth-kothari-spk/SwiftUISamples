@@ -35,7 +35,7 @@ struct ContentView: View {
                     .foregroundStyle(.yellow)
             }
             else {
-                Image(systemName: showCheckmark ? "checkmark.fill" : icons[currentIconIndex])
+                Image(systemName: showCheckmark ? "checkmark.seal" : icons[currentIconIndex])
                     .font(showCheckmark ? .largeTitle : .title2)
                     .foregroundStyle(showCheckmark ? .green : .white)
                     .contentTransition(.symbolEffect)
@@ -49,7 +49,7 @@ struct ContentView: View {
                 start.toggle()
             }
             if start {
-                DispatchQueue.main.asyncAfter(deadline: .now() + 3, execute: DispatchWorkItem(block: {
+                DispatchQueue.main.asyncAfter(deadline: .now() + 1, execute: DispatchWorkItem(block: {
                     loading = false
                     withAnimation {
                         showCheckmark = true
@@ -61,6 +61,14 @@ struct ContentView: View {
         .onAppear(perform: {
             withAnimation(.linear(duration: 2).repeatForever(autoreverses: false)) {
                 spin.toggle()
+            }
+            
+            Timer.scheduledTimer(withTimeInterval: 0.8, repeats: false) { timer in
+                if start && !showCheckmark {
+                    withAnimation {
+                        currentIconIndex = (currentIconIndex + 1) % icons.count
+                    }
+                }
             }
         })
     }
