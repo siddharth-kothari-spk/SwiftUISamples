@@ -34,6 +34,12 @@ struct ContentView: View {
                     .font(.title2)
                     .foregroundStyle(.yellow)
             }
+            else {
+                Image(systemName: showCheckmark ? "checkmark.fill" : icons[currentIconIndex])
+                    .font(showCheckmark ? .largeTitle : .title2)
+                    .foregroundStyle(showCheckmark ? .green : .white)
+                    .contentTransition(.symbolEffect)
+            }
         }
         .frame(width: start ? 65 : 190, height: 65)
         .background(.black, in: Capsule())
