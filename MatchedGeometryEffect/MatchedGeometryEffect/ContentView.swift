@@ -28,6 +28,11 @@ struct ContentView: View {
         .background {
             Capsule()
                 .fill(.gray.tertiary)
+                .overlay {
+                    Capsule()
+                        .fill(.gray.tertiary)
+                        .matchedGeometryEffect(id: state, in: segmentedControl, isSource: false)
+                }
         }
     }
 }
