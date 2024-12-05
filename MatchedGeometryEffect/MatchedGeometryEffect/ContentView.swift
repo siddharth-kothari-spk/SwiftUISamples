@@ -15,7 +15,7 @@ struct ContentView: View {
             ForEach(SegmentedControlState.allCases, id: \.self) { item in
                 Text(item.rawValue)
                     .padding(10)
-                    .foregroundStyle(state == item ? .black.opacity(0.9) : .gray.opacity(0.6))
+                    .foregroundStyle(state == item ? .black : .gray)
                     .matchedGeometryEffect(id: item, in: segmentedControl)
                     .onTapGesture(perform: {
                         withAnimation {
@@ -25,6 +25,10 @@ struct ContentView: View {
             }
         }
         .padding(6)
+        .background {
+            Capsule()
+                .fill(.gray.tertiary)
+        }
     }
 }
 
