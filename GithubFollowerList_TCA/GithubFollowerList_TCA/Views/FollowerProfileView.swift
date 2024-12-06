@@ -17,6 +17,18 @@ struct FollowerProfileView: View {
                 image.resizable()
                     .frame(width: 200, height: 200)
                     .clipShape(RoundedRectangle(cornerRadius: 25))
+                
+                List(store.repos) { repo in
+                    VStack(alignment: .leading, content: {
+                        
+                        Text(repo.name)
+                            .font(.title2).bold()
+                        
+                        Text(repo.url)
+                            .font(.caption).italic()
+                            .foregroundStyle(.blue)
+                    })
+                }
             } placeholder: {
                 ProgressView {
                     Text("Image loading")
@@ -25,6 +37,9 @@ struct FollowerProfileView: View {
                         
             Text("Git username: \(store.follower.login)")
             Text("Github link: \(store.follower.htmlURL)")
+        })
+        .onAppear(perform: {
+            store.send(.fetchAdditionalDetails)
         })
     }
 }

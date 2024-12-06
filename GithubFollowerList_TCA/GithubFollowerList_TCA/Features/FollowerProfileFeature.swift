@@ -14,13 +14,15 @@ import ComposableArchitecture
 struct FollowerProfileFeature {
     @ObservableState
     struct State {
+        var isLoading = false
         let follower: Follower
-        var repos: [Repo] = []
+        var repos: [TestRepo] = []
+        var error: Error?
     }
     
     enum Action {
         case fetchAdditionalDetails
-        case fetchAdditionalDetailsSuccess
+        case fetchAdditionalDetailsSuccess([TestRepo])
         case fetchAdditionalDetailsFailure(Error)
     }
     
@@ -29,13 +31,26 @@ struct FollowerProfileFeature {
             switch action {
             case .fetchAdditionalDetails:
                 print("fetch additional details")
+                state.isLoading = true
                 print(state.follower.reposURL)
+                if let repoURL = URL(string: state.follower.reposURL) {
+                    return .run { send in
+                        let (data, _) = try await URLSession.shared.data(from: repoURL)
+                        let repos = try JSONDecoder().decode([TestRepo].self, from: data)
+                        print("Repos: \(repos)")
+                        await send(.fetchAdditionalDetailsSuccess(repos))
+                    }
+                }
                 return .none
-            case .fetchAdditionalDetailsSuccess:
+            case .fetchAdditionalDetailsSuccess(let repos):
                 print("")
+                state.isLoading = false
+                state.repos = repos
                 return .none
             case .fetchAdditionalDetailsFailure(let error):
                 print("error")
+                state.isLoading = false
+                state.error = error
                 return .none
             }
         }

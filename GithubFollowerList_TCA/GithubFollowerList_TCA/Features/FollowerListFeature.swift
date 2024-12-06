@@ -57,6 +57,7 @@ struct FollowerListFeature {
                 state.error = error
                 return .none
             case .selectFollower(let follower):
+                // TODO: select follower
                 print("select follower")
                 return .none
             }

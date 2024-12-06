@@ -7,13 +7,21 @@
 
 import Foundation
 
-struct Repo: Codable {
+struct TestRepo: Identifiable {
+    let id: Int
+    let name: String
+    let url: String
+}
+
+extension TestRepo: Decodable {}
+
+struct Repo: Identifiable {
     let id: Int
     let nodeID, name, fullName: String
     let welcomePrivate: Bool
     let owner: Owner
     let htmlURL: String
-    let description: String
+    let description: String?
     let fork: Bool
     let url, forksURL: String
     let keysURL, collaboratorsURL: String
@@ -40,16 +48,16 @@ struct Repo: Codable {
     let svnURL: String
     let homepage: String
     let size, stargazersCount, watchersCount: Int
-   // let language: JSONNull?
+    let language: JSONNull?
     let hasIssues, hasProjects, hasDownloads, hasWiki: Bool
     let hasPages, hasDiscussions: Bool
     let forksCount: Int
-   // let mirrorURL: JSONNull?
+    let mirrorURL: JSONNull?
     let archived, disabled: Bool
     let openIssuesCount: Int
-   // let license: JSONNull?
+    let license: JSONNull?
     let allowForking, isTemplate, webCommitSignoffRequired: Bool
-  //  let topics: [JSONAny]
+    let topics: [JSONAny]
     let visibility: String
     let forks, openIssues, watchers: Int
     let defaultBranch: String
@@ -131,6 +139,8 @@ struct Repo: Codable {
     }
 }
 
+extension Repo: Decodable {}
+
 // MARK: - Owner
 struct Owner: Codable {
     let login: String
@@ -167,3 +177,4 @@ struct Owner: Codable {
         case siteAdmin = "site_admin"
     }
 }
+
