@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		B10EE2202D029A3500D98B50 /* TestRepo.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10EE21F2D029A3500D98B50 /* TestRepo.swift */; };
+		B10EE2222D029C1600D98B50 /* DateDecoding.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10EE2212D029C1600D98B50 /* DateDecoding.swift */; };
 		B124374E2CF563DD004A6305 /* GithubFollowerList_TCAApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B124374D2CF563DD004A6305 /* GithubFollowerList_TCAApp.swift */; };
 		B12437502CF563DD004A6305 /* FollowerListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B124374F2CF563DD004A6305 /* FollowerListView.swift */; };
 		B12437522CF563E0004A6305 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B12437512CF563E0004A6305 /* Assets.xcassets */; };
@@ -47,6 +48,7 @@
 
 /* Begin PBXFileReference section */
 		B10EE21F2D029A3500D98B50 /* TestRepo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestRepo.swift; sourceTree = "<group>"; };
+		B10EE2212D029C1600D98B50 /* DateDecoding.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateDecoding.swift; sourceTree = "<group>"; };
 		B124374A2CF563DD004A6305 /* GithubFollowerList_TCA.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GithubFollowerList_TCA.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B124374D2CF563DD004A6305 /* GithubFollowerList_TCAApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GithubFollowerList_TCAApp.swift; sourceTree = "<group>"; };
 		B124374F2CF563DD004A6305 /* FollowerListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FollowerListView.swift; sourceTree = "<group>"; };
@@ -194,6 +196,7 @@
 				B12437FB2CFEA5B4004A6305 /* JSONNull.swift */,
 				B12437FD2CFEA5E0004A6305 /* JSONCodingKey.swift */,
 				B12437FF2CFEA602004A6305 /* JSONAny.swift */,
+				B10EE2212D029C1600D98B50 /* DateDecoding.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -337,6 +340,7 @@
 			files = (
 				B12437F22CFC0398004A6305 /* DataError.swift in Sources */,
 				B12437EB2CF9B04F004A6305 /* FollowerListFeature.swift in Sources */,
+				B10EE2222D029C1600D98B50 /* DateDecoding.swift in Sources */,
 				B12437F42CFC780E004A6305 /* FollowerProfileFeature.swift in Sources */,
 				B12438002CFEA602004A6305 /* JSONAny.swift in Sources */,
 				B12437FC2CFEA5B4004A6305 /* JSONNull.swift in Sources */,

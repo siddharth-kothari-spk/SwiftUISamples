@@ -24,3 +24,7 @@ struct TestRepo: Identifiable {
 }
 
 extension TestRepo: Decodable {}
+
+enum RepoError: Error {
+    case dataCorruptedError
+}
