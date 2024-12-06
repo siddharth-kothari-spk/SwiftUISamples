@@ -11,6 +11,16 @@ struct TestRepo: Identifiable {
     let id: Int
     let name: String
     let url: String
+    let createdAt, updatedAt, pushedAt: Date
+    
+    enum CodingKeys: String, CodingKey {
+        case id
+        case name
+        case url
+        case createdAt = "created_at"
+        case updatedAt = "updated_at"
+        case pushedAt = "pushed_at"
+    }
 }
 
 extension TestRepo: Decodable {}
