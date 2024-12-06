@@ -7,14 +7,6 @@
 
 import Foundation
 
-struct TestRepo: Identifiable {
-    let id: Int
-    let name: String
-    let url: String
-}
-
-extension TestRepo: Decodable {}
-
 struct Repo: Identifiable {
     let id: Int
     let nodeID, name, fullName: String

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B10EE2202D029A3500D98B50 /* TestRepo.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10EE21F2D029A3500D98B50 /* TestRepo.swift */; };
 		B124374E2CF563DD004A6305 /* GithubFollowerList_TCAApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B124374D2CF563DD004A6305 /* GithubFollowerList_TCAApp.swift */; };
 		B12437502CF563DD004A6305 /* FollowerListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B124374F2CF563DD004A6305 /* FollowerListView.swift */; };
 		B12437522CF563E0004A6305 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B12437512CF563E0004A6305 /* Assets.xcassets */; };
@@ -45,6 +46,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		B10EE21F2D029A3500D98B50 /* TestRepo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestRepo.swift; sourceTree = "<group>"; };
 		B124374A2CF563DD004A6305 /* GithubFollowerList_TCA.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GithubFollowerList_TCA.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B124374D2CF563DD004A6305 /* GithubFollowerList_TCAApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GithubFollowerList_TCAApp.swift; sourceTree = "<group>"; };
 		B124374F2CF563DD004A6305 /* FollowerListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FollowerListView.swift; sourceTree = "<group>"; };
@@ -162,6 +164,7 @@
 				B12437F72CFEA043004A6305 /* ReposResponse.json */,
 				B12437EC2CFAB044004A6305 /* Follower.swift */,
 				B12437F82CFEA174004A6305 /* Repo.swift */,
+				B10EE21F2D029A3500D98B50 /* TestRepo.swift */,
 				B12437F12CFC0398004A6305 /* DataError.swift */,
 			);
 			path = Models;
@@ -339,6 +342,7 @@
 				B12437FC2CFEA5B4004A6305 /* JSONNull.swift in Sources */,
 				B12437F92CFEA174004A6305 /* Repo.swift in Sources */,
 				B12437FE2CFEA5E0004A6305 /* JSONCodingKey.swift in Sources */,
+				B10EE2202D029A3500D98B50 /* TestRepo.swift in Sources */,
 				B12437F62CFC7D51004A6305 /* FollowerProfileView.swift in Sources */,
 				B12437502CF563DD004A6305 /* FollowerListView.swift in Sources */,
 				B124374E2CF563DD004A6305 /* GithubFollowerList_TCAApp.swift in Sources */,
