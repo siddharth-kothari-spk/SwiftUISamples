@@ -27,6 +27,8 @@ struct FollowerProfileView: View {
                         Text(repo.url)
                             .font(.caption).italic()
                             .foregroundStyle(.blue)
+                        
+                        Text("createdAt: \(repo.createdAt.description)")
                     })
                 }
             } placeholder: {

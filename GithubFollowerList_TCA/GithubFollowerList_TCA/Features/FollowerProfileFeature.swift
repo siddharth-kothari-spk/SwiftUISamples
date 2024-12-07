@@ -36,7 +36,10 @@ struct FollowerProfileFeature {
                 if let repoURL = URL(string: state.follower.reposURL) {
                     return .run { send in
                         let (data, _) = try await URLSession.shared.data(from: repoURL)
-                        let repos = try JSONDecoder().decode([TestRepo].self, from: data)
+                        
+                        let decoder = JSONDecoder()
+                        decoder.dateDecodingStrategy = DateDecoding().customDateDecodingStrategy()
+                        let repos = try decoder.decode([TestRepo].self, from: data)
                         print("Repos: \(repos)")
                         await send(.fetchAdditionalDetailsSuccess(repos))
                     }
