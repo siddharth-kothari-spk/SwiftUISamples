@@ -16,7 +16,7 @@ struct ContentView: View {
         ZStack {
             ForEach(0..<6) {index in
                     RoundedRectangle(cornerRadius: 2)
-                    .frame(width: 4, height: .random(in: 10...30))
+                    .frame(width: 4, height: isAnimated ?  25 : 10)
                     .foregroundStyle(.pink)
                     .offset(y: isAnimated ? -70 : 0)
                     .rotationEffect(.degrees(Double(index) * 60))
@@ -29,6 +29,7 @@ struct ContentView: View {
                 .onTapGesture {
                     withAnimation(.spring(duration: 0.8)) {
                         isTapped.toggle()
+                        isAnimated.toggle()
                     }
                 }
         }
