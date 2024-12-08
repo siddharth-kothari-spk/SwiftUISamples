@@ -20,6 +20,7 @@ struct ContentView: View {
                     .foregroundStyle(.pink)
                     .offset(y: isAnimated ? -70 : 0)
                     .rotationEffect(.degrees(Double(index) * 60))
+                    .scaleEffect(isAnimated ? 1 : 0)
             }
             
             Image(systemName: isTapped ? "heart.fill" : "heart")
