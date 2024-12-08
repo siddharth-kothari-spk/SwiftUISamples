@@ -9,14 +9,21 @@
 import SwiftUI
 
 struct ContentView: View {
+    @State var isTapped = false
+    @State var isAnimated = false
+    
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("Hello, world!")
+        ZStack {
+            Image(systemName: isTapped ? "heart.fill" : "heart")
+                .foregroundStyle(isTapped ? .pink : .red)
+                .contentTransition(.symbolEffect)
+                .font(.largeTitle)
+                .onTapGesture {
+                    withAnimation(.spring(duration: 0.8)) {
+                        isTapped.toggle()
+                    }
+                }
         }
-        .padding()
     }
 }
 
