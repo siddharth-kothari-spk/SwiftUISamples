@@ -1,0 +1,593 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		B10EE2682D057D8200D98B50 /* HeartAnimationApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10EE2672D057D8200D98B50 /* HeartAnimationApp.swift */; };
+		B10EE26A2D057D8200D98B50 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10EE2692D057D8200D98B50 /* ContentView.swift */; };
+		B10EE26C2D057D8500D98B50 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B10EE26B2D057D8500D98B50 /* Assets.xcassets */; };
+		B10EE26F2D057D8500D98B50 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B10EE26E2D057D8500D98B50 /* Preview Assets.xcassets */; };
+		B10EE2792D057D8500D98B50 /* HeartAnimationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10EE2782D057D8500D98B50 /* HeartAnimationTests.swift */; };
+		B10EE2832D057D8500D98B50 /* HeartAnimationUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10EE2822D057D8500D98B50 /* HeartAnimationUITests.swift */; };
+		B10EE2852D057D8500D98B50 /* HeartAnimationUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10EE2842D057D8500D98B50 /* HeartAnimationUITestsLaunchTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		B10EE2752D057D8500D98B50 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B10EE25C2D057D8200D98B50 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B10EE2632D057D8200D98B50;
+			remoteInfo = HeartAnimation;
+		};
+		B10EE27F2D057D8500D98B50 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B10EE25C2D057D8200D98B50 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B10EE2632D057D8200D98B50;
+			remoteInfo = HeartAnimation;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		B10EE2642D057D8200D98B50 /* HeartAnimation.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HeartAnimation.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B10EE2672D057D8200D98B50 /* HeartAnimationApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeartAnimationApp.swift; sourceTree = "<group>"; };
+		B10EE2692D057D8200D98B50 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		B10EE26B2D057D8500D98B50 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		B10EE26E2D057D8500D98B50 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		B10EE2742D057D8500D98B50 /* HeartAnimationTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HeartAnimationTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B10EE2782D057D8500D98B50 /* HeartAnimationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeartAnimationTests.swift; sourceTree = "<group>"; };
+		B10EE27E2D057D8500D98B50 /* HeartAnimationUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HeartAnimationUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B10EE2822D057D8500D98B50 /* HeartAnimationUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeartAnimationUITests.swift; sourceTree = "<group>"; };
+		B10EE2842D057D8500D98B50 /* HeartAnimationUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeartAnimationUITestsLaunchTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B10EE2612D057D8200D98B50 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B10EE2712D057D8500D98B50 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B10EE27B2D057D8500D98B50 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		B10EE25B2D057D8200D98B50 = {
+			isa = PBXGroup;
+			children = (
+				B10EE2662D057D8200D98B50 /* HeartAnimation */,
+				B10EE2772D057D8500D98B50 /* HeartAnimationTests */,
+				B10EE2812D057D8500D98B50 /* HeartAnimationUITests */,
+				B10EE2652D057D8200D98B50 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		B10EE2652D057D8200D98B50 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B10EE2642D057D8200D98B50 /* HeartAnimation.app */,
+				B10EE2742D057D8500D98B50 /* HeartAnimationTests.xctest */,
+				B10EE27E2D057D8500D98B50 /* HeartAnimationUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B10EE2662D057D8200D98B50 /* HeartAnimation */ = {
+			isa = PBXGroup;
+			children = (
+				B10EE2672D057D8200D98B50 /* HeartAnimationApp.swift */,
+				B10EE2692D057D8200D98B50 /* ContentView.swift */,
+				B10EE26B2D057D8500D98B50 /* Assets.xcassets */,
+				B10EE26D2D057D8500D98B50 /* Preview Content */,
+			);
+			path = HeartAnimation;
+			sourceTree = "<group>";
+		};
+		B10EE26D2D057D8500D98B50 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				B10EE26E2D057D8500D98B50 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		B10EE2772D057D8500D98B50 /* HeartAnimationTests */ = {
+			isa = PBXGroup;
+			children = (
+				B10EE2782D057D8500D98B50 /* HeartAnimationTests.swift */,
+			);
+			path = HeartAnimationTests;
+			sourceTree = "<group>";
+		};
+		B10EE2812D057D8500D98B50 /* HeartAnimationUITests */ = {
+			isa = PBXGroup;
+			children = (
+				B10EE2822D057D8500D98B50 /* HeartAnimationUITests.swift */,
+				B10EE2842D057D8500D98B50 /* HeartAnimationUITestsLaunchTests.swift */,
+			);
+			path = HeartAnimationUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		B10EE2632D057D8200D98B50 /* HeartAnimation */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B10EE2882D057D8500D98B50 /* Build configuration list for PBXNativeTarget "HeartAnimation" */;
+			buildPhases = (
+				B10EE2602D057D8200D98B50 /* Sources */,
+				B10EE2612D057D8200D98B50 /* Frameworks */,
+				B10EE2622D057D8200D98B50 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = HeartAnimation;
+			productName = HeartAnimation;
+			productReference = B10EE2642D057D8200D98B50 /* HeartAnimation.app */;
+			productType = "com.apple.product-type.application";
+		};
+		B10EE2732D057D8500D98B50 /* HeartAnimationTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B10EE28B2D057D8500D98B50 /* Build configuration list for PBXNativeTarget "HeartAnimationTests" */;
+			buildPhases = (
+				B10EE2702D057D8500D98B50 /* Sources */,
+				B10EE2712D057D8500D98B50 /* Frameworks */,
+				B10EE2722D057D8500D98B50 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B10EE2762D057D8500D98B50 /* PBXTargetDependency */,
+			);
+			name = HeartAnimationTests;
+			productName = HeartAnimationTests;
+			productReference = B10EE2742D057D8500D98B50 /* HeartAnimationTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		B10EE27D2D057D8500D98B50 /* HeartAnimationUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B10EE28E2D057D8500D98B50 /* Build configuration list for PBXNativeTarget "HeartAnimationUITests" */;
+			buildPhases = (
+				B10EE27A2D057D8500D98B50 /* Sources */,
+				B10EE27B2D057D8500D98B50 /* Frameworks */,
+				B10EE27C2D057D8500D98B50 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B10EE2802D057D8500D98B50 /* PBXTargetDependency */,
+			);
+			name = HeartAnimationUITests;
+			productName = HeartAnimationUITests;
+			productReference = B10EE27E2D057D8500D98B50 /* HeartAnimationUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B10EE25C2D057D8200D98B50 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1530;
+				LastUpgradeCheck = 1530;
+				TargetAttributes = {
+					B10EE2632D057D8200D98B50 = {
+						CreatedOnToolsVersion = 15.3;
+					};
+					B10EE2732D057D8500D98B50 = {
+						CreatedOnToolsVersion = 15.3;
+						TestTargetID = B10EE2632D057D8200D98B50;
+					};
+					B10EE27D2D057D8500D98B50 = {
+						CreatedOnToolsVersion = 15.3;
+						TestTargetID = B10EE2632D057D8200D98B50;
+					};
+				};
+			};
+			buildConfigurationList = B10EE25F2D057D8200D98B50 /* Build configuration list for PBXProject "HeartAnimation" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = B10EE25B2D057D8200D98B50;
+			productRefGroup = B10EE2652D057D8200D98B50 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B10EE2632D057D8200D98B50 /* HeartAnimation */,
+				B10EE2732D057D8500D98B50 /* HeartAnimationTests */,
+				B10EE27D2D057D8500D98B50 /* HeartAnimationUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B10EE2622D057D8200D98B50 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B10EE26F2D057D8500D98B50 /* Preview Assets.xcassets in Resources */,
+				B10EE26C2D057D8500D98B50 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B10EE2722D057D8500D98B50 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B10EE27C2D057D8500D98B50 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B10EE2602D057D8200D98B50 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B10EE26A2D057D8200D98B50 /* ContentView.swift in Sources */,
+				B10EE2682D057D8200D98B50 /* HeartAnimationApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B10EE2702D057D8500D98B50 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B10EE2792D057D8500D98B50 /* HeartAnimationTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B10EE27A2D057D8500D98B50 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B10EE2852D057D8500D98B50 /* HeartAnimationUITestsLaunchTests.swift in Sources */,
+				B10EE2832D057D8500D98B50 /* HeartAnimationUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		B10EE2762D057D8500D98B50 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B10EE2632D057D8200D98B50 /* HeartAnimation */;
+			targetProxy = B10EE2752D057D8500D98B50 /* PBXContainerItemProxy */;
+		};
+		B10EE2802D057D8500D98B50 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B10EE2632D057D8200D98B50 /* HeartAnimation */;
+			targetProxy = B10EE27F2D057D8500D98B50 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		B10EE2862D057D8500D98B50 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		B10EE2872D057D8500D98B50 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		B10EE2892D057D8500D98B50 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"HeartAnimation/Preview Content\"";
+				DEVELOPMENT_TEAM = Q4WH2ZZWCT;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.siddharthkothari.HeartAnimation;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		B10EE28A2D057D8500D98B50 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"HeartAnimation/Preview Content\"";
+				DEVELOPMENT_TEAM = Q4WH2ZZWCT;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.siddharthkothari.HeartAnimation;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		B10EE28C2D057D8500D98B50 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = Q4WH2ZZWCT;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.siddharthkothari.HeartAnimationTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/HeartAnimation.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/HeartAnimation";
+			};
+			name = Debug;
+		};
+		B10EE28D2D057D8500D98B50 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = Q4WH2ZZWCT;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.siddharthkothari.HeartAnimationTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/HeartAnimation.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/HeartAnimation";
+			};
+			name = Release;
+		};
+		B10EE28F2D057D8500D98B50 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = Q4WH2ZZWCT;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.siddharthkothari.HeartAnimationUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = HeartAnimation;
+			};
+			name = Debug;
+		};
+		B10EE2902D057D8500D98B50 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = Q4WH2ZZWCT;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.siddharthkothari.HeartAnimationUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = HeartAnimation;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B10EE25F2D057D8200D98B50 /* Build configuration list for PBXProject "HeartAnimation" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B10EE2862D057D8500D98B50 /* Debug */,
+				B10EE2872D057D8500D98B50 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B10EE2882D057D8500D98B50 /* Build configuration list for PBXNativeTarget "HeartAnimation" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B10EE2892D057D8500D98B50 /* Debug */,
+				B10EE28A2D057D8500D98B50 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B10EE28B2D057D8500D98B50 /* Build configuration list for PBXNativeTarget "HeartAnimationTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B10EE28C2D057D8500D98B50 /* Debug */,
+				B10EE28D2D057D8500D98B50 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B10EE28E2D057D8500D98B50 /* Build configuration list for PBXNativeTarget "HeartAnimationUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B10EE28F2D057D8500D98B50 /* Debug */,
+				B10EE2902D057D8500D98B50 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = B10EE25C2D057D8200D98B50 /* Project object */;
+}
