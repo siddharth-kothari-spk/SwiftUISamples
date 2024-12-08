@@ -14,6 +14,14 @@ struct ContentView: View {
     
     var body: some View {
         ZStack {
+            ForEach(0..<6) {index in
+                    RoundedRectangle(cornerRadius: 2)
+                    .frame(width: 4, height: .random(in: 10...30))
+                    .foregroundStyle(.pink)
+                    .offset(y: isAnimated ? -70 : 0)
+                    .rotationEffect(.degrees(Double(index) * 60))
+            }
+            
             Image(systemName: isTapped ? "heart.fill" : "heart")
                 .foregroundStyle(isTapped ? .pink : .red)
                 .contentTransition(.symbolEffect)
