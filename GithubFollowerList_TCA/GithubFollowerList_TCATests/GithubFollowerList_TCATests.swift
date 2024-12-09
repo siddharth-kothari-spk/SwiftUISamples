@@ -7,6 +7,7 @@
 
 import XCTest
 @testable import GithubFollowerList_TCA
+import ComposableArchitecture
 
 final class GithubFollowerList_TCATests: XCTestCase {
 
@@ -32,5 +33,28 @@ final class GithubFollowerList_TCATests: XCTestCase {
             // Put the code you want to measure the time of here.
         }
     }
+    
+    @MainActor
+    func testFetchDataAction() async {
+        let store = await TestStore(initialState: FollowerListFeature.State()) {
+            FollowerListFeature()
+        }
+        
+        let followers: [Follower] = [Follower(login: "test1", id: 1, nodeID: "", avatarURL: "", gravatarID: "", url: "", htmlURL: "", followersURL: "", followingURL: "", gistsURL: "", starredURL: "", subscriptionsURL: "", organizationsURL: "", reposURL: "", eventsURL: "", receivedEventsURL: "", type: "", siteAdmin: true),
+        ]
+        
+        await store.send(.fetchData) {
+            $0.isLoading = true
+        }
+        
+        await store.send(.fetchDataSuccess(followers)) {
+            $0.isLoading = false
+            $0.followers = followers
+        }
+        
+        XCTAssertFalse(store.state.isLoading)
+        XCTAssertEqual(store.state.followers, followers)
+        await store.finish(timeout: 1)
+  }
 
 }
