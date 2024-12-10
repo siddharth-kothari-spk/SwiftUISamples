@@ -9,14 +9,22 @@
 import SwiftUI
 
 struct ContentView: View {
+    @State var selectedTab: TabIcon = .home
+    @State var xOffset = 140.0
+    
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("Hello, world!")
+        HStack {
+            ForEach(Array(tabItems.enumerated()), id: \.element.id) { index, item in
+                Spacer()
+                Image(systemName: item.icon)
+                    .bold()
+                    .symbolVariant(selectedTab == item.tab ? .fill : .none)
+                    .contentTransition(.symbolEffect)
+                Spacer()
+            }
         }
-        .padding()
+        .frame(height: 70)
+        .background(.thinMaterial, in: .capsule)
     }
 }
 
@@ -42,6 +50,6 @@ let tabItems: [TabBar] = [
     TabBar(icon: "square.stack", tab: .card),
     TabBar(icon: "location", tab: .location),
     TabBar(icon: "house", tab: .home),
-    TabBar(icon: "purchase", tab: .purchase),
-    TabBar(icon: "notification", tab: .notification)
+    TabBar(icon: "purchased", tab: .purchase),
+    TabBar(icon: "bell.badge", tab: .notification)
 ]
