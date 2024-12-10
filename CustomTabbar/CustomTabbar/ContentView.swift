@@ -10,7 +10,7 @@ import SwiftUI
 
 struct ContentView: View {
     @State var selectedTab: TabIcon = .home
-    @State var xOffset = 140.0
+   // @State var xOffset = 2 * 70.0
     
     var body: some View {
         HStack {
@@ -20,6 +20,12 @@ struct ContentView: View {
                     .bold()
                     .symbolVariant(selectedTab == item.tab ? .fill : .none)
                     .contentTransition(.symbolEffect)
+                    .onTapGesture {
+                        withAnimation(.spring) {
+                            selectedTab = item.tab
+                           // xOffset = CGFloat(index) * 70
+                        }
+                    }
                 Spacer()
             }
         }
@@ -50,6 +56,6 @@ let tabItems: [TabBar] = [
     TabBar(icon: "square.stack", tab: .card),
     TabBar(icon: "location", tab: .location),
     TabBar(icon: "house", tab: .home),
-    TabBar(icon: "purchased", tab: .purchase),
+    TabBar(icon: "purchased.circle", tab: .purchase),
     TabBar(icon: "bell.badge", tab: .notification)
 ]
