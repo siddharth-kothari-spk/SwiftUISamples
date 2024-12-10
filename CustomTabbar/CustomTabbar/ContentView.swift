@@ -23,18 +23,22 @@ struct ContentView: View {
                     .onTapGesture {
                         withAnimation(.spring) {
                             selectedTab = item.tab
-                            xOffset = CGFloat(index) * 70 + CGFloat(index - 2)
+                           // xOffset = CGFloat(index) * 70 + CGFloat(index - 2)
+                            xOffset = CGFloat(index) * 70
                         }
                     }
                 Spacer()
             }
+            .frame(width: 23.3)
         }
         .frame(height: 70)
         .background(.thinMaterial, in: .capsule)
         .overlay(alignment: .bottomLeading) {
             Circle()
                 .frame(width: 10, height: 10)
-                .offset(x: 35 + xOffset, y: -5)
+                //.offset(x: 35 + xOffset, y: -5)
+                .offset(x: 30, y: -5)
+                .offset(x: xOffset)
         }
         .padding()
     }
