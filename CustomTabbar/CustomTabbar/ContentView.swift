@@ -10,7 +10,7 @@ import SwiftUI
 
 struct ContentView: View {
     @State var selectedTab: TabIcon = .home
-   // @State var xOffset = 2 * 70.0
+    @State var xOffset = 2 * 70.0
     
     var body: some View {
         HStack {
@@ -23,7 +23,7 @@ struct ContentView: View {
                     .onTapGesture {
                         withAnimation(.spring) {
                             selectedTab = item.tab
-                           // xOffset = CGFloat(index) * 70
+                            xOffset = CGFloat(index) * 70 + CGFloat(index - 2)
                         }
                     }
                 Spacer()
@@ -31,6 +31,12 @@ struct ContentView: View {
         }
         .frame(height: 70)
         .background(.thinMaterial, in: .capsule)
+        .overlay(alignment: .bottomLeading) {
+            Circle()
+                .frame(width: 10, height: 10)
+                .offset(x: 35 + xOffset, y: -5)
+        }
+        .padding()
     }
 }
 
