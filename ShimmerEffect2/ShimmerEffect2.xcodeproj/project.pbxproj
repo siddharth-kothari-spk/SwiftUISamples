@@ -1,0 +1,593 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		B12559D72D09BED8003AA4E7 /* ShimmerEffect2App.swift in Sources */ = {isa = PBXBuildFile; fileRef = B12559D62D09BED8003AA4E7 /* ShimmerEffect2App.swift */; };
+		B12559D92D09BED8003AA4E7 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B12559D82D09BED8003AA4E7 /* ContentView.swift */; };
+		B12559DB2D09BEE1003AA4E7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B12559DA2D09BEE1003AA4E7 /* Assets.xcassets */; };
+		B12559DE2D09BEE1003AA4E7 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B12559DD2D09BEE1003AA4E7 /* Preview Assets.xcassets */; };
+		B12559E82D09BEE3003AA4E7 /* ShimmerEffect2Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B12559E72D09BEE3003AA4E7 /* ShimmerEffect2Tests.swift */; };
+		B12559F22D09BEE3003AA4E7 /* ShimmerEffect2UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B12559F12D09BEE3003AA4E7 /* ShimmerEffect2UITests.swift */; };
+		B12559F42D09BEE3003AA4E7 /* ShimmerEffect2UITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B12559F32D09BEE3003AA4E7 /* ShimmerEffect2UITestsLaunchTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		B12559E42D09BEE3003AA4E7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B12559CB2D09BED8003AA4E7 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B12559D22D09BED8003AA4E7;
+			remoteInfo = ShimmerEffect2;
+		};
+		B12559EE2D09BEE3003AA4E7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B12559CB2D09BED8003AA4E7 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B12559D22D09BED8003AA4E7;
+			remoteInfo = ShimmerEffect2;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		B12559D32D09BED8003AA4E7 /* ShimmerEffect2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ShimmerEffect2.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B12559D62D09BED8003AA4E7 /* ShimmerEffect2App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShimmerEffect2App.swift; sourceTree = "<group>"; };
+		B12559D82D09BED8003AA4E7 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		B12559DA2D09BEE1003AA4E7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		B12559DD2D09BEE1003AA4E7 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		B12559E32D09BEE3003AA4E7 /* ShimmerEffect2Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ShimmerEffect2Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B12559E72D09BEE3003AA4E7 /* ShimmerEffect2Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShimmerEffect2Tests.swift; sourceTree = "<group>"; };
+		B12559ED2D09BEE3003AA4E7 /* ShimmerEffect2UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ShimmerEffect2UITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B12559F12D09BEE3003AA4E7 /* ShimmerEffect2UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShimmerEffect2UITests.swift; sourceTree = "<group>"; };
+		B12559F32D09BEE3003AA4E7 /* ShimmerEffect2UITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShimmerEffect2UITestsLaunchTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B12559D02D09BED8003AA4E7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B12559E02D09BEE3003AA4E7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B12559EA2D09BEE3003AA4E7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		B12559CA2D09BED8003AA4E7 = {
+			isa = PBXGroup;
+			children = (
+				B12559D52D09BED8003AA4E7 /* ShimmerEffect2 */,
+				B12559E62D09BEE3003AA4E7 /* ShimmerEffect2Tests */,
+				B12559F02D09BEE3003AA4E7 /* ShimmerEffect2UITests */,
+				B12559D42D09BED8003AA4E7 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		B12559D42D09BED8003AA4E7 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B12559D32D09BED8003AA4E7 /* ShimmerEffect2.app */,
+				B12559E32D09BEE3003AA4E7 /* ShimmerEffect2Tests.xctest */,
+				B12559ED2D09BEE3003AA4E7 /* ShimmerEffect2UITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B12559D52D09BED8003AA4E7 /* ShimmerEffect2 */ = {
+			isa = PBXGroup;
+			children = (
+				B12559D62D09BED8003AA4E7 /* ShimmerEffect2App.swift */,
+				B12559D82D09BED8003AA4E7 /* ContentView.swift */,
+				B12559DA2D09BEE1003AA4E7 /* Assets.xcassets */,
+				B12559DC2D09BEE1003AA4E7 /* Preview Content */,
+			);
+			path = ShimmerEffect2;
+			sourceTree = "<group>";
+		};
+		B12559DC2D09BEE1003AA4E7 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				B12559DD2D09BEE1003AA4E7 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		B12559E62D09BEE3003AA4E7 /* ShimmerEffect2Tests */ = {
+			isa = PBXGroup;
+			children = (
+				B12559E72D09BEE3003AA4E7 /* ShimmerEffect2Tests.swift */,
+			);
+			path = ShimmerEffect2Tests;
+			sourceTree = "<group>";
+		};
+		B12559F02D09BEE3003AA4E7 /* ShimmerEffect2UITests */ = {
+			isa = PBXGroup;
+			children = (
+				B12559F12D09BEE3003AA4E7 /* ShimmerEffect2UITests.swift */,
+				B12559F32D09BEE3003AA4E7 /* ShimmerEffect2UITestsLaunchTests.swift */,
+			);
+			path = ShimmerEffect2UITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		B12559D22D09BED8003AA4E7 /* ShimmerEffect2 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B12559F72D09BEE3003AA4E7 /* Build configuration list for PBXNativeTarget "ShimmerEffect2" */;
+			buildPhases = (
+				B12559CF2D09BED8003AA4E7 /* Sources */,
+				B12559D02D09BED8003AA4E7 /* Frameworks */,
+				B12559D12D09BED8003AA4E7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ShimmerEffect2;
+			productName = ShimmerEffect2;
+			productReference = B12559D32D09BED8003AA4E7 /* ShimmerEffect2.app */;
+			productType = "com.apple.product-type.application";
+		};
+		B12559E22D09BEE3003AA4E7 /* ShimmerEffect2Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B12559FA2D09BEE3003AA4E7 /* Build configuration list for PBXNativeTarget "ShimmerEffect2Tests" */;
+			buildPhases = (
+				B12559DF2D09BEE3003AA4E7 /* Sources */,
+				B12559E02D09BEE3003AA4E7 /* Frameworks */,
+				B12559E12D09BEE3003AA4E7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B12559E52D09BEE3003AA4E7 /* PBXTargetDependency */,
+			);
+			name = ShimmerEffect2Tests;
+			productName = ShimmerEffect2Tests;
+			productReference = B12559E32D09BEE3003AA4E7 /* ShimmerEffect2Tests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		B12559EC2D09BEE3003AA4E7 /* ShimmerEffect2UITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B12559FD2D09BEE3003AA4E7 /* Build configuration list for PBXNativeTarget "ShimmerEffect2UITests" */;
+			buildPhases = (
+				B12559E92D09BEE3003AA4E7 /* Sources */,
+				B12559EA2D09BEE3003AA4E7 /* Frameworks */,
+				B12559EB2D09BEE3003AA4E7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B12559EF2D09BEE3003AA4E7 /* PBXTargetDependency */,
+			);
+			name = ShimmerEffect2UITests;
+			productName = ShimmerEffect2UITests;
+			productReference = B12559ED2D09BEE3003AA4E7 /* ShimmerEffect2UITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B12559CB2D09BED8003AA4E7 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1530;
+				LastUpgradeCheck = 1530;
+				TargetAttributes = {
+					B12559D22D09BED8003AA4E7 = {
+						CreatedOnToolsVersion = 15.3;
+					};
+					B12559E22D09BEE3003AA4E7 = {
+						CreatedOnToolsVersion = 15.3;
+						TestTargetID = B12559D22D09BED8003AA4E7;
+					};
+					B12559EC2D09BEE3003AA4E7 = {
+						CreatedOnToolsVersion = 15.3;
+						TestTargetID = B12559D22D09BED8003AA4E7;
+					};
+				};
+			};
+			buildConfigurationList = B12559CE2D09BED8003AA4E7 /* Build configuration list for PBXProject "ShimmerEffect2" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = B12559CA2D09BED8003AA4E7;
+			productRefGroup = B12559D42D09BED8003AA4E7 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B12559D22D09BED8003AA4E7 /* ShimmerEffect2 */,
+				B12559E22D09BEE3003AA4E7 /* ShimmerEffect2Tests */,
+				B12559EC2D09BEE3003AA4E7 /* ShimmerEffect2UITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B12559D12D09BED8003AA4E7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B12559DE2D09BEE1003AA4E7 /* Preview Assets.xcassets in Resources */,
+				B12559DB2D09BEE1003AA4E7 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B12559E12D09BEE3003AA4E7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B12559EB2D09BEE3003AA4E7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B12559CF2D09BED8003AA4E7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B12559D92D09BED8003AA4E7 /* ContentView.swift in Sources */,
+				B12559D72D09BED8003AA4E7 /* ShimmerEffect2App.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B12559DF2D09BEE3003AA4E7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B12559E82D09BEE3003AA4E7 /* ShimmerEffect2Tests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B12559E92D09BEE3003AA4E7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B12559F42D09BEE3003AA4E7 /* ShimmerEffect2UITestsLaunchTests.swift in Sources */,
+				B12559F22D09BEE3003AA4E7 /* ShimmerEffect2UITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		B12559E52D09BEE3003AA4E7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B12559D22D09BED8003AA4E7 /* ShimmerEffect2 */;
+			targetProxy = B12559E42D09BEE3003AA4E7 /* PBXContainerItemProxy */;
+		};
+		B12559EF2D09BEE3003AA4E7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B12559D22D09BED8003AA4E7 /* ShimmerEffect2 */;
+			targetProxy = B12559EE2D09BEE3003AA4E7 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		B12559F52D09BEE3003AA4E7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		B12559F62D09BEE3003AA4E7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		B12559F82D09BEE3003AA4E7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"ShimmerEffect2/Preview Content\"";
+				DEVELOPMENT_TEAM = Q4WH2ZZWCT;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.siddharthkothari.ShimmerEffect2;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		B12559F92D09BEE3003AA4E7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"ShimmerEffect2/Preview Content\"";
+				DEVELOPMENT_TEAM = Q4WH2ZZWCT;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.siddharthkothari.ShimmerEffect2;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		B12559FB2D09BEE3003AA4E7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = Q4WH2ZZWCT;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.siddharthkothari.ShimmerEffect2Tests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ShimmerEffect2.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/ShimmerEffect2";
+			};
+			name = Debug;
+		};
+		B12559FC2D09BEE3003AA4E7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = Q4WH2ZZWCT;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.siddharthkothari.ShimmerEffect2Tests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ShimmerEffect2.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/ShimmerEffect2";
+			};
+			name = Release;
+		};
+		B12559FE2D09BEE3003AA4E7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = Q4WH2ZZWCT;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.siddharthkothari.ShimmerEffect2UITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = ShimmerEffect2;
+			};
+			name = Debug;
+		};
+		B12559FF2D09BEE3003AA4E7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = Q4WH2ZZWCT;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.siddharthkothari.ShimmerEffect2UITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = ShimmerEffect2;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B12559CE2D09BED8003AA4E7 /* Build configuration list for PBXProject "ShimmerEffect2" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B12559F52D09BEE3003AA4E7 /* Debug */,
+				B12559F62D09BEE3003AA4E7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B12559F72D09BEE3003AA4E7 /* Build configuration list for PBXNativeTarget "ShimmerEffect2" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B12559F82D09BEE3003AA4E7 /* Debug */,
+				B12559F92D09BEE3003AA4E7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B12559FA2D09BEE3003AA4E7 /* Build configuration list for PBXNativeTarget "ShimmerEffect2Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B12559FB2D09BEE3003AA4E7 /* Debug */,
+				B12559FC2D09BEE3003AA4E7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B12559FD2D09BEE3003AA4E7 /* Build configuration list for PBXNativeTarget "ShimmerEffect2UITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B12559FE2D09BEE3003AA4E7 /* Debug */,
+				B12559FF2D09BEE3003AA4E7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = B12559CB2D09BED8003AA4E7 /* Project object */;
+}
