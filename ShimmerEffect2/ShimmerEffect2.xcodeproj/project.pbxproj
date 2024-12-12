@@ -14,6 +14,7 @@
 		B12559E82D09BEE3003AA4E7 /* ShimmerEffect2Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B12559E72D09BEE3003AA4E7 /* ShimmerEffect2Tests.swift */; };
 		B12559F22D09BEE3003AA4E7 /* ShimmerEffect2UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B12559F12D09BEE3003AA4E7 /* ShimmerEffect2UITests.swift */; };
 		B12559F42D09BEE3003AA4E7 /* ShimmerEffect2UITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B12559F32D09BEE3003AA4E7 /* ShimmerEffect2UITestsLaunchTests.swift */; };
+		B1255A012D09BF85003AA4E7 /* ShimmerEffect.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1255A002D09BF85003AA4E7 /* ShimmerEffect.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +45,7 @@
 		B12559ED2D09BEE3003AA4E7 /* ShimmerEffect2UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ShimmerEffect2UITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B12559F12D09BEE3003AA4E7 /* ShimmerEffect2UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShimmerEffect2UITests.swift; sourceTree = "<group>"; };
 		B12559F32D09BEE3003AA4E7 /* ShimmerEffect2UITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShimmerEffect2UITestsLaunchTests.swift; sourceTree = "<group>"; };
+		B1255A002D09BF85003AA4E7 /* ShimmerEffect.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShimmerEffect.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,6 +98,7 @@
 			children = (
 				B12559D62D09BED8003AA4E7 /* ShimmerEffect2App.swift */,
 				B12559D82D09BED8003AA4E7 /* ContentView.swift */,
+				B1255A002D09BF85003AA4E7 /* ShimmerEffect.swift */,
 				B12559DA2D09BEE1003AA4E7 /* Assets.xcassets */,
 				B12559DC2D09BEE1003AA4E7 /* Preview Content */,
 			);
@@ -258,6 +261,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B12559D92D09BED8003AA4E7 /* ContentView.swift in Sources */,
+				B1255A012D09BF85003AA4E7 /* ShimmerEffect.swift in Sources */,
 				B12559D72D09BED8003AA4E7 /* ShimmerEffect2App.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
