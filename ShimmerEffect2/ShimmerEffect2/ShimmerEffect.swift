@@ -18,7 +18,16 @@ struct ShimmerEffect: TextRenderer {
     }
     // avaialble from iOS 17 onwards , 2 more methods came from iOS 18
     func draw(layout: Text.Layout, in ctx: inout GraphicsContext) {
-        //
+        for line in layout {
+            for runs in line {
+                for (index, glyph) in runs.enumerated() {
+                    let relativePosition = CGFloat(index) / CGFloat(runs.count)
+                    let adjustedOpacity = max(0, 1 - abs(relativePosition - animationInProgress))
+                    ctx.opacity = adjustedOpacity
+                    ctx.draw(glyph)
+                }
+            }
+        }
     }
     
     
