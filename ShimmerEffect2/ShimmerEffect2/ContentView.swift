@@ -10,14 +10,21 @@
 import SwiftUI
 
 struct ContentView: View {
+    @State var moveFrom = false
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("Hello, world!")
+        ZStack {
+            
         }
+        .frame(height: 55)
+        .frame(maxWidth: .infinity)
+        .background(.gray.tertiary, in: Capsule())
         .padding()
+        .onAppear {
+            withAnimation(.linear(duration: 3).repeatForever(autoreverses: false)) {
+                moveFrom.toggle()
+            }
+        }
+        
     }
 }
 
