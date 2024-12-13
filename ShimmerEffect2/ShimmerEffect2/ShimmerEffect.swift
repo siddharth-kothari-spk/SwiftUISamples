@@ -12,7 +12,7 @@ import SwiftUI
 struct ShimmerEffect: TextRenderer {
     var animationInProgress: CGFloat
     //var animatableData: EmptyAnimatableData
-    var animateData: Double {
+    var animatableData: Double {
         get { animationInProgress}
         set { animationInProgress = newValue}
     }

@@ -13,7 +13,17 @@ struct ContentView: View {
     @State var moveFrom = false
     var body: some View {
         ZStack {
+            Text("Get started")
+                .font(.title.bold())
+                .foregroundStyle(.gray.opacity(0.2))
             
+            if #available(iOS 18.0, *) {
+                Text("Get started")
+                    .font(.title.bold())
+                    .textRenderer(ShimmerEffect(animationInProgress: moveFrom ? 3 : -1))
+            } else {
+                // Fallback on earlier versions
+            }
         }
         .frame(height: 55)
         .frame(maxWidth: .infinity)
