@@ -36,7 +36,23 @@ struct RotateGestureView: View {
     
     var body: some View {
     VStack {
-      Text("Test")
+        Rectangle()
+        .fill(Color.indigo)
+        .frame(width: 200, height: 200)
+        .rotationEffect(angle)
+        .cornerRadius(12)
+        .gesture(rotateGesture)
+        .padding()
+        
+        VStack(alignment: .leading, spacing: 10) {
+                Text("Rotation: \(angle.degrees, specifier: "%.2f")°")
+                Text("Velocity: \(velocity.degrees, specifier: "%.2f")°/s")
+                Text("Start Location: (\(startLocation.x, specifier: "%.2f"), \(startLocation.y, specifier: "%.2f"))")
+                Text("Start Anchor: (\(startAnchor.x, specifier: "%.2f"), \(startAnchor.y, specifier: "%.2f"))")
+              }
+        .padding()
+        .background(Color(.secondarySystemBackground))
+        .cornerRadius(12)
     }
     .padding()
     }
