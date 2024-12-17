@@ -19,9 +19,18 @@ struct RotateGestureView: View {
         RotateGesture(minimumAngleDelta: .degrees(1.0))
             .onChanged { rotateGestureValueChanged in
                 /// Adds an action to perform when the gesture's value changes.
+                withAnimation(.spring(response: 0.3, dampingFraction: 0.7, blendDuration: 0.5)) {
+                    angle = rotateGestureValueChanged.rotation
+                }
+                velocity = rotateGestureValueChanged.velocity
+                startLocation = rotateGestureValueChanged.startLocation
+                startAnchor = rotateGestureValueChanged.startAnchor
             }
             .onEnded { rotateGestureValueEnded in
                 /// Adds an action to perform when the gesture ends.
+                withAnimation(.spring(duration: 0.3, bounce: 0.7, blendDuration: 0.5)) {
+                    velocity = .degrees(0)
+                }
             }
     }
     
