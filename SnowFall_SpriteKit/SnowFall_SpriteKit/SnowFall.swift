@@ -20,5 +20,8 @@ class SnowFall: SKScene {
         anchorPoint = CGPoint(x: 0.5, y: 0.5) // Used to choose the origin of the scene's coordinate system
         backgroundColor = .clear
         
+        guard let  node = SKEmitterNode(fileNamed: "SnowFall.sks") else { return } // An emitter of particle sprites
+        addChild(node)
+        node.particlePositionRange.dx = UIScreen.main.bounds.width // The random variance about the starting position for each particle in the emitter's coordinate space. Defaults to (0.0, 0,0).
     }
 }
