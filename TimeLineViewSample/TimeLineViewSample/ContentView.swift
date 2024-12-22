@@ -50,6 +50,16 @@ struct ContentView: View {
                    .foregroundStyle(.green)
 
             }
+            
+            TimelineView(.daily) { timeLineViewContext in
+                let value = dayValue(for: timeLineViewContext.date)
+                Circle()
+                    .trim(from: 0, to: value)
+                    .stroke(lineWidth: 5)
+                    .padding()
+                    .frame(width: 200, height: 200)
+                    .foregroundStyle(.orange)
+            }
         }
     }
     private func secondsValue(for date: Date) -> Double {
@@ -61,6 +71,14 @@ struct ContentView: View {
             let seconds = Calendar.current.component(.second, from: date)
             let nanos = Calendar.current.component(.nanosecond, from: date)
             return Double(seconds * 1_000_000_000 + nanos) / 60_000_000_000
+        }
+    
+    private func dayValue(for date: Date) -> Double {
+        /// timeIntervalSinceNow: Returns a `Date` initialized relative to the current date and time by a given number of seconds.
+        //let day = Calendar.current.component(.day, from: .init(timeIntervalSinceNow: -(86400 * 7))) // to go to past date
+        
+        let day = Calendar.current.component(.day, from: date)
+            return Double(day) / 30
         }
 }
 
