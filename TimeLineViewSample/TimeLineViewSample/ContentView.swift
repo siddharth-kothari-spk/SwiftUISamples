@@ -19,19 +19,37 @@ struct ContentView: View {
                     .stroke(lineWidth: 5)
                     .padding()
                     .frame(width: 200, height: 200)
+                    .foregroundStyle(.red)
             }
             
             // The cadence represents the rate at which TimelineView updates, and it might change many times during the view’s lifecycle. For example, running the TimelineView on Apple Watch might decrease cadence while the user lowers the wrist. Fortunately, the Cadence type conforms to Comparable protocol, and we can easily compare them.
             TimelineView(.animation) { context in
-                       let date = context.date
-                       let value = context.cadence >= .live ?
-                           nanosValue(for: date): secondsValue(for: date)
+                   let date = context.date
+                   let value = context.cadence >= .live ?
+                       nanosValue(for: date): secondsValue(for: date)
            // .live: Updates the view continuously.
-                       Circle()
+                    Circle()
                     .trim(from: 0, to: value)
-                           .stroke()
-                           .frame(width: 200, height: 200)
+                    .stroke(lineWidth: 5)
+                    .padding()
+                    .frame(width: 200, height: 200)
+                    .foregroundStyle(.blue)
                    }
+            
+            
+            // Schedulers: SwiftUI provides us with  two schedulers: everyMinute and periodic scheduler. The everyMinute scheduler updates the timeline every minute. The periodic scheduler allows us to give a start date and interval, after which another update event should be fired.
+            
+            TimelineView(.periodic(from: .now, by: 5)) { timeLineViewContext in
+                let value = secondsValue(for: timeLineViewContext.date)
+
+               Circle()
+                   .trim(from: 0, to: value)
+                   .stroke(lineWidth: 5)
+                   .padding()
+                   .frame(width: 200, height: 200)
+                   .foregroundStyle(.green)
+
+            }
         }
     }
     private func secondsValue(for date: Date) -> Double {
