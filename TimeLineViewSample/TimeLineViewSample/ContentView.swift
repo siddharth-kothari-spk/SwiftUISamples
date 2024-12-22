@@ -10,12 +10,15 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        TimelineView(.animation) { timeLineViewContext in
-            let value = secondsValue(for: timeLineViewContext.date)
-            Circle()
-                .trim(from: 0, to: value)
-                .stroke(lineWidth: 5)
-                .padding()
+        VStack {
+            // The animation schedule is the system-provided scheduler that uses animation duration on the current platform and reevaluates its body very often to provide a nice transition.
+            TimelineView(.animation) { timeLineViewContext in
+                let value = secondsValue(for: timeLineViewContext.date)
+                Circle()
+                    .trim(from: 0, to: value)
+                    .stroke(lineWidth: 5)
+                    .padding()
+            }
         }
     }
     private func secondsValue(for date: Date) -> Double {
