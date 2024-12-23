@@ -10,12 +10,21 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        HStack {
-            Card(icon: "pencil", title: "Pencil", backgroundColour: .blue)
-            Card(icon: "pencil", title: "Pencil", backgroundColour: .blue)
-            Card(icon: "pencil", title: "Pencil", backgroundColour: .blue)
+        VStack {
+            HStack {
+                Card(icon: "pencil", title: "Pencil", backgroundColour: .blue)
+                Card(icon: "figure.walk", title: "Walking", backgroundColour: .orange)
+                Card(icon: "flame.fill", title: "Workout", backgroundColour: .red)
+            }
+            .padding()
+            
+            HStack {
+                Card(icon: "figure.stairs", title: "Steps", backgroundColour: .green)
+                Card(icon: "figure.yoga", title: "Yoga", backgroundColour: .pink)
+                Card(icon: "dumbbell.fill", title: "Lift", backgroundColour: .teal)
+            }
+            .padding()
         }
-        .padding()
     }
 }
 

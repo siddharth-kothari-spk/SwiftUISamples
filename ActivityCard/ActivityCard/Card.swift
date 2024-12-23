@@ -13,10 +13,10 @@ struct Card: View {
     let backgroundColour: Color
     
     var body: some View {
-        VStack(alignment: .leading, spacing: 10) {
+        VStack(alignment: .leading, spacing: 0) {
             
             Image(systemName: icon)
-                .font(.system(size: 25))
+                .font(.system(size: 30))
                 .frame(maxWidth: .infinity, alignment: .trailing)
                 
             Text(title)
@@ -25,6 +25,8 @@ struct Card: View {
         .padding(10)
         .padding(.vertical, -3)
         .foregroundStyle(backgroundColour)
+        .frame(height: 100)
+        .background(backgroundColour.opacity(0.2), in: .rect(cornerRadius: 12))
     }
 }
 
