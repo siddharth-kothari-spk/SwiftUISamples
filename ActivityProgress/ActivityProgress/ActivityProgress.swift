@@ -23,6 +23,22 @@ struct ActivityProgress: View {
                 .font(.system(size: 25))
                 .foregroundStyle(.gray)
                 .multilineTextAlignment(.center)
+            
+            ZStack {
+                Circle()
+                    .stroke(lineWidth: 5)
+                    .foregroundStyle(colour.opacity(0.1))
+                Circle()
+                    .trim(from: 0.0, to: CGFloat(80))
+                    .stroke(style: StrokeStyle(lineWidth: 8, lineCap: .round)
+                    // StrokeStyle: The characteristics of a stroke that traces a path.
+                    )
+                    .foregroundStyle(colour)
+                    .rotationEffect(Angle(degrees: -90))
+            }
+            .frame(width: 70, height: 70)
+            .padding(10)
+            
         } label: {
             HStack {
                 Image(systemName: icon)
