@@ -12,7 +12,7 @@ struct ActivityProgress: View {
     let title: String
     let details: String
     let colour: Color
-   // @Binding var progress: Double
+    @Binding var progress: Double
     
     var body: some View {
         // A stylized view, with an optional label, that visually collects a logical grouping of content.
@@ -29,7 +29,7 @@ struct ActivityProgress: View {
                     .stroke(lineWidth: 5)
                     .foregroundStyle(colour.opacity(0.1))
                 Circle()
-                    .trim(from: 0.0, to: CGFloat(80))
+                    .trim(from: 0.0, to: CGFloat(progress / 100))
                     .stroke(style: StrokeStyle(lineWidth: 8, lineCap: .round)
                     // StrokeStyle: The characteristics of a stroke that traces a path.
                     )
@@ -37,7 +37,7 @@ struct ActivityProgress: View {
                     .rotationEffect(Angle(degrees: -90))
                 // rotationEffect: Rotates a view's rendered output in two dimensions around the specified point.
                 
-                Text("\(Int(80.0))")
+                Text("\(Int(progress))")
                     .font(.headline)
                     .contentTransition(.numericText())
                 // contentTransition: Modifies the view to use a given transition as its method of animating changes to the contents of its views.
@@ -57,10 +57,10 @@ struct ActivityProgress: View {
                     .font(.headline)
             }
         }
-
     }
 }
 
 #Preview {
-    ActivityProgress(icon: "flame.fill", title: "Energy", details: "200 out of 500", colour: .red)
+    @Previewable @State var progress: Double = 75.0
+    ActivityProgress(icon: "flame.fill", title: "Energy", details: "200 out of 500", colour: .red, progress: $progress)
 }
