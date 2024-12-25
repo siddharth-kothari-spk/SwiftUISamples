@@ -35,6 +35,12 @@ struct ActivityProgress: View {
                     )
                     .foregroundStyle(colour)
                     .rotationEffect(Angle(degrees: -90))
+                // rotationEffect: Rotates a view's rendered output in two dimensions around the specified point.
+                
+                Text("\(Int(80.0))")
+                    .font(.headline)
+                    .contentTransition(.numericText())
+                // contentTransition: Modifies the view to use a given transition as its method of animating changes to the contents of its views.
             }
             .frame(width: 70, height: 70)
             .padding(10)
