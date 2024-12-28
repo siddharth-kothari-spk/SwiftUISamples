@@ -27,6 +27,14 @@ struct ContentView: View {
         }
         .padding()
     }
+    
+    private func startTimer() {
+        Timer.scheduledTimer(withTimeInterval: 1, repeats: true) { _ in
+            withAnimation(.easeInOut(duration: 0.5)) {
+                currentIndex = (currentIndex + 1) % items.count
+            }
+        }
+    }
 }
 
 #Preview {
