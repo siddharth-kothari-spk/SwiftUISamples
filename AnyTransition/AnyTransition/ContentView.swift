@@ -28,24 +28,27 @@ struct ContentView: View {
     }
     
     var body: some View {
-        HStack(spacing: 4) {
-            Text("Loading")
-            
-            ZStack {
-                ForEach(0..<items.count, id: \.self) { index in
-                    if index == currentIndex {
-                        Text(items[index])
-                            .bold()
-                            .foregroundStyle(colors[index])
-                            .transition(customTransition)
+        VStack {
+            HStack(spacing: 4) {
+                Text("Loading")
+                
+                ZStack {
+                    ForEach(0..<items.count, id: \.self) { index in
+                        if index == currentIndex {
+                            Text(items[index])
+                                .bold()
+                                .foregroundStyle(colors[index])
+                                .transition(customTransition)
+                        }
                     }
                 }
+                .frame(width: 100, height: 50, alignment: .leading)
+                .clipped() // used to see items in height 50 only
+                .padding(EdgeInsets(top: 5, leading: 5, bottom: 10, trailing: 5))
             }
-            .frame(width: 70, height: 30, alignment: .leading)
-            .clipped() // used to see items in height 30 only
-        }
-        .onAppear {
-            startTimer()
+            .onAppear {
+                startTimer()
+            }
         }
     }
 }
