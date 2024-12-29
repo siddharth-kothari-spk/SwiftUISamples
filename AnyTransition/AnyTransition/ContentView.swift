@@ -36,6 +36,8 @@ struct ContentView: View {
                     if index == currentIndex {
                         Text(items[index])
                             .bold()
+                            .foregroundStyle(colors[index])
+                            .transition(customTransition)
                     }
                 }
             }
