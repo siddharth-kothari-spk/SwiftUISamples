@@ -18,21 +18,32 @@ struct ContentView: View {
     var customTransition: AnyTransition {
         AnyTransition.asymmetric(insertion: .offset(y: 50).combined(with: .opacity), removal: .offset(y: -50).combined(with: .opacity))
     }
-    var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("Hello, world!")
-        }
-        .padding()
-    }
     
     private func startTimer() {
         Timer.scheduledTimer(withTimeInterval: 1, repeats: true) { _ in
             withAnimation(.easeInOut(duration: 0.5)) {
                 currentIndex = (currentIndex + 1) % items.count
             }
+        }
+    }
+    
+    var body: some View {
+        HStack(spacing: 4) {
+            Text("Loading")
+            
+            ZStack {
+                ForEach(0..<items.count, id: \.self) { index in
+                    if index == currentIndex {
+                        Text(items[index])
+                            .bold()
+                    }
+                }
+            }
+            .frame(width: 70, height: 30, alignment: .leading)
+            .clipped() // used to see items in height 30 only
+        }
+        .onAppear {
+            startTimer()
         }
     }
 }
