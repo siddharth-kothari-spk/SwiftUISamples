@@ -10,7 +10,7 @@ import SwiftUI
 
 struct ContentView: View {
     @State var progress: CGFloat = 0.1
-    @State var percentage: Int = 0
+    @State var percentage: Int = 10
     
     var body: some View {
         ZStack {
@@ -23,8 +23,25 @@ struct ContentView: View {
                 .stroke(style: StrokeStyle(lineWidth: 20, lineCap: .round, lineJoin: .miter))
                 .rotationEffect(.degrees(-90))
                 .foregroundStyle(.blue.gradient)
+            
+            Text("\(percentage)%")
+                .font(.title).bold()
+                .foregroundStyle(.red)
         }
-        .frame(width: 300, height: 300)
+        .frame(width: 200, height: 200)
+        .onAppear {
+            withAnimation(.linear(duration: 5)) {
+                progress = 1.0
+            }
+            Timer.scheduledTimer(withTimeInterval: 0.05, repeats: true) { timer in
+                if percentage < 100 {
+                    percentage += 1
+                }
+                else {
+                    timer.invalidate()
+                }
+            }
+        }
     }
 }
 
