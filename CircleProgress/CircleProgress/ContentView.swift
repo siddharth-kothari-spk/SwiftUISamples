@@ -21,15 +21,19 @@ struct ContentView: View {
             
             Circle()
                 .trim(from: 0.0, to: progress)
-                .stroke(style: StrokeStyle(lineWidth: 20, lineCap: .round, lineJoin: .miter))
+                .stroke(style: StrokeStyle(lineWidth: 50, lineCap: .round, lineJoin: .miter))
                 .rotationEffect(.degrees(-90))
-                .foregroundStyle(LinearGradient(gradient: Gradient(colors: [.blue, .green, .cyan]), startPoint: .top, endPoint: .bottom))
+                .foregroundStyle(LinearGradient(gradient: Gradient(colors: [.blue, .green, .yellow, .red]), startPoint: .topLeading, endPoint: .bottomTrailing))
+            
+            Rectangle()
+                .foregroundStyle(LinearGradient(gradient: Gradient(colors: [.blue, .green, .yellow, .red]), startPoint: .top, endPoint: .bottom))
+                .frame(width: 100, height: 100)
             
             Text("\(percentage)%")
                 .font(.title).bold()
-                .foregroundStyle(.red)
+                .foregroundStyle(.black)
         }
-        .frame(width: 200, height: 200)
+        .frame(width: 300, height: 300)
         .onAppear {
             withAnimation(.linear(duration: 5)) {
                 progress = 1.0
