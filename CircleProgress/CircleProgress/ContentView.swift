@@ -5,6 +5,7 @@
 //  Created by Siddharth Kothari on 20/01/25.
 //
 // https://www.linkedin.com/posts/su-codee-676946321_swiftui-activity-7285614955481939969-nrR3/?utm_source=share&utm_medium=member_ios
+// https://www.linkedin.com/posts/su-codee-676946321_swiftui-progress-ring-activity-7282722621505355777--h0V/
 
 import SwiftUI
 
@@ -22,7 +23,7 @@ struct ContentView: View {
                 .trim(from: 0.0, to: progress)
                 .stroke(style: StrokeStyle(lineWidth: 20, lineCap: .round, lineJoin: .miter))
                 .rotationEffect(.degrees(-90))
-                .foregroundStyle(.blue.gradient)
+                .foregroundStyle(LinearGradient(gradient: Gradient(colors: [.blue, .green, .cyan]), startPoint: .top, endPoint: .bottom))
             
             Text("\(percentage)%")
                 .font(.title).bold()
