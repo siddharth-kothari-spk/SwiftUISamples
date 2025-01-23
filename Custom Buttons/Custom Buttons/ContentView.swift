@@ -34,6 +34,11 @@ struct ContentView: View {
                 ModernButton()
                 ModernButton2()
                 ButtonWithCustomEffect()
+                VStack {
+                    ButtonWithCustomStyle()
+                    .frame(width: .infinity, height: 100)
+
+                }
             }
             .padding(.all, Constants.customPadding)
         }

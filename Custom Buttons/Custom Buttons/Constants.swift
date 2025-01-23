@@ -22,7 +22,7 @@ class Constants {
         return customHeight/2
     }
     
-    static var customPadding: CGFloat = 8.0
+    static var customPadding: CGFloat = 16.0
     
     static var customTextWidth: CGFloat = 80.0
 }

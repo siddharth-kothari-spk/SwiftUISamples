@@ -34,6 +34,7 @@
 		B18668C92B257654006A3DDD /* ModernButton2.swift in Sources */ = {isa = PBXBuildFile; fileRef = B18668C82B257654006A3DDD /* ModernButton2.swift */; };
 		B18668CB2B257710006A3DDD /* ButtonWithCustomEffect.swift in Sources */ = {isa = PBXBuildFile; fileRef = B18668CA2B257710006A3DDD /* ButtonWithCustomEffect.swift */; };
 		B18668CD2B257732006A3DDD /* ButtonPressedEffect.swift in Sources */ = {isa = PBXBuildFile; fileRef = B18668CC2B257732006A3DDD /* ButtonPressedEffect.swift */; };
+		B1E733112D41DE48009C826F /* ButtonWithCustomStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1E733102D41DE48009C826F /* ButtonWithCustomStyle.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -84,6 +85,7 @@
 		B18668C82B257654006A3DDD /* ModernButton2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModernButton2.swift; sourceTree = "<group>"; };
 		B18668CA2B257710006A3DDD /* ButtonWithCustomEffect.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonWithCustomEffect.swift; sourceTree = "<group>"; };
 		B18668CC2B257732006A3DDD /* ButtonPressedEffect.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonPressedEffect.swift; sourceTree = "<group>"; };
+		B1E733102D41DE48009C826F /* ButtonWithCustomStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonWithCustomStyle.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -191,6 +193,7 @@
 				B18668C62B257596006A3DDD /* ModernButton.swift */,
 				B18668C82B257654006A3DDD /* ModernButton2.swift */,
 				B18668CA2B257710006A3DDD /* ButtonWithCustomEffect.swift */,
+				B1E733102D41DE48009C826F /* ButtonWithCustomStyle.swift */,
 			);
 			path = "Button Views";
 			sourceTree = "<group>";
@@ -344,6 +347,7 @@
 				B18668B92B257020006A3DDD /* ToggleIconButton.swift in Sources */,
 				B18668A92B2564A9006A3DDD /* Constants.swift in Sources */,
 				B18668C72B257596006A3DDD /* ModernButton.swift in Sources */,
+				B1E733112D41DE48009C826F /* ButtonWithCustomStyle.swift in Sources */,
 				B18668AF2B256C00006A3DDD /* CircleIconButton.swift in Sources */,
 				B18668B72B256F2A006A3DDD /* CaptionIconButton.swift in Sources */,
 				B18668BF2B257286006A3DDD /* DashedIconButton.swift in Sources */,
