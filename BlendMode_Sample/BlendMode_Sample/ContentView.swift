@@ -220,7 +220,35 @@ struct ContentView: View {
                             .padding(-20)
                             .blendMode(.plusLighter)
                 }.padding()
-                
+               
+                if #available(iOS 18.0, *) {
+                    HStack {
+                        // public func mix(with rhs: Color, by fraction: Double, in colorSpace: Gradient.ColorSpace = .perceptual) -> Color usage
+
+                        Rectangle()
+                            .frame(width: 50, height: 50)
+                            .clipShape(.rect(cornerRadius: 10))
+                            .foregroundStyle(.red)
+                        
+                        Text("+")
+                            .frame(width: 20, height: 20)
+                            .bold()
+                        
+                        Rectangle()
+                            .frame(width: 50, height: 50)
+                            .clipShape(.rect(cornerRadius: 10))
+                            .foregroundStyle(.blue)
+                        
+                        Text("=")
+                            .frame(width: 20, height: 20)
+                            .bold()
+                        
+                        Rectangle()
+                            .frame(width: 50, height: 50)
+                            .clipShape(.rect(cornerRadius: 10))
+                            .foregroundStyle(.red.mix(with: .blue, by: 0.5, in: .device))
+                    }
+                }
             }
             .padding()
         }
