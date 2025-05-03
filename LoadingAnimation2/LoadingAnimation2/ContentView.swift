@@ -16,6 +16,12 @@ struct ContentView: View {
             Text("Loading...")
                 .font(.largeTitle.bold())
                 .foregroundStyle(.black)
+            
+            Text("Loading...")
+                .font(.largeTitle.bold())
+                .foregroundStyle(.white)
+                .frame(width: 200, height: 50)
+                .background(.black)
         }
     }
 }
