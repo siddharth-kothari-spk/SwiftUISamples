@@ -16,6 +16,17 @@ struct ContentView: View {
                 .imageScale(.large)
                 .foregroundStyle(.tint)
             Text("Hello, world!")
+            
+            Button {
+                withAnimation {
+                    
+                }
+            } label: {
+                Text("Open")
+                    .font(.largeTitle.italic())
+            }
+            .tint(.primary)
+
         }
         .padding()
     }
