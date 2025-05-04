@@ -10,22 +10,25 @@
 import SwiftUI
 
 struct ContentView: View {
+    @State var big = false
     var body: some View {
-        VStack {
+        VStack(spacing: 20) {
             Image(systemName: "globe")
-                .imageScale(.large)
+                .imageScale(big ? .large : .small)
                 .foregroundStyle(.tint)
+            
             Text("Hello, world!")
+                .fontDesign(big ? .monospaced : .rounded)
             
             Button {
                 withAnimation {
-                    
+                    big.toggle()
                 }
             } label: {
-                Text("Open")
-                    .font(.largeTitle.italic())
+                Text(big ? "Make small" : "Make big")
+                    .font(big ? .subheadline.italic() : .largeTitle.italic())
+                    .fontWeight(big ? .bold : .heavy)
             }
-            .tint(.primary)
 
         }
         .padding()
