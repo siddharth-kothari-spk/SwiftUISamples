@@ -7,6 +7,7 @@
 
 import SwiftUI
 
+// ❌ BAD: Using AnyView for simple conditional rendering
 struct BadConditionalExample: View {
     let isLoggedIn: Bool
     
