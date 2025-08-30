@@ -7,6 +7,13 @@
 
 import SwiftUI
 
+// ============================================
+// 1. @ViewBuilder Pattern - The Swiss Army Knife
+// ============================================
+
+// @ViewBuilder allows you to create conditional views and compose multiple views
+// without needing AnyView. It's SwiftUI's most powerful alternative.
+
 struct ViewBuilderExamples: View {
     @State private var userType: UserType = .standard
     @State private var showDetails = false
