@@ -117,4 +117,11 @@ struct MySwiftUIView: View {
     }
 }
 
-PlaygroundPage.current.setLiveView(MySwiftUIView())
+//PlaygroundPage.current.setLiveView(MySwiftUIView())
+
+// Using UIHostingController for views in playground
+let swiftUIView = MySwiftUIView()
+let hostingController = UIHostingController(rootView: swiftUIView)
+hostingController.preferredContentSize = CGSize(width: 375, height: 600)
+
+PlaygroundPage.current.setLiveView(hostingController)
