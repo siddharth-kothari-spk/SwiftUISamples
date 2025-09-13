@@ -5,24 +5,17 @@ import PlaygroundSupport
 struct MySwiftUIView: View {
     var body: some View {
         VStack(spacing: 20) {
-            Text("Hello, Playground!")
+            // Method 1: Using foregroundStyle with LinearGradient (iOS 15+)
+            Text("Gradient Text Method 1")
                 .font(.largeTitle)
+                .fontWeight(.bold)
                 .foregroundStyle(
                     LinearGradient(
-                        colors: [.blue, .purple, .pink],
+                        colors: [.blue, .cyan, .green],
                         startPoint: .leading,
                         endPoint: .trailing
                     )
                 )
-            
-            Button("Tap Me") {
-                print("Button tapped in playground!")
-            }
-            .padding()
-            .background(Color.blue)
-            .foregroundColor(.white)
-            .cornerRadius(10)
-            
         }
         .padding()
         .background(Color.gray.opacity(0.1))
