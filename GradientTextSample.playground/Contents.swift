@@ -45,6 +45,18 @@ struct MySwiftUIView: View {
                         endPoint: .trailing
                     )
                 )
+            
+            // Method 4: Vertical gradient
+            Text("Vertical Gradient")
+                .font(.largeTitle)
+                .fontWeight(.bold)
+                .foregroundStyle(
+                    LinearGradient(
+                        colors: [.red, .yellow, .green],
+                        startPoint: .top,
+                        endPoint: .bottom
+                    )
+                )
         }
         .padding()
         .background(Color.gray.opacity(0.1))
