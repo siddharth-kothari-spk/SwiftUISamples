@@ -16,6 +16,24 @@ struct MySwiftUIView: View {
                         endPoint: .trailing
                     )
                 )
+            
+            // Method 2: Using overlay with LinearGradient (iOS 13+)
+            Text("Gradient Text Method 2")
+                .font(.largeTitle)
+                .fontWeight(.bold)
+                .foregroundColor(.clear)
+                .overlay(
+                    LinearGradient(
+                        colors: [.purple, .pink, .orange],
+                        startPoint: .topLeading,
+                        endPoint: .bottomTrailing
+                    )
+                    .mask(
+                        Text("Gradient Text Method 2")
+                            .font(.largeTitle)
+                            .fontWeight(.bold)
+                    )
+                )
         }
         .padding()
         .background(Color.gray.opacity(0.1))
