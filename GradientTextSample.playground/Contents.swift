@@ -34,6 +34,17 @@ struct MySwiftUIView: View {
                             .fontWeight(.bold)
                     )
                 )
+            
+            // Method 3: horizontal gradient
+            Text("Horizontal gradient")
+                .font(.system(size: 32, weight: .medium))
+                .foregroundStyle(
+                    LinearGradient(
+                        colors: [.purple, .cyan, .blue],
+                        startPoint: .leading,
+                        endPoint: .trailing
+                    )
+                )
         }
         .padding()
         .background(Color.gray.opacity(0.1))
