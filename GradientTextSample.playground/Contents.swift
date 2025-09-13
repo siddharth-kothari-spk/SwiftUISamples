@@ -57,6 +57,19 @@ struct MySwiftUIView: View {
                         endPoint: .bottom
                     )
                 )
+            
+            // Method 5: Radial gradient
+            Text("Radial Gradient")
+                .font(.largeTitle)
+                .fontWeight(.bold)
+                .foregroundStyle(
+                    RadialGradient(
+                        colors: [.yellow, .orange, .red],
+                        center: .center,
+                        startRadius: 10,
+                        endRadius: 100
+                    )
+                )
         }
         .padding()
         .background(Color.gray.opacity(0.1))
