@@ -59,17 +59,32 @@ struct MySwiftUIView: View {
                 )
             
             // Method 5: Radial gradient
-            Text("Radial Gradient")
-                .font(.largeTitle)
-                .fontWeight(.bold)
-                .foregroundStyle(
-                    RadialGradient(
-                        colors: [.yellow, .orange, .red],
-                        center: .center,
-                        startRadius: 10,
-                        endRadius: 100
+            HStack {
+                
+                Text("Radial Gradient")
+                    .font(.largeTitle)
+                    .fontWeight(.bold)
+                    .foregroundStyle(
+                        RadialGradient(
+                            colors: [.yellow, .green, .red],
+                            center: .center,
+                            startRadius: 10,
+                            endRadius: 100
+                        )
                     )
-                )
+                Spacer()
+                Circle()
+                    .frame(width: 100, height: 100)
+                    .foregroundStyle(
+                        RadialGradient(
+                            colors: [.yellow, .green, .red],
+                            center: .center,
+                            startRadius: 10,
+                            endRadius: 50
+                        )
+                    )
+            }
+            
         }
         .padding()
         .background(Color.gray.opacity(0.1))
