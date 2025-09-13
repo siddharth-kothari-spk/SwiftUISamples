@@ -85,6 +85,31 @@ struct MySwiftUIView: View {
                     )
             }
             
+            // Method 6: Angular gradient
+            HStack {
+                Text("Angular Gradient")
+                    .font(.largeTitle)
+                    .fontWeight(.bold)
+                    .foregroundStyle(
+                        AngularGradient(
+                            colors: [.red, .orange, .yellow, .green, .blue, .purple, .red],
+                            center: .center,
+                            startAngle: .degrees(0),
+                            endAngle: .degrees(360)
+                        )
+                    )
+                
+                Circle()
+                    .frame(width: 100, height: 100)
+                    .foregroundStyle(
+                        AngularGradient(
+                            colors: [.red, .orange, .yellow, .green, .blue, .purple, .red],
+                            center: .center,
+                            startAngle: .degrees(0),
+                            endAngle: .degrees(360)
+                        )
+                    )
+            }
         }
         .padding()
         .background(Color.gray.opacity(0.1))
